@@ -430,11 +430,23 @@ class Analytics {
     trackInteractions() {
         // Track download attempts
         document.querySelectorAll('.download-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
+            btn.addEventListener('click', (e) => {
+                const isPremium = btn.id === 'downloadBtnPremium';
+                const downloadType = isPremium ? 'Premium Collection' : 'Complete Library';
+                
                 this.logEvent('download_attempt', {
                     button_id: btn.id || 'unknown',
+                    download_type: downloadType,
                     timestamp: new Date().toISOString()
                 });
+                
+                // Handle premium downloads with different messaging
+                if (isPremium) {
+                    // For now, redirect to complete download since premium isn't set up yet
+                    setTimeout(() => {
+                        window.open('https://github.com/nibertinvestments/DATA/archive/refs/heads/main.zip', '_blank');
+                    }, 1000);
+                }
             });
         });
 
