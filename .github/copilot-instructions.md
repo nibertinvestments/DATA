@@ -73,11 +73,26 @@ mkdir -p datasets/{raw,processed,synthetic} \
    python3 -m pytest <test_file> -v
    ```
 
-4. **Git operations** (takes ~10ms):
-   ```bash
-   git status  # Check repository status
-   git add .   # Stage all changes
-   ```
+### Git Operations and File Management
+
+**Important**: The repository includes a comprehensive `.gitignore` file that excludes:
+- Python cache files (`__pycache__/`, `*.pyc`)
+- ML model artifacts and large datasets
+- IDE configuration files
+- Temporary and build files
+
+**Git workflow**:
+```bash
+git status          # Check repository status (~10ms)
+git add .           # Stage all changes (~50ms)
+git commit -m "msg" # Commit changes (~100ms)
+```
+
+**Large dataset handling**:
+- Keep datasets under 100MB when possible
+- Use `.gitignore` for large datasets in `datasets/raw/`
+- Consider Git LFS for essential large files
+- Store sample datasets for development in the repository
 
 ## Build and Test Processes
 
@@ -250,9 +265,11 @@ When adding new content, always check these locations first:
    ```
 
 3. **Git tracking large files**:
-   - Use `.gitignore` for large datasets
+   - Repository includes comprehensive `.gitignore` for Python, ML, and development files
+   - Use `.gitignore` for large datasets in `datasets/raw/`
    - Consider Git LFS for essential large files
    - Keep datasets under 100MB when possible
+   - Remove accidentally committed cache files: `git rm -r --cached __pycache__/`
 
 4. **ML model training failures**:
    - Check available memory with `free -h`
@@ -283,6 +300,7 @@ When adding new content, always check these locations first:
 /home/runner/work/DATA/DATA/
 ├── .github/
 │   └── copilot-instructions.md
+├── .gitignore                     # Comprehensive ignore rules
 ├── code_samples/
 │   ├── cpp/
 │   ├── go/
