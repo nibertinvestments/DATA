@@ -1,8 +1,4 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
+
 .Python
 build/
 develop-eggs/
@@ -16,7 +12,7 @@ parts/
 sdist/
 var/
 wheels/
-pip-wheel-metadata/
+
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -24,6 +20,7 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
+
 *.manifest
 *.spec
 
@@ -45,12 +42,14 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
+
 # Jupyter Notebook
 .ipynb_checkpoints
 
 # IPython
 profile_default/
 ipython_config.py
+
 
 # Environments
 .env
@@ -61,26 +60,14 @@ ENV/
 env.bak/
 venv.bak/
 
-# ML/Data Science
-*.h5
-*.hdf5
-*.pkl
-*.pickle
-models/training/checkpoints/
-models/training/logs/
-datasets/raw/*.csv
-datasets/raw/*.json
-datasets/raw/*.parquet
-datasets/processed/cache/
 
-# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
+
 .DS_Store
 .DS_Store?
 ._*
@@ -89,8 +76,3 @@ datasets/processed/cache/
 ehthumbs.db
 Thumbs.db
 
-# Temporary files
-*.tmp
-*.temp
-temp/
-tmp/
