@@ -1,53 +1,157 @@
+#!/usr/bin/env python3
 """
-Raw ML Dataset Generator for AI Coding Agents
-==============================================
-
-This script generates comprehensive raw datasets for training AI coding agents.
-The datasets include code patterns, algorithms, best practices, and cross-language
-implementations that can be used for ML model training.
-
-Categories of datasets generated:
-1. Code patterns and idioms
-2. Algorithm implementations
-3. Error handling examples
-4. Best practices and anti-patterns
-5. Framework-specific code
-6. Cross-language translations
+ML Training Data Generator for Code Samples
+Processes code samples into various ML training formats.
 """
 
-import json
-import csv
 import os
-import random
-from typing import List, Dict, Any, Tuple
+import json
+import re
+import hashlib
 from pathlib import Path
-import uuid
-from datetime import datetime
+from typing import Dict, List, Any, Tuple, Optional
+from dataclasses import dataclass, asdict
+import logging
 
+# Set up logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logger = logging.getLogger(__name__)
 
-class MLDatasetGenerator:
-    """Generator for ML-ready coding datasets."""
+@dataclass
+class CodeSample:
+    """Represents a code sample with metadata."""
+    language: str
+    filename: str
+    content: str
+    file_path: str
+    size_bytes: int
+    line_count: int
+    function_count: int
+    class_count: int
+    comment_lines: int
+    complexity_score: float
+    algorithms: List[str]
+    data_structures: List[str]
+    design_patterns: List[str]
+    file_hash: str
 
-    def __init__(self, output_dir: str = "datasets/raw"):
-        """Initialize the dataset generator."""
-        self.output_dir = Path(output_dir)
-        self.output_dir.mkdir(parents=True, exist_ok=True)
+@dataclass
+class MLDataset:
+    """Represents a processed ML dataset."""
+    dataset_type: str
+    language: str
+    samples: List[Dict[str, Any]]
+    metadata: Dict[str, Any]
 
-        # Supported programming languages
-        self.languages = [
-            "python",
-            "javascript",
-            "java",
-            "cpp",
-            "rust",
-            "go",
-            "typescript",
-            "csharp",
-            "php",
-            "ruby",
-            "swift",
-            "kotlin",
-        ]
+class CodeAnalyzer:
+    """Analyzes code samples to extract features and metadata."""
+    
+    # Language-specific patterns for analysis
+    LANGUAGE_PATTERNS = {
+        'python': {
+            'function': r'def\s+(\w+)\s*\(',
+            'class': r'class\s+(\w+)[\s\(:]+',
+            'comment': r'#.*|"""[\s\S]*?"""|\'\'\'[\s\S]*?\'\'\'',
+            'import': r'import\s+(\w+)|from\s+(\w+)\s+import',
+        },
+        'javascript': {
+            'function': r'function\s+(\w+)\s*\(|(\w+)\s*=\s*function|\w+\s*=>\s*{|(\w+)\s*\([^)]*\)\s*=>',
+            'class': r'class\s+(\w+)[\s{]+',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'import\s+.*from\s+[\'"]([^\'"]+)[\'"]|require\s*\(\s*[\'"]([^\'"]+)[\'"]\s*\)',
+        },
+        'typescript': {
+            'function': r'function\s+(\w+)\s*\(|(\w+)\s*=\s*function|\w+\s*=>\s*{|(\w+)\s*\([^)]*\)\s*=>',
+            'class': r'class\s+(\w+)[\s{<]+',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'import\s+.*from\s+[\'"]([^\'"]+)[\'"]',
+        },
+        'rust': {
+            'function': r'fn\s+(\w+)\s*\(',
+            'class': r'struct\s+(\w+)|enum\s+(\w+)',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'use\s+([^;]+);',
+        },
+        'go': {
+            'function': r'func\s+(\w+)\s*\(',
+            'class': r'type\s+(\w+)\s+struct',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'import\s+[\'"]([^\'"]+)[\'"]',
+        },
+        'csharp': {
+            'function': r'(?:public|private|protected|internal)?\s*(?:static)?\s*\w+\s+(\w+)\s*\(',
+            'class': r'(?:public|private|protected|internal)?\s*class\s+(\w+)',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'using\s+([^;]+);',
+        },
+        'php': {
+            'function': r'function\s+(\w+)\s*\(',
+            'class': r'class\s+(\w+)[\s{]+',
+            'comment': r'//.*|/\*[\s\S]*?\*/|#.*',
+            'import': r'require\s*\(\s*[\'"]([^\'"]+)[\'"]\s*\)|include\s*\(\s*[\'"]([^\'"]+)[\'"]\s*\)',
+        },
+        'ruby': {
+            'function': r'def\s+(\w+)[\s\(]+',
+            'class': r'class\s+(\w+)[\s<]+',
+            'comment': r'#.*',
+            'import': r'require\s+[\'"]([^\'"]+)[\'"]',
+        },
+        'swift': {
+            'function': r'func\s+(\w+)\s*\(',
+            'class': r'class\s+(\w+)[\s{:<]+|struct\s+(\w+)[\s{:<]+',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'import\s+(\w+)',
+        },
+        'java': {
+            'function': r'(?:public|private|protected)?\s*(?:static)?\s*\w+\s+(\w+)\s*\(',
+            'class': r'(?:public|private|protected)?\s*class\s+(\w+)',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'import\s+([^;]+);',
+        },
+        'cpp': {
+            'function': r'\w+\s+(\w+)\s*\(',
+            'class': r'class\s+(\w+)[\s{:]+',
+            'comment': r'//.*|/\*[\s\S]*?\*/',
+            'import': r'#include\s*[<"]([^>"]+)[>"]',
+        }
+    }
+    
+    # Algorithm keywords for detection
+    ALGORITHM_KEYWORDS = {
+        'sorting': ['sort', 'bubble', 'quick', 'merge', 'heap', 'insertion', 'selection'],
+        'searching': ['search', 'binary', 'linear', 'find', 'lookup'],
+        'graph': ['dfs', 'bfs', 'dijkstra', 'graph', 'node', 'edge', 'vertex'],
+        'dynamic_programming': ['memo', 'dp', 'fibonacci', 'knapsack', 'lcs'],
+        'recursion': ['recursive', 'recursion', 'factorial'],
+        'hashing': ['hash', 'dictionary', 'map'],
+        'string': ['string', 'substring', 'palindrome', 'anagram'],
+        'math': ['gcd', 'lcm', 'prime', 'factorial', 'fibonacci'],
+        'concurrency': ['thread', 'async', 'await', 'parallel', 'concurrent', 'mutex', 'lock']
+    }
+    
+    # Data structure keywords
+    DATA_STRUCTURE_KEYWORDS = {
+        'array': ['array', 'list', 'vector'],
+        'stack': ['stack', 'push', 'pop'],
+        'queue': ['queue', 'enqueue', 'dequeue'],
+        'tree': ['tree', 'binary', 'node', 'leaf', 'root'],
+        'graph': ['graph', 'vertex', 'edge', 'adjacency'],
+        'hash_table': ['hash', 'dictionary', 'map', 'bucket'],
+        'linked_list': ['linked', 'next', 'node'],
+        'heap': ['heap', 'priority', 'min', 'max']
+    }
+    
+    # Design pattern keywords
+    DESIGN_PATTERN_KEYWORDS = {
+        'singleton': ['singleton', 'instance'],
+        'factory': ['factory', 'create'],
+        'observer': ['observer', 'notify', 'update'],
+        'strategy': ['strategy', 'algorithm'],
+        'decorator': ['decorator', 'wrapper'],
+        'builder': ['builder', 'build'],
+        'adapter': ['adapter', 'interface'],
+        'facade': ['facade', 'wrapper']
+    }
 
         # Algorithm categories
         self.algorithm_categories = [
