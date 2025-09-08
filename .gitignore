@@ -1,4 +1,7 @@
-
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
 .Python
 build/
 develop-eggs/
@@ -12,7 +15,6 @@ parts/
 sdist/
 var/
 wheels/
-
 share/python-wheels/
 *.egg-info/
 .installed.cfg
@@ -20,7 +22,6 @@ share/python-wheels/
 MANIFEST
 
 # PyInstaller
-
 *.manifest
 *.spec
 
@@ -42,7 +43,6 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 
-
 # Jupyter Notebook
 .ipynb_checkpoints
 
@@ -50,9 +50,14 @@ coverage.xml
 profile_default/
 ipython_config.py
 
-
-# Environments
+# Environment variables
 .env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Virtual environments
 .venv
 env/
 venv/
@@ -60,14 +65,57 @@ ENV/
 env.bak/
 venv.bak/
 
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
 
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+target/
+
+# C/C++
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# Go
+*.out
+vendor/
+
+# Rust
+target/
+Cargo.lock
+
+# .NET
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+*.sublime-*
 
-
+# OS files
 .DS_Store
 .DS_Store?
 ._*
@@ -76,3 +124,21 @@ venv.bak/
 ehthumbs.db
 Thumbs.db
 
+# ML/AI specific
+*.h5
+*.hdf5
+*.pkl
+*.pickle
+models/
+logs/
+checkpoints/
+*.weights
+
+# Large datasets (adjust as needed)
+datasets/raw/*.csv
+datasets/raw/*.json
+datasets/raw/*.txt
+!datasets/raw/sample_*
+datasets/processed/*.csv
+datasets/processed/*.json
+!datasets/processed/sample_*
