@@ -79,9 +79,9 @@ class DatasetDownloader {
 # Complete ML Datasets and AI Training Data
 
 ## Repository Contents
-- 41+ code files across multiple programming languages
-- Total size: ~2.4MB
-- Languages: Python, JavaScript, Java, C++, Go, Rust, TypeScript
+- 80+ code files across multiple programming languages
+- Total size: ~15.8MB
+- Languages: Python, JavaScript, Java, C++, Go, Rust, TypeScript, Solidity, Dart, R, Haskell, Elixir
 
 ## Directory Structure
 - data-sources/: Programming language examples and patterns
@@ -101,32 +101,49 @@ class DatasetDownloader {
 - Repository: https://github.com/nibertinvestments/DATA
 
 ## Dataset Categories
-### Languages (8+ supported)
-- Python: ML algorithms, data structures, best practices
-- JavaScript: Modern ES6+, async programming, frameworks
+### Languages (18+ supported)
+- Python: ML algorithms, data structures, best practices, intermediate patterns
+- JavaScript: Modern ES6+, async programming, frameworks, intermediate patterns
 - Java: Enterprise patterns, object-oriented design
 - C++: Performance-critical algorithms, memory management
 - Go: Concurrent programming, microservices
 - Rust: Systems programming, safety-first design
 - TypeScript: Type-safe JavaScript development
+- Solidity: Smart contracts, DeFi protocols, DAO governance
+- Dart: Flutter applications, mobile development
+- R: Data science, statistical analysis, machine learning
+- Haskell: Functional programming, category theory
+- Elixir: Concurrent programming, actor model, OTP
 - And more...
 
-### Cross-Language Patterns (10+)
+### Cross-Language Patterns (30+)
 - Algorithm implementations across languages
 - Design patterns and best practices
 - Universal programming concepts
 - Performance optimization techniques
+- Intermediate-level examples for all languages
 
 ### Frameworks (15+)
 - React: Modern UI development
 - Django: Python web framework
 - Spring: Java enterprise framework
 - Express.js: Node.js web framework
+- Phoenix: Elixir web framework
+- Flutter: Dart mobile framework
 - And many more...
 
+### Specialized Domains (12+)
+- Smart Contracts: Token creation, DAO governance, DEX/AMM
+- Data Science: Statistical analysis, ML pipelines, visualization
+- Functional Programming: Monads, category theory, immutable structures
+- Concurrent Programming: Actor model, STM, async patterns
+- Cryptography: Advanced encryption, hashing, security
+- Blockchain: DeFi protocols, consensus algorithms
+- And more specialized implementations...
+
 Generated on: ${new Date().toISOString()}
-Total Files: 41+
-Repository Size: ~2.4MB
+Total Files: 80+
+Repository Size: ~15.8MB
         `.trim();
 
         const blob = new Blob([datasetInfo], { type: 'text/plain' });
