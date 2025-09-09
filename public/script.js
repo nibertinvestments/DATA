@@ -54,22 +54,35 @@ class DatasetDownloader {
 
     async createDatasetZip() {
         try {
-            // Use modern fetch API to gather all repository content
+            // Primary method: Use GitHub API to get complete repository ZIP
             const response = await fetch('https://api.github.com/repos/nibertinvestments/DATA/zipball/main');
             
-            if (!response.ok) {
-                // Fallback: Create a simulated ZIP with available data
-                this.createFallbackZip();
+            if (response.ok) {
+                const blob = await response.blob();
+                this.downloadBlob(blob, 'nibert-investments-data-complete.zip');
+                this.showSuccess('Complete repository downloaded successfully!');
                 return;
             }
-
-            const blob = await response.blob();
-            this.downloadBlob(blob, 'nibert-investments-data-complete.zip');
+            
+            // If API fails, use direct GitHub download link
+            console.log('GitHub API failed, using direct download link');
+            this.downloadDirectFromGitHub();
             
         } catch (error) {
-            console.error('GitHub API failed, using fallback:', error);
-            this.createFallbackZip();
+            console.error('GitHub API failed, using direct download link:', error);
+            this.downloadDirectFromGitHub();
         }
+    }
+
+    downloadDirectFromGitHub() {
+        // Create info file to explain the download
+        this.createFallbackZip();
+        
+        // Open direct GitHub download link in new tab
+        setTimeout(() => {
+            window.open('https://github.com/nibertinvestments/DATA/archive/refs/heads/main.zip', '_blank');
+            this.showSuccess('Download started from GitHub. Check your downloads folder.');
+        }, 500);
     }
 
     createFallbackZip() {
@@ -79,9 +92,9 @@ class DatasetDownloader {
 # Complete ML Datasets and AI Training Data
 
 ## Repository Contents
-- 95+ code files across multiple programming languages
-- Total size: ~18.5MB
-- Languages: Python, JavaScript, Java, C++, Go, Rust, TypeScript, Solidity, Dart, R, Haskell, Elixir, Lua, Perl
+- 131 total files across multiple programming languages
+- Total size: ~2.9MB
+- 69 code files: Python, JavaScript, Java, C++, Go, Rust, TypeScript, Solidity, Dart, R, Haskell, Elixir, Lua, Perl
 
 ## Directory Structure
 - data-sources/: Programming language examples and patterns
@@ -101,11 +114,11 @@ class DatasetDownloader {
 - Repository: https://github.com/nibertinvestments/DATA
 
 ## Dataset Categories
-### Languages (20+ supported)
-- Python: ML algorithms, data structures, best practices, intermediate patterns
-- JavaScript: Modern ES6+, async programming, frameworks, intermediate patterns
+### Languages (15+ supported)
+- Python: 29 files - ML algorithms, data structures, best practices, intermediate patterns
+- JavaScript: 6 files - Modern ES6+, async programming, frameworks, intermediate patterns
 - Go: Concurrent programming, microservices, intermediate patterns
-- Java: Enterprise patterns, object-oriented design
+- Java: 4 files - Enterprise patterns, object-oriented design
 - C++: Performance-critical algorithms, memory management
 - Rust: Systems programming, safety-first design
 - TypeScript: Type-safe JavaScript development
@@ -118,23 +131,23 @@ class DatasetDownloader {
 - Perl: Text processing, system administration, advanced regex
 - And more...
 
-### Cross-Language Patterns (35+)
+### Cross-Language Patterns (25+)
 - Algorithm implementations across languages
 - Design patterns and best practices
 - Universal programming concepts
 - Performance optimization techniques
 - Intermediate-level examples for all languages
 
-### Frameworks (15+)
+### Frameworks (8+)
 - React: Modern UI development
 - Django: Python web framework
 - Spring: Java enterprise framework
 - Express.js: Node.js web framework
 - Phoenix: Elixir web framework
 - Flutter: Dart mobile framework
-- And many more...
+- And more...
 
-### Specialized Domains (12+)
+### Specialized Domains (8+)
 - Smart Contracts: Token creation, DAO governance, DEX/AMM
 - Data Science: Statistical analysis, ML pipelines, visualization
 - Functional Programming: Monads, category theory, immutable structures
@@ -143,20 +156,18 @@ class DatasetDownloader {
 - Game Development: Entity systems, scripting, performance
 - Cryptography: Advanced encryption, hashing, security
 - Blockchain: DeFi protocols, consensus algorithms
-- And more specialized implementations...
 
 Generated on: ${new Date().toISOString()}
-Total Files: 95+
-Repository Size: ~18.5MB
+Total Files: 131
+Repository Size: ~2.9MB
+
+## DOWNLOAD INSTRUCTIONS
+The complete repository with all 131 files will be downloaded automatically.
+This includes all code samples, documentation, tests, and datasets.
         `.trim();
 
         const blob = new Blob([datasetInfo], { type: 'text/plain' });
         this.downloadBlob(blob, 'nibert-investments-data-info.txt');
-        
-        // Also trigger GitHub download link
-        setTimeout(() => {
-            window.open('https://github.com/nibertinvestments/DATA/archive/refs/heads/main.zip', '_blank');
-        }, 1000);
     }
 
     downloadBlob(blob, filename) {
