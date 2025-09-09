@@ -14,10 +14,10 @@ This repository contains the most comprehensive collection of high-quality codin
 
 ## 📊 Repository Statistics
 
-- **Total Code Files**: 80+ high-quality implementations
-- **Programming Languages**: 18+ (Python, Java, C++, Go, Rust, TypeScript, JavaScript, Solidity, Dart, R, Haskell, Elixir, etc.)
+- **Total Code Files**: 95+ high-quality implementations
+- **Programming Languages**: 20+ (Python, Java, C++, Go, Rust, TypeScript, JavaScript, Solidity, Dart, R, Haskell, Elixir, Lua, Perl, etc.)
 - **Specialized Domains**: 12+ (Cryptography, AI/ML, Blockchain, Smart Contracts, Data Science, Functional Programming, etc.)
-- **Repository Size**: ~15.8MB of pure, high-quality code
+- **Repository Size**: ~18.5MB of pure, high-quality code
 - **Documentation**: Comprehensive comments and explanations for every algorithm
 
 ## 🗂️ Repository Structure
