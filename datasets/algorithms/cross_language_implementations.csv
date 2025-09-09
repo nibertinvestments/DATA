@@ -1,0 +1,495 @@
+algorithm,python_implementation,javascript_implementation,java_implementation,c_implementation,time_complexity,space_complexity,use_cases
+Binary Search,"def binary_search(arr, target):
+    left, right = 0, len(arr) - 1
+    while left <= right:
+        mid = (left + right) // 2
+        if arr[mid] == target:
+            return mid
+        elif arr[mid] < target:
+            left = mid + 1
+        else:
+            right = mid - 1
+    return -1","function binarySearch(arr, target) {
+    let left = 0, right = arr.length - 1;
+    while (left <= right) {
+        const mid = Math.floor((left + right) / 2);
+        if (arr[mid] === target) return mid;
+        if (arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;
+}","public static int binarySearch(int[] arr, int target) {
+    int left = 0, right = arr.length - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;
+}","int binary_search(int arr[], int n, int target) {
+    int left = 0, right = n - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;
+}",O(log n),O(1),"Searching in sorted arrays"
+Quick Sort,"def quick_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    pivot = arr[len(arr) // 2]
+    left = [x for x in arr if x < pivot]
+    middle = [x for x in arr if x == pivot]
+    right = [x for x in arr if x > pivot]
+    return quick_sort(left) + middle + quick_sort(right)","function quickSort(arr) {
+    if (arr.length <= 1) return arr;
+    const pivot = arr[Math.floor(arr.length / 2)];
+    const left = arr.filter(x => x < pivot);
+    const middle = arr.filter(x => x === pivot);
+    const right = arr.filter(x => x > pivot);
+    return [...quickSort(left), ...middle, ...quickSort(right)];
+}","public static void quickSort(int[] arr, int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        quickSort(arr, low, pi - 1);
+        quickSort(arr, pi + 1, high);
+    }
+}
+private static int partition(int[] arr, int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+    for (int j = low; j < high; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+            swap(arr, i, j);
+        }
+    }
+    swap(arr, i + 1, high);
+    return i + 1;
+}","void quick_sort(int arr[], int low, int high) {
+    if (low < high) {
+        int pi = partition(arr, low, high);
+        quick_sort(arr, low, pi - 1);
+        quick_sort(arr, pi + 1, high);
+    }
+}
+int partition(int arr[], int low, int high) {
+    int pivot = arr[high];
+    int i = low - 1;
+    for (int j = low; j < high; j++) {
+        if (arr[j] <= pivot) {
+            i++;
+            swap(&arr[i], &arr[j]);
+        }
+    }
+    swap(&arr[i + 1], &arr[high]);
+    return i + 1;
+}",O(n log n),O(log n),"General purpose sorting"
+Merge Sort,"def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+    mid = len(arr) // 2
+    left = merge_sort(arr[:mid])
+    right = merge_sort(arr[mid:])
+    return merge(left, right)
+
+def merge(left, right):
+    result = []
+    i = j = 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            result.append(left[i])
+            i += 1
+        else:
+            result.append(right[j])
+            j += 1
+    result.extend(left[i:])
+    result.extend(right[j:])
+    return result","function mergeSort(arr) {
+    if (arr.length <= 1) return arr;
+    const mid = Math.floor(arr.length / 2);
+    const left = mergeSort(arr.slice(0, mid));
+    const right = mergeSort(arr.slice(mid));
+    return merge(left, right);
+}
+
+function merge(left, right) {
+    const result = [];
+    let i = 0, j = 0;
+    while (i < left.length && j < right.length) {
+        if (left[i] <= right[j]) {
+            result.push(left[i++]);
+        } else {
+            result.push(right[j++]);
+        }
+    }
+    return result.concat(left.slice(i)).concat(right.slice(j));
+}","public static void mergeSort(int[] arr, int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        mergeSort(arr, left, mid);
+        mergeSort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
+}
+private static void merge(int[] arr, int left, int mid, int right) {
+    int[] temp = new int[right - left + 1];
+    int i = left, j = mid + 1, k = 0;
+    while (i <= mid && j <= right) {
+        if (arr[i] <= arr[j]) {
+            temp[k++] = arr[i++];
+        } else {
+            temp[k++] = arr[j++];
+        }
+    }
+    while (i <= mid) temp[k++] = arr[i++];
+    while (j <= right) temp[k++] = arr[j++];
+    for (i = left, k = 0; i <= right; i++, k++) {
+        arr[i] = temp[k];
+    }
+}","void merge_sort(int arr[], int left, int right) {
+    if (left < right) {
+        int mid = left + (right - left) / 2;
+        merge_sort(arr, left, mid);
+        merge_sort(arr, mid + 1, right);
+        merge(arr, left, mid, right);
+    }
+}
+void merge(int arr[], int left, int mid, int right) {
+    int n1 = mid - left + 1;
+    int n2 = right - mid;
+    int L[n1], R[n2];
+    for (int i = 0; i < n1; i++) L[i] = arr[left + i];
+    for (int j = 0; j < n2; j++) R[j] = arr[mid + 1 + j];
+    int i = 0, j = 0, k = left;
+    while (i < n1 && j < n2) {
+        if (L[i] <= R[j]) arr[k++] = L[i++];
+        else arr[k++] = R[j++];
+    }
+    while (i < n1) arr[k++] = L[i++];
+    while (j < n2) arr[k++] = R[j++];
+}",O(n log n),O(n),"Stable sorting, external sorting"
+Breadth-First Search,"def bfs(graph, start):
+    visited = set()
+    queue = [start]
+    result = []
+    
+    while queue:
+        node = queue.pop(0)
+        if node not in visited:
+            visited.add(node)
+            result.append(node)
+            queue.extend(graph.get(node, []))
+    
+    return result","function bfs(graph, start) {
+    const visited = new Set();
+    const queue = [start];
+    const result = [];
+    
+    while (queue.length > 0) {
+        const node = queue.shift();
+        if (!visited.has(node)) {
+            visited.add(node);
+            result.push(node);
+            const neighbors = graph.get(node) || [];
+            queue.push(...neighbors);
+        }
+    }
+    
+    return result;
+}","public List<T> bfs(T start) {
+    List<T> result = new ArrayList<>();
+    Set<T> visited = new HashSet<>();
+    Queue<T> queue = new LinkedList<>();
+    
+    queue.add(start);
+    visited.add(start);
+    
+    while (!queue.isEmpty()) {
+        T node = queue.poll();
+        result.add(node);
+        
+        List<T> neighbors = adjacencyList.getOrDefault(node, new ArrayList<>());
+        for (T neighbor : neighbors) {
+            if (!visited.contains(neighbor)) {
+                visited.add(neighbor);
+                queue.add(neighbor);
+            }
+        }
+    }
+    
+    return result;
+}","void bfs(int graph[][MAX], int start, int vertices) {
+    bool visited[MAX] = {false};
+    int queue[MAX];
+    int front = 0, rear = 0;
+    
+    visited[start] = true;
+    queue[rear++] = start;
+    
+    while (front < rear) {
+        int node = queue[front++];
+        printf(""%d "", node);
+        
+        for (int i = 0; i < vertices; i++) {
+            if (graph[node][i] && !visited[i]) {
+                visited[i] = true;
+                queue[rear++] = i;
+            }
+        }
+    }
+}",O(V + E),O(V),"Shortest path in unweighted graphs, level-order traversal"
+Depth-First Search,"def dfs(graph, start, visited=None):
+    if visited is None:
+        visited = set()
+    
+    visited.add(start)
+    result = [start]
+    
+    for neighbor in graph.get(start, []):
+        if neighbor not in visited:
+            result.extend(dfs(graph, neighbor, visited))
+    
+    return result","function dfs(graph, start, visited = new Set()) {
+    visited.add(start);
+    const result = [start];
+    
+    const neighbors = graph.get(start) || [];
+    for (const neighbor of neighbors) {
+        if (!visited.has(neighbor)) {
+            result.push(...dfs(graph, neighbor, visited));
+        }
+    }
+    
+    return result;
+}","public List<T> dfs(T start) {
+    List<T> result = new ArrayList<>();
+    Set<T> visited = new HashSet<>();
+    dfsHelper(start, visited, result);
+    return result;
+}
+
+private void dfsHelper(T node, Set<T> visited, List<T> result) {
+    visited.add(node);
+    result.add(node);
+    
+    List<T> neighbors = adjacencyList.getOrDefault(node, new ArrayList<>());
+    for (T neighbor : neighbors) {
+        if (!visited.contains(neighbor)) {
+            dfsHelper(neighbor, visited, result);
+        }
+    }
+}","void dfs(int graph[][MAX], int start, bool visited[], int vertices) {
+    visited[start] = true;
+    printf(""%d "", start);
+    
+    for (int i = 0; i < vertices; i++) {
+        if (graph[start][i] && !visited[i]) {
+            dfs(graph, i, visited, vertices);
+        }
+    }
+}",O(V + E),O(V),"Topological sorting, cycle detection, pathfinding"
+Fibonacci,"def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+# Optimized with memoization
+def fibonacci_memo(n, memo={}):
+    if n in memo:
+        return memo[n]
+    if n <= 1:
+        return n
+    memo[n] = fibonacci_memo(n-1, memo) + fibonacci_memo(n-2, memo)
+    return memo[n]","function fibonacci(n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+// Optimized with memoization
+function fibonacciMemo(n, memo = {}) {
+    if (n in memo) return memo[n];
+    if (n <= 1) return n;
+    memo[n] = fibonacciMemo(n - 1, memo) + fibonacciMemo(n - 2, memo);
+    return memo[n];
+}","public static long fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+// Optimized with memoization
+private static Map<Integer, Long> memo = new HashMap<>();
+public static long fibonacciMemo(int n) {
+    if (memo.containsKey(n)) return memo.get(n);
+    if (n <= 1) return n;
+    long result = fibonacciMemo(n - 1) + fibonacciMemo(n - 2);
+    memo.put(n, result);
+    return result;
+}","long fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+// Iterative version for better performance
+long fibonacci_iterative(int n) {
+    if (n <= 1) return n;
+    long a = 0, b = 1, temp;
+    for (int i = 2; i <= n; i++) {
+        temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return b;
+}",O(2^n) / O(n) memoized,O(n) / O(1) iterative,"Mathematical computations, dynamic programming"
+Factorial,"def factorial(n):
+    if n <= 1:
+        return 1
+    return n * factorial(n - 1)
+
+# Iterative version
+def factorial_iterative(n):
+    result = 1
+    for i in range(2, n + 1):
+        result *= i
+    return result","function factorial(n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+
+// Iterative version
+function factorialIterative(n) {
+    let result = 1;
+    for (let i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}","public static long factorial(int n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+
+// Iterative version
+public static long factorialIterative(int n) {
+    long result = 1;
+    for (int i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}","long factorial(int n) {
+    if (n <= 1) return 1;
+    return n * factorial(n - 1);
+}
+
+// Iterative version
+long factorial_iterative(int n) {
+    long result = 1;
+    for (int i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}",O(n),O(n) / O(1) iterative,"Mathematical computations, combinatorics"
+Hash Table Insert,"class HashTable:
+    def __init__(self, size=10):
+        self.size = size
+        self.table = [[] for _ in range(size)]
+    
+    def _hash(self, key):
+        return hash(key) % self.size
+    
+    def insert(self, key, value):
+        index = self._hash(key)
+        bucket = self.table[index]
+        for i, (k, v) in enumerate(bucket):
+            if k == key:
+                bucket[i] = (key, value)
+                return
+        bucket.append((key, value))","class HashTable {
+    constructor(size = 10) {
+        this.size = size;
+        this.table = Array(size).fill(null).map(() => []);
+    }
+    
+    _hash(key) {
+        return key.toString().split('').reduce((hash, char) => {
+            return hash + char.charCodeAt(0);
+        }, 0) % this.size;
+    }
+    
+    insert(key, value) {
+        const index = this._hash(key);
+        const bucket = this.table[index];
+        for (let i = 0; i < bucket.length; i++) {
+            if (bucket[i][0] === key) {
+                bucket[i][1] = value;
+                return;
+            }
+        }
+        bucket.push([key, value]);
+    }
+}","public class HashTable<K, V> {
+    private LinkedList<Entry<K, V>>[] buckets;
+    private int capacity;
+    
+    public HashTable(int capacity) {
+        this.capacity = capacity;
+        this.buckets = new LinkedList[capacity];
+        for (int i = 0; i < capacity; i++) {
+            buckets[i] = new LinkedList<>();
+        }
+    }
+    
+    private int hash(K key) {
+        return Math.abs(key.hashCode()) % capacity;
+    }
+    
+    public void put(K key, V value) {
+        int index = hash(key);
+        LinkedList<Entry<K, V>> bucket = buckets[index];
+        for (Entry<K, V> entry : bucket) {
+            if (entry.key.equals(key)) {
+                entry.value = value;
+                return;
+            }
+        }
+        bucket.add(new Entry<>(key, value));
+    }
+}","typedef struct Entry {
+    char* key;
+    int value;
+    struct Entry* next;
+} Entry;
+
+typedef struct HashTable {
+    Entry** buckets;
+    int size;
+} HashTable;
+
+unsigned int hash(const char* key, int size) {
+    unsigned int hash = 0;
+    while (*key) {
+        hash = (hash * 31) + *key++;
+    }
+    return hash % size;
+}
+
+void insert(HashTable* table, const char* key, int value) {
+    unsigned int index = hash(key, table->size);
+    Entry* entry = table->buckets[index];
+    
+    while (entry) {
+        if (strcmp(entry->key, key) == 0) {
+            entry->value = value;
+            return;
+        }
+        entry = entry->next;
+    }
+    
+    Entry* new_entry = malloc(sizeof(Entry));
+    new_entry->key = strdup(key);
+    new_entry->value = value;
+    new_entry->next = table->buckets[index];
+    table->buckets[index] = new_entry;
+}",O(1) average,O(n),"Fast lookups, caching, database indexing"
