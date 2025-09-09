@@ -167,6 +167,14 @@ a:hover {
   width: 100%;
 }
 
+.nav-link.active {
+  color: var(--color-metallic-red);
+}
+
+.nav-link.active::after {
+  width: 100%;
+}
+
 /* Hero Section */
 .hero {
   padding: 120px 0 80px;

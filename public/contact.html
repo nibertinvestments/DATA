@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="google-adsense-account" content="ca-pub-7710040313464623">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Nibert Investments DATA - Get in Touch About ML Datasets and AI Training Data">
+    <meta name="keywords" content="contact, machine learning, datasets, AI, coding agents, support">
+    <title>Contact | Nibert Investments DATA</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" style="text-decoration: none; color: inherit;">
+                        <span class="logo-text">Nibert Investments</span>
+                        <span class="logo-sub">DATA</span>
+                    </a>
+                </div>
+                <div class="nav-links">
+                    <a href="datasets.html" class="nav-link">Datasets</a>
+                    <a href="features.html" class="nav-link">Features</a>
+                    <a href="downloads.html" class="nav-link">Downloads</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content" style="text-align: center; max-width: 800px; margin: 0 auto;">
+                    <h1 class="hero-title">
+                        Get in
+                        <span class="hero-highlight">Touch</span>
+                    </h1>
+                    <p class="hero-description">
+                        Have questions about our datasets? Need custom solutions? We're here to help 
+                        you succeed with your AI coding projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" style="padding: var(--spacing-3xl) 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-3xl); align-items: start;">
+                    <!-- Contact Form -->
+                    <div class="feature-card" style="max-width: none;">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: var(--spacing-xl);">Send us a Message</h2>
+                        <form id="contactForm" style="display: flex; flex-direction: column; gap: var(--spacing-lg);">
+                            <div>
+                                <label for="subject" style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--color-black);">
+                                    Subject
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="subject" 
+                                    name="subject" 
+                                    required 
+                                    placeholder="What can we help you with?"
+                                    style="width: 100%; padding: var(--spacing-md); border: 2px solid #e2e8f0; border-radius: var(--border-radius); font-family: var(--font-primary); font-size: 1rem; transition: border-color var(--transition-fast);"
+                                >
+                            </div>
+                            <div>
+                                <label for="message" style="display: block; margin-bottom: var(--spacing-sm); font-weight: 600; color: var(--color-black);">
+                                    Message
+                                </label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    required 
+                                    maxlength="750"
+                                    rows="8"
+                                    placeholder="Please provide details about your inquiry, custom dataset needs, or any questions you have..."
+                                    style="width: 100%; padding: var(--spacing-md); border: 2px solid #e2e8f0; border-radius: var(--border-radius); font-family: var(--font-primary); font-size: 1rem; resize: vertical; transition: border-color var(--transition-fast);"
+                                ></textarea>
+                                <div style="text-align: right; margin-top: var(--spacing-xs); font-size: 0.875rem; color: var(--color-medium-gray);">
+                                    <span id="charCount">0</span>/750 characters
+                                </div>
+                            </div>
+                            <button 
+                                type="submit" 
+                                class="btn btn-primary"
+                                id="sendEmailBtn"
+                                style="align-self: flex-start;"
+                            >
+                                <span class="btn-icon">✉️</span>
+                                Send Email
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📧</div>
+                            <h3 class="feature-title">Email</h3>
+                            <p class="feature-description">
+                                Reach out to us directly for any questions, custom dataset requests, 
+                                or business inquiries.
+                            </p>
+                            <a href="mailto:josh@nibertinvestements.com" class="btn btn-secondary" style="margin-top: 1rem;">
+                                josh@nibertinvestements.com
+                            </a>
+                        </div>
+
+                        <div class="feature-card" style="margin-top: var(--spacing-lg);">
+                            <div class="feature-icon">🐙</div>
+                            <h3 class="feature-title">GitHub</h3>
+                            <p class="feature-description">
+                                View our repository, submit issues, or contribute to our 
+                                open-source datasets.
+                            </p>
+                            <a href="https://github.com/nibertinvestments/DATA" class="btn btn-secondary" target="_blank" rel="noopener" style="margin-top: 1rem;">
+                                GitHub Repository
+                            </a>
+                        </div>
+
+                        <div class="feature-card" style="margin-top: var(--spacing-lg);">
+                            <div class="feature-icon">🏢</div>
+                            <h3 class="feature-title">Business</h3>
+                            <p class="feature-description">
+                                For enterprise solutions, custom dataset development, 
+                                or partnership opportunities.
+                            </p>
+                            <div style="margin-top: 1rem; font-weight: 600; color: var(--color-metallic-red);">
+                                Nibert Investments LLC
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="datasets" style="background: var(--color-light-gray); padding: var(--spacing-3xl) 0;">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="datasets-grid">
+                    <div class="dataset-card">
+                        <h3 class="dataset-title">Custom Datasets</h3>
+                        <p class="dataset-description">
+                            <strong>Q: Can you create custom datasets for our specific use case?</strong><br>
+                            A: Yes! We offer custom dataset creation services tailored to your specific 
+                            programming languages, frameworks, and domain requirements.
+                        </p>
+                    </div>
+                    <div class="dataset-card">
+                        <h3 class="dataset-title">Licensing</h3>
+                        <p class="dataset-description">
+                            <strong>Q: What licensing terms apply to the datasets?</strong><br>
+                            A: Our datasets come with permissive licensing that allows both commercial 
+                            and educational use, perfect for AI model training and research.
+                        </p>
+                    </div>
+                    <div class="dataset-card">
+                        <h3 class="dataset-title">Updates</h3>
+                        <p class="dataset-description">
+                            <strong>Q: How often are the datasets updated?</strong><br>
+                            A: We regularly update our datasets with new examples, latest framework 
+                            versions, and emerging programming paradigms to keep them current.
+                        </p>
+                    </div>
+                    <div class="dataset-card">
+                        <h3 class="dataset-title">Support</h3>
+                        <p class="dataset-description">
+                            <strong>Q: Do you provide technical support?</strong><br>
+                            A: Yes, we provide support for integration questions, usage guidance, 
+                            and assistance with implementing our datasets in your AI systems.
+                        </p>
+                    </div>
+                    <div class="dataset-card">
+                        <h3 class="dataset-title">Enterprise</h3>
+                        <p class="dataset-description">
+                            <strong>Q: Do you offer enterprise solutions?</strong><br>
+                            A: We provide enterprise-grade solutions including custom datasets, 
+                            private repositories, dedicated support, and consulting services.
+                        </p>
+                    </div>
+                    <div class="dataset-card">
+                        <h3 class="dataset-title">Quality</h3>
+                        <p class="dataset-description">
+                            <strong>Q: How do you ensure code quality?</strong><br>
+                            A: Every code example is tested, linted, and verified to be production-ready 
+                            with comprehensive documentation and error handling.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-section" style="padding: var(--spacing-2xl) 0;">
+            <div class="container">
+                <div class="download-content">
+                    <h2 class="section-title">Ready to Get Started?</h2>
+                    <p class="download-description">
+                        Don't wait - download our datasets today and accelerate your AI development projects.
+                    </p>
+                    <div style="display: flex; gap: var(--spacing-lg); justify-content: center; flex-wrap: wrap;">
+                        <a href="downloads.html" class="btn btn-primary">
+                            <span class="btn-icon">📦</span>
+                            Download Now
+                        </a>
+                        <a href="datasets.html" class="btn btn-secondary">
+                            <span class="btn-icon">📊</span>
+                            Browse Datasets
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h4 class="footer-title">Nibert Investments LLC</h4>
+                    <p class="footer-subtitle">Professional ML Datasets & AI Training Data</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h5 class="footer-section-title">Quick Links</h5>
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="datasets.html" class="footer-link">Datasets</a>
+                        <a href="features.html" class="footer-link">Features</a>
+                        <a href="downloads.html" class="footer-link">Downloads</a>
+                    </div>
+                    <div class="footer-section">
+                        <h5 class="footer-section-title">Contact</h5>
+                        <a href="mailto:josh@nibertinvestements.com" class="footer-link">
+                            josh@nibertinvestements.com
+                        </a>
+                        <a href="https://github.com/nibertinvestments/DATA" class="footer-link" target="_blank" rel="noopener">
+                            GitHub Repository
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nibert Investments LLC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
