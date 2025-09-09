@@ -1,0 +1,23 @@
+programming_language,file_extension,paradigm,typing,compilation,popularity_rank,use_cases,syntax_complexity,learning_difficulty
+Python,.py,Multi-paradigm,Dynamic,Interpreted,1,"Web development,Data science,AI/ML,Automation",Low,Beginner
+JavaScript,.js,Multi-paradigm,Dynamic,Interpreted,2,"Web development,Frontend,Backend,Mobile apps",Medium,Beginner
+Java,.java,Object-oriented,Static,Compiled,3,"Enterprise applications,Android development,Backend",Medium,Intermediate
+C++,.cpp,Multi-paradigm,Static,Compiled,4,"System programming,Game development,High-performance computing",High,Advanced
+C#,.cs,Object-oriented,Static,Compiled,5,"Windows applications,.NET development,Game development",Medium,Intermediate
+PHP,.php,Multi-paradigm,Dynamic,Interpreted,6,"Web development,Server-side scripting",Medium,Beginner
+TypeScript,.ts,Object-oriented,Static,Transpiled,7,"Large-scale JavaScript applications,Type-safe development",Medium,Intermediate
+C,.c,Procedural,Static,Compiled,8,"System programming,Embedded systems,Operating systems",High,Intermediate
+Swift,.swift,Multi-paradigm,Static,Compiled,9,"iOS development,macOS applications",Medium,Intermediate
+Kotlin,.kt,Object-oriented,Static,Compiled,10,"Android development,JVM applications",Medium,Intermediate
+Go,.go,Procedural,Static,Compiled,11,"Cloud services,Microservices,System programming",Low,Beginner
+Rust,.rs,Multi-paradigm,Static,Compiled,12,"System programming,Web assembly,Performance-critical applications",High,Advanced
+Ruby,.rb,Object-oriented,Dynamic,Interpreted,13,"Web development,Scripting,Automation",Low,Beginner
+Scala,.scala,Multi-paradigm,Static,Compiled,14,"Big data processing,Functional programming,JVM applications",High,Advanced
+R,.R,Functional,Dynamic,Interpreted,15,"Data analysis,Statistics,Data science",Medium,Intermediate
+MATLAB,.m,Procedural,Dynamic,Interpreted,16,"Scientific computing,Engineering,Data analysis",Medium,Intermediate
+Perl,.pl,Multi-paradigm,Dynamic,Interpreted,17,"Text processing,System administration,Bioinformatics",High,Intermediate
+Lua,.lua,Multi-paradigm,Dynamic,Interpreted,18,"Game scripting,Embedded systems,Configuration",Low,Beginner
+Haskell,.hs,Functional,Static,Compiled,19,"Academic research,Financial systems,Functional programming",High,Advanced
+Dart,.dart,Object-oriented,Static,Compiled,20,"Flutter development,Web applications",Medium,Beginner
+Solidity,.sol,Object-oriented,Static,Compiled,21,"Smart contracts,Blockchain development,DeFi",High,Advanced
+SQL,.sql,Declarative,Static,Interpreted,22,"Database queries,Data analysis,Reporting",Medium,Beginner

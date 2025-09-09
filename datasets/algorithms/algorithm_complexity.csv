@@ -1,0 +1,49 @@
+algorithm_name,algorithm_type,time_complexity_avg,time_complexity_worst,space_complexity,difficulty,applications,stability
+Bubble Sort,Sorting,O(n²),O(n²),O(1),Beginner,"Educational purposes,Small datasets",Stable
+Quick Sort,Sorting,O(n log n),O(n²),O(log n),Intermediate,"General purpose sorting,Large datasets",Unstable
+Merge Sort,Sorting,O(n log n),O(n log n),O(n),Intermediate,"Stable sorting,External sorting",Stable
+Heap Sort,Sorting,O(n log n),O(n log n),O(1),Intermediate,"Priority queues,In-place sorting",Unstable
+Insertion Sort,Sorting,O(n²),O(n²),O(1),Beginner,"Small datasets,Nearly sorted data",Stable
+Selection Sort,Sorting,O(n²),O(n²),O(1),Beginner,"Educational purposes,Memory constrained",Unstable
+Radix Sort,Sorting,O(d(n+k)),O(d(n+k)),O(n+k),Intermediate,"Integer sorting,String sorting",Stable
+Counting Sort,Sorting,O(n+k),O(n+k),O(k),Beginner,"Small range integers,Stable sorting",Stable
+Linear Search,Search,O(n),O(n),O(1),Beginner,"Unsorted arrays,Small datasets",N/A
+Binary Search,Search,O(log n),O(log n),O(1),Beginner,"Sorted arrays,Large datasets",N/A
+Depth-First Search,Graph Traversal,O(V+E),O(V+E),O(V),Intermediate,"Graph connectivity,Topological sorting",N/A
+Breadth-First Search,Graph Traversal,O(V+E),O(V+E),O(V),Intermediate,"Shortest path,Level-order traversal",N/A
+Dijkstra's Algorithm,Shortest Path,O((V+E) log V),O((V+E) log V),O(V),Advanced,"GPS navigation,Network routing",N/A
+A* Algorithm,Shortest Path,O(b^d),O(b^d),O(b^d),Advanced,"Pathfinding,Game AI",N/A
+Floyd-Warshall,Shortest Path,O(V³),O(V³),O(V²),Intermediate,"All-pairs shortest path,Dense graphs",N/A
+Kruskal's Algorithm,Minimum Spanning Tree,O(E log E),O(E log E),O(V),Intermediate,"Network design,Clustering",N/A
+Prim's Algorithm,Minimum Spanning Tree,O(E log V),O(E log V),O(V),Intermediate,"Network design,Circuit design",N/A
+Knapsack (Dynamic),Dynamic Programming,O(nW),O(nW),O(nW),Advanced,"Resource allocation,Optimization",N/A
+Fibonacci (Dynamic),Dynamic Programming,O(n),O(n),O(n),Intermediate,"Mathematical computations,Optimization",N/A
+Longest Common Subsequence,Dynamic Programming,O(mn),O(mn),O(mn),Advanced,"Text comparison,Bioinformatics",N/A
+Edit Distance,Dynamic Programming,O(mn),O(mn),O(mn),Advanced,"Spell checkers,DNA sequencing",N/A
+Hash Table Insert,Hash Table,O(1),O(n),O(n),Intermediate,"Fast lookup,Caching",N/A
+Hash Table Search,Hash Table,O(1),O(n),O(n),Intermediate,"Database indexing,Symbol tables",N/A
+Binary Tree Insert,Tree Operations,O(log n),O(n),O(n),Intermediate,"Database indexing,Expression parsing",N/A
+Binary Tree Search,Tree Operations,O(log n),O(n),O(n),Intermediate,"Searching,Data organization",N/A
+AVL Tree Operations,Balanced Tree,O(log n),O(log n),O(n),Advanced,"Database systems,File systems",N/A
+Red-Black Tree Operations,Balanced Tree,O(log n),O(log n),O(n),Advanced,"Standard libraries,Operating systems",N/A
+B-Tree Operations,Tree Operations,O(log n),O(log n),O(n),Advanced,"Database indexing,File systems",N/A
+Trie Insert,Trie Operations,O(m),O(m),O(ALPHABET_SIZE * N * M),Intermediate,"Autocomplete,Spell checkers",N/A
+Trie Search,Trie Operations,O(m),O(m),O(ALPHABET_SIZE * N * M),Intermediate,"Dictionary lookup,IP routing",N/A
+Quick Select,Selection,O(n),O(n²),O(log n),Intermediate,"Finding k-th element,Statistics",N/A
+Union-Find,Disjoint Set,O(α(n)),O(α(n)),O(n),Intermediate,"Connected components,Kruskal's algorithm",N/A
+Topological Sort,Graph Algorithms,O(V+E),O(V+E),O(V),Intermediate,"Task scheduling,Dependency resolution",N/A
+Strongly Connected Components,Graph Algorithms,O(V+E),O(V+E),O(V),Advanced,"Web page ranking,Social networks",N/A
+Maximum Flow,Network Flow,O(VE²),O(VE²),O(V²),Advanced,"Network optimization,Matching problems",N/A
+Convex Hull,Computational Geometry,O(n log n),O(n log n),O(n),Advanced,"Computer graphics,GIS applications",N/A
+KMP String Matching,String Algorithms,O(n+m),O(n+m),O(m),Advanced,"Text search,Pattern matching",N/A
+Rabin-Karp,String Algorithms,O(n+m),O(nm),O(1),Intermediate,"Multiple pattern search,Plagiarism detection",N/A
+Suffix Array,String Algorithms,O(n log n),O(n log n),O(n),Advanced,"Text indexing,Bioinformatics",N/A
+Manacher's Algorithm,String Algorithms,O(n),O(n),O(n),Advanced,"Palindrome detection,Text analysis",N/A
+Fast Fourier Transform,Mathematical,O(n log n),O(n log n),O(n),Advanced,"Signal processing,Polynomial multiplication",N/A
+Matrix Multiplication,Mathematical,O(n³),O(n³),O(n²),Intermediate,"Scientific computing,Computer graphics",N/A
+Euclidean Algorithm,Mathematical,O(log min(a,b)),O(log min(a,b)),O(1),Beginner,"GCD computation,Cryptography",N/A
+Sieve of Eratosthenes,Mathematical,O(n log log n),O(n log log n),O(n),Intermediate,"Prime generation,Number theory",N/A
+Monte Carlo,Probabilistic,O(n),O(n),O(1),Intermediate,"Numerical integration,Simulation",N/A
+Genetic Algorithm,Evolutionary,O(generations × population × fitness),Variable,O(population),Advanced,"Optimization,Machine learning",N/A
+Simulated Annealing,Optimization,O(iterations),Variable,O(1),Advanced,"Global optimization,Scheduling",N/A
+Gradient Descent,Optimization,O(iterations × features),Variable,O(features),Intermediate,"Machine learning,Neural networks",N/A
