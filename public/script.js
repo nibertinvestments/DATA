@@ -545,7 +545,11 @@ class Analytics {
         document.querySelectorAll('.download-btn').forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const isPremium = btn.id === 'downloadBtnPremium';
-                const downloadType = isPremium ? 'Premium Collection' : 'Complete Library';
+                const isHighEnd = btn.id === 'downloadBtnHighEnd';
+                
+                let downloadType = 'Complete Library';
+                if (isPremium) downloadType = 'Premium Collection';
+                if (isHighEnd) downloadType = 'High-End Specialized';
                 
                 this.logEvent('download_attempt', {
                     button_id: btn.id || 'unknown',
@@ -553,12 +557,16 @@ class Analytics {
                     timestamp: new Date().toISOString()
                 });
                 
-                // Handle premium downloads with different messaging
+                // Handle different download types
                 if (isPremium) {
                     // For now, redirect to complete download since premium isn't set up yet
                     setTimeout(() => {
                         window.open('https://github.com/nibertinvestments/DATA/archive/refs/heads/main.zip', '_blank');
                     }, 1000);
+                } else if (isHighEnd) {
+                    // Handle high-end specialized download
+                    e.preventDefault();
+                    this.handleHighEndDownload();
                 }
             });
         });
@@ -572,6 +580,90 @@ class Analytics {
                 });
             });
         });
+    }
+
+    handleHighEndDownload() {
+        // Show loading and then download the high-end specialized package
+        this.showLoading();
+        
+        setTimeout(() => {
+            // Create the download link for our high-end package
+            const link = document.createElement('a');
+            link.href = '/high_end_specialized_premium.zip';
+            link.download = 'high_end_specialized_premium.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            
+            this.hideLoading();
+            this.showSuccess('High-End Specialized package downloaded! Contains 15+ algorithms, functions, and equations.');
+        }, 1500);
+    }
+
+    showLoading() {
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        if (loadingOverlay) {
+            loadingOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+    }
+
+    hideLoading() {
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        if (loadingOverlay) {
+            loadingOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    showSuccess(message) {
+        this.showNotification(message, 'success');
+    }
+
+    showNotification(message, type = 'info') {
+        const notification = document.createElement('div');
+        notification.style.cssText = `
+            position: fixed;
+            top: 100px;
+            right: 20px;
+            padding: 16px 24px;
+            border-radius: 8px;
+            color: white;
+            font-family: var(--font-primary);
+            font-weight: 500;
+            z-index: 10000;
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            max-width: 400px;
+            word-wrap: break-word;
+        `;
+
+        // Set background based on type
+        const colors = {
+            success: 'linear-gradient(135deg, #10b981, #059669)',
+            error: 'linear-gradient(135deg, #ef4444, #dc2626)',
+            info: 'linear-gradient(135deg, #3b82f6, #2563eb)'
+        };
+        
+        notification.style.background = colors[type] || colors.info;
+        notification.textContent = message;
+        
+        document.body.appendChild(notification);
+        
+        // Animate in
+        setTimeout(() => {
+            notification.style.transform = 'translateX(0)';
+        }, 100);
+        
+        // Auto remove
+        setTimeout(() => {
+            notification.style.transform = 'translateX(100%)';
+            setTimeout(() => {
+                if (document.body.contains(notification)) {
+                    document.body.removeChild(notification);
+                }
+            }, 300);
+        }, 4000);
     }
 
     logEvent(eventName, eventData) {
