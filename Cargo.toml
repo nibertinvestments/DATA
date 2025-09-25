@@ -1,0 +1,12 @@
+[package]
+name = "ml_production_patterns"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "ml_production_patterns"
+path = "code_samples/rust/ml_production_patterns.rs"
+
+[dependencies]
+serde_json = "1.0"
+fastrand = "2.0"
