@@ -27,20 +27,21 @@ Our security focus includes:
 ### Areas of Security Concern
 
 1. **Cryptographic Implementations**
-   - Located in `data-sources/specialized/cryptography/`
+   - Located in `code_samples/python/security_cryptography.py` and `data-sources/specialized/cryptography/`
+   - Located in `high_end_specialized/functions/cryptographic_hash_functions.py`
    - These are educational implementations
-   - **NOT intended for production cryptographic use**
+   - **NOT intended for production cryptographic use**  
    - Include warnings about production usage
 
-2. **Network Programming Examples**
-   - Input validation for network data
-   - Proper error handling for network operations
-   - Examples of secure communication patterns
+2. **Machine Learning Security**
+   - ML algorithm implementations across multiple languages
+   - Input validation for training data
+   - Model security and adversarial attack examples
 
-3. **System Programming**
-   - Memory management best practices
+3. **System Programming Examples**
+   - Memory management best practices in C++, Rust, and C#
    - Resource cleanup and RAII patterns
-   - Safe file system operations
+   - Safe file system operations across languages
 
 ## Reporting a Vulnerability
 
@@ -64,14 +65,14 @@ When reporting a security vulnerability, please include:
 ### Example Security Report
 
 ```
-Subject: [SECURITY] Buffer overflow in C++ quicksort implementation
+Subject: [SECURITY] Buffer overflow in C++ data structures implementation
 
 Description:
-The quicksort implementation in data-sources/languages/cpp/examples/quicksort.cpp
-has a potential buffer overflow vulnerability in the partition function.
+The data structures implementation in code_samples/cpp/data_structures.cpp
+has a potential buffer overflow vulnerability in the array resize function.
 
 Location:
-File: data-sources/languages/cpp/examples/quicksort.cpp
+File: code_samples/cpp/data_structures.cpp
 Lines: 45-52
 
 Impact:
@@ -79,12 +80,12 @@ An attacker could potentially cause a buffer overflow by providing
 specially crafted input arrays, leading to potential code execution.
 
 Reproduction:
-1. Compile quicksort.cpp
+1. Compile data_structures.cpp
 2. Run with input: [malicious_input_example]
 3. Observe segmentation fault/memory corruption
 
 Suggested Fix:
-Add bounds checking in the partition function before array access.
+Add bounds checking in the resize function before array access.
 
 Disclosure Timeline:
 Please fix within 30 days before public disclosure.

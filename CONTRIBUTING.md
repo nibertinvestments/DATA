@@ -1,6 +1,6 @@
 # Contributing to DATA
 
-We welcome contributions that help build comprehensive, high-quality training data for AI coding agents. This guide provides detailed information on how to contribute effectively.
+We welcome contributions that help build comprehensive, high-quality training data for AI coding agents. This guide provides detailed information on how to contribute effectively to our collection of 140+ production-ready code examples across 20 programming languages.
 
 ## 🎯 Our Mission
 
@@ -44,53 +44,62 @@ git remote add upstream https://github.com/nibertinvestments/DATA.git
 pip3 install --user black flake8 pylint pytest pytest-cov hypothesis
 ```
 
-### 2. Understanding Our Structure
+### 2. Understanding Our Repository Structure
+
+**Current Scale**: 140 code files across 20 programming languages
 
 ```
-data-sources/
-├── languages/              # Language-specific implementations
-│   ├── python/
-│   ├── java/
-│   ├── cpp/
-│   ├── go/
-│   ├── javascript/
-│   └── typescript/
-├── cross-language/          # Same algorithms across languages
-│   ├── algorithms/
-│   ├── design-patterns/
-│   └── data-structures/
-├── specialized/             # Domain-specific implementations
-│   ├── cryptography/
-│   ├── ai_ml_algorithms/
-│   └── security/
-└── frameworks/              # Framework-specific examples
-```
+code_samples/                   # Primary implementation directory
+├── python/          (48 files) # ML/AI, data science, security, testing
+├── java/            (11 files) # Enterprise patterns, neural networks
+├── javascript/       (9 files) # Modern web development, ML production
+├── kotlin/           (9 files) # JVM/Android, advanced ML algorithms
+├── go/               (7 files) # Concurrent programming, microservices
+├── typescript/       (6 files) # Type-safe enterprise patterns
+├── rust/             (6 files) # Memory-safe systems programming
+├── csharp/           (5 files) # .NET enterprise, ML production
+├── [additional languages...]   # 12 more languages with 3-5 files each
+└── [emerging languages]        # Blockchain, functional programming
 
+data-sources/                   # AI training data structure
+├── languages/                  # Language-specific training examples
+├── specialized/                # Cryptography and AI/ML algorithms
+├── cross-language/             # Universal programming concepts
+└── tools/                      # Development tools and utilities
+
+high_end_specialized/           # Advanced premium content
+├── algorithms/                 # Advanced algorithms (Monte Carlo, FFT)
+├── equations/                  # Financial mathematics
+└── functions/                  # Specialized mathematical functions
+```
 ### 3. Development Workflow
 
 ```bash
 # Create feature branch
 git checkout -b feature/your-contribution
 
-# Make your changes
-# - Implement your code
-# - Add comprehensive tests
-# - Update documentation
-# - Ensure code quality
+# Make your changes following our structure
+# - Add code to appropriate language directory in code_samples/
+# - Include comprehensive tests and documentation
+# - Follow language-specific conventions
 
-# Run quality checks
+# Run quality checks (Python example)
 python3 -m black .                    # Format code
 python3 -m flake8 .                   # Check style
-python3 -m pytest tests/ -v          # Run tests
-python3 -m mypy . --ignore-missing    # Type checking
+python3 -m pytest tests/ -v          # Run existing tests
+python3 -m mypy . --ignore-missing    # Type checking (if applicable)
+
+# Test your specific implementation
+python3 code_samples/python/your_new_algorithm.py
+javac code_samples/java/YourNewAlgorithm.java && java YourNewAlgorithm
 
 # Commit with descriptive message
-git commit -m "feat: add AVL tree implementation in Rust
+git commit -m "feat: add quantum annealing optimization in Python
 
-- Implements self-balancing binary search tree
-- Includes comprehensive test suite with property-based tests
-- Adds performance benchmarks comparing with std collections
-- Updates cross-language algorithm documentation"
+- Implements quantum-inspired optimization algorithm
+- Includes comprehensive test suite with benchmarking
+- Adds comparison with classical optimization methods
+- Updates documentation with complexity analysis"
 
 # Push and create PR
 git push origin feature/your-contribution
@@ -100,55 +109,72 @@ git push origin feature/your-contribution
 
 ### 🆕 New Algorithm Implementations
 
+**Primary Focus Areas:**
+- Machine Learning algorithms (Neural Networks, Decision Trees, Clustering)
+- Advanced data structures (AVL Trees, B-Trees, Graph algorithms)
+- Cryptographic algorithms and security implementations
+- Financial mathematics and quantitative algorithms
+- High-performance computing and optimization
+
 **Structure Required:**
 ```
-data-sources/languages/LANGUAGE/examples/
-├── your_algorithm.ext           # Implementation
-├── test_your_algorithm.ext      # Tests
-└── README.md                    # Documentation
+code_samples/LANGUAGE/
+├── your_algorithm.ext           # Main implementation
+├── test_your_algorithm.ext      # Comprehensive tests
+└── README.md                    # Algorithm documentation
 
-cross-language/algorithms/CATEGORY/
+data-sources/cross-language/algorithms/CATEGORY/
 ├── README.md                    # Algorithm explanation
 ├── algorithm.py                 # Python implementation
 ├── algorithm.java               # Java implementation
-├── algorithm.cpp                # C++ implementation
+├── algorithm.rs                 # Rust implementation
 └── performance_analysis.md      # Benchmarking data
 ```
 
 **Requirements:**
-- Implement in at least 2 languages
+- Implement in at least 2 different languages
 - Include time/space complexity analysis
-- Add comprehensive test cases
-- Document algorithm theory and applications
+- Add comprehensive test cases with edge case coverage
+- Document algorithm theory, applications, and trade-offs
 
 ### 🔧 New Language Support
 
-**Priority Languages:** Rust, C#, Swift, Kotlin, PHP, Ruby
+**Current Status**: 20 languages with 140+ implementations
 
-**Requirements:**
-- Follow existing directory structure patterns
-- Include representative examples (sorting, data structures, patterns)
-- Add language-specific README with setup instructions
-- Include testing framework examples
-- Document language-specific best practices
+**Enhancement Opportunities:**
+- Additional implementations in existing languages
+- Emerging language support (Zig, Julia, V, Nim)
+- Domain-specific languages (VHDL, Verilog for hardware)
+- Academic languages (Prolog, LISP variants)
+
+**Requirements for New Language:**
+- Minimum 3-5 high-quality implementations
+- Follow existing directory structure pattern
+- Include language-specific README with setup instructions
+- Add testing framework examples appropriate for the language
+- Document language-specific best practices and idioms
 
 ### 🧪 Testing Improvements
 
-**Types of Testing Contributions:**
-- Unit tests for existing implementations
-- Integration tests across language boundaries
+**Current Infrastructure**: pytest framework with 2 comprehensive tests
+
+**Testing Priorities:**
+- Unit tests for existing implementations across all languages
+- Integration tests for cross-language compatibility
 - Property-based tests using hypothesis/QuickCheck
-- Performance benchmarking tests
-- Security-focused tests
+- Performance benchmarking and regression tests
+- Security-focused tests for cryptographic implementations
 
 ### 📖 Documentation Enhancements
 
-**Documentation Priorities:**
-- Algorithm explanations with visual aids
-- Cross-language comparison guides
-- Performance analysis and benchmarking
-- Tutorial content for complex topics
-- API documentation improvements
+**Documentation Standards**: 44 comprehensive markdown files
+
+**Enhancement Areas:**
+- Algorithm explanations with mathematical foundations
+- Cross-language implementation comparisons
+- Performance analysis and benchmarking results
+- Interactive tutorials and learning guides  
+- API documentation for reusable components
 
 ## 🎯 High-Priority Contributions
 
@@ -211,12 +237,35 @@ cross-language/algorithms/CATEGORY/
 
 ## 🚨 What We Don't Accept
 
-- **Incomplete implementations** without proper testing
-- **Plagiarized code** or code without proper attribution
-- **Breaking changes** without discussion and approval
-- **Code without documentation** or meaningful comments
-- **Duplicate implementations** without significant improvements
-- **Non-educational code** that doesn't serve our AI training mission
+- **Incomplete implementations** without proper testing and documentation
+- **Plagiarized code** or code without proper attribution and licensing
+- **Breaking changes** without prior discussion and approval
+- **Undocumented code** lacking meaningful comments or explanations
+- **Duplicate implementations** without significant improvements over existing code
+- **Non-educational content** that doesn't contribute to AI training or learning value
+- **Low-quality code** that doesn't meet our production standards
+- **Single-language contributions** for algorithms that should be cross-language
+- **Deprecated patterns** using outdated language features or anti-patterns
+
+## 🎯 Current Priority Areas
+
+### High Priority (Actively Seeking)
+1. **Advanced ML Algorithms**: Deep learning, reinforcement learning, optimization
+2. **Financial Mathematics**: Advanced derivatives pricing, risk models, portfolio optimization  
+3. **Cryptographic Implementations**: Post-quantum cryptography, zero-knowledge proofs
+4. **High-Performance Computing**: Parallel algorithms, GPU computing, distributed systems
+5. **Cross-Language Implementations**: Same algorithms across multiple languages
+
+### Medium Priority
+1. **Framework Integrations**: Popular web, mobile, and ML frameworks
+2. **Testing Infrastructure**: Advanced testing patterns and validation tools
+3. **Performance Benchmarking**: Cross-language performance analysis tools
+4. **Educational Content**: Tutorials and learning materials
+
+### Lower Priority
+1. **Basic Algorithm Variations**: Simple modifications of existing implementations
+2. **Language-Specific Utilities**: Unless they demonstrate unique language features
+3. **Configuration and Setup**: Unless they solve significant development workflow issues
 
 ## 🏆 Recognition
 

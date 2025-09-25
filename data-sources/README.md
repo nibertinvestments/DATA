@@ -1,16 +1,34 @@
 # Data Sources for AI Coding Agents
 
-This directory contains comprehensive datasets and resources designed specifically for training and assisting AI coding agents. The structure is organized to provide error-free, well-documented coding examples, patterns, and references across multiple programming languages.
+This directory contains comprehensive datasets and resources designed specifically for training and assisting AI coding agents. The structure is organized to provide error-free, well-documented coding examples, patterns, and references that complement the main `code_samples/` directory which contains 140+ production-ready implementations across 20 programming languages.
 
 ## Directory Structure
 
-### Programming Languages
+### Relationship with Main Repository
+This directory complements the main [`code_samples/`](../code_samples/) directory:
+- **`code_samples/`**: 140+ production-ready implementations across 20 languages
+- **`data-sources/`**: Specialized AI training data and educational resources
+- **`high_end_specialized/`**: Advanced algorithms and financial mathematics
+
+### Programming Languages  
 Each programming language has its own directory containing various types of coding data:
 
 - **`languages/`** - Language-specific data organized by programming language
+  - Focus on AI training data structure and educational examples
+  - Complements the production code in `code_samples/`
 - **`cross-language/`** - Data that applies across multiple languages
-- **`frameworks/`** - Framework-specific examples and patterns
-- **`tools/`** - Development tools, configurations, and utilities
+  - Comparative implementations for pattern recognition
+- **`specialized/`** - Domain-specific implementations
+  - **`cryptography/`** - Modern cryptographic algorithms
+  - **`ai_ml_algorithms/`** - ML algorithms from scratch
+- **`frameworks/`** - Framework-specific examples and patterns (ready for expansion)
+- **`tools/`** - Development tools, configurations, and utilities (ready for expansion)
+
+### Current Implementation Status
+- **Languages Directory**: Established structure with Python, Java, C++, Go, JavaScript, TypeScript
+- **Specialized Content**: Cryptography and AI/ML algorithm foundations
+- **Cross-Language**: Algorithm comparison framework
+- **Frameworks & Tools**: Infrastructure ready for expansion
 
 ### Data Types
 Within each language directory, you'll find:
