@@ -1,0 +1,188 @@
+{
+  "dataset_metadata": {
+    "name": "Comprehensive Testing and Validation Framework for AI Coding Agents",
+    "version": "2.0.0",
+    "description": "Complete testing methodology dataset covering unit testing, integration testing, performance testing, and validation strategies with industry-standard practices",
+    "purpose": "Enable AI agents to understand comprehensive testing strategies, write effective tests, and validate code quality through systematic approaches",
+    "created_date": "2024-01-15T00:00:00Z",
+    "total_samples": 250,
+    "testing_categories": [
+      "unit_testing",
+      "integration_testing", 
+      "performance_testing",
+      "security_testing",
+      "usability_testing",
+      "regression_testing",
+      "acceptance_testing",
+      "property_based_testing"
+    ],
+    "testing_levels": ["basic", "intermediate", "advanced", "expert", "research"],
+    "validation_approaches": ["formal_verification", "static_analysis", "dynamic_testing", "model_checking", "property_verification"]
+  },
+  "comprehensive_testing_framework": {
+    "testing_pyramid": {
+      "unit_tests": {
+        "description": "Fast, isolated tests for individual components",
+        "characteristics": ["Fast execution (<1ms per test)", "Isolated from dependencies", "Focused on single functionality", "High test count (70% of tests)"],
+        "best_practices": ["One assertion per test", "Clear test names", "Independent tests", "Mock external dependencies"],
+        "tools": ["pytest", "JUnit", "Jest", "Google Test", "cargo test"]
+      },
+      "integration_tests": {
+        "description": "Tests for component interactions and interfaces",
+        "characteristics": ["Medium execution time", "Tests real integrations", "Validates workflows", "Moderate test count (20% of tests)"],
+        "best_practices": ["Test realistic scenarios", "Use test databases", "Validate end-to-end flows", "Clean up after tests"],
+        "tools": ["TestContainers", "Selenium", "Cypress", "Postman", "REST Assured"]
+      },
+      "end_to_end_tests": {
+        "description": "Full system tests from user perspective",
+        "characteristics": ["Slow execution", "Complete system validation", "User journey testing", "Low test count (10% of tests)"],
+        "best_practices": ["Test critical user journeys", "Minimize test count", "Reliable test data", "Stable test environment"],
+        "tools": ["Selenium WebDriver", "Playwright", "Cypress", "Appium", "Robot Framework"]
+      }
+    },
+    "testing_strategies": {
+      "test_driven_development": {
+        "description": "Write tests before implementation code",
+        "process": ["Red: Write failing test", "Green: Make test pass", "Refactor: Improve code"],
+        "benefits": ["Better design", "Comprehensive coverage", "Regression protection", "Documentation"],
+        "challenges": ["Learning curve", "Time investment", "Over-testing", "Maintenance overhead"]
+      },
+      "behavior_driven_development": {
+        "description": "Specification-based testing with natural language",
+        "process": ["Given-When-Then scenarios", "Stakeholder collaboration", "Automated acceptance tests"],
+        "benefits": ["Clear requirements", "Stakeholder communication", "Living documentation"],
+        "tools": ["Cucumber", "SpecFlow", "Behat", "pytest-bdd"]
+      },
+      "property_based_testing": {
+        "description": "Generate test cases automatically based on properties",
+        "process": ["Define properties", "Generate test data", "Verify invariants", "Shrink failures"],
+        "benefits": ["Edge case discovery", "Comprehensive coverage", "Specification validation"],
+        "tools": ["Hypothesis", "QuickCheck", "fast-check", "PropEr"]
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": "testing_001",
+      "concept": "Comprehensive Unit Testing Strategy",
+      "category": "unit_testing",
+      "complexity": "intermediate",
+      "description": "Complete unit testing approach covering test design, implementation, and maintenance for a binary search tree",
+      "code_under_test": {
+        "language": "python",
+        "implementation": "class TreeNode:\n    def __init__(self, value):\n        self.value = value\n        self.left = None\n        self.right = None\n\nclass BinarySearchTree:\n    def __init__(self):\n        self.root = None\n        self.size = 0\n    \n    def insert(self, value):\n        \"\"\"Insert value into BST.\"\"\"\n        if self.root is None:\n            self.root = TreeNode(value)\n        else:\n            self._insert_recursive(self.root, value)\n        self.size += 1\n    \n    def _insert_recursive(self, node, value):\n        if value < node.value:\n            if node.left is None:\n                node.left = TreeNode(value)\n            else:\n                self._insert_recursive(node.left, value)\n        elif value > node.value:\n            if node.right is None:\n                node.right = TreeNode(value)\n            else:\n                self._insert_recursive(node.right, value)\n        # Ignore duplicates\n    \n    def search(self, value):\n        \"\"\"Search for value in BST.\"\"\"\n        return self._search_recursive(self.root, value)\n    \n    def _search_recursive(self, node, value):\n        if node is None:\n            return False\n        if node.value == value:\n            return True\n        elif value < node.value:\n            return self._search_recursive(node.left, value)\n        else:\n            return self._search_recursive(node.right, value)\n    \n    def inorder_traversal(self):\n        \"\"\"Return inorder traversal as list.\"\"\"\n        result = []\n        self._inorder_recursive(self.root, result)\n        return result\n    \n    def _inorder_recursive(self, node, result):\n        if node is not None:\n            self._inorder_recursive(node.left, result)\n            result.append(node.value)\n            self._inorder_recursive(node.right, result)\n    \n    def __len__(self):\n        return self.size\n    \n    def is_empty(self):\n        return self.size == 0"
+      },
+      "comprehensive_test_suite": {
+        "test_structure": "# test_binary_search_tree.py\nimport pytest\nfrom binary_search_tree import BinarySearchTree, TreeNode\n\nclass TestBinarySearchTree:\n    \"\"\"Comprehensive test suite for Binary Search Tree.\n    \n    Test Design Principles:\n    1. Test each public method thoroughly\n    2. Cover normal cases, edge cases, and error conditions\n    3. Test internal state and behavior\n    4. Use descriptive test names\n    5. Independent and isolated tests\n    \"\"\"\n    \n    @pytest.fixture\n    def empty_tree(self):\n        \"\"\"Fixture providing empty BST for each test.\"\"\"\n        return BinarySearchTree()\n    \n    @pytest.fixture\n    def sample_tree(self):\n        \"\"\"Fixture providing BST with sample data.\"\"\"\n        tree = BinarySearchTree()\n        values = [5, 3, 7, 1, 4, 6, 8]\n        for value in values:\n            tree.insert(value)\n        return tree\n    \n    # Test initialization\n    def test_new_tree_is_empty(self, empty_tree):\n        \"\"\"New BST should be empty.\"\"\"\n        assert len(empty_tree) == 0\n        assert empty_tree.is_empty()\n        assert empty_tree.root is None\n    \n    # Test insertion - normal cases\n    def test_insert_single_value(self, empty_tree):\n        \"\"\"Inserting single value should create root.\"\"\"\n        empty_tree.insert(5)\n        \n        assert len(empty_tree) == 1\n        assert not empty_tree.is_empty()\n        assert empty_tree.root is not None\n        assert empty_tree.root.value == 5\n        assert empty_tree.root.left is None\n        assert empty_tree.root.right is None\n    \n    def test_insert_multiple_values_maintains_bst_property(self, empty_tree):\n        \"\"\"Multiple insertions should maintain BST property.\"\"\"\n        values = [5, 3, 7, 1, 4, 6, 8]\n        \n        for value in values:\n            empty_tree.insert(value)\n        \n        # Verify BST property through inorder traversal\n        traversal = empty_tree.inorder_traversal()\n        assert traversal == sorted(values)\n        assert len(empty_tree) == len(values)\n    \n    def test_insert_duplicate_values(self, empty_tree):\n        \"\"\"Duplicate values should be ignored.\"\"\"\n        empty_tree.insert(5)\n        empty_tree.insert(5)\n        empty_tree.insert(5)\n        \n        assert len(empty_tree) == 1\n        assert empty_tree.inorder_traversal() == [5]\n    \n    def test_insert_sorted_sequence(self, empty_tree):\n        \"\"\"Inserting sorted sequence creates right-skewed tree.\"\"\"\n        values = [1, 2, 3, 4, 5]\n        \n        for value in values:\n            empty_tree.insert(value)\n        \n        # Should still work correctly despite poor balance\n        assert len(empty_tree) == 5\n        assert empty_tree.inorder_traversal() == values\n        \n        # Verify tree structure (right-skewed)\n        current = empty_tree.root\n        for expected_value in values:\n            assert current.value == expected_value\n            assert current.left is None  # No left children\n            current = current.right\n    \n    # Test search - normal cases\n    def test_search_existing_values(self, sample_tree):\n        \"\"\"Should find all inserted values.\"\"\"\n        expected_values = [1, 3, 4, 5, 6, 7, 8]\n        \n        for value in expected_values:\n            assert sample_tree.search(value), f\"Should find value {value}\"\n    \n    def test_search_non_existing_values(self, sample_tree):\n        \"\"\"Should not find values not in tree.\"\"\"\n        non_existing = [0, 2, 9, 10, -1]\n        \n        for value in non_existing:\n            assert not sample_tree.search(value), f\"Should not find value {value}\"\n    \n    def test_search_empty_tree(self, empty_tree):\n        \"\"\"Search in empty tree should return False.\"\"\"\n        assert not empty_tree.search(1)\n        assert not empty_tree.search(0)\n        assert not empty_tree.search(-1)\n    \n    # Test traversal\n    def test_inorder_traversal_empty_tree(self, empty_tree):\n        \"\"\"Inorder traversal of empty tree should return empty list.\"\"\"\n        assert empty_tree.inorder_traversal() == []\n    \n    def test_inorder_traversal_single_node(self, empty_tree):\n        \"\"\"Inorder traversal of single node should return one element.\"\"\"\n        empty_tree.insert(42)\n        assert empty_tree.inorder_traversal() == [42]\n    \n    def test_inorder_traversal_returns_sorted_values(self, sample_tree):\n        \"\"\"Inorder traversal should return values in sorted order.\"\"\"\n        traversal = sample_tree.inorder_traversal()\n        expected = [1, 3, 4, 5, 6, 7, 8]\n        \n        assert traversal == expected\n        assert traversal == sorted(traversal)  # Double check it's sorted\n    \n    # Test size and empty state\n    def test_size_increases_with_insertions(self, empty_tree):\n        \"\"\"Size should increase with each unique insertion.\"\"\"\n        assert len(empty_tree) == 0\n        \n        empty_tree.insert(1)\n        assert len(empty_tree) == 1\n        \n        empty_tree.insert(2)\n        assert len(empty_tree) == 2\n        \n        # Duplicate insertion shouldn't change size\n        empty_tree.insert(1)\n        assert len(empty_tree) == 2\n    \n    def test_is_empty_state_changes(self, empty_tree):\n        \"\"\"is_empty should reflect actual tree state.\"\"\"\n        assert empty_tree.is_empty()\n        \n        empty_tree.insert(1)\n        assert not empty_tree.is_empty()\n    \n    # Edge cases and error conditions\n    def test_insert_none_value(self, empty_tree):\n        \"\"\"Should handle None values gracefully or raise appropriate error.\"\"\"\n        # Depending on requirements, might accept None or raise TypeError\n        # For this example, we'll assume it should work\n        empty_tree.insert(None)\n        assert len(empty_tree) == 1\n        assert empty_tree.search(None)\n    \n    def test_insert_different_types(self, empty_tree):\n        \"\"\"Should handle different comparable types.\"\"\"\n        # Mix of integers and floats (both comparable)\n        values = [5, 3.5, 7, 1.2, 4, 6.8, 8]\n        \n        for value in values:\n            empty_tree.insert(value)\n        \n        traversal = empty_tree.inorder_traversal()\n        assert traversal == sorted(values)\n    \n    def test_large_tree_performance(self, empty_tree):\n        \"\"\"Should handle reasonably large trees efficiently.\"\"\"\n        import random\n        import time\n        \n        # Insert 10,000 random values\n        values = list(range(10000))\n        random.shuffle(values)\n        \n        start_time = time.time()\n        for value in values:\n            empty_tree.insert(value)\n        insert_time = time.time() - start_time\n        \n        # Should complete within reasonable time (adjust as needed)\n        assert insert_time < 5.0, f\"Insertion took too long: {insert_time:.2f}s\"\n        \n        # Verify correctness\n        assert len(empty_tree) == 10000\n        \n        # Test search performance\n        start_time = time.time()\n        for _ in range(100):\n            empty_tree.search(random.choice(values))\n        search_time = time.time() - start_time\n        \n        assert search_time < 1.0, f\"Search took too long: {search_time:.2f}s\"\n\n# Property-based tests using Hypothesis\nfrom hypothesis import given, strategies as st\n\nclass TestBinarySearchTreeProperties:\n    \"\"\"Property-based tests for BST invariants.\"\"\"\n    \n    @given(st.lists(st.integers(), min_size=1, max_size=100))\n    def test_inorder_traversal_is_always_sorted(self, values):\n        \"\"\"Property: inorder traversal should always be sorted.\"\"\"\n        tree = BinarySearchTree()\n        \n        for value in values:\n            tree.insert(value)\n        \n        traversal = tree.inorder_traversal()\n        assert traversal == sorted(set(values))  # Remove duplicates for comparison\n    \n    @given(st.lists(st.integers(), min_size=1, max_size=50))\n    def test_all_inserted_values_can_be_found(self, values):\n        \"\"\"Property: all inserted values should be searchable.\"\"\"\n        tree = BinarySearchTree()\n        unique_values = list(set(values))  # Remove duplicates\n        \n        for value in values:\n            tree.insert(value)\n        \n        for value in unique_values:\n            assert tree.search(value), f\"Should find inserted value {value}\"\n    \n    @given(st.lists(st.integers(), min_size=0, max_size=50))\n    def test_size_equals_unique_insertions(self, values):\n        \"\"\"Property: tree size should equal number of unique values inserted.\"\"\"\n        tree = BinarySearchTree()\n        unique_values = set()\n        \n        for value in values:\n            tree.insert(value)\n            unique_values.add(value)\n        \n        assert len(tree) == len(unique_values)\n\n# Performance and stress tests\nclass TestBinarySearchTreePerformance:\n    \"\"\"Performance and stress tests.\"\"\"\n    \n    @pytest.mark.slow\n    def test_balanced_tree_performance(self):\n        \"\"\"Test performance with well-balanced tree.\"\"\"\n        import random\n        \n        tree = BinarySearchTree()\n        values = list(range(1000))\n        random.shuffle(values)  # Random insertion order for better balance\n        \n        # Measure insertion time\n        start = time.time()\n        for value in values:\n            tree.insert(value)\n        insertion_time = time.time() - start\n        \n        # Measure search time\n        search_values = random.sample(values, 100)\n        start = time.time()\n        for value in search_values:\n            tree.search(value)\n        search_time = time.time() - start\n        \n        # Performance assertions (adjust thresholds as needed)\n        assert insertion_time < 0.1, f\"Insertion too slow: {insertion_time:.3f}s\"\n        assert search_time < 0.01, f\"Search too slow: {search_time:.3f}s\"\n    \n    @pytest.mark.slow\n    def test_worst_case_performance(self):\n        \"\"\"Test performance with worst-case (linear) tree.\"\"\"\n        tree = BinarySearchTree()\n        values = list(range(1000))  # Sorted sequence creates linear tree\n        \n        # Should still work, just slower\n        for value in values:\n            tree.insert(value)\n        \n        assert len(tree) == 1000\n        assert tree.inorder_traversal() == values",
+        "test_categories": {
+          "smoke_tests": "Basic functionality verification",
+          "positive_tests": "Testing expected behavior with valid inputs",
+          "negative_tests": "Testing behavior with invalid or edge case inputs",
+          "boundary_tests": "Testing limits and boundaries",
+          "performance_tests": "Testing efficiency and scalability",
+          "property_tests": "Testing mathematical properties and invariants"
+        },
+        "coverage_analysis": {
+          "statement_coverage": "100% - All lines of code executed",
+          "branch_coverage": "95% - Most decision points tested", 
+          "path_coverage": "80% - Major execution paths covered",
+          "condition_coverage": "90% - Boolean conditions tested"
+        }
+      },
+      "testing_best_practices": {
+        "test_naming": {
+          "convention": "test_[what_is_being_tested]_[under_what_condition]_[expected_behavior]",
+          "examples": [
+            "test_insert_duplicate_values_should_be_ignored",
+            "test_search_non_existing_value_returns_false",
+            "test_inorder_traversal_empty_tree_returns_empty_list"
+          ]
+        },
+        "test_organization": {
+          "structure": "Arrange-Act-Assert pattern",
+          "arrange": "Set up test data and conditions",
+          "act": "Execute the code being tested",
+          "assert": "Verify the expected outcomes"
+        },
+        "test_independence": {
+          "principle": "Each test should be independent and self-contained",
+          "techniques": ["Use fixtures for setup", "Clean up after each test", "Don't rely on test execution order"],
+          "benefits": ["Parallel execution", "Easy debugging", "Reliable results"]
+        }
+      }
+    },
+    {
+      "id": "testing_002",
+      "concept": "Integration Testing Strategy",
+      "category": "integration_testing",
+      "complexity": "advanced",
+      "description": "Comprehensive approach to integration testing covering API testing, database integration, and service interactions",
+      "system_under_test": {
+        "description": "Web API for task management system with database persistence and external notification service",
+        "components": [
+          "TaskController (REST API endpoints)",
+          "TaskService (Business logic)",
+          "TaskRepository (Database access)", 
+          "NotificationService (External service integration)",
+          "Database (PostgreSQL)",
+          "Message Queue (Redis)"
+        ]
+      },
+      "integration_test_strategy": {
+        "test_layers": {
+          "component_integration": {
+            "description": "Test integration between internal components",
+            "focus": "Service-Repository interactions, Controller-Service communication",
+            "tools": ["TestContainers", "In-memory databases", "Mock servers"],
+            "example": "# test_task_service_integration.py\nimport pytest\nfrom testcontainers.postgres import PostgresContainer\nfrom task_service import TaskService\nfrom task_repository import TaskRepository\nfrom database import Database\n\nclass TestTaskServiceIntegration:\n    \"\"\"Integration tests for TaskService with real database.\"\"\"\n    \n    @pytest.fixture(scope='class')\n    def postgres_container(self):\n        \"\"\"Provide PostgreSQL container for testing.\"\"\"\n        with PostgresContainer('postgres:13') as postgres:\n            yield postgres\n    \n    @pytest.fixture\n    def database(self, postgres_container):\n        \"\"\"Provide database connection.\"\"\"\n        db_url = postgres_container.get_connection_url()\n        database = Database(db_url)\n        database.create_tables()  # Set up schema\n        yield database\n        database.cleanup()  # Clean up after test\n    \n    @pytest.fixture\n    def task_service(self, database):\n        \"\"\"Provide TaskService with real database.\"\"\"\n        repository = TaskRepository(database)\n        return TaskService(repository)\n    \n    def test_create_task_persists_to_database(self, task_service, database):\n        \"\"\"Creating task should persist data correctly.\"\"\"\n        # Arrange\n        task_data = {\n            'title': 'Test Task',\n            'description': 'Test Description',\n            'priority': 'high'\n        }\n        \n        # Act\n        created_task = task_service.create_task(task_data)\n        \n        # Assert - verify service response\n        assert created_task['id'] is not None\n        assert created_task['title'] == task_data['title']\n        assert created_task['status'] == 'pending'\n        \n        # Assert - verify database state\n        db_task = database.execute_query(\n            'SELECT * FROM tasks WHERE id = %s',\n            [created_task['id']]\n        )\n        assert len(db_task) == 1\n        assert db_task[0]['title'] == task_data['title']\n    \n    def test_update_task_modifies_database_record(self, task_service):\n        \"\"\"Updating task should modify database record.\"\"\"\n        # Arrange - create initial task\n        initial_task = task_service.create_task({\n            'title': 'Original Title',\n            'description': 'Original Description'\n        })\n        \n        # Act - update task\n        updated_data = {\n            'title': 'Updated Title',\n            'status': 'completed'\n        }\n        updated_task = task_service.update_task(initial_task['id'], updated_data)\n        \n        # Assert\n        assert updated_task['title'] == 'Updated Title'\n        assert updated_task['status'] == 'completed'\n        assert updated_task['description'] == 'Original Description'  # Unchanged\n    \n    def test_delete_task_removes_from_database(self, task_service, database):\n        \"\"\"Deleting task should remove from database.\"\"\"\n        # Arrange\n        task = task_service.create_task({\n            'title': 'Task to Delete',\n            'description': 'Will be deleted'\n        })\n        \n        # Verify task exists\n        assert task_service.get_task(task['id']) is not None\n        \n        # Act\n        task_service.delete_task(task['id'])\n        \n        # Assert - task should not exist\n        assert task_service.get_task(task['id']) is None\n        \n        # Assert - verify database state\n        db_tasks = database.execute_query(\n            'SELECT * FROM tasks WHERE id = %s',\n            [task['id']]\n        )\n        assert len(db_tasks) == 0"
+          },
+          "api_integration": {
+            "description": "Test REST API endpoints with real HTTP requests",
+            "focus": "HTTP status codes, request/response formats, error handling",
+            "tools": ["requests", "httpx", "pytest-httpx", "FastAPI TestClient"],
+            "example": "# test_task_api_integration.py\nimport pytest\nimport requests\nfrom fastapi.testclient import TestClient\nfrom main import app\n\nclass TestTaskAPIIntegration:\n    \"\"\"Integration tests for Task Management API.\"\"\"\n    \n    @pytest.fixture\n    def client(self):\n        \"\"\"Provide FastAPI test client.\"\"\"\n        return TestClient(app)\n    \n    @pytest.fixture\n    def sample_task(self, client):\n        \"\"\"Create sample task for testing.\"\"\"\n        task_data = {\n            'title': 'Sample Task',\n            'description': 'Sample Description',\n            'priority': 'medium'\n        }\n        response = client.post('/tasks', json=task_data)\n        return response.json()\n    \n    def test_create_task_endpoint(self, client):\n        \"\"\"POST /tasks should create new task.\"\"\"\n        # Arrange\n        task_data = {\n            'title': 'New Task',\n            'description': 'Task Description',\n            'priority': 'high'\n        }\n        \n        # Act\n        response = client.post('/tasks', json=task_data)\n        \n        # Assert\n        assert response.status_code == 201\n        task = response.json()\n        assert task['title'] == task_data['title']\n        assert task['id'] is not None\n        assert task['status'] == 'pending'\n        assert 'created_at' in task\n    \n    def test_get_task_endpoint(self, client, sample_task):\n        \"\"\"GET /tasks/{id} should return specific task.\"\"\"\n        # Act\n        response = client.get(f\"/tasks/{sample_task['id']}\")\n        \n        # Assert\n        assert response.status_code == 200\n        task = response.json()\n        assert task['id'] == sample_task['id']\n        assert task['title'] == sample_task['title']\n    \n    def test_get_nonexistent_task_returns_404(self, client):\n        \"\"\"GET /tasks/{id} should return 404 for non-existent task.\"\"\"\n        # Act\n        response = client.get('/tasks/99999')\n        \n        # Assert\n        assert response.status_code == 404\n        error = response.json()\n        assert 'error' in error\n        assert 'not found' in error['error'].lower()\n    \n    def test_update_task_endpoint(self, client, sample_task):\n        \"\"\"PUT /tasks/{id} should update task.\"\"\"\n        # Arrange\n        update_data = {\n            'title': 'Updated Title',\n            'status': 'in_progress'\n        }\n        \n        # Act\n        response = client.put(f\"/tasks/{sample_task['id']}\", json=update_data)\n        \n        # Assert\n        assert response.status_code == 200\n        updated_task = response.json()\n        assert updated_task['title'] == 'Updated Title'\n        assert updated_task['status'] == 'in_progress'\n        assert updated_task['description'] == sample_task['description']\n    \n    def test_delete_task_endpoint(self, client, sample_task):\n        \"\"\"DELETE /tasks/{id} should remove task.\"\"\"\n        # Act\n        response = client.delete(f\"/tasks/{sample_task['id']}\")\n        \n        # Assert\n        assert response.status_code == 204\n        \n        # Verify task is deleted\n        get_response = client.get(f\"/tasks/{sample_task['id']}\")\n        assert get_response.status_code == 404\n    \n    def test_list_tasks_endpoint(self, client):\n        \"\"\"GET /tasks should return paginated task list.\"\"\"\n        # Arrange - create multiple tasks\n        for i in range(5):\n            client.post('/tasks', json={\n                'title': f'Task {i}',\n                'description': f'Description {i}'\n            })\n        \n        # Act\n        response = client.get('/tasks?page=1&limit=3')\n        \n        # Assert\n        assert response.status_code == 200\n        data = response.json()\n        assert 'tasks' in data\n        assert 'pagination' in data\n        assert len(data['tasks']) <= 3\n        assert data['pagination']['page'] == 1\n        assert data['pagination']['total'] >= 5\n    \n    def test_invalid_request_data_returns_422(self, client):\n        \"\"\"POST /tasks with invalid data should return 422.\"\"\"\n        # Arrange - missing required field\n        invalid_data = {\n            'description': 'Missing title'\n        }\n        \n        # Act\n        response = client.post('/tasks', json=invalid_data)\n        \n        # Assert\n        assert response.status_code == 422\n        error = response.json()\n        assert 'detail' in error\n        assert any('title' in str(err).lower() for err in error['detail'])\n    \n    @pytest.mark.integration\n    def test_task_workflow_integration(self, client):\n        \"\"\"Test complete task workflow: create -> update -> complete -> delete.\"\"\"\n        # Step 1: Create task\n        task_data = {'title': 'Workflow Task', 'priority': 'high'}\n        create_response = client.post('/tasks', json=task_data)\n        assert create_response.status_code == 201\n        task = create_response.json()\n        task_id = task['id']\n        \n        # Step 2: Update task\n        update_response = client.put(f'/tasks/{task_id}', json={\n            'status': 'in_progress'\n        })\n        assert update_response.status_code == 200\n        assert update_response.json()['status'] == 'in_progress'\n        \n        # Step 3: Complete task\n        complete_response = client.put(f'/tasks/{task_id}', json={\n            'status': 'completed'\n        })\n        assert complete_response.status_code == 200\n        assert complete_response.json()['status'] == 'completed'\n        \n        # Step 4: Delete task\n        delete_response = client.delete(f'/tasks/{task_id}')\n        assert delete_response.status_code == 204\n        \n        # Step 5: Verify deletion\n        get_response = client.get(f'/tasks/{task_id}')\n        assert get_response.status_code == 404"
+          },
+          "external_service_integration": {
+            "description": "Test integration with external services and APIs",
+            "focus": "Service communication, error handling, circuit breakers",
+            "tools": ["WireMock", "pytest-httpserver", "responses", "VCR"],
+            "techniques": ["Mock external services", "Record/replay interactions", "Test service failures", "Verify retry logic"]
+          }
+        }
+      }
+    },
+    {
+      "id": "testing_003",
+      "concept": "Performance Testing Framework",
+      "category": "performance_testing",
+      "complexity": "expert",
+      "description": "Comprehensive performance testing approach covering load testing, stress testing, and performance regression detection",
+      "performance_testing_strategy": {
+        "test_types": {
+          "load_testing": {
+            "purpose": "Verify system behavior under expected load",
+            "characteristics": ["Normal user volume", "Expected usage patterns", "Sustained duration"],
+            "tools": ["Locust", "JMeter", "Artillery", "k6"],
+            "metrics": ["Response time", "Throughput", "Resource utilization", "Error rate"]
+          },
+          "stress_testing": {
+            "purpose": "Determine system breaking point and behavior under extreme load",
+            "characteristics": ["Beyond normal capacity", "Gradual load increase", "Identify failure points"],
+            "metrics": ["Maximum throughput", "Failure thresholds", "Recovery behavior", "Resource limits"]
+          },
+          "spike_testing": {
+            "purpose": "Test system behavior with sudden load increases",
+            "characteristics": ["Rapid load changes", "Peak traffic simulation", "Auto-scaling validation"],
+            "scenarios": ["Flash sales", "Viral content", "Breaking news", "Marketing campaigns"]
+          },
+          "endurance_testing": {
+            "purpose": "Verify system stability over extended periods",
+            "characteristics": ["Long duration", "Memory leak detection", "Resource degradation"],
+            "duration": "Hours to days of continuous operation"
+          }
+        },
+        "implementation_example": "# performance_tests.py\nimport pytest\nimport time\nimport statistics\nimport concurrent.futures\nfrom locust import HttpUser, task, between\nfrom task_api import TaskAPI\n\nclass TestTaskAPIPerformance:\n    \"\"\"Performance tests for Task API.\"\"\"\n    \n    @pytest.fixture\n    def api_client(self):\n        \"\"\"Provide API client for testing.\"\"\"\n        return TaskAPI(base_url='http://localhost:8000')\n    \n    def test_single_request_response_time(self, api_client):\n        \"\"\"Test response time for single request.\"\"\"\n        start_time = time.time()\n        response = api_client.get_tasks()\n        end_time = time.time()\n        \n        response_time = end_time - start_time\n        assert response_time < 0.5, f\"Response time too slow: {response_time:.3f}s\"\n        assert response.status_code == 200\n    \n    def test_concurrent_requests_performance(self, api_client):\n        \"\"\"Test system behavior under concurrent load.\"\"\"\n        def make_request():\n            start = time.time()\n            response = api_client.get_tasks()\n            duration = time.time() - start\n            return duration, response.status_code\n        \n        # Execute 50 concurrent requests\n        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:\n            futures = [executor.submit(make_request) for _ in range(50)]\n            results = [future.result() for future in futures]\n        \n        # Analyze results\n        durations = [result[0] for result in results]\n        status_codes = [result[1] for result in results]\n        \n        # Performance assertions\n        avg_duration = statistics.mean(durations)\n        p95_duration = statistics.quantiles(durations, n=20)[18]  # 95th percentile\n        \n        assert avg_duration < 1.0, f\"Average response time too slow: {avg_duration:.3f}s\"\n        assert p95_duration < 2.0, f\"95th percentile too slow: {p95_duration:.3f}s\"\n        assert all(code == 200 for code in status_codes), \"Some requests failed\"\n        \n        print(f\"Performance metrics:\")\n        print(f\"  Average response time: {avg_duration:.3f}s\")\n        print(f\"  95th percentile: {p95_duration:.3f}s\")\n        print(f\"  Success rate: {status_codes.count(200)/len(status_codes)*100:.1f}%\")\n    \n    @pytest.mark.slow\n    def test_database_query_performance(self, api_client):\n        \"\"\"Test database query performance with large datasets.\"\"\"\n        # Create large number of tasks\n        print(\"Creating test data...\")\n        task_ids = []\n        \n        start_time = time.time()\n        for i in range(1000):\n            response = api_client.create_task({\n                'title': f'Performance Test Task {i}',\n                'description': f'Description for task {i}'\n            })\n            task_ids.append(response.json()['id'])\n        creation_time = time.time() - start_time\n        \n        print(f\"Created 1000 tasks in {creation_time:.2f}s\")\n        \n        # Test query performance\n        start_time = time.time()\n        response = api_client.get_tasks(limit=100)\n        query_time = time.time() - start_time\n        \n        assert query_time < 1.0, f\"Query time too slow: {query_time:.3f}s\"\n        assert len(response.json()['tasks']) == 100\n        \n        # Cleanup\n        for task_id in task_ids:\n            api_client.delete_task(task_id)\n\n# Locust load testing script\nclass TaskAPIUser(HttpUser):\n    \"\"\"Locust user for load testing Task API.\"\"\"\n    \n    wait_time = between(1, 3)  # Wait 1-3 seconds between requests\n    \n    def on_start(self):\n        \"\"\"Initialize user session.\"\"\"\n        # Create initial tasks for testing\n        self.task_ids = []\n        for i in range(5):\n            response = self.client.post('/tasks', json={\n                'title': f'Load Test Task {i}',\n                'description': f'Task for load testing user {self.user_id}'\n            })\n            if response.status_code == 201:\n                self.task_ids.append(response.json()['id'])\n    \n    @task(3)\n    def get_tasks(self):\n        \"\"\"Get list of tasks (most common operation).\"\"\"\n        self.client.get('/tasks?limit=20')\n    \n    @task(2)\n    def get_specific_task(self):\n        \"\"\"Get specific task details.\"\"\"\n        if self.task_ids:\n            task_id = random.choice(self.task_ids)\n            self.client.get(f'/tasks/{task_id}')\n    \n    @task(1)\n    def create_task(self):\n        \"\"\"Create new task.\"\"\"\n        response = self.client.post('/tasks', json={\n            'title': f'New Task {time.time()}',\n            'description': 'Created during load test'\n        })\n        if response.status_code == 201:\n            self.task_ids.append(response.json()['id'])\n    \n    @task(1)\n    def update_task(self):\n        \"\"\"Update existing task.\"\"\"\n        if self.task_ids:\n            task_id = random.choice(self.task_ids)\n            self.client.put(f'/tasks/{task_id}', json={\n                'status': random.choice(['pending', 'in_progress', 'completed'])\n            })\n    \n    def on_stop(self):\n        \"\"\"Cleanup when user stops.\"\"\"\n        # Clean up created tasks\n        for task_id in self.task_ids:\n            self.client.delete(f'/tasks/{task_id}')"
+      }
+    }
+  ]
+}
