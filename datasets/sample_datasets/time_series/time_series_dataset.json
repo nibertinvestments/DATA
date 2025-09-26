@@ -1,0 +1,387 @@
+{
+  "dataset_metadata": {
+    "name": "Time Series Analysis Training Dataset", 
+    "version": "1.0.0",
+    "description": "Comprehensive time series dataset covering forecasting, anomaly detection, pattern recognition, and temporal analysis for ML model training",
+    "purpose": "Train AI models on time series tasks including forecasting, trend analysis, seasonality detection, anomaly identification, and pattern classification",
+    "created_date": "2024-01-01T00:00:00Z",
+    "total_samples": 160,
+    "time_ranges": ["minutes", "hours", "days", "weeks", "months", "years"],
+    "frequencies": ["high_frequency", "medium_frequency", "low_frequency", "irregular"],
+    "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+    "task_categories": [
+      "forecasting",
+      "anomaly_detection", 
+      "pattern_classification",
+      "trend_analysis",
+      "seasonality_detection", 
+      "change_point_detection",
+      "correlation_analysis",
+      "clustering"
+    ],
+    "use_cases": [
+      "Stock market prediction",
+      "Energy consumption forecasting",
+      "Network monitoring",
+      "IoT sensor data analysis",
+      "Supply chain optimization",
+      "Healthcare monitoring",
+      "Weather prediction",
+      "Financial fraud detection"
+    ],
+    "sample_structure": {
+      "id": "unique_identifier",
+      "task_type": "specific_time_series_task",
+      "time_series_data": "temporal_data_points_with_timestamps",
+      "labels": "ground_truth_annotations",
+      "metadata": "data_characteristics_and_properties",
+      "complexity": "task_difficulty_level",
+      "domain": "application_area"
+    }
+  },
+  "samples": [
+    {
+      "id": "ts_001",
+      "task_type": "forecasting",
+      "time_series_data": {
+        "timestamps": [
+          "2024-01-01T00:00:00Z", "2024-01-01T01:00:00Z", "2024-01-01T02:00:00Z",
+          "2024-01-01T03:00:00Z", "2024-01-01T04:00:00Z", "2024-01-01T05:00:00Z",
+          "2024-01-01T06:00:00Z", "2024-01-01T07:00:00Z", "2024-01-01T08:00:00Z",
+          "2024-01-01T09:00:00Z", "2024-01-01T10:00:00Z", "2024-01-01T11:00:00Z",
+          "2024-01-01T12:00:00Z", "2024-01-01T13:00:00Z", "2024-01-01T14:00:00Z",
+          "2024-01-01T15:00:00Z", "2024-01-01T16:00:00Z", "2024-01-01T17:00:00Z",
+          "2024-01-01T18:00:00Z", "2024-01-01T19:00:00Z", "2024-01-01T20:00:00Z",
+          "2024-01-01T21:00:00Z", "2024-01-01T22:00:00Z", "2024-01-01T23:00:00Z"
+        ],
+        "values": [
+          45.2, 42.1, 38.5, 35.8, 33.2, 31.7, 32.4, 38.9, 48.3, 62.1, 78.4, 89.7,
+          95.3, 98.2, 96.8, 92.4, 87.1, 84.6, 79.2, 72.8, 65.3, 58.7, 52.1, 47.6
+        ],
+        "feature_names": ["energy_consumption_kwh"],
+        "sampling_rate": "hourly"
+      },
+      "labels": {
+        "forecast_horizon": 6,
+        "predicted_values": [44.8, 41.5, 37.9, 34.2, 32.1, 30.8],
+        "forecast_timestamps": [
+          "2024-01-02T00:00:00Z", "2024-01-02T01:00:00Z", "2024-01-02T02:00:00Z",
+          "2024-01-02T03:00:00Z", "2024-01-02T04:00:00Z", "2024-01-02T05:00:00Z"
+        ],
+        "confidence_intervals": [
+          {"lower": 40.2, "upper": 49.4},
+          {"lower": 37.1, "upper": 45.9},
+          {"lower": 33.8, "upper": 42.0},
+          {"lower": 30.5, "upper": 37.9},
+          {"lower": 28.4, "upper": 35.8},
+          {"lower": 26.9, "upper": 34.7}
+        ],
+        "forecast_accuracy_metrics": {
+          "mae": 2.3,
+          "mse": 8.1,
+          "mape": 5.2,
+          "r2": 0.89
+        }
+      },
+      "metadata": {
+        "data_source": "smart_grid_sensors",
+        "location": "residential_building_A",
+        "weather_influence": true,
+        "seasonal_patterns": ["daily_cycle", "weekly_cycle"],
+        "trend": "stable",
+        "missing_values": 0,
+        "outliers_detected": 2
+      },
+      "complexity": "intermediate",
+      "domain": "energy_management"
+    },
+    {
+      "id": "ts_002",
+      "task_type": "anomaly_detection",
+      "time_series_data": {
+        "timestamps": [
+          "2024-01-01T09:00:00Z", "2024-01-01T09:05:00Z", "2024-01-01T09:10:00Z",
+          "2024-01-01T09:15:00Z", "2024-01-01T09:20:00Z", "2024-01-01T09:25:00Z",
+          "2024-01-01T09:30:00Z", "2024-01-01T09:35:00Z", "2024-01-01T09:40:00Z",
+          "2024-01-01T09:45:00Z", "2024-01-01T09:50:00Z", "2024-01-01T09:55:00Z",
+          "2024-01-01T10:00:00Z", "2024-01-01T10:05:00Z", "2024-01-01T10:10:00Z",
+          "2024-01-01T10:15:00Z", "2024-01-01T10:20:00Z", "2024-01-01T10:25:00Z",
+          "2024-01-01T10:30:00Z", "2024-01-01T10:35:00Z"
+        ],
+        "values": [
+          98.2, 97.8, 98.5, 97.9, 98.1, 97.7, 156.3, 98.0, 97.6, 98.3,
+          97.4, 98.7, 183.4, 97.2, 98.9, 97.5, 98.4, 97.1, 98.6, 97.8
+        ],
+        "feature_names": ["cpu_temperature_celsius"],
+        "sampling_rate": "5_minutes"
+      },
+      "labels": {
+        "anomalies": [
+          {
+            "timestamp": "2024-01-01T09:30:00Z",
+            "value": 156.3,
+            "anomaly_type": "point_anomaly",
+            "severity": "high",
+            "anomaly_score": 0.95,
+            "expected_range": [97.0, 99.0]
+          },
+          {
+            "timestamp": "2024-01-01T10:00:00Z", 
+            "value": 183.4,
+            "anomaly_type": "point_anomaly",
+            "severity": "critical",
+            "anomaly_score": 0.99,
+            "expected_range": [97.0, 99.0]
+          }
+        ],
+        "normal_baseline": {
+          "mean": 97.85,
+          "std": 0.52,
+          "min": 97.1,
+          "max": 98.9
+        },
+        "detection_method": "statistical_threshold",
+        "threshold_parameters": {
+          "z_score_threshold": 3.0,
+          "window_size": 10,
+          "contamination_rate": 0.1
+        }
+      },
+      "metadata": {
+        "data_source": "server_monitoring",
+        "server_id": "web_server_01",
+        "monitoring_system": "prometheus",
+        "alert_triggered": true,
+        "root_cause": "cooling_system_failure",
+        "business_impact": "high"
+      },
+      "complexity": "advanced",
+      "domain": "infrastructure_monitoring"
+    },
+    {
+      "id": "ts_003",
+      "task_type": "pattern_classification",
+      "time_series_data": {
+        "timestamps": "daily_from_2023_01_01_to_2023_12_31",
+        "values": [
+          245.67, 248.23, 251.89, 255.14, 252.78, 248.91, 244.33, 246.78, 250.12,
+          254.67, 259.23, 263.45, 267.89, 272.14, 276.78, 281.23, 285.67, 290.12,
+          294.56, 299.01, 303.45, 307.89, 312.34, 316.78, 321.23, 325.67, 330.12,
+          334.56, 339.01, 343.45, 347.89, 352.34, 356.78, 361.23, 365.67, 370.12,
+          374.56, 379.01, 383.45, 387.89, 392.34, 396.78, 401.23, 405.67, 410.12
+        ],
+        "feature_names": ["stock_price_usd"],
+        "sampling_rate": "daily"
+      },
+      "labels": {
+        "pattern_type": "bullish_trend",
+        "pattern_confidence": 0.87,
+        "pattern_duration": "long_term",
+        "trend_characteristics": {
+          "direction": "upward",
+          "strength": "strong",
+          "consistency": "high",
+          "volatility": "low"
+        },
+        "support_levels": [245.0, 280.0, 320.0, 360.0],
+        "resistance_levels": [270.0, 310.0, 350.0, 390.0, 430.0],
+        "technical_indicators": {
+          "moving_average_50": 325.45,
+          "moving_average_200": 298.67,
+          "rsi": 65.4,
+          "macd": 12.3,
+          "bollinger_band_position": "upper_third"
+        }
+      },
+      "metadata": {
+        "ticker_symbol": "TECH_001",
+        "company_sector": "technology",
+        "market_cap": "large",
+        "trading_volume": "high",
+        "analyst_consensus": "buy",
+        "earnings_season_effect": false
+      },
+      "complexity": "advanced",
+      "domain": "financial_analysis"
+    },
+    {
+      "id": "ts_004", 
+      "task_type": "seasonality_detection",
+      "time_series_data": {
+        "timestamps": "monthly_from_2020_01_to_2023_12",
+        "values": [
+          1250, 1180, 1340, 1520, 1680, 1920, 2150, 2280, 1980, 1640, 1380, 1290,
+          1280, 1210, 1390, 1580, 1740, 1980, 2210, 2340, 2010, 1680, 1420, 1320,
+          1310, 1240, 1420, 1610, 1770, 2010, 2240, 2370, 2040, 1710, 1450, 1350,
+          1340, 1270, 1450, 1640, 1800, 2040, 2270, 2400, 2070, 1740, 1480, 1380
+        ],
+        "feature_names": ["ice_cream_sales_units"],
+        "sampling_rate": "monthly"
+      },
+      "labels": {
+        "seasonal_components": {
+          "seasonal_pattern": "yearly",
+          "peak_months": ["June", "July", "August"],
+          "trough_months": ["December", "January", "February"],
+          "seasonal_strength": 0.82,
+          "seasonal_amplitude": 980
+        },
+        "decomposition": {
+          "trend": "slightly_increasing",
+          "seasonal": "strong_yearly_pattern",
+          "residual": "low_noise",
+          "trend_slope": 12.3
+        },
+        "seasonal_indices": {
+          "January": 0.72,
+          "February": 0.68,
+          "March": 0.79,
+          "April": 0.91,
+          "May": 1.02,
+          "June": 1.15,
+          "July": 1.28,
+          "August": 1.35,
+          "September": 1.18,
+          "October": 0.98,
+          "November": 0.82,
+          "December": 0.73
+        }
+      },
+      "metadata": {
+        "business_type": "ice_cream_shop",
+        "location": "temperate_climate",
+        "weather_correlation": 0.78,
+        "tourism_influence": "moderate",
+        "promotional_events": ["summer_festival", "back_to_school"]
+      },
+      "complexity": "intermediate",
+      "domain": "retail_analytics"
+    },
+    {
+      "id": "ts_005",
+      "task_type": "change_point_detection", 
+      "time_series_data": {
+        "timestamps": "daily_from_2024_01_01_to_2024_03_31",
+        "values": [
+          45.2, 44.8, 45.7, 44.9, 45.3, 45.1, 44.6, 45.4, 45.0, 44.7, 45.2, 45.5,
+          44.9, 45.3, 45.1, 44.8, 45.6, 45.2, 44.9, 45.0, 78.3, 79.1, 78.7, 79.4,
+          78.9, 79.2, 78.6, 79.0, 78.8, 79.3, 78.5, 79.1, 78.7, 79.5, 78.9, 79.2,
+          78.4, 79.0, 78.8, 79.6, 52.1, 51.8, 52.4, 51.9, 52.3, 52.0, 51.7, 52.2,
+          51.9, 52.1, 51.6, 52.3, 52.0, 51.8, 52.4, 51.9, 52.2, 52.0, 51.7, 52.1,
+          35.4, 34.9, 35.2, 34.8, 35.1, 34.7, 35.0, 34.6, 35.3, 34.9, 35.1, 34.8,
+          35.2, 34.7, 35.0, 34.9, 35.3, 34.8, 35.1, 34.7, 35.0, 34.9, 35.2, 34.8,
+          35.1, 34.7, 35.0, 34.9, 35.3, 34.8
+        ],
+        "feature_names": ["manufacturing_output_units_per_hour"],
+        "sampling_rate": "daily"
+      },
+      "labels": {
+        "change_points": [
+          {
+            "date": "2024-01-21",
+            "change_type": "level_increase",
+            "magnitude": 33.1,
+            "confidence": 0.94,
+            "cause": "equipment_upgrade"
+          },
+          {
+            "date": "2024-02-10",
+            "change_type": "level_decrease", 
+            "magnitude": -26.8,
+            "confidence": 0.89,
+            "cause": "maintenance_schedule"
+          },
+          {
+            "date": "2024-03-01",
+            "change_type": "level_decrease",
+            "magnitude": -16.7,
+            "confidence": 0.91,
+            "cause": "shift_reduction"
+          }
+        ],
+        "regimes": [
+          {"period": "2024-01-01_to_2024-01-20", "mean": 45.1, "std": 0.31},
+          {"period": "2024-01-21_to_2024-02-09", "mean": 78.9, "std": 0.34},
+          {"period": "2024-02-10_to_2024-02-28", "mean": 52.1, "std": 0.25},
+          {"period": "2024-03-01_to_2024-03-31", "mean": 35.0, "std": 0.19}
+        ],
+        "detection_algorithm": "PELT",
+        "statistical_significance": 0.01
+      },
+      "metadata": {
+        "facility_id": "plant_B_line_3",
+        "product_type": "automotive_parts",
+        "quality_control": "passed",
+        "operator_changes": true,
+        "external_factors": ["supply_chain_disruption", "seasonal_demand"]
+      },
+      "complexity": "advanced",
+      "domain": "manufacturing_analytics"
+    },
+    {
+      "id": "ts_006",
+      "task_type": "correlation_analysis",
+      "time_series_data": {
+        "timestamps": "hourly_from_2024_01_01_to_2024_01_07",
+        "multivariate_series": {
+          "temperature": [
+            22.5, 22.1, 21.8, 21.5, 21.2, 20.9, 20.7, 21.2, 22.8, 24.5, 26.2, 27.8,
+            28.9, 29.4, 29.8, 29.5, 28.7, 27.3, 25.8, 24.2, 23.1, 22.8, 22.6, 22.4
+          ],
+          "humidity": [
+            65.2, 66.1, 67.3, 68.5, 69.2, 70.1, 71.3, 69.8, 67.2, 63.5, 59.8, 56.2,
+            52.7, 50.3, 48.9, 49.5, 52.1, 56.8, 61.2, 64.7, 66.3, 67.1, 67.8, 68.2
+          ],
+          "energy_consumption": [
+            120.5, 118.2, 115.8, 113.5, 111.2, 109.8, 108.7, 112.3, 125.8, 142.5,
+            158.2, 172.8, 185.9, 191.4, 194.8, 190.5, 181.7, 165.3, 148.8, 132.2,
+            125.1, 121.8, 119.6, 118.4
+          ]
+        },
+        "feature_names": ["temperature_celsius", "humidity_percent", "energy_consumption_kwh"],
+        "sampling_rate": "hourly"
+      },
+      "labels": {
+        "correlation_matrix": [
+          [1.00, -0.87, 0.92],
+          [-0.87, 1.00, -0.84],
+          [0.92, -0.84, 1.00]
+        ],
+        "feature_correlations": {
+          "temperature_energy": {
+            "coefficient": 0.92,
+            "significance": "highly_significant",
+            "p_value": 0.001,
+            "relationship": "strong_positive"
+          },
+          "temperature_humidity": {
+            "coefficient": -0.87,
+            "significance": "highly_significant",
+            "p_value": 0.002,
+            "relationship": "strong_negative"
+          },
+          "humidity_energy": {
+            "coefficient": -0.84,
+            "significance": "highly_significant", 
+            "p_value": 0.003,
+            "relationship": "strong_negative"
+          }
+        },
+        "lag_correlations": {
+          "temperature_energy_lag_1": 0.89,
+          "humidity_energy_lag_1": -0.81,
+          "optimal_lag": 0
+        }
+      },
+      "metadata": {
+        "building_type": "office_complex",
+        "hvac_system": "smart_controlled",
+        "weather_station": "on_site",
+        "occupancy_influence": "moderate",
+        "season": "winter"
+      },
+      "complexity": "intermediate",
+      "domain": "building_management"
+    }
+  ]
+}

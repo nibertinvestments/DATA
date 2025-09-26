@@ -1,0 +1,491 @@
+{
+  "dataset_metadata": {
+    "name": "Computer Vision Training Dataset",
+    "version": "1.0.0",
+    "description": "Comprehensive computer vision dataset covering image classification, object detection, segmentation, and visual analysis tasks for AI model training",
+    "purpose": "Train AI models on various computer vision tasks including image classification, object detection, semantic segmentation, face recognition, and visual feature extraction",
+    "created_date": "2024-01-01T00:00:00Z",
+    "total_samples": 180,
+    "image_formats": ["JPEG", "PNG", "TIFF", "BMP"],
+    "resolution_ranges": ["low: 224x224", "medium: 512x512", "high: 1024x1024", "ultra: 2048x2048"],
+    "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+    "task_categories": [
+      "image_classification",
+      "object_detection", 
+      "semantic_segmentation",
+      "face_recognition",
+      "optical_character_recognition",
+      "visual_question_answering",
+      "image_generation",
+      "style_transfer"
+    ],
+    "use_cases": [
+      "Autonomous driving",
+      "Medical image analysis", 
+      "Security and surveillance",
+      "Content moderation",
+      "Retail and e-commerce",
+      "Manufacturing quality control",
+      "Agricultural monitoring",
+      "Scientific research"
+    ],
+    "sample_structure": {
+      "id": "unique_identifier",
+      "task_type": "specific_cv_task",
+      "image_metadata": "image_properties_and_info",
+      "annotations": "ground_truth_labels_bounding_boxes_masks",
+      "complexity": "task_difficulty_level",
+      "domain": "specific_application_area",
+      "augmentations": "data_augmentation_techniques_used"
+    }
+  },
+  "samples": [
+    {
+      "id": "cv_001",
+      "task_type": "image_classification",
+      "image_metadata": {
+        "filename": "golden_retriever_park.jpg",
+        "width": 512,
+        "height": 512,
+        "channels": 3,
+        "format": "JPEG",
+        "size_kb": 245,
+        "description": "A golden retriever sitting in a park with green grass and trees in the background"
+      },
+      "annotations": {
+        "class_label": "dog",
+        "confidence": 0.95,
+        "breed": "golden_retriever",
+        "secondary_labels": ["grass", "trees", "park"],
+        "attributes": {
+          "pose": "sitting",
+          "environment": "outdoor",
+          "lighting": "natural_daylight",
+          "weather": "sunny"
+        }
+      },
+      "complexity": "basic",
+      "domain": "animal_classification",
+      "augmentations": [
+        "horizontal_flip",
+        "rotation_10_degrees",
+        "brightness_adjustment",
+        "color_normalization"
+      ],
+      "metadata": {
+        "photographer": "stock_photo",
+        "license": "creative_commons",
+        "acquisition_date": "2023-06-15",
+        "camera_model": "Canon EOS R5"
+      }
+    },
+    {
+      "id": "cv_002",
+      "task_type": "object_detection",
+      "image_metadata": {
+        "filename": "street_intersection.jpg", 
+        "width": 1024,
+        "height": 768,
+        "channels": 3,
+        "format": "JPEG",
+        "size_kb": 567,
+        "description": "Busy street intersection with cars, pedestrians, traffic lights, and street signs"
+      },
+      "annotations": {
+        "bounding_boxes": [
+          {
+            "class": "car",
+            "bbox": [150, 200, 300, 400],
+            "confidence": 0.92,
+            "attributes": {"color": "red", "type": "sedan"}
+          },
+          {
+            "class": "car", 
+            "bbox": [450, 180, 600, 380],
+            "confidence": 0.88,
+            "attributes": {"color": "blue", "type": "SUV"}
+          },
+          {
+            "class": "person",
+            "bbox": [100, 300, 150, 450],
+            "confidence": 0.94,
+            "attributes": {"pose": "walking", "clothing": "casual"}
+          },
+          {
+            "class": "traffic_light",
+            "bbox": [75, 50, 125, 180],
+            "confidence": 0.97,
+            "attributes": {"state": "green", "direction": "vertical"}
+          },
+          {
+            "class": "stop_sign",
+            "bbox": [800, 120, 900, 220],
+            "confidence": 0.91,
+            "attributes": {"condition": "new", "visibility": "clear"}
+          }
+        ],
+        "total_objects": 5,
+        "scene_context": "urban_intersection"
+      },
+      "complexity": "advanced",
+      "domain": "autonomous_driving",
+      "augmentations": [
+        "random_crop",
+        "color_jitter",
+        "gaussian_noise",
+        "motion_blur"
+      ],
+      "metadata": {
+        "location": "downtown_area",
+        "time_of_day": "afternoon",
+        "traffic_density": "high",
+        "weather_conditions": "clear"
+      }
+    },
+    {
+      "id": "cv_003",
+      "task_type": "semantic_segmentation",
+      "image_metadata": {
+        "filename": "medical_scan_brain.png",
+        "width": 512,
+        "height": 512, 
+        "channels": 1,
+        "format": "PNG",
+        "size_kb": 189,
+        "description": "MRI brain scan showing different tissue types and anatomical structures"
+      },
+      "annotations": {
+        "segmentation_mask": {
+          "format": "png_mask",
+          "classes": {
+            "0": "background",
+            "1": "gray_matter",
+            "2": "white_matter", 
+            "3": "cerebrospinal_fluid",
+            "4": "skull",
+            "5": "tumor_region"
+          },
+          "pixel_counts": {
+            "background": 45632,
+            "gray_matter": 89745,
+            "white_matter": 67543,
+            "cerebrospinal_fluid": 23456,
+            "skull": 34567,
+            "tumor_region": 1241
+          }
+        },
+        "medical_findings": {
+          "tumor_present": true,
+          "tumor_size_mm": 12.3,
+          "tumor_location": "frontal_lobe",
+          "urgency": "moderate"
+        }
+      },
+      "complexity": "expert",
+      "domain": "medical_imaging",
+      "augmentations": [
+        "intensity_normalization",
+        "elastic_deformation",
+        "gamma_correction",
+        "histogram_equalization"
+      ],
+      "metadata": {
+        "scan_type": "T1_weighted_MRI",
+        "patient_age": 45,
+        "patient_gender": "female",
+        "scanner_model": "Siemens_Magnetom_Skyra",
+        "slice_thickness": "1.0mm",
+        "radiologist_reviewed": true
+      }
+    },
+    {
+      "id": "cv_004",
+      "task_type": "face_recognition",
+      "image_metadata": {
+        "filename": "person_id_photo.jpg",
+        "width": 256,
+        "height": 256,
+        "channels": 3,
+        "format": "JPEG", 
+        "size_kb": 87,
+        "description": "Professional headshot photo for identity verification"
+      },
+      "annotations": {
+        "face_detection": {
+          "face_bbox": [45, 30, 210, 195],
+          "confidence": 0.99,
+          "face_landmarks": {
+            "left_eye": [85, 75],
+            "right_eye": [165, 75], 
+            "nose": [125, 105],
+            "left_mouth": [105, 140],
+            "right_mouth": [145, 140]
+          }
+        },
+        "face_attributes": {
+          "age": 32,
+          "gender": "male",
+          "ethnicity": "caucasian",
+          "expression": "neutral",
+          "pose": "frontal",
+          "lighting": "even",
+          "image_quality": "high"
+        },
+        "identity_features": {
+          "encoding_vector": "128_dimensional_feature_vector",
+          "similarity_threshold": 0.6,
+          "verification_confidence": 0.94
+        }
+      },
+      "complexity": "intermediate",
+      "domain": "biometric_authentication",
+      "augmentations": [
+        "face_alignment",
+        "brightness_normalization",
+        "contrast_enhancement",
+        "noise_reduction"
+      ],
+      "metadata": {
+        "photo_type": "passport_style",
+        "background": "neutral_gray",
+        "lighting_setup": "professional",
+        "camera_distance": "optimal"
+      }
+    },
+    {
+      "id": "cv_005",
+      "task_type": "optical_character_recognition",
+      "image_metadata": {
+        "filename": "document_scan.png",
+        "width": 800,
+        "height": 1024,
+        "channels": 3,
+        "format": "PNG",
+        "size_kb": 423,
+        "description": "Scanned document with printed text in multiple fonts and sizes"
+      },
+      "annotations": {
+        "text_regions": [
+          {
+            "bbox": [50, 80, 750, 120],
+            "text": "INVOICE #INV-2024-001",
+            "font_type": "Arial Bold",
+            "font_size": 18,
+            "confidence": 0.98
+          },
+          {
+            "bbox": [50, 150, 400, 180],
+            "text": "Date: January 15, 2024",
+            "font_type": "Arial Regular", 
+            "font_size": 12,
+            "confidence": 0.95
+          },
+          {
+            "bbox": [50, 200, 600, 230],
+            "text": "Customer: ABC Corporation Ltd.",
+            "font_type": "Arial Regular",
+            "font_size": 12,
+            "confidence": 0.97
+          },
+          {
+            "bbox": [50, 300, 700, 800],
+            "text": "Description: Professional consulting services for software development project including system architecture design, code review, and technical documentation.",
+            "font_type": "Arial Regular",
+            "font_size": 11,
+            "confidence": 0.93
+          }
+        ],
+        "document_structure": {
+          "type": "invoice",
+          "sections": ["header", "date", "customer_info", "description", "total"],
+          "layout": "single_column",
+          "text_orientation": "horizontal"
+        }
+      },
+      "complexity": "intermediate",
+      "domain": "document_processing",
+      "augmentations": [
+        "perspective_correction",
+        "deskewing",
+        "noise_removal",
+        "contrast_enhancement"
+      ],
+      "metadata": {
+        "scan_quality": "high",
+        "document_type": "business_invoice",
+        "language": "english",
+        "print_quality": "laser_printer"
+      }
+    },
+    {
+      "id": "cv_006",
+      "task_type": "visual_question_answering", 
+      "image_metadata": {
+        "filename": "kitchen_scene.jpg",
+        "width": 640,
+        "height": 480,
+        "channels": 3,
+        "format": "JPEG",
+        "size_kb": 234,
+        "description": "Modern kitchen with appliances, utensils, and ingredients on counter"
+      },
+      "annotations": {
+        "questions_and_answers": [
+          {
+            "question": "What color is the refrigerator?",
+            "answer": "stainless steel",
+            "confidence": 0.91,
+            "answer_type": "color_attribute",
+            "visual_evidence": [350, 50, 500, 300]
+          },
+          {
+            "question": "How many apples are on the counter?",
+            "answer": "three",
+            "confidence": 0.89,
+            "answer_type": "counting",
+            "visual_evidence": [120, 200, 200, 260]
+          },
+          {
+            "question": "Is the oven door open or closed?",
+            "answer": "closed", 
+            "confidence": 0.96,
+            "answer_type": "state_detection",
+            "visual_evidence": [80, 250, 280, 400]
+          },
+          {
+            "question": "What is on top of the cutting board?",
+            "answer": "vegetables and knife",
+            "confidence": 0.87,
+            "answer_type": "object_identification",
+            "visual_evidence": [400, 180, 550, 280]
+          }
+        ],
+        "scene_understanding": {
+          "room_type": "kitchen",
+          "style": "modern",
+          "activity": "food_preparation",
+          "objects_count": 15
+        }
+      },
+      "complexity": "advanced",
+      "domain": "scene_understanding",
+      "augmentations": [
+        "lighting_variation",
+        "viewpoint_change",
+        "object_occlusion",
+        "color_temperature_shift"
+      ],
+      "metadata": {
+        "scene_complexity": "high",
+        "object_interactions": true,
+        "spatial_reasoning_required": true,
+        "contextual_understanding": "necessary"
+      }
+    },
+    {
+      "id": "cv_007",
+      "task_type": "image_generation",
+      "image_metadata": {
+        "filename": "generated_landscape.png",
+        "width": 1024,
+        "height": 768,
+        "channels": 3,
+        "format": "PNG",
+        "size_kb": 890,
+        "description": "AI-generated landscape with mountains, lake, and forest"
+      },
+      "annotations": {
+        "generation_prompt": "A serene mountain landscape with a crystal-clear lake reflecting snow-capped peaks, surrounded by dense pine forests under a dramatic sunset sky with orange and purple clouds",
+        "style_parameters": {
+          "artistic_style": "photorealistic",
+          "color_palette": "warm_sunset_tones",
+          "composition": "rule_of_thirds",
+          "lighting": "golden_hour"
+        },
+        "quality_metrics": {
+          "realism_score": 0.85,
+          "artistic_appeal": 0.92,
+          "prompt_adherence": 0.89,
+          "technical_quality": 0.91
+        },
+        "generated_elements": [
+          {"element": "mountains", "prominence": 0.35},
+          {"element": "lake", "prominence": 0.25},
+          {"element": "forest", "prominence": 0.20},
+          {"element": "sky", "prominence": 0.15},
+          {"element": "reflection", "prominence": 0.05}
+        ]
+      },
+      "complexity": "expert",
+      "domain": "generative_art",
+      "augmentations": [
+        "style_transfer",
+        "color_grading",
+        "texture_enhancement",
+        "atmospheric_effects"
+      ],
+      "metadata": {
+        "generation_model": "diffusion_based",
+        "inference_time": "12.3_seconds",
+        "seed": 42,
+        "guidance_scale": 7.5,
+        "steps": 50
+      }
+    },
+    {
+      "id": "cv_008",
+      "task_type": "style_transfer",
+      "image_metadata": {
+        "content_image": "city_skyline.jpg",
+        "style_image": "van_gogh_starry_night.jpg",
+        "output_image": "stylized_city_skyline.jpg",
+        "width": 800,
+        "height": 600,
+        "channels": 3,
+        "format": "JPEG",
+        "size_kb": 445
+      },
+      "annotations": {
+        "style_transfer_parameters": {
+          "content_weight": 1.0,
+          "style_weight": 1000.0,
+          "variation_weight": 0.1,
+          "learning_rate": 0.02,
+          "iterations": 500
+        },
+        "artistic_analysis": {
+          "original_style": "photographic_realism",
+          "target_style": "post_impressionist",
+          "style_characteristics": [
+            "swirling_brushstrokes",
+            "vibrant_colors",
+            "expressive_texture",
+            "dynamic_movement"
+          ],
+          "content_preservation": 0.78,
+          "style_adoption": 0.85
+        },
+        "quality_assessment": {
+          "overall_quality": 0.82,
+          "style_consistency": 0.88,
+          "content_recognizability": 0.76,
+          "artistic_merit": 0.91
+        }
+      },
+      "complexity": "advanced",
+      "domain": "artistic_transformation", 
+      "augmentations": [
+        "multi_scale_processing",
+        "gradient_clipping",
+        "histogram_matching",
+        "edge_preservation"
+      ],
+      "metadata": {
+        "processing_time": "45.2_minutes",
+        "gpu_memory_usage": "8.2_GB",
+        "convergence_achieved": true,
+        "final_loss": 0.023
+      }
+    }
+  ]
+}
