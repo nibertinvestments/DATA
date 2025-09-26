@@ -1,0 +1,559 @@
+{
+  "dataset_metadata": {
+    "name": "Multi-Modal Learning Training Dataset",
+    "version": "1.0.0",
+    "description": "Comprehensive multi-modal dataset combining text, images, audio, and structured data for training AI models on cross-modal understanding, fusion, and generation tasks",
+    "purpose": "Train AI models on multi-modal tasks including vision-language understanding, audio-visual analysis, cross-modal retrieval, multi-modal sentiment analysis, and unified representation learning",
+    "created_date": "2024-01-01T00:00:00Z",
+    "total_samples": 100,
+    "modalities": ["text", "image", "audio", "video", "structured_data", "time_series"],
+    "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+    "task_categories": [
+      "vision_language_understanding",
+      "audio_visual_analysis", 
+      "cross_modal_retrieval",
+      "multi_modal_sentiment_analysis",
+      "visual_question_answering",
+      "image_captioning",
+      "speech_to_text_with_context",
+      "multi_modal_recommendation"
+    ],
+    "use_cases": [
+      "Social media content analysis",
+      "Video understanding and summarization",
+      "Accessibility applications",
+      "Autonomous systems perception",
+      "Human-computer interaction",
+      "Content creation and editing",
+      "Educational technology",
+      "Healthcare diagnostics"
+    ],
+    "sample_structure": {
+      "id": "unique_identifier",
+      "task_type": "specific_multi_modal_task",
+      "modalities_data": "data_from_multiple_modalities",
+      "cross_modal_relationships": "connections_between_modalities",
+      "unified_representation": "joint_embedding_or_features",
+      "task_specific_labels": "annotations_for_specific_tasks",
+      "evaluation_metrics": "multi_modal_performance_measures"
+    }
+  },
+  "samples": [
+    {
+      "id": "mm_001",
+      "task_type": "vision_language_understanding",
+      "modalities_data": {
+        "image": {
+          "filename": "family_picnic_park.jpg",
+          "description": "A happy family of four having a picnic in a sunny park with trees, grass, and a blue sky",
+          "visual_elements": ["people", "picnic_blanket", "food", "trees", "grass", "sky"],
+          "scene_attributes": {
+            "setting": "outdoor_park",
+            "weather": "sunny",
+            "time_of_day": "afternoon",
+            "mood": "happy_relaxed"
+          },
+          "image_features": {
+            "dominant_colors": ["green", "blue", "brown", "white"],
+            "lighting": "natural_daylight",
+            "composition": "wide_shot",
+            "quality": "high_resolution"
+          }
+        },
+        "text": {
+          "caption": "Perfect family day at Riverside Park! The kids loved the sandwiches mom made, and dad's jokes kept everyone laughing. Beautiful weather for outdoor fun! #FamilyTime #PicnicLife #SunnyDay",
+          "sentiment": "positive",
+          "entities": [
+            {"text": "Riverside Park", "type": "LOCATION"},
+            {"text": "mom", "type": "PERSON_ROLE"},
+            {"text": "dad", "type": "PERSON_ROLE"},
+            {"text": "kids", "type": "PERSON_ROLE"}
+          ],
+          "hashtags": ["#FamilyTime", "#PicnicLife", "#SunnyDay"],
+          "language": "english",
+          "text_features": {
+            "tone": "cheerful",
+            "formality": "casual",
+            "emotion_intensity": "moderate_high"
+          }
+        }
+      },
+      "cross_modal_relationships": {
+        "visual_text_alignment": {
+          "alignment_score": 0.92,
+          "matching_concepts": [
+            {"visual": "family", "textual": "family", "confidence": 0.95},
+            {"visual": "park_setting", "textual": "Riverside Park", "confidence": 0.89},
+            {"visual": "sunny_weather", "textual": "Beautiful weather", "confidence": 0.87},
+            {"visual": "food_items", "textual": "sandwiches", "confidence": 0.83}
+          ],
+          "semantic_consistency": "high",
+          "contextual_relevance": 0.91
+        },
+        "emotional_coherence": {
+          "visual_emotion": "joy_contentment",
+          "textual_emotion": "happiness_excitement",
+          "emotion_alignment": 0.88,
+          "overall_sentiment": "positive"
+        }
+      },
+      "unified_representation": {
+        "joint_embedding": "512_dimensional_multimodal_vector",
+        "shared_concepts": ["family_bonding", "outdoor_recreation", "positive_experience"],
+        "modal_weights": {"visual": 0.6, "textual": 0.4},
+        "representation_quality": 0.87
+      },
+      "task_specific_labels": {
+        "image_text_matching": {
+          "match_score": 0.92,
+          "is_related": true,
+          "relationship_type": "descriptive_match"
+        },
+        "scene_understanding": {
+          "scene_category": "family_outdoor_activity",
+          "activity_recognition": "picnicking",
+          "social_context": "family_gathering"
+        },
+        "content_moderation": {
+          "safety_score": 1.0,
+          "appropriate_for_all_ages": true,
+          "content_type": "wholesome_family_content"
+        }
+      },
+      "evaluation_metrics": {
+        "cross_modal_retrieval": {
+          "text_to_image_rank": 1,
+          "image_to_text_rank": 1,
+          "retrieval_accuracy": 0.94
+        },
+        "caption_generation_quality": {
+          "bleu_score": 0.78,
+          "rouge_l": 0.82,
+          "cider_score": 0.85,
+          "human_evaluation": 4.3
+        }
+      },
+      "complexity": "intermediate",
+      "domain": "social_media_analysis"
+    },
+    {
+      "id": "mm_002",
+      "task_type": "audio_visual_analysis", 
+      "modalities_data": {
+        "video": {
+          "filename": "cooking_tutorial_pasta.mp4",
+          "duration": 180,
+          "resolution": "1920x1080",
+          "fps": 30,
+          "visual_content": {
+            "scenes": ["kitchen_setup", "ingredient_preparation", "cooking_process", "plating"],
+            "objects": ["pasta", "tomatoes", "onions", "garlic", "olive_oil", "pan", "pot"],
+            "actions": ["chopping", "sauteing", "boiling", "stirring", "plating"],
+            "chef_appearance": "professional_attire",
+            "kitchen_setting": "modern_home_kitchen"
+          }
+        },
+        "audio": {
+          "speech_content": {
+            "transcript": "Welcome everyone! Today we're making a classic spaghetti marinara. First, let's heat our olive oil in this pan. You'll hear that lovely sizzling sound when we add the garlic - that's when you know it's ready. The aroma is absolutely incredible!",
+            "speaker": "chef_instructor",
+            "tone": "enthusiastic_educational",
+            "speech_rate": "moderate",
+            "clarity": "high"
+          },
+          "ambient_sounds": {
+            "cooking_sounds": ["sizzling", "bubbling", "chopping"],
+            "kitchen_ambiance": "quiet_home_environment",
+            "background_music": "soft_cooking_themed",
+            "audio_quality": "studio_level"
+          },
+          "prosodic_features": {
+            "pitch_variation": "moderate",
+            "emphasis_points": ["sizzling sound", "absolutely incredible"],
+            "speaking_style": "conversational_instructional"
+          }
+        }
+      },
+      "cross_modal_relationships": {
+        "audio_visual_synchronization": {
+          "sync_score": 0.95,
+          "timing_alignment": [
+            {"audio": "heat our olive oil", "visual": "oil_pouring_into_pan", "timestamp": 45.2},
+            {"audio": "sizzling sound", "visual": "garlic_hitting_hot_oil", "timestamp": 67.8},
+            {"audio": "chopping", "visual": "knife_cutting_vegetables", "timestamp": 23.5}
+          ],
+          "lip_sync_accuracy": 0.89
+        },
+        "semantic_coherence": {
+          "action_description_match": 0.91,
+          "object_mention_alignment": 0.87,
+          "instructional_consistency": 0.94,
+          "contextual_relevance": 0.88
+        }
+      },
+      "unified_representation": {
+        "multimodal_features": {
+          "visual_features": "object_detection_action_recognition",
+          "audio_features": "speech_recognition_sound_classification",
+          "temporal_features": "sequence_modeling_attention_weights"
+        },
+        "joint_understanding": {
+          "activity_type": "cooking_instruction",
+          "skill_level": "beginner_friendly",
+          "cooking_method": "italian_cuisine",
+          "educational_value": "high"
+        }
+      },
+      "task_specific_labels": {
+        "video_summarization": {
+          "key_moments": [
+            {"timestamp": 15, "description": "ingredient_introduction"},
+            {"timestamp": 45, "description": "oil_heating_process"},
+            {"timestamp": 67, "description": "garlic_sauteing_technique"},
+            {"timestamp": 120, "description": "sauce_simmering"},
+            {"timestamp": 165, "description": "final_plating"}
+          ],
+          "summary": "Professional chef demonstrates classic spaghetti marinara preparation with emphasis on proper technique and sensory cues"
+        },
+        "instructional_quality": {
+          "clarity_score": 4.7,
+          "completeness": 4.5,
+          "difficulty_level": "beginner",
+          "educational_effectiveness": 4.6
+        }
+      },
+      "evaluation_metrics": {
+        "video_understanding": {
+          "action_recognition_accuracy": 0.92,
+          "object_detection_map": 0.88,
+          "scene_classification_accuracy": 0.94
+        },
+        "audio_analysis": {
+          "speech_recognition_wer": 0.03,
+          "sound_classification_accuracy": 0.91,
+          "speaker_identification": 0.96
+        }
+      },
+      "complexity": "advanced",
+      "domain": "educational_content"
+    },
+    {
+      "id": "mm_003",
+      "task_type": "cross_modal_retrieval",
+      "modalities_data": {
+        "query_modalities": {
+          "text_query": "Find images of sustainable energy solutions in urban environments",
+          "image_query": {
+            "filename": "solar_panels_city.jpg",
+            "description": "Solar panels installed on urban building rooftops"
+          }
+        },
+        "database_items": [
+          {
+            "id": "item_001",
+            "image": "wind_turbines_cityscape.jpg",
+            "text": "Modern wind turbines generating clean energy in metropolitan area with skyscrapers",
+            "metadata": {"category": "renewable_energy", "location": "urban", "technology": "wind_power"}
+          },
+          {
+            "id": "item_002", 
+            "image": "electric_bus_charging.jpg",
+            "text": "Electric public transportation bus charging at solar-powered station",
+            "metadata": {"category": "sustainable_transport", "location": "urban", "technology": "electric_solar"}
+          },
+          {
+            "id": "item_003",
+            "image": "green_building_facade.jpg",
+            "text": "Energy-efficient building with vertical gardens and smart glass windows",
+            "metadata": {"category": "green_architecture", "location": "urban", "technology": "smart_building"}
+          }
+        ]
+      },
+      "cross_modal_relationships": {
+        "text_to_image_relevance": [
+          {"item_id": "item_001", "relevance_score": 0.89, "matching_concepts": ["urban", "energy", "sustainable"]},
+          {"item_id": "item_002", "relevance_score": 0.85, "matching_concepts": ["urban", "sustainable", "solar"]},
+          {"item_id": "item_003", "relevance_score": 0.78, "matching_concepts": ["urban", "energy_efficient"]}
+        ],
+        "image_to_image_similarity": [
+          {"item_id": "item_001", "visual_similarity": 0.72, "concept_overlap": ["urban_setting", "energy_infrastructure"]},
+          {"item_id": "item_002", "visual_similarity": 0.81, "concept_overlap": ["solar_technology", "urban_infrastructure"]},
+          {"item_id": "item_003", "visual_similarity": 0.69, "concept_overlap": ["urban_building", "green_technology"]}
+        ]
+      },
+      "unified_representation": {
+        "cross_modal_embeddings": {
+          "text_embedding_dim": 768,
+          "image_embedding_dim": 2048,
+          "joint_space_dim": 512,
+          "alignment_method": "contrastive_learning"
+        },
+        "semantic_space": {
+          "concept_clusters": ["renewable_energy", "urban_sustainability", "green_technology"],
+          "modal_alignment_score": 0.84
+        }
+      },
+      "task_specific_labels": {
+        "retrieval_ranking": {
+          "text_query_results": [
+            {"rank": 1, "item_id": "item_001", "score": 0.89},
+            {"rank": 2, "item_id": "item_002", "score": 0.85},
+            {"rank": 3, "item_id": "item_003", "score": 0.78}
+          ],
+          "image_query_results": [
+            {"rank": 1, "item_id": "item_002", "score": 0.81},
+            {"rank": 2, "item_id": "item_001", "score": 0.72},
+            {"rank": 3, "item_id": "item_003", "score": 0.69}
+          ]
+        },
+        "relevance_judgments": {
+          "highly_relevant": ["item_001", "item_002"],
+          "moderately_relevant": ["item_003"],
+          "not_relevant": []
+        }
+      },
+      "evaluation_metrics": {
+        "retrieval_performance": {
+          "precision_at_3": 1.0,
+          "recall_at_3": 0.75,
+          "map_score": 0.84,
+          "ndcg_at_3": 0.91
+        },
+        "cross_modal_effectiveness": {
+          "text_to_image_performance": 0.87,
+          "image_to_text_performance": 0.82,
+          "bidirectional_consistency": 0.79
+        }
+      },
+      "complexity": "advanced",
+      "domain": "information_retrieval"
+    },
+    {
+      "id": "mm_004",
+      "task_type": "multi_modal_sentiment_analysis",
+      "modalities_data": {
+        "text": {
+          "content": "Just tried the new restaurant downtown. The ambiance was absolutely perfect! 😍 However, the service was incredibly slow and the food was cold when it arrived. Really disappointed with the overall experience. 😞 #RestaurantReview",
+          "linguistic_features": {
+            "sentiment_words": ["perfect", "disappointed", "slow", "cold"],
+            "intensifiers": ["absolutely", "incredibly", "really"],
+            "emotion_indicators": ["😍", "😞"],
+            "review_structure": "mixed_sentiment"
+          }
+        },
+        "image": {
+          "filename": "restaurant_food_presentation.jpg",
+          "visual_content": {
+            "food_presentation": "poorly_plated_dish",
+            "visual_appeal": "low",
+            "lighting": "dim_unflattering",
+            "composition": "amateur_photo",
+            "food_condition": "appears_cold_congealed"
+          },
+          "color_analysis": {
+            "dominant_colors": ["brown", "gray", "dull_yellow"],
+            "color_saturation": "low",
+            "visual_warmth": "cold_tones"
+          }
+        },
+        "structured_data": {
+          "rating": 2.5,
+          "price_range": "$$$",
+          "visit_duration": 120,
+          "party_size": 2,
+          "meal_type": "dinner",
+          "day_of_week": "saturday"
+        }
+      },
+      "cross_modal_relationships": {
+        "sentiment_consistency": {
+          "text_sentiment": "mixed_negative_leaning",
+          "visual_sentiment": "negative",
+          "rating_sentiment": "negative",
+          "overall_coherence": 0.82,
+          "modality_agreement": ["text_visual", "visual_rating"]
+        },
+        "contradiction_analysis": {
+          "text_visual_conflicts": [
+            {"text_aspect": "ambiance perfect", "visual_evidence": "dim_poor_lighting", "conflict_score": 0.7}
+          ],
+          "expectation_vs_reality": {
+            "expected_quality": "high_based_on_price",
+            "actual_quality": "low_based_on_image",
+            "disappointment_factor": 0.85
+          }
+        }
+      },
+      "unified_representation": {
+        "multi_modal_sentiment": {
+          "overall_sentiment": "negative",
+          "sentiment_confidence": 0.78,
+          "aspect_sentiments": {
+            "ambiance": "positive",
+            "service": "very_negative",
+            "food_quality": "negative",
+            "value": "poor"
+          }
+        },
+        "sentiment_dimensions": {
+          "valence": -0.6,
+          "arousal": 0.4,
+          "dominance": 0.2
+        }
+      },
+      "task_specific_labels": {
+        "fine_grained_sentiment": {
+          "text_only_sentiment": "mixed",
+          "image_only_sentiment": "negative", 
+          "rating_only_sentiment": "negative",
+          "multimodal_sentiment": "negative",
+          "modality_contributions": {
+            "text": 0.4,
+            "image": 0.35,
+            "structured": 0.25
+          }
+        },
+        "aspect_based_analysis": {
+          "food": {"sentiment": "negative", "confidence": 0.85},
+          "service": {"sentiment": "very_negative", "confidence": 0.92},
+          "ambiance": {"sentiment": "positive", "confidence": 0.75},
+          "value": {"sentiment": "negative", "confidence": 0.88}
+        }
+      },
+      "evaluation_metrics": {
+        "sentiment_classification": {
+          "accuracy": 0.87,
+          "precision": 0.84,
+          "recall": 0.89,
+          "f1_score": 0.86
+        },
+        "multi_modal_improvement": {
+          "text_only_accuracy": 0.78,
+          "multimodal_accuracy": 0.87,
+          "improvement_gain": 0.09
+        }
+      },
+      "complexity": "expert",
+      "domain": "customer_feedback_analysis"
+    },
+    {
+      "id": "mm_005",
+      "task_type": "visual_question_answering",
+      "modalities_data": {
+        "image": {
+          "filename": "busy_office_meeting.jpg",
+          "scene_description": "Business meeting in modern conference room with 6 people around table, presentation screen, laptops, and documents",
+          "visual_elements": {
+            "people": 6,
+            "objects": ["table", "chairs", "laptops", "documents", "screen", "whiteboard"],
+            "setting": "corporate_conference_room",
+            "activity": "business_presentation"
+          },
+          "spatial_relationships": {
+            "presenter": "standing_at_front",
+            "audience": "seated_around_table",
+            "screen": "wall_mounted_behind_presenter"
+          }
+        },
+        "questions": [
+          {
+            "question": "How many people are attending the meeting?",
+            "question_type": "counting",
+            "difficulty": "easy",
+            "requires_reasoning": false
+          },
+          {
+            "question": "What is the person at the front of the room doing?",
+            "question_type": "action_recognition", 
+            "difficulty": "medium",
+            "requires_reasoning": true
+          },
+          {
+            "question": "Based on the setup and body language, is this likely a formal presentation or a casual discussion?",
+            "question_type": "scene_understanding",
+            "difficulty": "hard",
+            "requires_reasoning": true
+          }
+        ]
+      },
+      "cross_modal_relationships": {
+        "visual_linguistic_grounding": [
+          {
+            "question_concept": "people",
+            "visual_grounding": "6_individuals_in_scene",
+            "grounding_confidence": 0.95
+          },
+          {
+            "question_concept": "meeting",
+            "visual_grounding": "conference_room_business_setting",
+            "grounding_confidence": 0.89
+          },
+          {
+            "question_concept": "front_of_room", 
+            "visual_grounding": "person_standing_by_presentation_screen",
+            "grounding_confidence": 0.92
+          }
+        ],
+        "reasoning_requirements": {
+          "spatial_reasoning": ["front_of_room", "around_table"],
+          "contextual_reasoning": ["formal_vs_casual", "presentation_context"],
+          "visual_inference": ["body_language", "setting_formality"]
+        }
+      },
+      "unified_representation": {
+        "scene_graph": {
+          "entities": ["person_1", "person_2", "person_3", "person_4", "person_5", "person_6", "table", "screen"],
+          "relationships": [
+            {"subject": "person_1", "predicate": "presenting_to", "object": "person_2_6"},
+            {"subject": "person_2_6", "predicate": "seated_at", "object": "table"},
+            {"subject": "screen", "predicate": "behind", "object": "person_1"}
+          ]
+        },
+        "contextual_features": {
+          "formality_indicators": ["business_attire", "conference_room", "presentation_setup"],
+          "activity_markers": ["standing_presenter", "seated_audience", "attention_directed"]
+        }
+      },
+      "task_specific_labels": {
+        "answers": [
+          {
+            "question": "How many people are attending the meeting?",
+            "answer": "six people",
+            "answer_type": "numerical",
+            "confidence": 0.96,
+            "visual_evidence": "count_of_individuals_in_scene"
+          },
+          {
+            "question": "What is the person at the front of the room doing?",
+            "answer": "giving a presentation",
+            "answer_type": "action_description",
+            "confidence": 0.89,
+            "visual_evidence": "standing_posture_gesturing_toward_screen"
+          },
+          {
+            "question": "Based on the setup and body language, is this likely a formal presentation or a casual discussion?",
+            "answer": "formal presentation",
+            "answer_type": "scene_classification",
+            "confidence": 0.84,
+            "visual_evidence": "business_attire_structured_seating_presentation_screen"
+          }
+        ]
+      },
+      "evaluation_metrics": {
+        "vqa_performance": {
+          "exact_match_accuracy": 0.89,
+          "partial_match_accuracy": 0.94,
+          "reasoning_accuracy": 0.82,
+          "visual_grounding_accuracy": 0.91
+        },
+        "question_type_performance": {
+          "counting": 0.96,
+          "action_recognition": 0.89,
+          "scene_understanding": 0.84
+        }
+      },
+      "complexity": "advanced",
+      "domain": "visual_reasoning"
+    }
+  ]
+}

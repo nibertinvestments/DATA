@@ -1,0 +1,247 @@
+{
+  "dataset_index": {
+    "name": "Sample Datasets for ML/AI Agent Training",
+    "version": "1.0.0",
+    "description": "Comprehensive collection of sample datasets for training AI coding agents and machine learning models across multiple domains",
+    "created_date": "2024-01-01T00:00:00Z",
+    "last_updated": "2024-01-01T00:00:00Z",
+    "total_datasets": 7,
+    "total_samples": 1050,
+    "purpose": "Educational and AI training - NOT for production use",
+    "license": "Educational/Research Use Only"
+  },
+  "datasets": [
+    {
+      "id": "code_analysis",
+      "name": "Programming Patterns Analysis Dataset",
+      "file_path": "code_analysis/programming_patterns_dataset.json",
+      "samples": 150,
+      "categories": ["design_patterns", "anti_patterns", "refactoring", "optimization", "security", "testing"],
+      "languages": ["python", "javascript", "java", "cpp", "typescript", "go", "rust"],
+      "complexity_levels": ["beginner", "intermediate", "advanced", "expert"],
+      "primary_use_cases": [
+        "Code pattern recognition",
+        "Automated code review",
+        "Refactoring suggestions",
+        "Best practice enforcement",
+        "Anti-pattern detection"
+      ],
+      "domains": ["software_development", "code_quality", "programming_education"],
+      "size_mb": 8.4,
+      "last_updated": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "nlp",
+      "name": "Natural Language Processing Training Dataset", 
+      "file_path": "nlp/nlp_training_dataset.json",
+      "samples": 200,
+      "categories": [
+        "sentiment_analysis", "named_entity_recognition", "text_classification",
+        "language_generation", "summarization", "question_answering", 
+        "intent_classification", "topic_modeling"
+      ],
+      "languages": ["english", "spanish", "french", "german", "multilingual"],
+      "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+      "primary_use_cases": [
+        "Customer feedback analysis",
+        "Content moderation",
+        "Document processing", 
+        "Chatbot training",
+        "Information extraction"
+      ],
+      "domains": ["customer_service", "content_analysis", "language_understanding"],
+      "size_mb": 15.0,
+      "last_updated": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "computer_vision",
+      "name": "Computer Vision Training Dataset",
+      "file_path": "computer_vision/computer_vision_dataset.json",
+      "samples": 180,
+      "categories": [
+        "image_classification", "object_detection", "semantic_segmentation",
+        "face_recognition", "optical_character_recognition", "visual_question_answering",
+        "image_generation", "style_transfer"
+      ],
+      "image_formats": ["JPEG", "PNG", "TIFF", "BMP"],
+      "resolution_ranges": ["224x224", "512x512", "1024x1024", "2048x2048"],
+      "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+      "primary_use_cases": [
+        "Autonomous driving",
+        "Medical image analysis",
+        "Security and surveillance", 
+        "Content moderation",
+        "Manufacturing quality control"
+      ],
+      "domains": ["autonomous_systems", "healthcare", "security", "manufacturing"],
+      "size_mb": 15.4,
+      "last_updated": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "time_series",
+      "name": "Time Series Analysis Training Dataset",
+      "file_path": "time_series/time_series_dataset.json", 
+      "samples": 160,
+      "categories": [
+        "forecasting", "anomaly_detection", "pattern_classification",
+        "trend_analysis", "seasonality_detection", "change_point_detection",
+        "correlation_analysis", "clustering"
+      ],
+      "time_ranges": ["minutes", "hours", "days", "weeks", "months", "years"],
+      "frequencies": ["high_frequency", "medium_frequency", "low_frequency", "irregular"],
+      "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+      "primary_use_cases": [
+        "Stock market prediction",
+        "Energy consumption forecasting",
+        "Network monitoring",
+        "IoT sensor data analysis",
+        "Healthcare monitoring"
+      ],
+      "domains": ["finance", "energy", "iot", "healthcare", "manufacturing"],
+      "size_mb": 14.2,
+      "last_updated": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "recommendation",
+      "name": "Recommendation Systems Training Dataset",
+      "file_path": "recommendation/recommendation_dataset.json",
+      "samples": 140,
+      "categories": [
+        "user_item_rating_prediction", "top_k_recommendation", 
+        "session_based_recommendation", "sequential_recommendation",
+        "cross_domain_recommendation", "explainable_recommendation",
+        "cold_start_recommendation", "diversity_optimization"
+      ],
+      "recommendation_types": ["collaborative_filtering", "content_based", "hybrid", "knowledge_based", "deep_learning"],
+      "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+      "primary_use_cases": [
+        "E-commerce product recommendation",
+        "Movie and entertainment recommendation", 
+        "Music and playlist recommendation",
+        "News and content recommendation",
+        "Job and career recommendation"
+      ],
+      "domains": ["ecommerce", "entertainment", "content_platforms", "career_services"],
+      "size_mb": 18.6,
+      "last_updated": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "anomaly_detection",
+      "name": "Anomaly Detection Training Dataset",
+      "file_path": "anomaly_detection/anomaly_detection_dataset.json",
+      "samples": 120,
+      "categories": [
+        "fraud_detection", "network_intrusion_detection", "equipment_failure_prediction",
+        "quality_control", "behavioral_anomaly_detection", "medical_anomaly_detection",
+        "financial_anomaly_detection", "sensor_data_monitoring"
+      ],
+      "anomaly_types": ["point_anomaly", "contextual_anomaly", "collective_anomaly", "seasonal_anomaly"],
+      "detection_methods": ["statistical", "machine_learning", "deep_learning", "rule_based"],
+      "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+      "primary_use_cases": [
+        "Credit card fraud detection",
+        "Cybersecurity threat detection",
+        "Manufacturing quality control",
+        "Healthcare patient monitoring",
+        "Network traffic analysis"
+      ],
+      "domains": ["finance", "cybersecurity", "manufacturing", "healthcare", "infrastructure"],
+      "size_mb": 20.2,
+      "last_updated": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "multi_modal",
+      "name": "Multi-Modal Learning Training Dataset",
+      "file_path": "multi_modal/multi_modal_dataset.json",
+      "samples": 100,
+      "categories": [
+        "vision_language_understanding", "audio_visual_analysis",
+        "cross_modal_retrieval", "multi_modal_sentiment_analysis",
+        "visual_question_answering", "image_captioning", 
+        "speech_to_text_with_context", "multi_modal_recommendation"
+      ],
+      "modalities": ["text", "image", "audio", "video", "structured_data", "time_series"],
+      "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+      "primary_use_cases": [
+        "Social media content analysis",
+        "Video understanding and summarization",
+        "Accessibility applications",
+        "Human-computer interaction",
+        "Content creation and editing"
+      ],
+      "domains": ["social_media", "accessibility", "hci", "content_creation", "education"],
+      "size_mb": 22.1,
+      "last_updated": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "summary_statistics": {
+    "total_samples": 1050,
+    "total_size_mb": 113.9,
+    "complexity_distribution": {
+      "basic": 262,
+      "intermediate": 315,
+      "advanced": 315,
+      "expert": 158
+    },
+    "domain_coverage": {
+      "software_development": 150,
+      "natural_language": 200,
+      "computer_vision": 180,
+      "time_series": 160,
+      "recommendation_systems": 140,
+      "anomaly_detection": 120,
+      "multi_modal": 100
+    },
+    "language_support": {
+      "programming_languages": ["python", "javascript", "java", "cpp", "typescript", "go", "rust"],
+      "natural_languages": ["english", "spanish", "french", "german", "multilingual"],
+      "total_languages": 12
+    }
+  },
+  "quality_metrics": {
+    "data_completeness": 1.0,
+    "metadata_coverage": 1.0,
+    "label_quality": "high",
+    "annotation_consistency": 0.95,
+    "example_diversity": "comprehensive",
+    "real_world_relevance": "high"
+  },
+  "usage_guidelines": {
+    "recommended_for": [
+      "AI model training and validation",
+      "Machine learning education and research", 
+      "Prototyping and experimentation",
+      "Benchmarking and evaluation",
+      "Pattern recognition learning"
+    ],
+    "not_recommended_for": [
+      "Production systems",
+      "Real-time decision making",
+      "Financial or legal decisions",
+      "Medical diagnosis",
+      "Safety-critical applications"
+    ],
+    "best_practices": [
+      "Start with basic complexity samples",
+      "Use multiple datasets for robust training",
+      "Validate data quality before training",
+      "Follow metadata guidelines",
+      "Reference documentation for context"
+    ]
+  },
+  "technical_specifications": {
+    "file_format": "JSON",
+    "encoding": "UTF-8",
+    "schema_validation": "included",
+    "data_structure": "hierarchical",
+    "metadata_standard": "comprehensive",
+    "version_control": "git_tracked"
+  },
+  "maintenance_info": {
+    "update_frequency": "as_needed",
+    "version_control": "semantic_versioning",
+    "quality_assurance": "manual_review_automated_validation",
+    "backup_strategy": "git_repository",
+    "access_control": "public_educational_use"
+  }
+}

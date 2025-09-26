@@ -37,7 +37,7 @@
   "samples": [
     {
       "id": "pattern_001",
-      "pattern_type": "design_pattern",
+      "task_type": "design_pattern",
       "pattern_name": "singleton",
       "language": "python",
       "complexity": "intermediate",
@@ -63,7 +63,7 @@
     },
     {
       "id": "pattern_002",
-      "pattern_type": "anti_pattern",
+      "task_type": "anti_pattern",
       "pattern_name": "god_object",
       "language": "java",
       "complexity": "advanced",
