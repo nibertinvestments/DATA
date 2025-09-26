@@ -1,0 +1,588 @@
+{
+  "dataset_metadata": {
+    "name": "Anomaly Detection Training Dataset",
+    "version": "1.0.0",
+    "description": "Comprehensive anomaly detection dataset covering various types of anomalies across different domains including fraud detection, system monitoring, quality control, and behavioral analysis",
+    "purpose": "Train AI models to identify outliers, unusual patterns, fraudulent activities, system failures, and other anomalous behaviors in diverse data types and contexts",
+    "created_date": "2024-01-01T00:00:00Z",
+    "total_samples": 120,
+    "anomaly_types": ["point_anomaly", "contextual_anomaly", "collective_anomaly", "seasonal_anomaly"],
+    "detection_methods": ["statistical", "machine_learning", "deep_learning", "rule_based"],
+    "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+    "task_categories": [
+      "fraud_detection",
+      "network_intrusion_detection",
+      "equipment_failure_prediction",
+      "quality_control",
+      "behavioral_anomaly_detection",
+      "medical_anomaly_detection",
+      "financial_anomaly_detection",
+      "sensor_data_monitoring"
+    ],
+    "use_cases": [
+      "Credit card fraud detection",
+      "Cybersecurity threat detection",
+      "Manufacturing quality control",
+      "Healthcare patient monitoring",
+      "Network traffic analysis",
+      "Financial market surveillance",
+      "IoT sensor monitoring",
+      "User behavior analytics"
+    ],
+    "sample_structure": {
+      "id": "unique_identifier",
+      "task_type": "specific_anomaly_detection_task",
+      "normal_data": "baseline_normal_behavior_patterns",
+      "anomalous_data": "unusual_patterns_or_outliers",
+      "detection_results": "anomaly_scores_and_classifications",
+      "ground_truth": "actual_anomaly_labels",
+      "context_information": "domain_specific_metadata"
+    }
+  },
+  "samples": [
+    {
+      "id": "ad_001",
+      "task_type": "fraud_detection",
+      "normal_data": {
+        "transaction_patterns": [
+          {
+            "transaction_id": "txn_001",
+            "amount": 45.67,
+            "merchant": "grocery_store",
+            "location": "home_city",
+            "time": "2024-01-15T14:30:00Z",
+            "payment_method": "credit_card",
+            "category": "food_shopping",
+            "frequency": "weekly"
+          },
+          {
+            "transaction_id": "txn_002", 
+            "amount": 89.99,
+            "merchant": "gas_station",
+            "location": "home_city",
+            "time": "2024-01-16T08:15:00Z",
+            "payment_method": "credit_card",
+            "category": "fuel",
+            "frequency": "weekly"
+          },
+          {
+            "transaction_id": "txn_003",
+            "amount": 12.50,
+            "merchant": "coffee_shop",
+            "location": "workplace",
+            "time": "2024-01-17T09:00:00Z",
+            "payment_method": "mobile_pay",
+            "category": "food_beverage",
+            "frequency": "daily"
+          }
+        ],
+        "user_profile": {
+          "avg_transaction_amount": 67.89,
+          "common_locations": ["home_city", "workplace"],
+          "typical_categories": ["food_shopping", "fuel", "food_beverage", "utilities"],
+          "spending_pattern": "consistent",
+          "active_hours": "06:00-22:00"
+        }
+      },
+      "anomalous_data": {
+        "suspicious_transactions": [
+          {
+            "transaction_id": "txn_fraud_001",
+            "amount": 2890.00,
+            "merchant": "electronics_store",
+            "location": "foreign_country",
+            "time": "2024-01-18T03:45:00Z",
+            "payment_method": "credit_card",
+            "category": "electronics",
+            "anomaly_indicators": [
+              "unusually_high_amount",
+              "foreign_location",
+              "unusual_time",
+              "new_merchant_category"
+            ]
+          },
+          {
+            "transaction_id": "txn_fraud_002",
+            "amount": 4567.89,
+            "merchant": "luxury_jewelry",
+            "location": "foreign_country", 
+            "time": "2024-01-18T04:12:00Z",
+            "payment_method": "credit_card",
+            "category": "jewelry",
+            "anomaly_indicators": [
+              "extremely_high_amount",
+              "same_foreign_location",
+              "rapid_succession",
+              "luxury_category"
+            ]
+          }
+        ]
+      },
+      "detection_results": {
+        "anomaly_scores": [
+          {"transaction_id": "txn_fraud_001", "score": 0.92, "risk_level": "high"},
+          {"transaction_id": "txn_fraud_002", "score": 0.97, "risk_level": "critical"}
+        ],
+        "detection_method": "isolation_forest_with_rules",
+        "threshold": 0.75,
+        "alerts_triggered": 2,
+        "false_positive_rate": 0.03,
+        "detection_time": "real_time"
+      },
+      "ground_truth": {
+        "txn_fraud_001": {"is_fraud": true, "fraud_type": "stolen_card"},
+        "txn_fraud_002": {"is_fraud": true, "fraud_type": "stolen_card"},
+        "confirmed_by": "cardholder_report",
+        "investigation_outcome": "card_blocked_charges_reversed"
+      },
+      "context_information": {
+        "customer_segment": "premium_cardholder",
+        "account_age": 5,
+        "previous_fraud_incidents": 0,
+        "travel_notifications": false,
+        "security_features": ["chip_pin", "contactless", "mobile_alerts"]
+      },
+      "complexity": "intermediate",
+      "domain": "financial_services"
+    },
+    {
+      "id": "ad_002",
+      "task_type": "network_intrusion_detection",
+      "normal_data": {
+        "network_traffic_baseline": [
+          {
+            "timestamp": "2024-01-15T10:00:00Z",
+            "source_ip": "192.168.1.100",
+            "dest_ip": "8.8.8.8",
+            "protocol": "HTTPS",
+            "port": 443,
+            "bytes_sent": 1024,
+            "bytes_received": 4096,
+            "connection_duration": 5.2,
+            "connection_type": "web_browsing"
+          },
+          {
+            "timestamp": "2024-01-15T10:05:00Z",
+            "source_ip": "192.168.1.101",
+            "dest_ip": "10.0.0.50",
+            "protocol": "SSH",
+            "port": 22,
+            "bytes_sent": 2048,
+            "bytes_received": 1024,
+            "connection_duration": 12.8,
+            "connection_type": "admin_access"
+          }
+        ],
+        "traffic_patterns": {
+          "avg_connections_per_minute": 15.3,
+          "common_protocols": ["HTTPS", "HTTP", "SSH", "DNS"],
+          "typical_data_volume": "moderate",
+          "peak_hours": ["09:00-11:00", "14:00-16:00"],
+          "baseline_established": true
+        }
+      },
+      "anomalous_data": {
+        "suspicious_activities": [
+          {
+            "timestamp": "2024-01-15T15:30:00Z",
+            "source_ip": "192.168.1.150",
+            "dest_ip": "malicious-server.com",
+            "protocol": "HTTP",
+            "port": 80,
+            "bytes_sent": 50000,
+            "bytes_received": 500000,
+            "connection_duration": 0.1,
+            "connection_type": "data_exfiltration",
+            "anomaly_indicators": [
+              "unusual_data_volume",
+              "suspicious_destination",
+              "rapid_data_transfer",
+              "new_internal_source"
+            ]
+          },
+          {
+            "timestamp": "2024-01-15T15:35:00Z",
+            "source_ip": "external_attacker",
+            "dest_ip": "192.168.1.10",
+            "protocol": "TCP",
+            "port": 3389,
+            "bytes_sent": 8192,
+            "bytes_received": 512,
+            "connection_duration": 120,
+            "connection_type": "brute_force_attempt",
+            "anomaly_indicators": [
+              "external_rdp_attempts",
+              "failed_authentication_pattern",
+              "repeated_connections",
+              "suspicious_source_ip"
+            ]
+          }
+        ]
+      },
+      "detection_results": {
+        "intrusion_alerts": [
+          {
+            "alert_id": "IDS_001",
+            "severity": "critical",
+            "attack_type": "data_exfiltration",
+            "confidence": 0.94,
+            "source": "192.168.1.150",
+            "destination": "malicious-server.com",
+            "action_taken": "connection_blocked"
+          },
+          {
+            "alert_id": "IDS_002",
+            "severity": "high",
+            "attack_type": "brute_force_rdp",
+            "confidence": 0.89,
+            "source": "external_attacker",
+            "destination": "192.168.1.10",
+            "action_taken": "ip_blocked_for_24h"
+          }
+        ],
+        "detection_engine": "deep_packet_inspection_with_ml",
+        "response_time": "2.3_seconds",
+        "mitigation_effectiveness": "100%_blocked"
+      },
+      "ground_truth": {
+        "IDS_001": {"is_attack": true, "attack_category": "data_breach_attempt"},
+        "IDS_002": {"is_attack": true, "attack_category": "unauthorized_access_attempt"},
+        "post_incident_analysis": "confirmed_malicious_activity",
+        "impact_assessment": "no_data_compromised"
+      },
+      "context_information": {
+        "network_segment": "corporate_lan",
+        "security_posture": "high",
+        "previous_incidents": 3,
+        "threat_intelligence": "updated_daily",
+        "compliance_requirements": ["pci_dss", "gdpr"]
+      },
+      "complexity": "advanced",
+      "domain": "cybersecurity"
+    },
+    {
+      "id": "ad_003", 
+      "task_type": "equipment_failure_prediction",
+      "normal_data": {
+        "sensor_readings": [
+          {
+            "timestamp": "2024-01-15T08:00:00Z",
+            "temperature": 72.5,
+            "vibration": 0.15,
+            "pressure": 145.2,
+            "rotation_speed": 1800,
+            "current_draw": 12.3,
+            "oil_temperature": 68.0,
+            "bearing_condition": "normal"
+          },
+          {
+            "timestamp": "2024-01-15T08:15:00Z",
+            "temperature": 73.1,
+            "vibration": 0.18,
+            "pressure": 144.8,
+            "rotation_speed": 1798,
+            "current_draw": 12.5,
+            "oil_temperature": 68.5,
+            "bearing_condition": "normal"
+          }
+        ],
+        "operational_parameters": {
+          "normal_temperature_range": [70, 85],
+          "normal_vibration_range": [0.1, 0.3],
+          "normal_pressure_range": [140, 150],
+          "normal_speed_range": [1750, 1850],
+          "equipment_age": 3.2,
+          "maintenance_schedule": "monthly"
+        }
+      },
+      "anomalous_data": {
+        "degradation_patterns": [
+          {
+            "timestamp": "2024-01-20T14:30:00Z",
+            "temperature": 91.2,
+            "vibration": 0.85,
+            "pressure": 138.5,
+            "rotation_speed": 1720,
+            "current_draw": 15.8,
+            "oil_temperature": 85.0,
+            "bearing_condition": "degrading",
+            "anomaly_indicators": [
+              "temperature_above_normal",
+              "excessive_vibration",
+              "pressure_drop",
+              "speed_variation",
+              "increased_power_consumption"
+            ]
+          },
+          {
+            "timestamp": "2024-01-21T09:45:00Z",
+            "temperature": 95.8,
+            "vibration": 1.25,
+            "pressure": 135.0,
+            "rotation_speed": 1680,
+            "current_draw": 18.2,
+            "oil_temperature": 92.0,
+            "bearing_condition": "critical",
+            "anomaly_indicators": [
+              "critical_temperature",
+              "dangerous_vibration_levels",
+              "significant_pressure_loss",
+              "major_speed_deviation",
+              "power_surge"
+            ]
+          }
+        ]
+      },
+      "detection_results": {
+        "failure_prediction": {
+          "failure_probability": 0.87,
+          "estimated_time_to_failure": "72_hours",
+          "failure_mode": "bearing_failure",
+          "confidence": 0.91,
+          "recommended_action": "immediate_maintenance_required"
+        },
+        "anomaly_progression": [
+          {"timestamp": "2024-01-20T14:30:00Z", "severity": "warning", "score": 0.65},
+          {"timestamp": "2024-01-21T09:45:00Z", "severity": "critical", "score": 0.92}
+        ],
+        "predictive_model": "lstm_with_attention",
+        "feature_importance": {
+          "vibration": 0.35,
+          "temperature": 0.28,
+          "current_draw": 0.18,
+          "pressure": 0.12,
+          "rotation_speed": 0.07
+        }
+      },
+      "ground_truth": {
+        "actual_failure": true,
+        "failure_occurred": "2024-01-22T16:20:00Z", 
+        "failure_type": "bearing_seizure",
+        "prediction_accuracy": "within_predicted_window",
+        "maintenance_outcome": "bearing_replaced_successfully"
+      },
+      "context_information": {
+        "equipment_type": "industrial_pump",
+        "criticality": "high",
+        "operating_environment": "outdoor_industrial",
+        "maintenance_history": "regular_preventive_maintenance",
+        "replacement_cost": 15000
+      },
+      "complexity": "expert",
+      "domain": "industrial_maintenance"
+    },
+    {
+      "id": "ad_004",
+      "task_type": "behavioral_anomaly_detection",
+      "normal_data": {
+        "user_behavior_baseline": [
+          {
+            "user_id": "emp_12345",
+            "login_time": "08:30:00",
+            "logout_time": "17:45:00",
+            "applications_used": ["email", "crm", "document_editor", "browser"],
+            "file_access_count": 25,
+            "email_sent": 8,
+            "email_received": 15,
+            "data_downloads": 2,
+            "location": "office_building_A",
+            "device": "corporate_laptop_001"
+          },
+          {
+            "user_id": "emp_12345",
+            "login_time": "08:25:00",
+            "logout_time": "17:30:00", 
+            "applications_used": ["email", "crm", "spreadsheet", "browser"],
+            "file_access_count": 28,
+            "email_sent": 12,
+            "email_received": 18,
+            "data_downloads": 1,
+            "location": "office_building_A",
+            "device": "corporate_laptop_001"
+          }
+        ],
+        "behavioral_profile": {
+          "typical_work_hours": "08:00-18:00",
+          "avg_file_accesses": 26.5,
+          "avg_emails_per_day": 23,
+          "common_applications": ["email", "crm", "office_suite"],
+          "usual_locations": ["office_building_A"],
+          "access_pattern": "consistent_business_hours"
+        }
+      },
+      "anomalous_data": {
+        "suspicious_behavior": [
+          {
+            "user_id": "emp_12345",
+            "login_time": "02:15:00",
+            "logout_time": "04:30:00",
+            "applications_used": ["file_explorer", "database_client", "encryption_tool"],
+            "file_access_count": 150,
+            "files_accessed": ["sensitive_customer_data.xlsx", "financial_reports_2024.pdf", "employee_records.db"],
+            "email_sent": 0,
+            "email_received": 0,
+            "data_downloads": 25,
+            "location": "remote_vpn_connection",
+            "device": "personal_device_unknown",
+            "anomaly_indicators": [
+              "unusual_login_time",
+              "excessive_file_access",
+              "sensitive_data_access",
+              "unfamiliar_device",
+              "remote_connection",
+              "bulk_data_download"
+            ]
+          }
+        ]
+      },
+      "detection_results": {
+        "risk_assessment": {
+          "risk_score": 0.95,
+          "risk_level": "critical",
+          "anomaly_type": "insider_threat",
+          "behavior_deviation": "extreme",
+          "immediate_action": "account_suspended"
+        },
+        "anomaly_details": {
+          "deviation_from_baseline": {
+            "time_deviation": 6.25,
+            "file_access_deviation": 5.65,
+            "location_deviation": "completely_new",
+            "device_deviation": "unrecognized"
+          },
+          "threat_indicators": [
+            "after_hours_access",
+            "data_exfiltration_pattern",
+            "privilege_escalation_attempt",
+            "suspicious_tool_usage"
+          ]
+        },
+        "detection_algorithm": "user_behavior_analytics",
+        "alert_priority": "p0_critical"
+      },
+      "ground_truth": {
+        "is_malicious": true,
+        "threat_type": "insider_data_theft",
+        "investigation_outcome": "employee_terminated_legal_action",
+        "data_compromised": "customer_database_partially_accessed",
+        "incident_response": "immediate_containment_successful"
+      },
+      "context_information": {
+        "employee_role": "sales_representative",
+        "access_level": "standard_user",
+        "employment_status": "notice_period",
+        "previous_violations": 0,
+        "data_sensitivity": "pii_financial_data"
+      },
+      "complexity": "advanced",
+      "domain": "enterprise_security"
+    },
+    {
+      "id": "ad_005",
+      "task_type": "quality_control",
+      "normal_data": {
+        "production_metrics": [
+          {
+            "batch_id": "batch_001",
+            "temperature": 145.2,
+            "pressure": 2.1,
+            "ph_level": 7.2,
+            "viscosity": 1250,
+            "color_index": 85,
+            "density": 1.05,
+            "processing_time": 45,
+            "quality_grade": "A"
+          },
+          {
+            "batch_id": "batch_002",
+            "temperature": 146.8,
+            "pressure": 2.0,
+            "ph_level": 7.1,
+            "viscosity": 1280,
+            "color_index": 87,
+            "density": 1.04,
+            "processing_time": 47,
+            "quality_grade": "A"
+          }
+        ],
+        "specification_limits": {
+          "temperature": [140, 150],
+          "pressure": [1.8, 2.2],
+          "ph_level": [6.8, 7.4],
+          "viscosity": [1200, 1400],
+          "color_index": [80, 90],
+          "density": [1.0, 1.1],
+          "processing_time": [40, 50]
+        }
+      },
+      "anomalous_data": {
+        "defective_batches": [
+          {
+            "batch_id": "batch_defect_001",
+            "temperature": 155.8,
+            "pressure": 1.6,
+            "ph_level": 8.2,
+            "viscosity": 1850,
+            "color_index": 65,
+            "density": 1.15,
+            "processing_time": 62,
+            "quality_grade": "reject",
+            "defect_indicators": [
+              "temperature_too_high",
+              "pressure_too_low",
+              "ph_out_of_range",
+              "viscosity_excessive",
+              "color_deviation",
+              "density_too_high",
+              "processing_time_exceeded"
+            ]
+          }
+        ]
+      },
+      "detection_results": {
+        "quality_assessment": {
+          "overall_quality_score": 0.15,
+          "quality_prediction": "reject",
+          "confidence": 0.94,
+          "defect_probability": 0.92,
+          "root_cause_analysis": [
+            "temperature_control_malfunction",
+            "pressure_regulator_failure",
+            "ph_adjustment_system_error"
+          ]
+        },
+        "process_recommendations": {
+          "immediate_actions": [
+            "stop_production_line",
+            "inspect_temperature_control",
+            "calibrate_pressure_system",
+            "check_ph_monitoring_equipment"
+          ],
+          "preventive_measures": [
+            "increase_monitoring_frequency",
+            "schedule_equipment_maintenance",
+            "review_standard_operating_procedures"
+          ]
+        },
+        "detection_method": "multivariate_statistical_process_control",
+        "statistical_significance": 0.001
+      },
+      "ground_truth": {
+        "actual_quality": "defective",
+        "customer_complaint": false,
+        "batch_disposition": "rejected_and_reworked",
+        "cost_impact": 5500,
+        "corrective_action_effectiveness": "successful"
+      },
+      "context_information": {
+        "product_type": "industrial_coating",
+        "production_line": "line_B",
+        "shift": "night_shift",
+        "operator": "operator_003",
+        "environmental_conditions": "normal"
+      },
+      "complexity": "intermediate",
+      "domain": "manufacturing_quality"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "dataset_metadata": {
+    "name": "Programming Patterns Analysis Dataset",
+    "version": "1.0.0",
+    "description": "Comprehensive dataset containing diverse programming patterns, anti-patterns, and best practices across multiple languages for AI coding agent training",
+    "purpose": "Train AI agents to recognize, understand, and generate proper programming patterns and avoid anti-patterns",
+    "created_date": "2024-01-01T00:00:00Z",
+    "total_samples": 150,
+    "languages": ["python", "javascript", "java", "cpp", "typescript", "go", "rust"],
+    "complexity_levels": ["beginner", "intermediate", "advanced", "expert"],
+    "pattern_categories": ["design_patterns", "anti_patterns", "refactoring", "optimization", "security", "testing"],
+    "use_cases": [
+      "Code pattern recognition",
+      "Code quality assessment", 
+      "Refactoring suggestions",
+      "Best practice enforcement",
+      "Anti-pattern detection",
+      "Code generation training"
+    ],
+    "sample_structure": {
+      "id": "unique_identifier",
+      "pattern_type": "design_pattern|anti_pattern|refactoring|optimization|security|testing",
+      "pattern_name": "specific_pattern_name",
+      "language": "programming_language",
+      "complexity": "beginner|intermediate|advanced|expert",
+      "code_before": "original_problematic_code",
+      "code_after": "improved_refactored_code",
+      "explanation": "detailed_explanation_of_changes",
+      "benefits": ["list_of_improvements"],
+      "common_mistakes": ["typical_errors_to_avoid"],
+      "related_patterns": ["similar_or_complementary_patterns"],
+      "tags": ["searchable_keywords"],
+      "performance_impact": "positive|negative|neutral",
+      "security_implications": "secure|vulnerable|neutral"
+    }
+  },
+  "samples": [
+    {
+      "id": "pattern_001",
+      "task_type": "design_pattern",
+      "pattern_name": "singleton",
+      "language": "python",
+      "complexity": "intermediate",
+      "code_before": "class DatabaseConnection:\n    def __init__(self):\n        self.connection = self._create_connection()\n    \n    def _create_connection(self):\n        # Expensive database connection setup\n        return 'db_connection'\n\n# Multiple instances created unnecessarily\ndb1 = DatabaseConnection()\ndb2 = DatabaseConnection()\ndb3 = DatabaseConnection()",
+      "code_after": "class DatabaseConnection:\n    _instance = None\n    _connection = None\n    \n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super().__new__(cls)\n            cls._instance._connection = cls._instance._create_connection()\n        return cls._instance\n    \n    def _create_connection(self):\n        # Expensive database connection setup\n        return 'db_connection'\n    \n    def get_connection(self):\n        return self._connection\n\n# All variables reference the same instance\ndb1 = DatabaseConnection()\ndb2 = DatabaseConnection()\ndb3 = DatabaseConnection()\nassert db1 is db2 is db3",
+      "explanation": "Singleton pattern ensures only one instance of DatabaseConnection exists, preventing unnecessary resource allocation and ensuring consistent state across the application.",
+      "benefits": [
+        "Reduced memory usage",
+        "Controlled access to shared resources",
+        "Global access point",
+        "Lazy initialization"
+      ],
+      "common_mistakes": [
+        "Not handling thread safety",
+        "Making the constructor public",
+        "Not considering inheritance issues",
+        "Difficult to unit test"
+      ],
+      "related_patterns": ["factory", "registry", "dependency_injection"],
+      "tags": ["creational", "singleton", "resource_management", "database"],
+      "performance_impact": "positive",
+      "security_implications": "neutral"
+    },
+    {
+      "id": "pattern_002",
+      "task_type": "anti_pattern",
+      "pattern_name": "god_object",
+      "language": "java",
+      "complexity": "advanced",
+      "code_before": "public class UserManager {\n    private DatabaseConnection db;\n    private EmailService emailService;\n    private LoggingService logger;\n    private ValidationService validator;\n    private EncryptionService encryption;\n    \n    public void createUser(String username, String email, String password) {\n        // Validation logic\n        if (username == null || username.isEmpty()) {\n            logger.log('Invalid username');\n            throw new IllegalArgumentException('Username required');\n        }\n        \n        // Database operations\n        String hashedPassword = encryption.hash(password);\n        db.execute('INSERT INTO users (username, email, password) VALUES (?, ?, ?)', \n                  username, email, hashedPassword);\n        \n        // Email operations\n        emailService.sendWelcomeEmail(email, username);\n        \n        // More validation\n        if (!validator.isValidEmail(email)) {\n            logger.log('Invalid email format');\n            throw new IllegalArgumentException('Invalid email');\n        }\n        \n        // Additional business logic...\n        logger.log('User created: ' + username);\n    }\n    \n    public void updateUser(Long id, String newEmail) {\n        // More mixed responsibilities...\n    }\n    \n    public void deleteUser(Long id) {\n        // Even more mixed responsibilities...\n    }\n    \n    // Many more methods handling different concerns...\n}",
+      "code_after": "// Separate responsibility classes\npublic class User {\n    private Long id;\n    private String username;\n    private String email;\n    private String hashedPassword;\n    \n    // Constructor and getters/setters\n}\n\npublic class UserValidator {\n    public void validateUsername(String username) {\n        if (username == null || username.isEmpty()) {\n            throw new ValidationException('Username required');\n        }\n    }\n    \n    public void validateEmail(String email) {\n        if (!isValidEmailFormat(email)) {\n            throw new ValidationException('Invalid email format');\n        }\n    }\n    \n    private boolean isValidEmailFormat(String email) {\n        return email != null && email.contains('@');\n    }\n}\n\npublic class UserRepository {\n    private DatabaseConnection db;\n    \n    public void save(User user) {\n        db.execute('INSERT INTO users (username, email, password) VALUES (?, ?, ?)', \n                  user.getUsername(), user.getEmail(), user.getHashedPassword());\n    }\n    \n    public void update(User user) {\n        // Update logic\n    }\n    \n    public void delete(Long id) {\n        // Delete logic\n    }\n}\n\npublic class UserService {\n    private UserValidator validator;\n    private UserRepository repository;\n    private EmailService emailService;\n    private EncryptionService encryption;\n    private LoggingService logger;\n    \n    public void createUser(String username, String email, String password) {\n        validator.validateUsername(username);\n        validator.validateEmail(email);\n        \n        String hashedPassword = encryption.hash(password);\n        User user = new User(username, email, hashedPassword);\n        \n        repository.save(user);\n        emailService.sendWelcomeEmail(email, username);\n        logger.log('User created: ' + username);\n    }\n}",
+      "explanation": "The God Object anti-pattern occurs when a single class takes on too many responsibilities. The refactored version follows Single Responsibility Principle by separating validation, data access, and business logic into distinct classes.",
+      "benefits": [
+        "Better maintainability",
+        "Improved testability", 
+        "Clearer separation of concerns",
+        "Easier to extend and modify",
+        "Better code reusability"
+      ],
+      "common_mistakes": [
+        "Adding 'just one more method' to existing classes",
+        "Not recognizing when a class has grown too large",
+        "Mixing different levels of abstraction",
+        "Creating dependencies between unrelated concerns"
+      ],
+      "related_patterns": ["single_responsibility_principle", "dependency_injection", "repository_pattern"],
+      "tags": ["anti_pattern", "god_object", "refactoring", "solid_principles"],
+      "performance_impact": "positive",
+      "security_implications": "positive"
+    }
+  ]
+}

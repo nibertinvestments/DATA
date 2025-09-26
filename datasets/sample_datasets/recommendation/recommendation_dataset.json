@@ -1,0 +1,517 @@
+{
+  "dataset_metadata": {
+    "name": "Recommendation Systems Training Dataset",
+    "version": "1.0.0",
+    "description": "Comprehensive recommendation system dataset covering collaborative filtering, content-based filtering, hybrid approaches, and personalization for ML model training",
+    "purpose": "Train AI models on recommendation tasks including user preference modeling, item similarity, personalization, cold start problems, and recommendation explainability",
+    "created_date": "2024-01-01T00:00:00Z",
+    "total_samples": 140,
+    "recommendation_types": ["collaborative_filtering", "content_based", "hybrid", "knowledge_based", "deep_learning"],
+    "complexity_levels": ["basic", "intermediate", "advanced", "expert"],
+    "task_categories": [
+      "user_item_rating_prediction",
+      "top_k_recommendation",
+      "session_based_recommendation", 
+      "sequential_recommendation",
+      "cross_domain_recommendation",
+      "explainable_recommendation",
+      "cold_start_recommendation",
+      "diversity_optimization"
+    ],
+    "use_cases": [
+      "E-commerce product recommendation",
+      "Movie and entertainment recommendation",
+      "Music and playlist recommendation",
+      "News and content recommendation",
+      "Social media feed curation",
+      "Job and career recommendation",
+      "Travel and accommodation suggestion",
+      "Learning path recommendation"
+    ],
+    "sample_structure": {
+      "id": "unique_identifier",
+      "task_type": "specific_recommendation_task",
+      "user_data": "user_profiles_and_behavior",
+      "item_data": "item_features_and_metadata",
+      "interaction_data": "user_item_interactions",
+      "recommendations": "generated_recommendations_with_scores",
+      "evaluation_metrics": "recommendation_quality_measures"
+    }
+  },
+  "samples": [
+    {
+      "id": "rec_001",
+      "task_type": "user_item_rating_prediction",
+      "user_data": {
+        "user_id": "user_12345",
+        "demographics": {
+          "age": 28,
+          "gender": "female",
+          "location": "San Francisco, CA",
+          "occupation": "software_engineer"
+        },
+        "preferences": {
+          "genres": ["sci-fi", "thriller", "drama"],
+          "preferred_rating": "PG-13_to_R",
+          "viewing_time": "evening",
+          "device": "smart_tv"
+        },
+        "behavior_patterns": {
+          "avg_session_duration": 45,
+          "movies_per_week": 3.2,
+          "completion_rate": 0.87,
+          "rating_tendency": "generous"
+        }
+      },
+      "item_data": {
+        "movie_id": "movie_67890",
+        "title": "Quantum Paradox",
+        "metadata": {
+          "genre": ["sci-fi", "thriller"],
+          "release_year": 2023,
+          "duration": 128,
+          "rating": "PG-13",
+          "director": "Sarah Chen",
+          "cast": ["Alex Martinez", "Emma Thompson", "David Kim"],
+          "budget": 45000000,
+          "box_office": 156000000
+        },
+        "features": {
+          "imdb_score": 7.8,
+          "rotten_tomatoes": 85,
+          "awards": 3,
+          "visual_effects_heavy": true,
+          "dialogue_density": "medium"
+        },
+        "content_tags": [
+          "time_travel", "alternate_reality", "conspiracy", 
+          "technology", "philosophical", "action_sequences"
+        ]
+      },
+      "interaction_data": {
+        "historical_ratings": [
+          {"movie_id": "movie_11111", "rating": 4.5, "genre": "sci-fi"},
+          {"movie_id": "movie_22222", "rating": 4.0, "genre": "thriller"},
+          {"movie_id": "movie_33333", "rating": 3.5, "genre": "drama"},
+          {"movie_id": "movie_44444", "rating": 5.0, "genre": "sci-fi"},
+          {"movie_id": "movie_55555", "rating": 2.0, "genre": "comedy"}
+        ],
+        "viewing_history": {
+          "total_movies": 127,
+          "sci-fi_movies": 45,
+          "thriller_movies": 38,
+          "avg_rating": 3.8,
+          "recent_activity": "highly_active"
+        },
+        "similar_users": [
+          {"user_id": "user_98765", "similarity": 0.83},
+          {"user_id": "user_11223", "similarity": 0.78},
+          {"user_id": "user_44556", "similarity": 0.72}
+        ]
+      },
+      "recommendations": {
+        "predicted_rating": 4.3,
+        "confidence": 0.87,
+        "explanation": "Based on your love for sci-fi thrillers like 'Interstellar' and 'Minority Report', you'll likely enjoy this mind-bending time travel story with excellent visual effects and a thought-provoking plot.",
+        "recommendation_score": 0.91,
+        "factors": {
+          "genre_match": 0.95,
+          "similar_user_ratings": 0.88,
+          "content_similarity": 0.82,
+          "popularity_boost": 0.15
+        }
+      },
+      "evaluation_metrics": {
+        "actual_rating": 4.5,
+        "prediction_error": -0.2,
+        "rank_position": 2,
+        "click_through_rate": 0.34,
+        "conversion_rate": 0.78
+      },
+      "complexity": "intermediate",
+      "domain": "entertainment_streaming"
+    },
+    {
+      "id": "rec_002",
+      "task_type": "top_k_recommendation",
+      "user_data": {
+        "user_id": "user_78901",
+        "shopping_profile": {
+          "purchase_history": 45,
+          "avg_order_value": 78.50,
+          "favorite_categories": ["electronics", "books", "sports"],
+          "brand_loyalty": "moderate",
+          "price_sensitivity": "medium"
+        },
+        "behavioral_signals": {
+          "browse_time": 12.5,
+          "cart_abandonment_rate": 0.23,
+          "return_rate": 0.08,
+          "review_frequency": "occasional"
+        }
+      },
+      "item_data": {
+        "product_catalog": [
+          {
+            "product_id": "prod_001",
+            "name": "Wireless Noise-Cancelling Headphones",
+            "category": "electronics",
+            "price": 299.99,
+            "rating": 4.7,
+            "reviews": 1247,
+            "features": ["bluetooth", "noise_cancelling", "long_battery"]
+          },
+          {
+            "product_id": "prod_002", 
+            "name": "Productivity Planner 2024",
+            "category": "books",
+            "price": 24.99,
+            "rating": 4.5,
+            "reviews": 892,
+            "features": ["daily_planning", "goal_tracking", "habit_formation"]
+          },
+          {
+            "product_id": "prod_003",
+            "name": "Yoga Mat Premium",
+            "category": "sports",
+            "price": 49.99,
+            "rating": 4.6,
+            "reviews": 634,
+            "features": ["eco_friendly", "non_slip", "extra_thick"]
+          }
+        ]
+      },
+      "interaction_data": {
+        "recent_purchases": [
+          {"product_id": "prod_electronics_123", "category": "electronics", "price": 199.99},
+          {"product_id": "prod_books_456", "category": "books", "price": 19.99},
+          {"product_id": "prod_sports_789", "category": "sports", "price": 89.99}
+        ],
+        "browsing_behavior": {
+          "pages_viewed": ["electronics", "books", "sports", "home_garden"],
+          "time_spent": {"electronics": 180, "books": 95, "sports": 120},
+          "search_queries": ["bluetooth headphones", "productivity books", "yoga equipment"]
+        },
+        "seasonal_patterns": {
+          "holiday_shopping": true,
+          "back_to_school": false,
+          "summer_sports": false
+        }
+      },
+      "recommendations": {
+        "top_k": 5,
+        "recommended_items": [
+          {
+            "product_id": "prod_001",
+            "rank": 1,
+            "score": 0.94,
+            "reason": "Perfect match for your electronics preferences and recent headphone searches"
+          },
+          {
+            "product_id": "prod_002",
+            "rank": 2, 
+            "score": 0.89,
+            "reason": "Aligns with your productivity book purchases and goal-oriented profile"
+          },
+          {
+            "product_id": "prod_003",
+            "rank": 3,
+            "score": 0.85,
+            "reason": "Complements your sports equipment collection and healthy lifestyle"
+          },
+          {
+            "product_id": "prod_004",
+            "rank": 4,
+            "score": 0.78,
+            "reason": "Popular among users with similar purchase patterns"
+          },
+          {
+            "product_id": "prod_005",
+            "rank": 5,
+            "score": 0.72,
+            "reason": "Trending item in your preferred price range"
+          }
+        ],
+        "diversity_score": 0.83,
+        "novelty_score": 0.67,
+        "coverage_score": 0.91
+      },
+      "evaluation_metrics": {
+        "precision_at_5": 0.80,
+        "recall_at_5": 0.65,
+        "ndcg_at_5": 0.78,
+        "click_rate": 0.42,
+        "purchase_rate": 0.18,
+        "user_satisfaction": 4.2
+      },
+      "complexity": "advanced",
+      "domain": "e_commerce"
+    },
+    {
+      "id": "rec_003",
+      "task_type": "session_based_recommendation",
+      "user_data": {
+        "session_id": "session_abc123",
+        "anonymous_profile": true,
+        "session_context": {
+          "duration": 15.5,
+          "page_views": 8,
+          "device": "mobile",
+          "location": "New York, NY",
+          "time_of_day": "evening",
+          "referrer": "google_search"
+        }
+      },
+      "item_data": {
+        "current_session_items": [
+          {
+            "track_id": "track_001",
+            "title": "Midnight City",
+            "artist": "M83",
+            "genre": "electronic",
+            "duration": 240,
+            "play_time": 180,
+            "skipped": false
+          },
+          {
+            "track_id": "track_002",
+            "title": "Synthesized Dreams", 
+            "artist": "Neon Lights",
+            "genre": "synthwave",
+            "duration": 210,
+            "play_time": 45,
+            "skipped": true
+          },
+          {
+            "track_id": "track_003",
+            "title": "Digital Horizon",
+            "artist": "Cyber Space",
+            "genre": "electronic",
+            "duration": 195,
+            "play_time": 195,
+            "skipped": false
+          }
+        ],
+        "item_features": {
+          "tempo_avg": 128,
+          "energy_level": "high",
+          "mood": "uplifting",
+          "era": "2010s"
+        }
+      },
+      "interaction_data": {
+        "session_sequence": [
+          {"action": "play", "track_id": "track_001", "timestamp": "2024-01-01T20:15:00Z"},
+          {"action": "complete", "track_id": "track_001", "timestamp": "2024-01-01T20:19:00Z"},
+          {"action": "play", "track_id": "track_002", "timestamp": "2024-01-01T20:19:30Z"},
+          {"action": "skip", "track_id": "track_002", "timestamp": "2024-01-01T20:20:15Z"},
+          {"action": "play", "track_id": "track_003", "timestamp": "2024-01-01T20:20:45Z"},
+          {"action": "complete", "track_id": "track_003", "timestamp": "2024-01-01T20:24:00Z"}
+        ],
+        "session_patterns": {
+          "completion_rate": 0.67,
+          "skip_rate": 0.33,
+          "genre_consistency": "high",
+          "artist_diversity": "high"
+        }
+      },
+      "recommendations": {
+        "next_tracks": [
+          {
+            "track_id": "track_rec_001",
+            "title": "Electric Nights",
+            "artist": "Retro Future",
+            "score": 0.91,
+            "reason": "Similar electronic style to your completed tracks"
+          },
+          {
+            "track_id": "track_rec_002",
+            "title": "Neon Glow",
+            "artist": "M83",
+            "score": 0.88,
+            "reason": "Same artist as your most played track in this session"
+          },
+          {
+            "track_id": "track_rec_003",
+            "title": "City Pulse",
+            "artist": "Digital Dreams",
+            "score": 0.85,
+            "reason": "Matches the uplifting electronic mood of your session"
+          }
+        ],
+        "playlist_continuation": true,
+        "session_coherence": 0.89,
+        "temporal_relevance": 0.92
+      },
+      "evaluation_metrics": {
+        "session_completion_rate": 0.75,
+        "next_track_acceptance": 0.68,
+        "session_extension": 1.4,
+        "user_engagement": 0.82
+      },
+      "complexity": "intermediate", 
+      "domain": "music_streaming"
+    },
+    {
+      "id": "rec_004",
+      "task_type": "cold_start_recommendation",
+      "user_data": {
+        "user_id": "new_user_999",
+        "registration_data": {
+          "signup_date": "2024-01-15",
+          "age": 25,
+          "interests": ["technology", "travel", "photography"],
+          "education": "university",
+          "occupation": "marketing_specialist"
+        },
+        "onboarding_preferences": {
+          "content_types": ["articles", "videos", "tutorials"],
+          "difficulty_level": "intermediate",
+          "time_availability": "30_minutes_per_day",
+          "learning_goals": ["skill_development", "career_advancement"]
+        },
+        "implicit_signals": {
+          "signup_source": "linkedin_ad",
+          "device": "laptop",
+          "time_zone": "PST",
+          "initial_browsing": ["data_science", "digital_marketing", "photography_basics"]
+        }
+      },
+      "item_data": {
+        "content_catalog": {
+          "popular_items": [
+            {"course_id": "course_001", "title": "Data Science Fundamentals", "category": "technology"},
+            {"course_id": "course_002", "title": "Digital Marketing Strategy", "category": "marketing"},
+            {"course_id": "course_003", "title": "Travel Photography Mastery", "category": "photography"}
+          ],
+          "trending_items": [
+            {"course_id": "course_004", "title": "Python for Beginners", "category": "technology"},
+            {"course_id": "course_005", "title": "Social Media Analytics", "category": "marketing"}
+          ]
+        }
+      },
+      "interaction_data": {
+        "demographic_clusters": [
+          {"cluster_id": "young_professionals", "similarity": 0.85},
+          {"cluster_id": "tech_enthusiasts", "similarity": 0.78},
+          {"cluster_id": "creative_learners", "similarity": 0.72}
+        ],
+        "similar_new_users": [
+          {"user_id": "new_user_888", "similarity": 0.81, "successful_recommendations": 4},
+          {"user_id": "new_user_777", "similarity": 0.76, "successful_recommendations": 3}
+        ]
+      },
+      "recommendations": {
+        "cold_start_strategy": "demographic_and_popularity_hybrid",
+        "recommended_items": [
+          {
+            "course_id": "course_002",
+            "rank": 1,
+            "score": 0.89,
+            "reasoning": "Perfect match for marketing professional interested in career advancement"
+          },
+          {
+            "course_id": "course_001",
+            "rank": 2,
+            "score": 0.84,
+            "reasoning": "High interest in technology and data aligns with skill development goals"
+          },
+          {
+            "course_id": "course_003",
+            "rank": 3,
+            "score": 0.81,
+            "reasoning": "Combines travel and photography interests for creative learning"
+          }
+        ],
+        "exploration_bonus": 0.15,
+        "popularity_weight": 0.25,
+        "demographic_weight": 0.60
+      },
+      "evaluation_metrics": {
+        "first_week_engagement": 0.72,
+        "course_completion_intent": 0.68,
+        "recommendation_acceptance": 0.75,
+        "retention_after_30_days": 0.82
+      },
+      "complexity": "advanced",
+      "domain": "online_education"
+    },
+    {
+      "id": "rec_005",
+      "task_type": "explainable_recommendation",
+      "user_data": {
+        "user_id": "user_explain_123",
+        "profile": {
+          "cooking_level": "intermediate",
+          "dietary_restrictions": ["vegetarian", "gluten_free"],
+          "cuisine_preferences": ["mediterranean", "asian", "mexican"],
+          "cooking_time": "30_minutes_max",
+          "equipment": ["oven", "stovetop", "blender"]
+        },
+        "recipe_history": [
+          {"recipe_id": "recipe_001", "rating": 5.0, "cooked_times": 3},
+          {"recipe_id": "recipe_002", "rating": 4.5, "cooked_times": 1},
+          {"recipe_id": "recipe_003", "rating": 3.0, "cooked_times": 1}
+        ]
+      },
+      "item_data": {
+        "recipe_candidate": {
+          "recipe_id": "recipe_new_001",
+          "name": "Mediterranean Quinoa Bowl",
+          "cuisine": "mediterranean",
+          "dietary_tags": ["vegetarian", "gluten_free", "healthy"],
+          "cook_time": 25,
+          "difficulty": "easy",
+          "ingredients": ["quinoa", "olives", "feta", "cucumber", "tomatoes", "olive_oil"],
+          "equipment_needed": ["stovetop"],
+          "nutrition": {"calories": 420, "protein": 15, "fiber": 8}
+        }
+      },
+      "interaction_data": {
+        "user_feedback": {
+          "explicit_ratings": {"mediterranean": 4.8, "healthy": 4.6, "quick": 4.9},
+          "implicit_preferences": {"ingredient_variety": "high", "visual_appeal": "important"},
+          "cooking_frequency": "4_times_per_week"
+        }
+      },
+      "recommendations": {
+        "recommendation_score": 0.92,
+        "explanation": {
+          "primary_reasons": [
+            "Matches your Mediterranean cuisine preference (95% confidence)",
+            "Perfectly fits your vegetarian and gluten-free dietary needs",
+            "Takes only 25 minutes - within your 30-minute time limit",
+            "Similar to your highly-rated recipe 'Greek Salad Bowl' (5 stars)"
+          ],
+          "feature_contributions": {
+            "cuisine_match": 0.35,
+            "dietary_compatibility": 0.30,
+            "time_constraint": 0.15,
+            "similarity_to_liked": 0.12,
+            "difficulty_match": 0.08
+          },
+          "visual_explanation": {
+            "similar_recipes": ["Greek Salad Bowl", "Veggie Buddha Bowl"],
+            "key_ingredients_highlight": ["quinoa", "olives", "feta"],
+            "nutrition_benefits": ["high_protein", "high_fiber", "balanced_meal"]
+          },
+          "confidence_level": 0.89,
+          "explanation_quality": "high"
+        },
+        "alternative_explanations": [
+          "Trending among users with similar dietary preferences",
+          "Highly rated by intermediate cooks like yourself",
+          "Perfect for your Mediterranean cuisine exploration"
+        ]
+      },
+      "evaluation_metrics": {
+        "explanation_satisfaction": 4.7,
+        "trust_in_recommendation": 4.5,
+        "likelihood_to_try": 0.86,
+        "explanation_helpfulness": 4.6
+      },
+      "complexity": "expert",
+      "domain": "recipe_recommendation"
+    }
+  ]
+}
