@@ -254,14 +254,21 @@ class DatasetDownloader {
     async handleDownload(event) {
         event.preventDefault();
         
+        const buttonId = event.target.id || event.target.closest('.download-btn').id;
+        
         try {
             this.showLoading();
             
             // Simulate preparation time for better UX
             await this.delay(1500);
             
-            // Create and download the ZIP file
-            await this.createDatasetZip();
+            // Check if this is the full dataset download
+            if (buttonId === 'downloadBtnFullDataset') {
+                this.downloadFullDataset();
+            } else {
+                // Create and download the ZIP file
+                await this.createDatasetZip();
+            }
             
         } catch (error) {
             console.error('Download failed:', error);
@@ -269,6 +276,16 @@ class DatasetDownloader {
         } finally {
             this.hideLoading();
         }
+    }
+
+    downloadFullDataset() {
+        // Download the pre-created fulldataset.zip
+        const link = document.createElement('a');
+        link.href = 'fulldataset.zip';
+        link.download = 'nibert-investments-fulldataset.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
     }
 
     async createDatasetZip() {
