@@ -14,7 +14,7 @@
 - **[Phase 4 Completion Report](phase4_completion_report.md)** - Historical development progress
 
 ### Directory-Specific Documentation
-- **[Code Samples Overview](../code_samples/)** - 141 examples across 19 programming languages
+- **[Code Samples Overview](../code_samples/)** - 106 curated examples across 20 programming languages
 - **[Data Sources Guide](../data-sources/README.md)** - AI training data structure and usage
 - **[High-End Specialized](../high_end_specialized/README.md)** - Advanced algorithms and premium content
 - **[Language Documentation](../data-sources/languages/README.md)** - Programming language implementations
@@ -22,11 +22,11 @@
 ## 📋 Current Repository Statistics
 
 ### Code Implementation Status
-- **Total Code Files**: 131+ production-ready implementations (updated count)
-- **Programming Languages**: 19+ comprehensive language coverage
-- **Repository Size**: 6.9MB of curated, professional content (updated size)
-- **Documentation Files**: 45+ comprehensive markdown files
-- **Test Infrastructure**: Working pytest framework (11 passing tests)
+- **Core Code Examples**: 106 production-ready implementations (verified count)
+- **Programming Languages**: 20 comprehensive language coverage
+- **Repository Size**: 6.9MB of curated, professional content
+- **Documentation Files**: 46 comprehensive markdown files
+- **Development Infrastructure**: Organized structure ready for testing expansion
 
 ### Download Packages Available
 - **Complete Full Dataset**: 1.2MB ZIP containing entire repository
@@ -41,21 +41,22 @@
 ### Language Breakdown
 | Language | Files | Focus Area |
 |----------|-------|------------|
-| Python | 49 | ML/AI, Data Science, Security |
-| Java | 11 | Enterprise, Neural Networks |
-| JavaScript | 9 | Modern Web, ML Production |
-| Kotlin | 9 | JVM/Android, ML Algorithms |
-| Go | 7 | Concurrent Programming |
-| TypeScript | 6 | Type-Safe Enterprise |
+| Python | 16 | ML/AI, Data Science, Core Algorithms |
+| Kotlin | 9 | JVM/Android, Modern Development |
+| Java | 8 | Enterprise, Neural Networks |
+| Go | 6 | Concurrent Programming |
+| JavaScript | 6 | Modern Web, Async Patterns |
 | Rust | 6 | Memory-Safe Systems |
+| TypeScript | 5 | Type-Safe Enterprise |
 | C# | 5 | .NET Enterprise |
+| C++ | 5 | High-Performance Computing |
 | Ruby | 5 | Web Development |
 | PHP | 5 | Modern Web Frameworks |
 | Swift | 5 | iOS/macOS Development |
 | Scala | 5 | Functional Programming |
 | Dart | 5 | Flutter Cross-Platform |
-| C++ | 4 | High-Performance Computing |
-| Others | 9 | Blockchain, Scripting, Functional |
+| R | 5 | Statistical Computing |
+| Others | 11 | Blockchain, Scripting, Functional |
 
 ### Content Quality
 - **Production Ready**: All code compiles and runs correctly
@@ -67,7 +68,7 @@
 
 ### For New Contributors
 1. Start with [README.md](../README.md) for comprehensive project overview
-2. Read [PROJECT_STATUS_REPORT.md](../PROJECT_STATUS_REPORT.md) for current status (141 code files, 19 languages)
+2. Read [PROJECT_STATUS_REPORT.md](../PROJECT_STATUS_REPORT.md) for current status (106 code examples, 20 languages)
 3. Review [CONTRIBUTING.md](../CONTRIBUTING.md) for contribution guidelines and processes
 4. Explore [code_samples/](../code_samples/) for implementation examples
 
@@ -119,5 +120,5 @@
 ---
 
 *Last Updated: December 2024*  
-*Repository Status: 141 code files across 19 languages*  
+*Repository Status: 106 core code examples across 20 languages*  
 *Next Review: Ongoing maintenance*
