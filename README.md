@@ -5,9 +5,14 @@ This directory contains the professional website for the Nibert Investments DATA
 ## 🎨 Design Features
 
 ### Color Palette
-- **Base**: Black (#000000) and White (#ffffff)
-- **Accents**: Metallic Red (#dc2626) and Neon White (#f0f9ff)
-- **Professional gradient combinations** for visual appeal
+- **Base**: Black (#000000) and Mother of Pearl (#f8f6f0) - Updated elegant scheme
+- **Accents**: Metallic Red (#dc2626), Neon White (#f0f9ff), and **Canary Yellow (#ffef00)** - New pinstriping accent
+- **Professional gradient combinations** for visual appeal with canary yellow borders
+
+### New Design Elements
+- **Canary Yellow Pinstriping**: Added as accent borders throughout the website
+- **Mother of Pearl Background**: Sophisticated replacement for stark white
+- **Enhanced Visual Hierarchy**: Improved contrast and professional appearance
 
 ### Technology Stack
 - **HTML5**: Semantic, accessible markup
@@ -25,10 +30,12 @@ This directory contains the professional website for the Nibert Investments DATA
 - ✅ SEO optimized with proper meta tags
 
 ### Download Functionality
+- ✅ **Complete Full Dataset Package**: New comprehensive ZIP (1.2MB) containing entire repository
 - ✅ One-click download of complete dataset library
 - ✅ Automatic ZIP generation from GitHub repository
 - ✅ Fallback download options for reliability
 - ✅ Professional loading states and notifications
+- ✅ Multiple download options for different use cases
 
 ### Content
 - ✅ Company branding: "Nibert Investments LLC"
