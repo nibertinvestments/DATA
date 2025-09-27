@@ -328,14 +328,14 @@ class DatasetDownloader {
 # Complete ML Datasets and AI Training Data
 
 ## Repository Contents
-- 141 total code files across multiple programming languages
+- 106+ curated code examples across multiple programming languages
 - Repository size: ~6.7MB
 - 45 documentation files
 - 11 working tests across comprehensive test suite
 
 ## Directory Structure
 - data-sources/: Programming language examples and patterns
-- code_samples/: Comprehensive code samples for AI training (141 files)
+- code_samples/: Curated code samples for AI training (106 files)
 - high_end_specialized/: Advanced algorithms and financial mathematics
 - scripts/: Data processing and ML pipeline scripts
 - documentation/: Specifications and tutorials
@@ -353,7 +353,7 @@ class DatasetDownloader {
 
 ## Dataset Categories
 ### Languages (19 supported)
-- Python: 49 files - ML algorithms, data structures, security, advanced patterns
+- Python: 16 files - ML algorithms, data structures, core patterns
 - Java: 11 files - Enterprise patterns, neural networks, object-oriented design
 - JavaScript: 9 files - Modern ES6+, async programming, frameworks, production patterns
 - Kotlin: 9 files - JVM/Android development, ML algorithms
@@ -411,13 +411,13 @@ class DatasetDownloader {
 - Blockchain: DeFi protocols, consensus algorithms
 
 Generated on: ${new Date().toISOString()}
-Total Code Files: 141
+Core Code Examples: 106+ curated implementations
 Repository Size: ~6.7MB (source), ~1.2MB (ZIP download)
 Documentation Files: 45
 Test Coverage: 11 passing tests
 
 ## DOWNLOAD INSTRUCTIONS
-The complete repository with all 141 code files will be downloaded automatically.
+The complete repository with all 106+ curated code examples will be downloaded automatically.
 This includes all code samples, documentation, tests, and datasets.
         `.trim();
 

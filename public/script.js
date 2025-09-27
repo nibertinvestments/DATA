@@ -311,14 +311,14 @@ class DatasetDownloader {
 # Complete ML Datasets and AI Training Data
 
 ## Repository Contents
-- 141 total code files across multiple programming languages
-- Repository size: ~6.7MB
-- 45 documentation files
-- 11 working tests across comprehensive test suite
+- 106+ curated code examples across multiple programming languages
+- Repository size: ~6.9MB
+- 46 documentation files
+- Organized testing structure for validation
 
 ## Directory Structure
 - data-sources/: Programming language examples and patterns
-- code_samples/: Comprehensive code samples for AI training (141 files)
+- code_samples/: Curated code samples for AI training (106 files)
 - high_end_specialized/: Advanced algorithms and financial mathematics
 - scripts/: Data processing and ML pipeline scripts
 - documentation/: Specifications and tutorials
@@ -335,19 +335,20 @@ class DatasetDownloader {
 - Repository: https://github.com/nibertinvestments/DATA
 
 ## Dataset Categories
-### Languages (19 supported)
-- Python: 49 files - ML algorithms, data structures, security, advanced patterns
-- Java: 11 files - Enterprise patterns, neural networks, object-oriented design
-- JavaScript: 9 files - Modern ES6+, async programming, frameworks, production patterns
-- Kotlin: 9 files - JVM/Android development, ML algorithms
-- Go: 7 files - Concurrent programming, microservices, advanced patterns
-- TypeScript: 6 files - Type-safe development, enterprise patterns
+### Languages (20 supported)
+- Python: 16 files - ML algorithms, data structures, core patterns
+- Kotlin: 9 files - JVM/Android development, modern patterns
+- Java: 8 files - Enterprise patterns, neural networks, robust design
+- Go: 6 files - Concurrent programming, systems development
+- JavaScript: 6 files - Modern ES6+, async programming, web patterns
 - Rust: 6 files - Memory-safe systems programming
+- TypeScript: 5 files - Type-safe development, enterprise patterns
 - C#: 5 files - .NET enterprise patterns
+- C++: 5 files - High-performance computing
 - Ruby: 5 files - Web development, metaprogramming
 - PHP: 5 files - Modern web frameworks
 - Swift: 5 files - iOS/macOS development
-- Scala: 5 files - Functional programming, big data
+- Scala: 5 files - Functional programming, JVM integration
 - Dart: 5 files - Flutter, cross-platform development
 - C++: 4 files - Performance-critical algorithms, memory management
 - Lua: 3 files - Embedded scripting, game development
@@ -394,14 +395,14 @@ class DatasetDownloader {
 - Blockchain: DeFi protocols, consensus algorithms
 
 Generated on: ${new Date().toISOString()}
-Total Code Files: 141
-Repository Size: ~6.7MB (source), ~1.2MB (ZIP download)
-Documentation Files: 45
-Test Coverage: 11 passing tests
+Core Code Examples: 106+ curated implementations
+Repository Size: ~6.9MB (source), ~1.2MB (ZIP download)
+Documentation Files: 46
+Test Infrastructure: Organized for validation
 
 ## DOWNLOAD INSTRUCTIONS
-The complete repository with all 141 code files will be downloaded automatically.
-This includes all code samples, documentation, tests, and datasets.
+The complete repository with 106+ curated code examples will be downloaded automatically.
+This includes all code samples, documentation, testing structure, and datasets.
         `.trim();
 
         const blob = new Blob([datasetInfo], { type: 'text/plain' });
