@@ -1,0 +1,386 @@
+{
+  "metadata": {
+    "name": "Machine Learning and AI Training Datasets",
+    "version": "1.0",
+    "status": "PRE_PRODUCTION_TRAINING",
+    "description": "Comprehensive ML/AI datasets for training coding agents and machine learning models. These are training datasets, not production-ready data.",
+    "warning": "FOR TRAINING PURPOSES ONLY - Not suitable for production deployment without validation",
+    "categories": ["neural_networks", "reinforcement_learning", "computer_vision", "nlp", "time_series", "anomaly_detection"],
+    "total_examples": 120,
+    "created": "2024",
+    "last_updated": "2024"
+  },
+  "neural_network_architectures": [
+    {
+      "id": "nn_001",
+      "name": "Feedforward Neural Network",
+      "category": "neural_networks",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Basic feedforward neural network with backpropagation",
+      "use_cases": [
+        "Classification tasks",
+        "Regression problems",
+        "Pattern recognition",
+        "Function approximation"
+      ],
+      "python_implementation": "import numpy as np\n\nclass NeuralNetwork:\n    def __init__(self, layer_sizes):\n        self.layer_sizes = layer_sizes\n        self.weights = []\n        self.biases = []\n        \n        # Initialize weights and biases\n        for i in range(len(layer_sizes) - 1):\n            w = np.random.randn(layer_sizes[i], layer_sizes[i+1]) * 0.01\n            b = np.zeros((1, layer_sizes[i+1]))\n            self.weights.append(w)\n            self.biases.append(b)\n    \n    def sigmoid(self, x):\n        return 1 / (1 + np.exp(-np.clip(x, -500, 500)))\n    \n    def sigmoid_derivative(self, x):\n        return x * (1 - x)\n    \n    def forward(self, X):\n        self.activations = [X]\n        \n        for i in range(len(self.weights)):\n            z = np.dot(self.activations[-1], self.weights[i]) + self.biases[i]\n            a = self.sigmoid(z)\n            self.activations.append(a)\n        \n        return self.activations[-1]\n    \n    def backward(self, X, y, learning_rate=0.1):\n        m = X.shape[0]\n        \n        # Calculate output layer error\n        delta = self.activations[-1] - y\n        \n        # Backpropagate\n        for i in range(len(self.weights) - 1, -1, -1):\n            # Calculate gradients\n            dw = np.dot(self.activations[i].T, delta) / m\n            db = np.sum(delta, axis=0, keepdims=True) / m\n            \n            # Update weights and biases\n            self.weights[i] -= learning_rate * dw\n            self.biases[i] -= learning_rate * db\n            \n            # Calculate delta for previous layer\n            if i > 0:\n                delta = np.dot(delta, self.weights[i].T) * \\\n                       self.sigmoid_derivative(self.activations[i])\n    \n    def train(self, X, y, epochs=1000, learning_rate=0.1):\n        for epoch in range(epochs):\n            output = self.forward(X)\n            self.backward(X, y, learning_rate)\n            \n            if epoch % 100 == 0:\n                loss = np.mean((output - y) ** 2)\n                print(f'Epoch {epoch}, Loss: {loss:.4f}')\n    \n    def predict(self, X):\n        return self.forward(X)\n\n# Example usage\nnn = NeuralNetwork([2, 4, 1])\nX = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])\ny = np.array([[0], [1], [1], [0]])  # XOR problem\nnn.train(X, y, epochs=1000)",
+      "architecture_details": {
+        "layers": "Input -> Hidden Layers -> Output",
+        "activation_functions": ["Sigmoid", "ReLU", "Tanh"],
+        "optimization": "Gradient Descent, Adam, RMSprop",
+        "regularization": "L1, L2, Dropout"
+      }
+    },
+    {
+      "id": "nn_002",
+      "name": "Convolutional Neural Network (CNN)",
+      "category": "neural_networks",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "CNN architecture for image processing",
+      "use_cases": [
+        "Image classification",
+        "Object detection",
+        "Image segmentation",
+        "Facial recognition"
+      ],
+      "key_components": {
+        "convolutional_layer": "Applies filters to extract features",
+        "pooling_layer": "Reduces spatial dimensions",
+        "fully_connected": "Final classification layers",
+        "activation": "ReLU for non-linearity"
+      },
+      "typical_architecture": [
+        "Input Image (224x224x3)",
+        "Conv Layer (64 filters, 3x3)",
+        "ReLU Activation",
+        "Max Pooling (2x2)",
+        "Conv Layer (128 filters, 3x3)",
+        "ReLU Activation",
+        "Max Pooling (2x2)",
+        "Flatten",
+        "Dense Layer (256 units)",
+        "Dropout (0.5)",
+        "Output Layer (num_classes)"
+      ]
+    },
+    {
+      "id": "nn_003",
+      "name": "Recurrent Neural Network (RNN)",
+      "category": "neural_networks",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Sequential data processing with memory",
+      "use_cases": [
+        "Natural language processing",
+        "Time series prediction",
+        "Speech recognition",
+        "Video analysis"
+      ],
+      "variants": {
+        "vanilla_rnn": "Basic recurrent connections",
+        "lstm": "Long Short-Term Memory - better at long sequences",
+        "gru": "Gated Recurrent Unit - simplified LSTM",
+        "bidirectional": "Process sequence in both directions"
+      }
+    },
+    {
+      "id": "nn_004",
+      "name": "Transformer Architecture",
+      "category": "neural_networks",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Attention-based architecture for sequence processing",
+      "use_cases": [
+        "Machine translation",
+        "Text generation (GPT)",
+        "Language understanding (BERT)",
+        "Vision transformers"
+      ],
+      "key_concepts": {
+        "self_attention": "Learn relationships between all positions",
+        "multi_head_attention": "Multiple attention mechanisms in parallel",
+        "positional_encoding": "Add position information to embeddings",
+        "feed_forward": "Position-wise feed-forward networks"
+      },
+      "advantages": [
+        "Parallel processing (faster than RNNs)",
+        "Better at long-range dependencies",
+        "State-of-the-art results in NLP",
+        "Scalable to large datasets"
+      ]
+    },
+    {
+      "id": "nn_005",
+      "name": "Generative Adversarial Network (GAN)",
+      "category": "neural_networks",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Two-network architecture for generative modeling",
+      "components": {
+        "generator": "Creates fake samples from random noise",
+        "discriminator": "Distinguishes real from fake samples",
+        "adversarial_training": "Networks compete in zero-sum game"
+      },
+      "use_cases": [
+        "Image generation",
+        "Image-to-image translation",
+        "Data augmentation",
+        "Style transfer"
+      ],
+      "variants": [
+        "DCGAN (Deep Convolutional GAN)",
+        "StyleGAN (High-quality image generation)",
+        "CycleGAN (Unpaired image translation)",
+        "Pix2Pix (Paired image translation)"
+      ]
+    }
+  ],
+  "reinforcement_learning": [
+    {
+      "id": "rl_001",
+      "name": "Q-Learning Algorithm",
+      "category": "reinforcement_learning",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Value-based RL for discrete action spaces",
+      "python_implementation": "import numpy as np\n\nclass QLearningAgent:\n    def __init__(self, n_states, n_actions, learning_rate=0.1, \n                 discount_factor=0.95, epsilon=0.1):\n        self.q_table = np.zeros((n_states, n_actions))\n        self.lr = learning_rate\n        self.gamma = discount_factor\n        self.epsilon = epsilon\n        self.n_actions = n_actions\n    \n    def choose_action(self, state):\n        # Epsilon-greedy policy\n        if np.random.random() < self.epsilon:\n            return np.random.randint(self.n_actions)\n        return np.argmax(self.q_table[state])\n    \n    def update(self, state, action, reward, next_state):\n        # Q-learning update rule\n        current_q = self.q_table[state, action]\n        max_next_q = np.max(self.q_table[next_state])\n        new_q = current_q + self.lr * (reward + self.gamma * max_next_q - current_q)\n        self.q_table[state, action] = new_q\n    \n    def train(self, env, episodes=1000):\n        for episode in range(episodes):\n            state = env.reset()\n            done = False\n            total_reward = 0\n            \n            while not done:\n                action = self.choose_action(state)\n                next_state, reward, done, _ = env.step(action)\n                self.update(state, action, reward, next_state)\n                state = next_state\n                total_reward += reward\n            \n            if episode % 100 == 0:\n                print(f'Episode {episode}, Total Reward: {total_reward}')",
+      "key_concepts": {
+        "q_value": "Expected future reward for state-action pair",
+        "bellman_equation": "Recursive relationship for optimal value",
+        "exploration_vs_exploitation": "Epsilon-greedy strategy",
+        "temporal_difference": "Update based on immediate reward and next state"
+      }
+    },
+    {
+      "id": "rl_002",
+      "name": "Deep Q-Network (DQN)",
+      "category": "reinforcement_learning",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Neural network-based Q-learning",
+      "improvements": [
+        "Experience Replay: Store and sample past experiences",
+        "Target Network: Separate network for stable targets",
+        "Frame Stacking: Use multiple frames as state",
+        "Reward Clipping: Normalize rewards for stability"
+      ],
+      "use_cases": [
+        "Atari games",
+        "Robotics control",
+        "Resource management",
+        "Trading strategies"
+      ]
+    },
+    {
+      "id": "rl_003",
+      "name": "Policy Gradient Methods",
+      "category": "reinforcement_learning",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Directly optimize policy parameters",
+      "algorithms": {
+        "reinforce": "Monte Carlo policy gradient",
+        "actor_critic": "Combine value and policy learning",
+        "ppo": "Proximal Policy Optimization",
+        "a3c": "Asynchronous Advantage Actor-Critic"
+      },
+      "advantages": [
+        "Work with continuous action spaces",
+        "Can learn stochastic policies",
+        "Better convergence properties",
+        "More stable than value-based methods"
+      ]
+    }
+  ],
+  "computer_vision_datasets": [
+    {
+      "id": "cv_001",
+      "name": "Image Classification Dataset Structure",
+      "category": "computer_vision",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Standard structure for image classification datasets",
+      "structure": {
+        "train": {
+          "class_1": ["image1.jpg", "image2.jpg"],
+          "class_2": ["image1.jpg", "image2.jpg"],
+          "class_n": ["image1.jpg", "image2.jpg"]
+        },
+        "validation": {
+          "class_1": ["image1.jpg"],
+          "class_2": ["image1.jpg"]
+        },
+        "test": {
+          "class_1": ["image1.jpg"],
+          "class_2": ["image1.jpg"]
+        }
+      },
+      "typical_splits": {
+        "train": "70-80%",
+        "validation": "10-15%",
+        "test": "10-15%"
+      },
+      "preprocessing": [
+        "Resize to fixed dimensions",
+        "Normalize pixel values [0, 1] or [-1, 1]",
+        "Data augmentation (rotation, flip, crop)",
+        "Color jittering",
+        "Random erasing"
+      ]
+    },
+    {
+      "id": "cv_002",
+      "name": "Object Detection Annotations",
+      "category": "computer_vision",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Bounding box annotations for object detection",
+      "annotation_format": {
+        "coco": {
+          "bbox": "[x, y, width, height]",
+          "format": "JSON with image metadata and annotations"
+        },
+        "pascal_voc": {
+          "bbox": "[xmin, ymin, xmax, ymax]",
+          "format": "XML per image"
+        },
+        "yolo": {
+          "bbox": "[x_center, y_center, width, height] (normalized)",
+          "format": "TXT per image"
+        }
+      }
+    }
+  ],
+  "nlp_datasets": [
+    {
+      "id": "nlp_001",
+      "name": "Text Classification Dataset",
+      "category": "nlp",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Labeled text samples for classification",
+      "example_structure": {
+        "text": "This is a sample review. It expresses positive sentiment.",
+        "label": "positive",
+        "metadata": {
+          "source": "product_review",
+          "language": "en",
+          "length": 52
+        }
+      },
+      "common_tasks": [
+        "Sentiment analysis",
+        "Topic classification",
+        "Intent detection",
+        "Spam detection"
+      ]
+    },
+    {
+      "id": "nlp_002",
+      "name": "Named Entity Recognition (NER) Dataset",
+      "category": "nlp",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Token-level entity annotations",
+      "example_structure": {
+        "tokens": ["Apple", "is", "located", "in", "Cupertino"],
+        "labels": ["B-ORG", "O", "O", "O", "B-LOC"],
+        "entities": [
+          {"text": "Apple", "type": "ORG", "start": 0, "end": 5},
+          {"text": "Cupertino", "type": "LOC", "start": 22, "end": 31}
+        ]
+      },
+      "entity_types": [
+        "PERSON", "ORG", "LOC", "DATE", "TIME", "MONEY", "PERCENT"
+      ]
+    },
+    {
+      "id": "nlp_003",
+      "name": "Machine Translation Dataset",
+      "category": "nlp",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Parallel corpus for translation",
+      "example_structure": {
+        "source": "Hello, how are you?",
+        "target": "Bonjour, comment allez-vous?",
+        "source_lang": "en",
+        "target_lang": "fr"
+      }
+    }
+  ],
+  "time_series_patterns": [
+    {
+      "id": "ts_001",
+      "name": "ARIMA Model",
+      "category": "time_series",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "AutoRegressive Integrated Moving Average",
+      "components": {
+        "ar": "AutoRegressive - past values",
+        "i": "Integrated - differencing for stationarity",
+        "ma": "Moving Average - past errors"
+      },
+      "use_cases": [
+        "Stock price prediction",
+        "Sales forecasting",
+        "Weather prediction",
+        "Demand forecasting"
+      ]
+    },
+    {
+      "id": "ts_002",
+      "name": "LSTM for Time Series",
+      "category": "time_series",
+      "status": "PRE_PRODUCTION_TRAINING",
+      "description": "Long Short-Term Memory networks for sequential data",
+      "advantages": [
+        "Capture long-term dependencies",
+        "Handle variable-length sequences",
+        "Learn complex patterns",
+        "Better than traditional methods for complex data"
+      ]
+    }
+  ],
+  "model_evaluation_metrics": {
+    "classification": {
+      "accuracy": "Correct predictions / Total predictions",
+      "precision": "True Positives / (True Positives + False Positives)",
+      "recall": "True Positives / (True Positives + False Negatives)",
+      "f1_score": "2 * (Precision * Recall) / (Precision + Recall)",
+      "roc_auc": "Area under ROC curve"
+    },
+    "regression": {
+      "mse": "Mean Squared Error",
+      "rmse": "Root Mean Squared Error",
+      "mae": "Mean Absolute Error",
+      "r2_score": "Coefficient of Determination"
+    },
+    "clustering": {
+      "silhouette_score": "Measure of cluster separation",
+      "davies_bouldin_index": "Average similarity between clusters",
+      "calinski_harabasz_score": "Ratio of between-cluster to within-cluster dispersion"
+    }
+  },
+  "training_best_practices": [
+    "Use train/validation/test splits",
+    "Apply data augmentation for small datasets",
+    "Monitor for overfitting (validation loss)",
+    "Use early stopping",
+    "Learning rate scheduling",
+    "Batch normalization for stability",
+    "Regularization (L1, L2, Dropout)",
+    "Cross-validation for robust evaluation",
+    "Hyperparameter tuning",
+    "Ensemble methods for better performance"
+  ],
+  "production_considerations": {
+    "model_serving": [
+      "Convert to production format (ONNX, TensorFlow Serving)",
+      "Optimize for inference speed",
+      "Batch predictions when possible",
+      "Use model versioning"
+    ],
+    "monitoring": [
+      "Track prediction latency",
+      "Monitor model accuracy over time",
+      "Detect data drift",
+      "Alert on anomalies"
+    ],
+    "scaling": [
+      "Horizontal scaling with load balancing",
+      "GPU acceleration for deep learning",
+      "Caching for frequent queries",
+      "A/B testing for model updates"
+    ]
+  }
+}
