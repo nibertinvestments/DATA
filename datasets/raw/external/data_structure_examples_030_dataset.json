@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_4",
+    "type": "data_structures",
+    "language": "java",
+    "total_examples": 3,
+    "created_at": "2025-10-07T23:25:39.713807",
+    "variant": 4
+  },
+  "examples": [
+    {
+      "id": "ds_4_3d060058",
+      "structure": "heap",
+      "language": "java",
+      "implementation": "# heap implementation in java",
+      "operations": [
+        "insert",
+        "delete",
+        "search",
+        "traverse"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "ds_4_21060b69",
+      "structure": "trie",
+      "language": "java",
+      "implementation": "# trie implementation in java",
+      "operations": [
+        "insert",
+        "delete",
+        "search",
+        "traverse"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "ds_4_ab1363bb",
+      "structure": "linked_list",
+      "language": "java",
+      "implementation": "# linked_list implementation in java",
+      "operations": [
+        "delete",
+        "insert",
+        "search",
+        "traverse"
+      ],
+      "variant": 4
+    }
+  ]
+}

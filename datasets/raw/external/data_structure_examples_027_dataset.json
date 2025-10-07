@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_1",
+    "type": "data_structures",
+    "language": "javascript",
+    "total_examples": 4,
+    "created_at": "2025-10-07T23:25:39.713372",
+    "variant": 1
+  },
+  "examples": [
+    {
+      "id": "ds_1_c2737aad",
+      "structure": "array",
+      "language": "javascript",
+      "implementation": "# array implementation in javascript",
+      "operations": [
+        "traverse",
+        "search"
+      ],
+      "variant": 1
+    },
+    {
+      "id": "ds_1_1491ff8e",
+      "structure": "stack",
+      "language": "javascript",
+      "implementation": "# stack implementation in javascript",
+      "operations": [
+        "traverse",
+        "delete"
+      ],
+      "variant": 1
+    },
+    {
+      "id": "ds_1_1003a93a",
+      "structure": "queue",
+      "language": "javascript",
+      "implementation": "# queue implementation in javascript",
+      "operations": [
+        "search",
+        "traverse"
+      ],
+      "variant": 1
+    },
+    {
+      "id": "ds_1_28e45927",
+      "structure": "trie",
+      "language": "javascript",
+      "implementation": "# trie implementation in javascript",
+      "operations": [
+        "search",
+        "delete",
+        "insert",
+        "traverse"
+      ],
+      "variant": 1
+    }
+  ]
+}

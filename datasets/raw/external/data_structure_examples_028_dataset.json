@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_2",
+    "type": "data_structures",
+    "language": "go",
+    "total_examples": 4,
+    "created_at": "2025-10-07T23:25:39.713524",
+    "variant": 2
+  },
+  "examples": [
+    {
+      "id": "ds_2_6075abe7",
+      "structure": "hash_table",
+      "language": "go",
+      "implementation": "# hash_table implementation in go",
+      "operations": [
+        "delete",
+        "search",
+        "traverse"
+      ],
+      "variant": 2
+    },
+    {
+      "id": "ds_2_a9612b05",
+      "structure": "array",
+      "language": "go",
+      "implementation": "# array implementation in go",
+      "operations": [
+        "traverse",
+        "delete",
+        "search",
+        "insert"
+      ],
+      "variant": 2
+    },
+    {
+      "id": "ds_2_0712cf58",
+      "structure": "queue",
+      "language": "go",
+      "implementation": "# queue implementation in go",
+      "operations": [
+        "insert",
+        "delete",
+        "traverse",
+        "search"
+      ],
+      "variant": 2
+    },
+    {
+      "id": "ds_2_afef94b0",
+      "structure": "linked_list",
+      "language": "go",
+      "implementation": "# linked_list implementation in go",
+      "operations": [
+        "search",
+        "traverse"
+      ],
+      "variant": 2
+    }
+  ]
+}

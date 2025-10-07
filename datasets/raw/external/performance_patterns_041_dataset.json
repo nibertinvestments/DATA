@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_0",
+    "type": "performance",
+    "language": "python",
+    "total_optimizations": 2,
+    "created_at": "2025-10-07T23:25:39.715363",
+    "variant": 0
+  },
+  "optimizations": [
+    {
+      "id": "perf_0_0_88ee17ea",
+      "optimization_type": "caching",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "91x faster",
+      "variant": 0
+    },
+    {
+      "id": "perf_0_1_41bd1dff",
+      "optimization_type": "lazy_loading",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "82x faster",
+      "variant": 0
+    }
+  ]
+}

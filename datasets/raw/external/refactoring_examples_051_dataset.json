@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_0",
+    "type": "refactoring",
+    "language": "java",
+    "total_examples": 5,
+    "created_at": "2025-10-07T23:25:39.716669",
+    "variant": 0
+  },
+  "refactorings": [
+    {
+      "id": "refactor_0_0_5ad72d97",
+      "refactoring_type": "extract_method",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    },
+    {
+      "id": "refactor_0_1_a62621d2",
+      "refactoring_type": "rename",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    },
+    {
+      "id": "refactor_0_2_a36fcb70",
+      "refactoring_type": "inline",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    },
+    {
+      "id": "refactor_0_3_4f44e821",
+      "refactoring_type": "move",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    },
+    {
+      "id": "refactor_0_4_3ed1cac0",
+      "refactoring_type": "extract_method",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    }
+  ]
+}

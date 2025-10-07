@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_2",
+    "type": "framework_usage",
+    "framework": "fastapi",
+    "total_examples": 6,
+    "created_at": "2025-10-07T23:25:39.719225",
+    "variant": 2
+  },
+  "examples": [
+    {
+      "id": "framework_2_0_e8c14aab",
+      "framework": "fastapi",
+      "feature": "Feature #1",
+      "code": "# fastapi example",
+      "variant": 2
+    },
+    {
+      "id": "framework_2_1_4490996c",
+      "framework": "fastapi",
+      "feature": "Feature #2",
+      "code": "# fastapi example",
+      "variant": 2
+    },
+    {
+      "id": "framework_2_2_ec7021e5",
+      "framework": "fastapi",
+      "feature": "Feature #3",
+      "code": "# fastapi example",
+      "variant": 2
+    },
+    {
+      "id": "framework_2_3_47baee8d",
+      "framework": "fastapi",
+      "feature": "Feature #4",
+      "code": "# fastapi example",
+      "variant": 2
+    },
+    {
+      "id": "framework_2_4_3f55e9d6",
+      "framework": "fastapi",
+      "feature": "Feature #5",
+      "code": "# fastapi example",
+      "variant": 2
+    },
+    {
+      "id": "framework_2_5_f10669b9",
+      "framework": "fastapi",
+      "feature": "Feature #6",
+      "code": "# fastapi example",
+      "variant": 2
+    }
+  ]
+}

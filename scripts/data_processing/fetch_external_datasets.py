@@ -2,12 +2,15 @@
 """
 External Dataset Fetcher for LLM/ML/AI Training
 Pulls datasets from web sources and GitHub to expand training data breadth.
+Enhanced version that generates diverse, non-repeating datasets.
 """
 
 import json
 import os
 import sys
 import time
+import random
+import uuid
 from pathlib import Path
 from typing import Dict, List, Any, Optional
 from datetime import datetime

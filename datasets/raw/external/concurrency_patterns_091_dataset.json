@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_0",
+    "type": "concurrency",
+    "language": "rust",
+    "total_patterns": 4,
+    "created_at": "2025-10-07T23:25:39.722421",
+    "variant": 0
+  },
+  "patterns": [
+    {
+      "id": "concur_0_0_c9d7c6af",
+      "pattern": "semaphore",
+      "language": "rust",
+      "example": "# Concurrency pattern",
+      "variant": 0
+    },
+    {
+      "id": "concur_0_1_6b9b187b",
+      "pattern": "semaphore",
+      "language": "rust",
+      "example": "# Concurrency pattern",
+      "variant": 0
+    },
+    {
+      "id": "concur_0_2_da6060ec",
+      "pattern": "thread_pool",
+      "language": "rust",
+      "example": "# Concurrency pattern",
+      "variant": 0
+    },
+    {
+      "id": "concur_0_3_cdb5ebb4",
+      "pattern": "thread_pool",
+      "language": "rust",
+      "example": "# Concurrency pattern",
+      "variant": 0
+    }
+  ]
+}

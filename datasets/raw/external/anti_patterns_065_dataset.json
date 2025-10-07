@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_4",
+    "type": "anti_patterns",
+    "language": "java",
+    "total_patterns": 3,
+    "created_at": "2025-10-07T23:25:39.718837",
+    "variant": 4
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_4_ecfe6740",
+      "pattern": "Spaghetti Code",
+      "language": "java",
+      "bad_example": "# Anti-pattern: Spaghetti Code",
+      "good_example": "# Better approach",
+      "variant": 4
+    },
+    {
+      "id": "anti_4_a0247c81",
+      "pattern": "God Object",
+      "language": "java",
+      "bad_example": "# Anti-pattern: God Object",
+      "good_example": "# Better approach",
+      "variant": 4
+    },
+    {
+      "id": "anti_4_0a258154",
+      "pattern": "Magic Numbers",
+      "language": "java",
+      "bad_example": "# Anti-pattern: Magic Numbers",
+      "good_example": "# Better approach",
+      "variant": 4
+    }
+  ]
+}

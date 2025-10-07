@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_2",
+    "type": "refactoring",
+    "language": "go",
+    "total_examples": 5,
+    "created_at": "2025-10-07T23:25:39.716960",
+    "variant": 2
+  },
+  "refactorings": [
+    {
+      "id": "refactor_2_0_c09399fe",
+      "refactoring_type": "extract_method",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_1_88707d4f",
+      "refactoring_type": "move",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_2_d896cb87",
+      "refactoring_type": "extract_method",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_3_8988a257",
+      "refactoring_type": "rename",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_4_65edf933",
+      "refactoring_type": "extract_method",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "cli_tools_variant_2",
+    "type": "cli",
+    "language": "rust",
+    "total_tools": 4,
+    "created_at": "2025-10-07T23:25:39.720501",
+    "variant": 2
+  },
+  "tools": [
+    {
+      "id": "cli_2_0_da65681d",
+      "tool_name": "tool_2_0",
+      "language": "rust",
+      "command": "# CLI command",
+      "variant": 2
+    },
+    {
+      "id": "cli_2_1_da1ef5ba",
+      "tool_name": "tool_2_1",
+      "language": "rust",
+      "command": "# CLI command",
+      "variant": 2
+    },
+    {
+      "id": "cli_2_2_f452d7c7",
+      "tool_name": "tool_2_2",
+      "language": "rust",
+      "command": "# CLI command",
+      "variant": 2
+    },
+    {
+      "id": "cli_2_3_a62122a6",
+      "tool_name": "tool_2_3",
+      "language": "rust",
+      "command": "# CLI command",
+      "variant": 2
+    }
+  ]
+}

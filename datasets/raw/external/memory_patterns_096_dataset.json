@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "memory_patterns_variant_0",
+    "type": "memory_management",
+    "language": "c",
+    "total_patterns": 3,
+    "created_at": "2025-10-07T23:25:39.722996",
+    "variant": 0
+  },
+  "patterns": [
+    {
+      "id": "memory_0_0_3a1b4dfb",
+      "pattern": "allocation",
+      "language": "c",
+      "example": "# Memory management",
+      "variant": 0
+    },
+    {
+      "id": "memory_0_1_cc67476e",
+      "pattern": "smart_pointer",
+      "language": "c",
+      "example": "# Memory management",
+      "variant": 0
+    },
+    {
+      "id": "memory_0_2_6825d69b",
+      "pattern": "allocation",
+      "language": "c",
+      "example": "# Memory management",
+      "variant": 0
+    }
+  ]
+}

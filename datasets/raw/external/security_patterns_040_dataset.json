@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_4",
+    "type": "security",
+    "language": "go",
+    "total_vulnerabilities": 4,
+    "created_at": "2025-10-07T23:25:39.715229",
+    "variant": 4
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_4_d6e7654d",
+      "vulnerability": "Insecure Deserialization",
+      "severity": "high",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable Insecure Deserialization code",
+      "fixed_code": "# Fixed Insecure Deserialization code",
+      "variant": 4
+    },
+    {
+      "id": "sec_4_4d1dab56",
+      "vulnerability": "Authentication Bypass",
+      "severity": "low",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable Authentication Bypass code",
+      "fixed_code": "# Fixed Authentication Bypass code",
+      "variant": 4
+    },
+    {
+      "id": "sec_4_2bab57d8",
+      "vulnerability": "SSRF",
+      "severity": "low",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable SSRF code",
+      "fixed_code": "# Fixed SSRF code",
+      "variant": 4
+    },
+    {
+      "id": "sec_4_af11aad5",
+      "vulnerability": "CSRF",
+      "severity": "high",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable CSRF code",
+      "fixed_code": "# Fixed CSRF code",
+      "variant": 4
+    }
+  ]
+}

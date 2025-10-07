@@ -1,0 +1,89 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_1",
+    "type": "error_analysis",
+    "description": "Error patterns for cpp, typescript, javascript",
+    "languages": [
+      "cpp",
+      "typescript",
+      "javascript"
+    ],
+    "total_patterns": 6,
+    "created_at": "2025-10-07T23:25:39.709903",
+    "variant": 1
+  },
+  "error_patterns": [
+    {
+      "id": "err_1_000_e31d37cd",
+      "language": "typescript",
+      "error_type": "RuntimeError",
+      "description": "RuntimeError in typescript",
+      "buggy_code": "# Buggy typescript code that causes RuntimeError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for RuntimeError\n# ... implementation ...",
+      "explanation": "How to fix RuntimeError in typescript",
+      "severity": "critical",
+      "category": "syntax",
+      "variant": 1
+    },
+    {
+      "id": "err_1_001_20cb6717",
+      "language": "javascript",
+      "error_type": "EvalError",
+      "description": "EvalError in javascript",
+      "buggy_code": "# Buggy javascript code that causes EvalError\n# ... implementation ...",
+      "fixed_code": "# Fixed javascript code for EvalError\n# ... implementation ...",
+      "explanation": "How to fix EvalError in javascript",
+      "severity": "low",
+      "category": "type",
+      "variant": 1
+    },
+    {
+      "id": "err_1_002_165a6569",
+      "language": "cpp",
+      "error_type": "ArrayIndexOutOfBounds",
+      "description": "ArrayIndexOutOfBounds in cpp",
+      "buggy_code": "# Buggy cpp code that causes ArrayIndexOutOfBounds\n# ... implementation ...",
+      "fixed_code": "# Fixed cpp code for ArrayIndexOutOfBounds\n# ... implementation ...",
+      "explanation": "How to fix ArrayIndexOutOfBounds in cpp",
+      "severity": "high",
+      "category": "type",
+      "variant": 1
+    },
+    {
+      "id": "err_1_003_de9f2174",
+      "language": "cpp",
+      "error_type": "SystemError",
+      "description": "SystemError in cpp",
+      "buggy_code": "# Buggy cpp code that causes SystemError\n# ... implementation ...",
+      "fixed_code": "# Fixed cpp code for SystemError\n# ... implementation ...",
+      "explanation": "How to fix SystemError in cpp",
+      "severity": "critical",
+      "category": "logic",
+      "variant": 1
+    },
+    {
+      "id": "err_1_004_66c327d6",
+      "language": "typescript",
+      "error_type": "RangeError",
+      "description": "RangeError in typescript",
+      "buggy_code": "# Buggy typescript code that causes RangeError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for RangeError\n# ... implementation ...",
+      "explanation": "How to fix RangeError in typescript",
+      "severity": "critical",
+      "category": "logic",
+      "variant": 1
+    },
+    {
+      "id": "err_1_005_652f71db",
+      "language": "cpp",
+      "error_type": "SyntaxError",
+      "description": "SyntaxError in cpp",
+      "buggy_code": "# Buggy cpp code that causes SyntaxError\n# ... implementation ...",
+      "fixed_code": "# Fixed cpp code for SyntaxError\n# ... implementation ...",
+      "explanation": "How to fix SyntaxError in cpp",
+      "severity": "low",
+      "category": "logic",
+      "variant": 1
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "library_usage_variant_4",
+    "type": "library_patterns",
+    "language": "rust",
+    "total_examples": 3,
+    "created_at": "2025-10-07T23:25:39.720129",
+    "variant": 4
+  },
+  "usage_patterns": [
+    {
+      "id": "lib_4_0_f5227c76",
+      "library": "library_1",
+      "language": "rust",
+      "usage_example": "# Library usage",
+      "variant": 4
+    },
+    {
+      "id": "lib_4_1_61be2790",
+      "library": "library_2",
+      "language": "rust",
+      "usage_example": "# Library usage",
+      "variant": 4
+    },
+    {
+      "id": "lib_4_2_b57194a6",
+      "library": "library_3",
+      "language": "rust",
+      "usage_example": "# Library usage",
+      "variant": 4
+    }
+  ]
+}

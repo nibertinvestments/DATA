@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_0",
+    "type": "best_practices",
+    "topic": "microservices",
+    "language": "typescript",
+    "total_practices": 4,
+    "created_at": "2025-10-07T23:25:39.717401",
+    "variant": 0
+  },
+  "practices": [
+    {
+      "id": "practice_0_0_a8efa106",
+      "practice": "Best practice #1",
+      "topic": "microservices",
+      "language": "typescript",
+      "description": "Recommended approach for microservices",
+      "example": "# Example code",
+      "variant": 0
+    },
+    {
+      "id": "practice_0_1_e4a3b203",
+      "practice": "Best practice #2",
+      "topic": "microservices",
+      "language": "typescript",
+      "description": "Recommended approach for microservices",
+      "example": "# Example code",
+      "variant": 0
+    },
+    {
+      "id": "practice_0_2_c004778c",
+      "practice": "Best practice #3",
+      "topic": "microservices",
+      "language": "typescript",
+      "description": "Recommended approach for microservices",
+      "example": "# Example code",
+      "variant": 0
+    },
+    {
+      "id": "practice_0_3_96b3a664",
+      "practice": "Best practice #4",
+      "topic": "microservices",
+      "language": "typescript",
+      "description": "Recommended approach for microservices",
+      "example": "# Example code",
+      "variant": 0
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "metadata": {
+    "name": "api_patterns_variant_1",
+    "type": "api_usage",
+    "description": "API patterns for java, cpp, go",
+    "languages": [
+      "java",
+      "cpp",
+      "go"
+    ],
+    "total_patterns": 5,
+    "created_at": "2025-10-07T23:25:39.711695",
+    "variant": 1
+  },
+  "api_patterns": [
+    {
+      "id": "api_1_000_89b839b1",
+      "language": "go",
+      "api_type": "GraphQL",
+      "method": "GET",
+      "name": "API PATCH Request Pattern",
+      "description": "Best practice for PATCH requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 1
+    },
+    {
+      "id": "api_1_001_47afab12",
+      "language": "java",
+      "api_type": "gRPC",
+      "method": "POST",
+      "name": "API DELETE Request Pattern",
+      "description": "Best practice for PUT requests in java",
+      "code_example": "# API request in java\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses"
+      ],
+      "variant": 1
+    },
+    {
+      "id": "api_1_002_2c77b4e5",
+      "language": "go",
+      "api_type": "GraphQL",
+      "method": "PUT",
+      "name": "API POST Request Pattern",
+      "description": "Best practice for GET requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 1
+    },
+    {
+      "id": "api_1_003_65d99655",
+      "language": "cpp",
+      "api_type": "GraphQL",
+      "method": "POST",
+      "name": "API GET Request Pattern",
+      "description": "Best practice for POST requests in cpp",
+      "code_example": "# API request in cpp\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 1
+    },
+    {
+      "id": "api_1_004_212e29a7",
+      "language": "go",
+      "api_type": "SOAP",
+      "method": "POST",
+      "name": "API GET Request Pattern",
+      "description": "Best practice for GET requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 1
+    }
+  ]
+}

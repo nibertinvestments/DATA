@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "name": "github_samples_variant_4",
+    "type": "github_api",
+    "description": "GitHub repositories for authentication",
+    "languages": [
+      "scala",
+      "r",
+      "rust"
+    ],
+    "query": "authentication",
+    "total_samples": 0,
+    "created_at": "2025-10-07T23:25:39.709198",
+    "variant": 4
+  },
+  "samples": []
+}

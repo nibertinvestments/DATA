@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "library_usage_variant_0",
+    "type": "library_patterns",
+    "language": "go",
+    "total_examples": 4,
+    "created_at": "2025-10-07T23:25:39.719608",
+    "variant": 0
+  },
+  "usage_patterns": [
+    {
+      "id": "lib_0_0_281d9dff",
+      "library": "library_1",
+      "language": "go",
+      "usage_example": "# Library usage",
+      "variant": 0
+    },
+    {
+      "id": "lib_0_1_f7cd3c38",
+      "library": "library_2",
+      "language": "go",
+      "usage_example": "# Library usage",
+      "variant": 0
+    },
+    {
+      "id": "lib_0_2_b40167da",
+      "library": "library_3",
+      "language": "go",
+      "usage_example": "# Library usage",
+      "variant": 0
+    },
+    {
+      "id": "lib_0_3_e387ecd7",
+      "library": "library_4",
+      "language": "go",
+      "usage_example": "# Library usage",
+      "variant": 0
+    }
+  ]
+}

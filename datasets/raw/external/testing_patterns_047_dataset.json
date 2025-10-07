@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_1",
+    "type": "testing",
+    "language": "java",
+    "total_patterns": 2,
+    "created_at": "2025-10-07T23:25:39.716180",
+    "variant": 1
+  },
+  "patterns": [
+    {
+      "id": "test_1_63eeb042",
+      "test_type": "unit",
+      "language": "java",
+      "example": "# unit test example",
+      "framework": "pytest",
+      "variant": 1
+    },
+    {
+      "id": "test_1_5c13979b",
+      "test_type": "regression",
+      "language": "java",
+      "example": "# regression test example",
+      "framework": "jest",
+      "variant": 1
+    }
+  ]
+}

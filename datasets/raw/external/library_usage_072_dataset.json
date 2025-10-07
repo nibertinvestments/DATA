@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "name": "library_usage_variant_1",
+    "type": "library_patterns",
+    "language": "java",
+    "total_examples": 5,
+    "created_at": "2025-10-07T23:25:39.719735",
+    "variant": 1
+  },
+  "usage_patterns": [
+    {
+      "id": "lib_1_0_ff96294a",
+      "library": "library_1",
+      "language": "java",
+      "usage_example": "# Library usage",
+      "variant": 1
+    },
+    {
+      "id": "lib_1_1_48a6d856",
+      "library": "library_2",
+      "language": "java",
+      "usage_example": "# Library usage",
+      "variant": 1
+    },
+    {
+      "id": "lib_1_2_61e98bef",
+      "library": "library_3",
+      "language": "java",
+      "usage_example": "# Library usage",
+      "variant": 1
+    },
+    {
+      "id": "lib_1_3_aa1708f3",
+      "library": "library_4",
+      "language": "java",
+      "usage_example": "# Library usage",
+      "variant": 1
+    },
+    {
+      "id": "lib_1_4_c1deac32",
+      "library": "library_5",
+      "language": "java",
+      "usage_example": "# Library usage",
+      "variant": 1
+    }
+  ]
+}

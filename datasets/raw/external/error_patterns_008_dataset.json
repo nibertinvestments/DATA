@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_2",
+    "type": "error_analysis",
+    "description": "Error patterns for cpp, typescript, java",
+    "languages": [
+      "cpp",
+      "typescript",
+      "java"
+    ],
+    "total_patterns": 3,
+    "created_at": "2025-10-07T23:25:39.710087",
+    "variant": 2
+  },
+  "error_patterns": [
+    {
+      "id": "err_2_000_b98a0807",
+      "language": "cpp",
+      "error_type": "KeyError",
+      "description": "KeyError in cpp",
+      "buggy_code": "# Buggy cpp code that causes KeyError\n# ... implementation ...",
+      "fixed_code": "# Fixed cpp code for KeyError\n# ... implementation ...",
+      "explanation": "How to fix KeyError in cpp",
+      "severity": "critical",
+      "category": "memory",
+      "variant": 2
+    },
+    {
+      "id": "err_2_001_80c13039",
+      "language": "cpp",
+      "error_type": "ValueError",
+      "description": "ValueError in cpp",
+      "buggy_code": "# Buggy cpp code that causes ValueError\n# ... implementation ...",
+      "fixed_code": "# Fixed cpp code for ValueError\n# ... implementation ...",
+      "explanation": "How to fix ValueError in cpp",
+      "severity": "low",
+      "category": "memory",
+      "variant": 2
+    },
+    {
+      "id": "err_2_002_3c1e4ebe",
+      "language": "java",
+      "error_type": "EvalError",
+      "description": "EvalError in java",
+      "buggy_code": "# Buggy java code that causes EvalError\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for EvalError\n# ... implementation ...",
+      "explanation": "How to fix EvalError in java",
+      "severity": "critical",
+      "category": "memory",
+      "variant": 2
+    }
+  ]
+}

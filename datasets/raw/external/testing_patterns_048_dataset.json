@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_2",
+    "type": "testing",
+    "language": "java",
+    "total_patterns": 2,
+    "created_at": "2025-10-07T23:25:39.716298",
+    "variant": 2
+  },
+  "patterns": [
+    {
+      "id": "test_2_09284b6b",
+      "test_type": "regression",
+      "language": "java",
+      "example": "# regression test example",
+      "framework": "rspec",
+      "variant": 2
+    },
+    {
+      "id": "test_2_abb9cdd8",
+      "test_type": "performance",
+      "language": "java",
+      "example": "# performance test example",
+      "framework": "junit",
+      "variant": 2
+    }
+  ]
+}

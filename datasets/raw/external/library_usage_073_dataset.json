@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "name": "library_usage_variant_2",
+    "type": "library_patterns",
+    "language": "ruby",
+    "total_examples": 5,
+    "created_at": "2025-10-07T23:25:39.719867",
+    "variant": 2
+  },
+  "usage_patterns": [
+    {
+      "id": "lib_2_0_644310f4",
+      "library": "library_1",
+      "language": "ruby",
+      "usage_example": "# Library usage",
+      "variant": 2
+    },
+    {
+      "id": "lib_2_1_e5848786",
+      "library": "library_2",
+      "language": "ruby",
+      "usage_example": "# Library usage",
+      "variant": 2
+    },
+    {
+      "id": "lib_2_2_17ac8d1b",
+      "library": "library_3",
+      "language": "ruby",
+      "usage_example": "# Library usage",
+      "variant": 2
+    },
+    {
+      "id": "lib_2_3_ef900291",
+      "library": "library_4",
+      "language": "ruby",
+      "usage_example": "# Library usage",
+      "variant": 2
+    },
+    {
+      "id": "lib_2_4_318c6a41",
+      "library": "library_5",
+      "language": "ruby",
+      "usage_example": "# Library usage",
+      "variant": 2
+    }
+  ]
+}

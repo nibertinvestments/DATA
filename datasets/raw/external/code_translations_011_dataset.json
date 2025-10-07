@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "code_translations_variant_0",
+    "type": "cross_language",
+    "description": "Cross-language fenwick_tree implementations",
+    "languages": [
+      "ruby",
+      "go",
+      "rust",
+      "javascript",
+      "python",
+      "typescript"
+    ],
+    "algorithm": "fenwick_tree",
+    "total_examples": 1,
+    "created_at": "2025-10-07T23:25:39.710722",
+    "variant": 0
+  },
+  "translation_examples": [
+    {
+      "id": "trans_0_62e1949a",
+      "concept": "fenwick_tree_variant_0",
+      "description": "Implement fenwick_tree algorithm",
+      "difficulty": "advanced",
+      "implementations": {
+        "ruby": "# fenwick_tree implementation in ruby\n# ... code ...",
+        "go": "# fenwick_tree implementation in go\n# ... code ...",
+        "rust": "# fenwick_tree implementation in rust\n# ... code ...",
+        "javascript": "# fenwick_tree implementation in javascript\n# ... code ...",
+        "python": "# fenwick_tree implementation in python\n# ... code ...",
+        "typescript": "# fenwick_tree implementation in typescript\n# ... code ..."
+      },
+      "variant": 0
+    }
+  ]
+}

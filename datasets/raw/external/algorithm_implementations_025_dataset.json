@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "algorithm_implementations_variant_4",
+    "type": "algorithms",
+    "language": "java",
+    "total_implementations": 3,
+    "created_at": "2025-10-07T23:25:39.713039",
+    "variant": 4
+  },
+  "implementations": [
+    {
+      "id": "algo_4_53ee618c",
+      "name": "heap_implementation",
+      "language": "java",
+      "complexity": "O(n)",
+      "code": "# heap implementation in java\n# ... code ...",
+      "variant": 4
+    },
+    {
+      "id": "algo_4_279fd20c",
+      "name": "sorting_implementation",
+      "language": "java",
+      "complexity": "O(n)",
+      "code": "# sorting implementation in java\n# ... code ...",
+      "variant": 4
+    },
+    {
+      "id": "algo_4_8e270038",
+      "name": "greedy_implementation",
+      "language": "java",
+      "complexity": "O(n log n)",
+      "code": "# greedy implementation in java\n# ... code ...",
+      "variant": 4
+    }
+  ]
+}

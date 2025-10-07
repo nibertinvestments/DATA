@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_0",
+    "type": "data_structures",
+    "language": "java",
+    "total_examples": 5,
+    "created_at": "2025-10-07T23:25:39.713205",
+    "variant": 0
+  },
+  "examples": [
+    {
+      "id": "ds_0_67b8efc9",
+      "structure": "set",
+      "language": "java",
+      "implementation": "# set implementation in java",
+      "operations": [
+        "delete",
+        "insert",
+        "traverse"
+      ],
+      "variant": 0
+    },
+    {
+      "id": "ds_0_52407249",
+      "structure": "stack",
+      "language": "java",
+      "implementation": "# stack implementation in java",
+      "operations": [
+        "delete",
+        "insert",
+        "traverse",
+        "search"
+      ],
+      "variant": 0
+    },
+    {
+      "id": "ds_0_92f4916c",
+      "structure": "trie",
+      "language": "java",
+      "implementation": "# trie implementation in java",
+      "operations": [
+        "traverse",
+        "search"
+      ],
+      "variant": 0
+    },
+    {
+      "id": "ds_0_4b35511d",
+      "structure": "linked_list",
+      "language": "java",
+      "implementation": "# linked_list implementation in java",
+      "operations": [
+        "delete",
+        "traverse",
+        "insert"
+      ],
+      "variant": 0
+    },
+    {
+      "id": "ds_0_a3070ee4",
+      "structure": "array",
+      "language": "java",
+      "implementation": "# array implementation in java",
+      "operations": [
+        "search",
+        "traverse"
+      ],
+      "variant": 0
+    }
+  ]
+}

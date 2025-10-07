@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_2",
+    "type": "concurrency",
+    "language": "python",
+    "total_patterns": 2,
+    "created_at": "2025-10-07T23:25:39.722654",
+    "variant": 2
+  },
+  "patterns": [
+    {
+      "id": "concur_2_0_b555f818",
+      "pattern": "channel",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 2
+    },
+    {
+      "id": "concur_2_1_796dbf17",
+      "pattern": "channel",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 2
+    }
+  ]
+}

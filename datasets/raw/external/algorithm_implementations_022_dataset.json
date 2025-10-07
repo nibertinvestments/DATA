@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "algorithm_implementations_variant_1",
+    "type": "algorithms",
+    "language": "java",
+    "total_implementations": 4,
+    "created_at": "2025-10-07T23:25:39.712577",
+    "variant": 1
+  },
+  "implementations": [
+    {
+      "id": "algo_1_9672ba97",
+      "name": "sorting_implementation",
+      "language": "java",
+      "complexity": "O(1)",
+      "code": "# sorting implementation in java\n# ... code ...",
+      "variant": 1
+    },
+    {
+      "id": "algo_1_bee79e3b",
+      "name": "string_implementation",
+      "language": "java",
+      "complexity": "O(n²)",
+      "code": "# string implementation in java\n# ... code ...",
+      "variant": 1
+    },
+    {
+      "id": "algo_1_7ee63c02",
+      "name": "array_implementation",
+      "language": "java",
+      "complexity": "O(n)",
+      "code": "# array implementation in java\n# ... code ...",
+      "variant": 1
+    },
+    {
+      "id": "algo_1_d6745b1e",
+      "name": "union_find_implementation",
+      "language": "java",
+      "complexity": "O(1)",
+      "code": "# union_find implementation in java\n# ... code ...",
+      "variant": 1
+    }
+  ]
+}
