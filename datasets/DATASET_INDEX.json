@@ -1,0 +1,173 @@
+{
+  "generated_at": "2025-10-07T23:13:41.057082",
+  "repository": "nibertinvestments/DATA",
+  "description": "Comprehensive dataset index for LLM/ML/AI training",
+  "total_datasets": 10,
+  "categories": {
+    "testing": [
+      "testing_strategies"
+    ],
+    "security": [
+      "security_vulnerabilities"
+    ],
+    "software_design": [
+      "design_patterns",
+      "database_patterns"
+    ],
+    "performance": [
+      "performance_optimization"
+    ],
+    "error_handling": [
+      "common_programming_errors"
+    ],
+    "api_patterns": [
+      "api_documentation_patterns"
+    ],
+    "code_samples": [
+      "github_code_search"
+    ],
+    "code_translation": [
+      "code_translation_examples"
+    ],
+    "async_concurrent": [
+      "async_programming"
+    ]
+  },
+  "datasets": [
+    {
+      "name": "testing_strategies",
+      "filename": "testing_strategies_dataset.json",
+      "path": "raw/external/testing_strategies_dataset.json",
+      "size_kb": 3.56,
+      "category": "testing",
+      "description": "Comprehensive testing strategies and patterns",
+      "languages": [],
+      "total_samples": 2,
+      "created_at": "2025-10-07T23:11:05.973693"
+    },
+    {
+      "name": "security_vulnerabilities",
+      "filename": "security_vulnerabilities_dataset.json",
+      "path": "raw/external/security_vulnerabilities_dataset.json",
+      "size_kb": 6.8,
+      "category": "security",
+      "description": "Common security vulnerabilities and their fixes",
+      "languages": [],
+      "total_samples": 3,
+      "created_at": "2025-10-07T23:11:05.973683"
+    },
+    {
+      "name": "design_patterns",
+      "filename": "design_patterns_dataset.json",
+      "path": "raw/external/design_patterns_dataset.json",
+      "size_kb": 8.96,
+      "category": "software_design",
+      "description": "Comprehensive design patterns for multiple languages",
+      "languages": [],
+      "total_samples": 3,
+      "created_at": "2025-10-07T23:11:05.973672"
+    },
+    {
+      "name": "performance_optimization",
+      "filename": "performance_optimization_dataset.json",
+      "path": "raw/external/performance_optimization_dataset.json",
+      "size_kb": 3.82,
+      "category": "performance",
+      "description": "Performance optimization patterns and techniques",
+      "languages": [],
+      "total_samples": 3,
+      "created_at": "2025-10-07T23:11:05.973687"
+    },
+    {
+      "name": "database_patterns",
+      "filename": "database_patterns_dataset.json",
+      "path": "raw/external/database_patterns_dataset.json",
+      "size_kb": 1.97,
+      "category": "software_design",
+      "description": "Database design patterns and optimization techniques",
+      "languages": [],
+      "total_samples": 2,
+      "created_at": "2025-10-07T23:11:05.973696"
+    },
+    {
+      "name": "common_programming_errors",
+      "filename": "common_programming_errors_dataset.json",
+      "path": "raw/external/common_programming_errors_dataset.json",
+      "size_kb": 7.52,
+      "category": "error_handling",
+      "description": "Common programming errors and solutions",
+      "languages": [
+        "python",
+        "javascript",
+        "java",
+        "cpp",
+        "typescript"
+      ],
+      "total_samples": 11,
+      "created_at": "2025-10-07T23:12:34.813854"
+    },
+    {
+      "name": "api_documentation_patterns",
+      "filename": "api_documentation_patterns_dataset.json",
+      "path": "raw/external/api_documentation_patterns_dataset.json",
+      "size_kb": 7.46,
+      "category": "api_patterns",
+      "description": "API documentation and usage patterns",
+      "languages": [
+        "python",
+        "javascript",
+        "java",
+        "rest"
+      ],
+      "total_samples": 5,
+      "created_at": "2025-10-07T23:12:34.814256"
+    },
+    {
+      "name": "github_code_search",
+      "filename": "github_code_search_dataset.json",
+      "path": "raw/external/github_code_search_dataset.json",
+      "size_kb": 0.34,
+      "category": "code_samples",
+      "description": "GitHub code repositories with ML/AI focus",
+      "languages": [
+        "python",
+        "javascript",
+        "java",
+        "cpp",
+        "rust",
+        "go"
+      ],
+      "total_samples": 0,
+      "created_at": "2025-10-07T23:12:34.813271"
+    },
+    {
+      "name": "code_translation_examples",
+      "filename": "code_translation_examples_dataset.json",
+      "path": "raw/external/code_translation_examples_dataset.json",
+      "size_kb": 9.07,
+      "category": "code_translation",
+      "description": "Cross-language code translation examples",
+      "languages": [
+        "python",
+        "javascript",
+        "java",
+        "cpp",
+        "rust",
+        "go"
+      ],
+      "total_samples": 3,
+      "created_at": "2025-10-07T23:12:34.814607"
+    },
+    {
+      "name": "async_programming",
+      "filename": "async_programming_dataset.json",
+      "path": "raw/external/async_programming_dataset.json",
+      "size_kb": 2.08,
+      "category": "async_concurrent",
+      "description": "Asynchronous programming patterns and best practices",
+      "languages": [],
+      "total_samples": 1,
+      "created_at": "2025-10-07T23:11:05.973698"
+    }
+  ]
+}

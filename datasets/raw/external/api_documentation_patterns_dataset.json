@@ -10,7 +10,7 @@
       "rest"
     ],
     "total_patterns": 5,
-    "created_at": "2025-10-07T23:08:43.180184"
+    "created_at": "2025-10-07T23:12:34.814256"
   },
   "api_patterns": [
     {
@@ -38,7 +38,7 @@
       "api_type": "REST",
       "name": "Async API Call with Fetch",
       "description": "Modern async/await pattern for API calls",
-      "code_example": "async function fetchUserData(userId) {\n    try {\n        const response = await fetch(\n            \\`https://api.example.com/users/\\${userId}\\`,\n            {\n                method: 'GET',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n                signal: AbortSignal.timeout(10000)\n            }\n        );\n        \n        if (!response.ok) {\n            throw new Error(\\`HTTP error! status: \\${response.status}\\`);\n        }\n        \n        const data = await response.json();\n        return data;\n    } catch (error) {\n        if (error.name === 'AbortError') {\n            console.error('Request timed out');\n        } else {\n            console.error('Fetch error:', error);\n        }\n        return null;\n    }\n}",
+      "code_example": "async function fetchUserData(userId) {\n    try {\n        const response = await fetch(\n            `https://api.example.com/users/${userId}`,\n            {\n                method: 'GET',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n                signal: AbortSignal.timeout(10000)\n            }\n        );\n        \n        if (!response.ok) {\n            throw new Error(\\`HTTP error! status: \\${response.status}\\`);\n        }\n        \n        const data = await response.json();\n        return data;\n    } catch (error) {\n        if (error.name === 'AbortError') {\n            console.error('Request timed out');\n        } else {\n            console.error('Fetch error:', error);\n        }\n        return null;\n    }\n}",
       "best_practices": [
         "Use async/await for cleaner code",
         "Check response.ok before parsing",
@@ -95,7 +95,7 @@
       "api_type": "REST",
       "name": "Type-Safe API Client",
       "description": "Type-safe API calls with TypeScript",
-      "code_example": "interface User {\n    id: number;\n    name: string;\n    email: string;\n}\n\ninterface ApiResponse<T> {\n    data: T;\n    success: boolean;\n}\n\nasync function fetchUser(userId: number): Promise<User | null> {\n    try {\n        const response = await fetch(\n            \\`https://api.example.com/users/\\${userId}\\`,\n            {\n                method: 'GET',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n            }\n        );\n        \n        if (!response.ok) {\n            throw new Error(\\`HTTP error! status: \\${response.status}\\`);\n        }\n        \n        const apiResponse: ApiResponse<User> = await response.json();\n        \n        if (apiResponse.success) {\n            return apiResponse.data;\n        }\n        \n        return null;\n    } catch (error) {\n        console.error('Fetch error:', error);\n        return null;\n    }\n}",
+      "code_example": "interface User {\n    id: number;\n    name: string;\n    email: string;\n}\n\ninterface ApiResponse<T> {\n    data: T;\n    success: boolean;\n}\n\nasync function fetchUser(userId: number): Promise<User | null> {\n    try {\n        const response = await fetch(\n            `https://api.example.com/users/${userId}`,\n            {\n                method: 'GET',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n            }\n        );\n        \n        if (!response.ok) {\n            throw new Error(\\`HTTP error! status: \\${response.status}\\`);\n        }\n        \n        const apiResponse: ApiResponse<User> = await response.json();\n        \n        if (apiResponse.success) {\n            return apiResponse.data;\n        }\n        \n        return null;\n    } catch (error) {\n        console.error('Fetch error:', error);\n        return null;\n    }\n}",
       "best_practices": [
         "Define interfaces for type safety",
         "Use generic types for API responses",
