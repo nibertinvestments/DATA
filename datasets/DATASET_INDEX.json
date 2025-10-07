@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-10-07T23:13:41.057082",
+  "generated_at": "2025-10-07T23:15:11.547035",
   "repository": "nibertinvestments/DATA",
   "description": "Comprehensive dataset index for LLM/ML/AI training",
   "total_datasets": 10,
@@ -43,7 +43,7 @@
       "description": "Comprehensive testing strategies and patterns",
       "languages": [],
       "total_samples": 2,
-      "created_at": "2025-10-07T23:11:05.973693"
+      "created_at": "2025-10-07T23:15:11.513987"
     },
     {
       "name": "security_vulnerabilities",
@@ -54,7 +54,7 @@
       "description": "Common security vulnerabilities and their fixes",
       "languages": [],
       "total_samples": 3,
-      "created_at": "2025-10-07T23:11:05.973683"
+      "created_at": "2025-10-07T23:15:11.513976"
     },
     {
       "name": "design_patterns",
@@ -65,7 +65,7 @@
       "description": "Comprehensive design patterns for multiple languages",
       "languages": [],
       "total_samples": 3,
-      "created_at": "2025-10-07T23:11:05.973672"
+      "created_at": "2025-10-07T23:15:11.513967"
     },
     {
       "name": "performance_optimization",
@@ -76,7 +76,7 @@
       "description": "Performance optimization patterns and techniques",
       "languages": [],
       "total_samples": 3,
-      "created_at": "2025-10-07T23:11:05.973687"
+      "created_at": "2025-10-07T23:15:11.513982"
     },
     {
       "name": "database_patterns",
@@ -87,7 +87,7 @@
       "description": "Database design patterns and optimization techniques",
       "languages": [],
       "total_samples": 2,
-      "created_at": "2025-10-07T23:11:05.973696"
+      "created_at": "2025-10-07T23:15:11.513989"
     },
     {
       "name": "common_programming_errors",
@@ -104,7 +104,7 @@
         "typescript"
       ],
       "total_samples": 11,
-      "created_at": "2025-10-07T23:12:34.813854"
+      "created_at": "2025-10-07T23:15:11.467262"
     },
     {
       "name": "api_documentation_patterns",
@@ -120,7 +120,7 @@
         "rest"
       ],
       "total_samples": 5,
-      "created_at": "2025-10-07T23:12:34.814256"
+      "created_at": "2025-10-07T23:15:11.467594"
     },
     {
       "name": "github_code_search",
@@ -138,7 +138,7 @@
         "go"
       ],
       "total_samples": 0,
-      "created_at": "2025-10-07T23:12:34.813271"
+      "created_at": "2025-10-07T23:15:11.466794"
     },
     {
       "name": "code_translation_examples",
@@ -156,7 +156,7 @@
         "go"
       ],
       "total_samples": 3,
-      "created_at": "2025-10-07T23:12:34.814607"
+      "created_at": "2025-10-07T23:15:11.467860"
     },
     {
       "name": "async_programming",
@@ -167,7 +167,7 @@
       "description": "Asynchronous programming patterns and best practices",
       "languages": [],
       "total_samples": 1,
-      "created_at": "2025-10-07T23:11:05.973698"
+      "created_at": "2025-10-07T23:15:11.513991"
     }
   ]
 }
