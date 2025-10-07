@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "name": "database_queries_variant_2",
+    "type": "database",
+    "database_type": "sql",
+    "total_queries": 7,
+    "created_at": "2025-10-07T23:25:39.721979",
+    "variant": 2
+  },
+  "queries": [
+    {
+      "id": "dbquery_2_0_113e63f2",
+      "database_type": "sql",
+      "query_type": "select",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 2
+    },
+    {
+      "id": "dbquery_2_1_7eae2714",
+      "database_type": "sql",
+      "query_type": "delete",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 2
+    },
+    {
+      "id": "dbquery_2_2_f8b843cd",
+      "database_type": "sql",
+      "query_type": "update",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 2
+    },
+    {
+      "id": "dbquery_2_3_1ebcd557",
+      "database_type": "sql",
+      "query_type": "join",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 2
+    },
+    {
+      "id": "dbquery_2_4_c7e2bf46",
+      "database_type": "sql",
+      "query_type": "join",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 2
+    },
+    {
+      "id": "dbquery_2_5_46b8ca9e",
+      "database_type": "sql",
+      "query_type": "delete",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 2
+    },
+    {
+      "id": "dbquery_2_6_42ef614d",
+      "database_type": "sql",
+      "query_type": "insert",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 2
+    }
+  ]
+}

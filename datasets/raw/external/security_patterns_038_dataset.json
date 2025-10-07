@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_2",
+    "type": "security",
+    "language": "python",
+    "total_vulnerabilities": 2,
+    "created_at": "2025-10-07T23:25:39.714951",
+    "variant": 2
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_2_7e6d3b0e",
+      "vulnerability": "XXE",
+      "severity": "critical",
+      "language": "python",
+      "vulnerable_code": "# Vulnerable XXE code",
+      "fixed_code": "# Fixed XXE code",
+      "variant": 2
+    },
+    {
+      "id": "sec_2_9e1e5921",
+      "vulnerability": "SSRF",
+      "severity": "low",
+      "language": "python",
+      "vulnerable_code": "# Vulnerable SSRF code",
+      "fixed_code": "# Fixed SSRF code",
+      "variant": 2
+    }
+  ]
+}

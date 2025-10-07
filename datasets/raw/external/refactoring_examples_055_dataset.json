@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_4",
+    "type": "refactoring",
+    "language": "python",
+    "total_examples": 4,
+    "created_at": "2025-10-07T23:25:39.717255",
+    "variant": 4
+  },
+  "refactorings": [
+    {
+      "id": "refactor_4_0_e02c7fc7",
+      "refactoring_type": "extract_method",
+      "language": "python",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 4
+    },
+    {
+      "id": "refactor_4_1_8b7747c5",
+      "refactoring_type": "inline",
+      "language": "python",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 4
+    },
+    {
+      "id": "refactor_4_2_3365e898",
+      "refactoring_type": "inline",
+      "language": "python",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 4
+    },
+    {
+      "id": "refactor_4_3_eec902a3",
+      "refactoring_type": "extract_class",
+      "language": "python",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 4
+    }
+  ]
+}

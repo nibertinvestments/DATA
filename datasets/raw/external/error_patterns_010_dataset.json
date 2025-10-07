@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_4",
+    "type": "error_analysis",
+    "description": "Error patterns for python, java, go",
+    "languages": [
+      "python",
+      "java",
+      "go"
+    ],
+    "total_patterns": 8,
+    "created_at": "2025-10-07T23:25:39.710528",
+    "variant": 4
+  },
+  "error_patterns": [
+    {
+      "id": "err_4_000_06b7cafa",
+      "language": "go",
+      "error_type": "ZeroDivisionError",
+      "description": "ZeroDivisionError in go",
+      "buggy_code": "# Buggy go code that causes ZeroDivisionError\n# ... implementation ...",
+      "fixed_code": "# Fixed go code for ZeroDivisionError\n# ... implementation ...",
+      "explanation": "How to fix ZeroDivisionError in go",
+      "severity": "low",
+      "category": "runtime",
+      "variant": 4
+    },
+    {
+      "id": "err_4_001_4cd086ee",
+      "language": "java",
+      "error_type": "RuntimeError",
+      "description": "RuntimeError in java",
+      "buggy_code": "# Buggy java code that causes RuntimeError\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for RuntimeError\n# ... implementation ...",
+      "explanation": "How to fix RuntimeError in java",
+      "severity": "low",
+      "category": "memory",
+      "variant": 4
+    },
+    {
+      "id": "err_4_002_e7aa720d",
+      "language": "python",
+      "error_type": "IndexError",
+      "description": "IndexError in python",
+      "buggy_code": "# Buggy python code that causes IndexError\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for IndexError\n# ... implementation ...",
+      "explanation": "How to fix IndexError in python",
+      "severity": "medium",
+      "category": "memory",
+      "variant": 4
+    },
+    {
+      "id": "err_4_003_ffcc7933",
+      "language": "java",
+      "error_type": "ReferenceError",
+      "description": "ReferenceError in java",
+      "buggy_code": "# Buggy java code that causes ReferenceError\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for ReferenceError\n# ... implementation ...",
+      "explanation": "How to fix ReferenceError in java",
+      "severity": "critical",
+      "category": "type",
+      "variant": 4
+    },
+    {
+      "id": "err_4_004_e482f4a0",
+      "language": "java",
+      "error_type": "IllegalArgumentException",
+      "description": "IllegalArgumentException in java",
+      "buggy_code": "# Buggy java code that causes IllegalArgumentException\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for IllegalArgumentException\n# ... implementation ...",
+      "explanation": "How to fix IllegalArgumentException in java",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 4
+    },
+    {
+      "id": "err_4_005_c64a2cf2",
+      "language": "go",
+      "error_type": "RangeError",
+      "description": "RangeError in go",
+      "buggy_code": "# Buggy go code that causes RangeError\n# ... implementation ...",
+      "fixed_code": "# Fixed go code for RangeError\n# ... implementation ...",
+      "explanation": "How to fix RangeError in go",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 4
+    },
+    {
+      "id": "err_4_006_b5ce4682",
+      "language": "java",
+      "error_type": "URIError",
+      "description": "URIError in java",
+      "buggy_code": "# Buggy java code that causes URIError\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for URIError\n# ... implementation ...",
+      "explanation": "How to fix URIError in java",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 4
+    },
+    {
+      "id": "err_4_007_ad4c671c",
+      "language": "go",
+      "error_type": "IllegalStateException",
+      "description": "IllegalStateException in go",
+      "buggy_code": "# Buggy go code that causes IllegalStateException\n# ... implementation ...",
+      "fixed_code": "# Fixed go code for IllegalStateException\n# ... implementation ...",
+      "explanation": "How to fix IllegalStateException in go",
+      "severity": "high",
+      "category": "memory",
+      "variant": 4
+    }
+  ]
+}

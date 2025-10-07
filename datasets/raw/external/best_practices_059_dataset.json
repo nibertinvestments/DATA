@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_3",
+    "type": "best_practices",
+    "topic": "desktop",
+    "language": "typescript",
+    "total_practices": 8,
+    "created_at": "2025-10-07T23:25:39.717886",
+    "variant": 3
+  },
+  "practices": [
+    {
+      "id": "practice_3_0_921a0001",
+      "practice": "Best practice #1",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    },
+    {
+      "id": "practice_3_1_99835397",
+      "practice": "Best practice #2",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    },
+    {
+      "id": "practice_3_2_5a5a3044",
+      "practice": "Best practice #3",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    },
+    {
+      "id": "practice_3_3_603c07b6",
+      "practice": "Best practice #4",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    },
+    {
+      "id": "practice_3_4_bfee1726",
+      "practice": "Best practice #5",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    },
+    {
+      "id": "practice_3_5_1ad2223c",
+      "practice": "Best practice #6",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    },
+    {
+      "id": "practice_3_6_50a2b4e8",
+      "practice": "Best practice #7",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    },
+    {
+      "id": "practice_3_7_14109f41",
+      "practice": "Best practice #8",
+      "topic": "desktop",
+      "language": "typescript",
+      "description": "Recommended approach for desktop",
+      "example": "# Example code",
+      "variant": 3
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "cli_tools_variant_0",
+    "type": "cli",
+    "language": "go",
+    "total_tools": 3,
+    "created_at": "2025-10-07T23:25:39.720267",
+    "variant": 0
+  },
+  "tools": [
+    {
+      "id": "cli_0_0_cfeddc49",
+      "tool_name": "tool_0_0",
+      "language": "go",
+      "command": "# CLI command",
+      "variant": 0
+    },
+    {
+      "id": "cli_0_1_7de25ea8",
+      "tool_name": "tool_0_1",
+      "language": "go",
+      "command": "# CLI command",
+      "variant": 0
+    },
+    {
+      "id": "cli_0_2_957df850",
+      "tool_name": "tool_0_2",
+      "language": "go",
+      "command": "# CLI command",
+      "variant": 0
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_2",
+    "type": "design_patterns",
+    "language": "python",
+    "total_patterns": 2,
+    "created_at": "2025-10-07T23:25:39.714235",
+    "variant": 2
+  },
+  "patterns": [
+    {
+      "id": "pattern_2_da80ed71",
+      "name": "Decorator Pattern",
+      "category": "creational",
+      "language": "python",
+      "implementation": "# Decorator in python",
+      "variant": 2
+    },
+    {
+      "id": "pattern_2_c6b8c053",
+      "name": "Command Pattern",
+      "category": "structural",
+      "language": "python",
+      "implementation": "# Command in python",
+      "variant": 2
+    }
+  ]
+}

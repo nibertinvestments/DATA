@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_4",
+    "type": "best_practices",
+    "topic": "monitoring",
+    "language": "typescript",
+    "total_practices": 8,
+    "created_at": "2025-10-07T23:25:39.718132",
+    "variant": 4
+  },
+  "practices": [
+    {
+      "id": "practice_4_0_bf015792",
+      "practice": "Best practice #1",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_1_e2352e7b",
+      "practice": "Best practice #2",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_2_f028d1d0",
+      "practice": "Best practice #3",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_3_461fdf17",
+      "practice": "Best practice #4",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_4_34e7f209",
+      "practice": "Best practice #5",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_5_87e7d191",
+      "practice": "Best practice #6",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_6_de0fe15f",
+      "practice": "Best practice #7",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_7_903951b9",
+      "practice": "Best practice #8",
+      "topic": "monitoring",
+      "language": "typescript",
+      "description": "Recommended approach for monitoring",
+      "example": "# Example code",
+      "variant": 4
+    }
+  ]
+}

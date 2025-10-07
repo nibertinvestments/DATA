@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_4",
+    "type": "framework_usage",
+    "framework": "asp_net",
+    "total_examples": 4,
+    "created_at": "2025-10-07T23:25:39.719483",
+    "variant": 4
+  },
+  "examples": [
+    {
+      "id": "framework_4_0_3d6ed615",
+      "framework": "asp_net",
+      "feature": "Feature #1",
+      "code": "# asp_net example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_1_425212d0",
+      "framework": "asp_net",
+      "feature": "Feature #2",
+      "code": "# asp_net example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_2_c1f84bd4",
+      "framework": "asp_net",
+      "feature": "Feature #3",
+      "code": "# asp_net example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_3_a2998b34",
+      "framework": "asp_net",
+      "feature": "Feature #4",
+      "code": "# asp_net example",
+      "variant": 4
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_4",
+    "type": "design_patterns",
+    "language": "go",
+    "total_patterns": 4,
+    "created_at": "2025-10-07T23:25:39.714485",
+    "variant": 4
+  },
+  "patterns": [
+    {
+      "id": "pattern_4_c1da33f8",
+      "name": "Adapter Pattern",
+      "category": "creational",
+      "language": "go",
+      "implementation": "# Adapter in go",
+      "variant": 4
+    },
+    {
+      "id": "pattern_4_2d893a79",
+      "name": "Singleton Pattern",
+      "category": "creational",
+      "language": "go",
+      "implementation": "# Singleton in go",
+      "variant": 4
+    },
+    {
+      "id": "pattern_4_3d8572f8",
+      "name": "Strategy Pattern",
+      "category": "structural",
+      "language": "go",
+      "implementation": "# Strategy in go",
+      "variant": 4
+    },
+    {
+      "id": "pattern_4_45f99fa9",
+      "name": "Iterator Pattern",
+      "category": "behavioral",
+      "language": "go",
+      "implementation": "# Iterator in go",
+      "variant": 4
+    }
+  ]
+}

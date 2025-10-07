@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_0",
+    "type": "framework_usage",
+    "framework": "meteor",
+    "total_examples": 3,
+    "created_at": "2025-10-07T23:25:39.718959",
+    "variant": 0
+  },
+  "examples": [
+    {
+      "id": "framework_0_0_96c38314",
+      "framework": "meteor",
+      "feature": "Feature #1",
+      "code": "# meteor example",
+      "variant": 0
+    },
+    {
+      "id": "framework_0_1_2025de9c",
+      "framework": "meteor",
+      "feature": "Feature #2",
+      "code": "# meteor example",
+      "variant": 0
+    },
+    {
+      "id": "framework_0_2_95216240",
+      "framework": "meteor",
+      "feature": "Feature #3",
+      "code": "# meteor example",
+      "variant": 0
+    }
+  ]
+}

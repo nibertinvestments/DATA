@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_1",
+    "type": "framework_usage",
+    "framework": "vue",
+    "total_examples": 3,
+    "created_at": "2025-10-07T23:25:39.719077",
+    "variant": 1
+  },
+  "examples": [
+    {
+      "id": "framework_1_0_9d752253",
+      "framework": "vue",
+      "feature": "Feature #1",
+      "code": "# vue example",
+      "variant": 1
+    },
+    {
+      "id": "framework_1_1_2dfe1d95",
+      "framework": "vue",
+      "feature": "Feature #2",
+      "code": "# vue example",
+      "variant": 1
+    },
+    {
+      "id": "framework_1_2_e61104c0",
+      "framework": "vue",
+      "feature": "Feature #3",
+      "code": "# vue example",
+      "variant": 1
+    }
+  ]
+}

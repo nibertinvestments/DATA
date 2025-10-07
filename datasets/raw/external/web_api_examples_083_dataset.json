@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "name": "web_api_examples_variant_2",
+    "type": "web_api",
+    "language": "python",
+    "total_endpoints": 5,
+    "created_at": "2025-10-07T23:25:39.721143",
+    "variant": 2
+  },
+  "apis": [
+    {
+      "id": "webapi_2_0_e670c228",
+      "endpoint": "/api/v2/resource_0",
+      "method": "DELETE",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 2
+    },
+    {
+      "id": "webapi_2_1_297f4f9b",
+      "endpoint": "/api/v2/resource_1",
+      "method": "DELETE",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 2
+    },
+    {
+      "id": "webapi_2_2_77b4114c",
+      "endpoint": "/api/v2/resource_2",
+      "method": "PUT",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 2
+    },
+    {
+      "id": "webapi_2_3_b76f9ac9",
+      "endpoint": "/api/v2/resource_3",
+      "method": "DELETE",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 2
+    },
+    {
+      "id": "webapi_2_4_7d6d4886",
+      "endpoint": "/api/v2/resource_4",
+      "method": "DELETE",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 2
+    }
+  ]
+}

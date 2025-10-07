@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_3",
+    "type": "anti_patterns",
+    "language": "javascript",
+    "total_patterns": 3,
+    "created_at": "2025-10-07T23:25:39.718715",
+    "variant": 3
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_3_0a650bda",
+      "pattern": "Hard Coding",
+      "language": "javascript",
+      "bad_example": "# Anti-pattern: Hard Coding",
+      "good_example": "# Better approach",
+      "variant": 3
+    },
+    {
+      "id": "anti_3_439fc712",
+      "pattern": "Spaghetti Code",
+      "language": "javascript",
+      "bad_example": "# Anti-pattern: Spaghetti Code",
+      "good_example": "# Better approach",
+      "variant": 3
+    },
+    {
+      "id": "anti_3_c9fa944c",
+      "pattern": "Premature Optimization",
+      "language": "javascript",
+      "bad_example": "# Anti-pattern: Premature Optimization",
+      "good_example": "# Better approach",
+      "variant": 3
+    }
+  ]
+}

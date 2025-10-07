@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_1",
+    "type": "best_practices",
+    "topic": "containers",
+    "language": "java",
+    "total_practices": 4,
+    "created_at": "2025-10-07T23:25:39.717569",
+    "variant": 1
+  },
+  "practices": [
+    {
+      "id": "practice_1_0_3024004b",
+      "practice": "Best practice #1",
+      "topic": "containers",
+      "language": "java",
+      "description": "Recommended approach for containers",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_1_27ddad0b",
+      "practice": "Best practice #2",
+      "topic": "containers",
+      "language": "java",
+      "description": "Recommended approach for containers",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_2_777c501e",
+      "practice": "Best practice #3",
+      "topic": "containers",
+      "language": "java",
+      "description": "Recommended approach for containers",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_3_a3f0b5fa",
+      "practice": "Best practice #4",
+      "topic": "containers",
+      "language": "java",
+      "description": "Recommended approach for containers",
+      "example": "# Example code",
+      "variant": 1
+    }
+  ]
+}

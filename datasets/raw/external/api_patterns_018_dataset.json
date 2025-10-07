@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "name": "api_patterns_variant_2",
+    "type": "api_usage",
+    "description": "API patterns for go, rust, cpp",
+    "languages": [
+      "go",
+      "rust",
+      "cpp"
+    ],
+    "total_patterns": 5,
+    "created_at": "2025-10-07T23:25:39.711888",
+    "variant": 2
+  },
+  "api_patterns": [
+    {
+      "id": "api_2_000_5f27f4f9",
+      "language": "go",
+      "api_type": "REST",
+      "method": "DELETE",
+      "name": "API PUT Request Pattern",
+      "description": "Best practice for POST requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses"
+      ],
+      "variant": 2
+    },
+    {
+      "id": "api_2_001_7ceabb69",
+      "language": "go",
+      "api_type": "GraphQL",
+      "method": "PUT",
+      "name": "API PATCH Request Pattern",
+      "description": "Best practice for PATCH requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 2
+    },
+    {
+      "id": "api_2_002_8ab7995f",
+      "language": "rust",
+      "api_type": "gRPC",
+      "method": "POST",
+      "name": "API GET Request Pattern",
+      "description": "Best practice for PUT requests in rust",
+      "code_example": "# API request in rust\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses"
+      ],
+      "variant": 2
+    },
+    {
+      "id": "api_2_003_0fe8c0a9",
+      "language": "go",
+      "api_type": "WebSocket",
+      "method": "PUT",
+      "name": "API GET Request Pattern",
+      "description": "Best practice for PATCH requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses"
+      ],
+      "variant": 2
+    },
+    {
+      "id": "api_2_004_0d1ccb87",
+      "language": "rust",
+      "api_type": "GraphQL",
+      "method": "GET",
+      "name": "API DELETE Request Pattern",
+      "description": "Best practice for GET requests in rust",
+      "code_example": "# API request in rust\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 2
+    }
+  ]
+}

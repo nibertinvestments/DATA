@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_3",
+    "type": "concurrency",
+    "language": "python",
+    "total_patterns": 3,
+    "created_at": "2025-10-07T23:25:39.722763",
+    "variant": 3
+  },
+  "patterns": [
+    {
+      "id": "concur_3_0_4bf5518e",
+      "pattern": "semaphore",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 3
+    },
+    {
+      "id": "concur_3_1_071d1857",
+      "pattern": "thread_pool",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 3
+    },
+    {
+      "id": "concur_3_2_413d1631",
+      "pattern": "mutex",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 3
+    }
+  ]
+}

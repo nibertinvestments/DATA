@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_2",
+    "type": "best_practices",
+    "topic": "gui",
+    "language": "javascript",
+    "total_practices": 6,
+    "created_at": "2025-10-07T23:25:39.717719",
+    "variant": 2
+  },
+  "practices": [
+    {
+      "id": "practice_2_0_8702f30d",
+      "practice": "Best practice #1",
+      "topic": "gui",
+      "language": "javascript",
+      "description": "Recommended approach for gui",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_1_8ca8e517",
+      "practice": "Best practice #2",
+      "topic": "gui",
+      "language": "javascript",
+      "description": "Recommended approach for gui",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_2_7f60bf7c",
+      "practice": "Best practice #3",
+      "topic": "gui",
+      "language": "javascript",
+      "description": "Recommended approach for gui",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_3_81a9368b",
+      "practice": "Best practice #4",
+      "topic": "gui",
+      "language": "javascript",
+      "description": "Recommended approach for gui",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_4_90791310",
+      "practice": "Best practice #5",
+      "topic": "gui",
+      "language": "javascript",
+      "description": "Recommended approach for gui",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_5_40fec517",
+      "practice": "Best practice #6",
+      "topic": "gui",
+      "language": "javascript",
+      "description": "Recommended approach for gui",
+      "example": "# Example code",
+      "variant": 2
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "name": "web_api_examples_variant_3",
+    "type": "web_api",
+    "language": "go",
+    "total_endpoints": 6,
+    "created_at": "2025-10-07T23:25:39.721381",
+    "variant": 3
+  },
+  "apis": [
+    {
+      "id": "webapi_3_0_4141f743",
+      "endpoint": "/api/v3/resource_0",
+      "method": "POST",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 3
+    },
+    {
+      "id": "webapi_3_1_7e9115ad",
+      "endpoint": "/api/v3/resource_1",
+      "method": "POST",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 3
+    },
+    {
+      "id": "webapi_3_2_6e88b45e",
+      "endpoint": "/api/v3/resource_2",
+      "method": "GET",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 3
+    },
+    {
+      "id": "webapi_3_3_379bd29d",
+      "endpoint": "/api/v3/resource_3",
+      "method": "POST",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 3
+    },
+    {
+      "id": "webapi_3_4_75eb6d4f",
+      "endpoint": "/api/v3/resource_4",
+      "method": "PUT",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 3
+    },
+    {
+      "id": "webapi_3_5_c05c0b3b",
+      "endpoint": "/api/v3/resource_5",
+      "method": "DELETE",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 3
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "memory_patterns_variant_1",
+    "type": "memory_management",
+    "language": "c",
+    "total_patterns": 4,
+    "created_at": "2025-10-07T23:25:39.723120",
+    "variant": 1
+  },
+  "patterns": [
+    {
+      "id": "memory_1_0_7cc8ce9a",
+      "pattern": "allocation",
+      "language": "c",
+      "example": "# Memory management",
+      "variant": 1
+    },
+    {
+      "id": "memory_1_1_a3daf803",
+      "pattern": "allocation",
+      "language": "c",
+      "example": "# Memory management",
+      "variant": 1
+    },
+    {
+      "id": "memory_1_2_0f5cc7c7",
+      "pattern": "deallocation",
+      "language": "c",
+      "example": "# Memory management",
+      "variant": 1
+    },
+    {
+      "id": "memory_1_3_a6895763",
+      "pattern": "RAII",
+      "language": "c",
+      "example": "# Memory management",
+      "variant": 1
+    }
+  ]
+}

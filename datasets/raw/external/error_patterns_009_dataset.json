@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_3",
+    "type": "error_analysis",
+    "description": "Error patterns for typescript, python, javascript",
+    "languages": [
+      "typescript",
+      "python",
+      "javascript"
+    ],
+    "total_patterns": 8,
+    "created_at": "2025-10-07T23:25:39.710289",
+    "variant": 3
+  },
+  "error_patterns": [
+    {
+      "id": "err_3_000_72b8ced3",
+      "language": "python",
+      "error_type": "StackOverflow",
+      "description": "StackOverflow in python",
+      "buggy_code": "# Buggy python code that causes StackOverflow\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for StackOverflow\n# ... implementation ...",
+      "explanation": "How to fix StackOverflow in python",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 3
+    },
+    {
+      "id": "err_3_001_bf631d0d",
+      "language": "python",
+      "error_type": "SegmentationFault",
+      "description": "SegmentationFault in python",
+      "buggy_code": "# Buggy python code that causes SegmentationFault\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for SegmentationFault\n# ... implementation ...",
+      "explanation": "How to fix SegmentationFault in python",
+      "severity": "critical",
+      "category": "type",
+      "variant": 3
+    },
+    {
+      "id": "err_3_002_eae033a2",
+      "language": "python",
+      "error_type": "ArrayIndexOutOfBounds",
+      "description": "ArrayIndexOutOfBounds in python",
+      "buggy_code": "# Buggy python code that causes ArrayIndexOutOfBounds\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for ArrayIndexOutOfBounds\n# ... implementation ...",
+      "explanation": "How to fix ArrayIndexOutOfBounds in python",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 3
+    },
+    {
+      "id": "err_3_003_37520f29",
+      "language": "javascript",
+      "error_type": "ImportError",
+      "description": "ImportError in javascript",
+      "buggy_code": "# Buggy javascript code that causes ImportError\n# ... implementation ...",
+      "fixed_code": "# Fixed javascript code for ImportError\n# ... implementation ...",
+      "explanation": "How to fix ImportError in javascript",
+      "severity": "high",
+      "category": "logic",
+      "variant": 3
+    },
+    {
+      "id": "err_3_004_c451d32a",
+      "language": "typescript",
+      "error_type": "URIError",
+      "description": "URIError in typescript",
+      "buggy_code": "# Buggy typescript code that causes URIError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for URIError\n# ... implementation ...",
+      "explanation": "How to fix URIError in typescript",
+      "severity": "high",
+      "category": "syntax",
+      "variant": 3
+    },
+    {
+      "id": "err_3_005_a19a0e68",
+      "language": "typescript",
+      "error_type": "SyntaxError",
+      "description": "SyntaxError in typescript",
+      "buggy_code": "# Buggy typescript code that causes SyntaxError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for SyntaxError\n# ... implementation ...",
+      "explanation": "How to fix SyntaxError in typescript",
+      "severity": "low",
+      "category": "syntax",
+      "variant": 3
+    },
+    {
+      "id": "err_3_006_a2cc8124",
+      "language": "javascript",
+      "error_type": "RecursionError",
+      "description": "RecursionError in javascript",
+      "buggy_code": "# Buggy javascript code that causes RecursionError\n# ... implementation ...",
+      "fixed_code": "# Fixed javascript code for RecursionError\n# ... implementation ...",
+      "explanation": "How to fix RecursionError in javascript",
+      "severity": "medium",
+      "category": "syntax",
+      "variant": 3
+    },
+    {
+      "id": "err_3_007_b88ed837",
+      "language": "python",
+      "error_type": "ZeroDivisionError",
+      "description": "ZeroDivisionError in python",
+      "buggy_code": "# Buggy python code that causes ZeroDivisionError\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for ZeroDivisionError\n# ... implementation ...",
+      "explanation": "How to fix ZeroDivisionError in python",
+      "severity": "medium",
+      "category": "type",
+      "variant": 3
+    }
+  ]
+}

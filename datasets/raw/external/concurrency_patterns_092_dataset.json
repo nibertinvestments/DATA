@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_1",
+    "type": "concurrency",
+    "language": "java",
+    "total_patterns": 3,
+    "created_at": "2025-10-07T23:25:39.722542",
+    "variant": 1
+  },
+  "patterns": [
+    {
+      "id": "concur_1_0_f0e9c580",
+      "pattern": "actor",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 1
+    },
+    {
+      "id": "concur_1_1_e0b7ebe1",
+      "pattern": "channel",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 1
+    },
+    {
+      "id": "concur_1_2_1ff3261e",
+      "pattern": "thread_pool",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 1
+    }
+  ]
+}

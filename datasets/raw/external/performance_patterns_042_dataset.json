@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_1",
+    "type": "performance",
+    "language": "python",
+    "total_optimizations": 4,
+    "created_at": "2025-10-07T23:25:39.715486",
+    "variant": 1
+  },
+  "optimizations": [
+    {
+      "id": "perf_1_0_d6491a6f",
+      "optimization_type": "caching",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "72x faster",
+      "variant": 1
+    },
+    {
+      "id": "perf_1_1_e96cf9df",
+      "optimization_type": "caching",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "31x faster",
+      "variant": 1
+    },
+    {
+      "id": "perf_1_2_5f82b577",
+      "optimization_type": "algorithmic",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "91x faster",
+      "variant": 1
+    },
+    {
+      "id": "perf_1_3_07b98bc2",
+      "optimization_type": "algorithmic",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "54x faster",
+      "variant": 1
+    }
+  ]
+}

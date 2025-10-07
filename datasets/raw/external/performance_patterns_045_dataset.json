@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_4",
+    "type": "performance",
+    "language": "cpp",
+    "total_optimizations": 5,
+    "created_at": "2025-10-07T23:25:39.715888",
+    "variant": 4
+  },
+  "optimizations": [
+    {
+      "id": "perf_4_0_e1a8145c",
+      "optimization_type": "algorithmic",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "25x faster",
+      "variant": 4
+    },
+    {
+      "id": "perf_4_1_abda59c4",
+      "optimization_type": "caching",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "94x faster",
+      "variant": 4
+    },
+    {
+      "id": "perf_4_2_109a5b7a",
+      "optimization_type": "parallelization",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "32x faster",
+      "variant": 4
+    },
+    {
+      "id": "perf_4_3_d9884409",
+      "optimization_type": "algorithmic",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "14x faster",
+      "variant": 4
+    },
+    {
+      "id": "perf_4_4_9698e133",
+      "optimization_type": "caching",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "17x faster",
+      "variant": 4
+    }
+  ]
+}

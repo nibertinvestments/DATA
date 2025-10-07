@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_1",
+    "type": "design_patterns",
+    "language": "rust",
+    "total_patterns": 4,
+    "created_at": "2025-10-07T23:25:39.714088",
+    "variant": 1
+  },
+  "patterns": [
+    {
+      "id": "pattern_1_15aa0047",
+      "name": "Adapter Pattern",
+      "category": "behavioral",
+      "language": "rust",
+      "implementation": "# Adapter in rust",
+      "variant": 1
+    },
+    {
+      "id": "pattern_1_5a3438d4",
+      "name": "Singleton Pattern",
+      "category": "behavioral",
+      "language": "rust",
+      "implementation": "# Singleton in rust",
+      "variant": 1
+    },
+    {
+      "id": "pattern_1_2e740f8c",
+      "name": "Decorator Pattern",
+      "category": "behavioral",
+      "language": "rust",
+      "implementation": "# Decorator in rust",
+      "variant": 1
+    },
+    {
+      "id": "pattern_1_c1cfb55a",
+      "name": "Iterator Pattern",
+      "category": "creational",
+      "language": "rust",
+      "implementation": "# Iterator in rust",
+      "variant": 1
+    }
+  ]
+}

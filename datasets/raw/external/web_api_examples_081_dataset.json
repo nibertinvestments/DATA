@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "name": "web_api_examples_variant_0",
+    "type": "web_api",
+    "language": "python",
+    "total_endpoints": 5,
+    "created_at": "2025-10-07T23:25:39.720870",
+    "variant": 0
+  },
+  "apis": [
+    {
+      "id": "webapi_0_0_ecd44798",
+      "endpoint": "/api/v0/resource_0",
+      "method": "GET",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 0
+    },
+    {
+      "id": "webapi_0_1_917f535d",
+      "endpoint": "/api/v0/resource_1",
+      "method": "GET",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 0
+    },
+    {
+      "id": "webapi_0_2_81c4eccf",
+      "endpoint": "/api/v0/resource_2",
+      "method": "GET",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 0
+    },
+    {
+      "id": "webapi_0_3_8bbed3a2",
+      "endpoint": "/api/v0/resource_3",
+      "method": "GET",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 0
+    },
+    {
+      "id": "webapi_0_4_320a0683",
+      "endpoint": "/api/v0/resource_4",
+      "method": "PUT",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 0
+    }
+  ]
+}

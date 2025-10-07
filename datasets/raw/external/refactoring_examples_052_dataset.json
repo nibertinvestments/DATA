@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_1",
+    "type": "refactoring",
+    "language": "javascript",
+    "total_examples": 5,
+    "created_at": "2025-10-07T23:25:39.716817",
+    "variant": 1
+  },
+  "refactorings": [
+    {
+      "id": "refactor_1_0_e64913d1",
+      "refactoring_type": "extract_method",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 1
+    },
+    {
+      "id": "refactor_1_1_87b404b1",
+      "refactoring_type": "extract_class",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 1
+    },
+    {
+      "id": "refactor_1_2_3d701f1e",
+      "refactoring_type": "rename",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 1
+    },
+    {
+      "id": "refactor_1_3_9961df5f",
+      "refactoring_type": "rename",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 1
+    },
+    {
+      "id": "refactor_1_4_da1e9d27",
+      "refactoring_type": "extract_class",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 1
+    }
+  ]
+}

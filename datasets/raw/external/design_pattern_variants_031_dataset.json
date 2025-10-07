@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_0",
+    "type": "design_patterns",
+    "language": "javascript",
+    "total_patterns": 4,
+    "created_at": "2025-10-07T23:25:39.713953",
+    "variant": 0
+  },
+  "patterns": [
+    {
+      "id": "pattern_0_a38a8970",
+      "name": "Adapter Pattern",
+      "category": "creational",
+      "language": "javascript",
+      "implementation": "# Adapter in javascript",
+      "variant": 0
+    },
+    {
+      "id": "pattern_0_3059ac84",
+      "name": "Iterator Pattern",
+      "category": "structural",
+      "language": "javascript",
+      "implementation": "# Iterator in javascript",
+      "variant": 0
+    },
+    {
+      "id": "pattern_0_01e21bff",
+      "name": "Command Pattern",
+      "category": "behavioral",
+      "language": "javascript",
+      "implementation": "# Command in javascript",
+      "variant": 0
+    },
+    {
+      "id": "pattern_0_6f4e419c",
+      "name": "Observer Pattern",
+      "category": "creational",
+      "language": "javascript",
+      "implementation": "# Observer in javascript",
+      "variant": 0
+    }
+  ]
+}

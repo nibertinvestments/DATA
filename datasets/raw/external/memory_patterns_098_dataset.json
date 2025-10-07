@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "memory_patterns_variant_2",
+    "type": "memory_management",
+    "language": "cpp",
+    "total_patterns": 3,
+    "created_at": "2025-10-07T23:25:39.723262",
+    "variant": 2
+  },
+  "patterns": [
+    {
+      "id": "memory_2_0_f76807d0",
+      "pattern": "deallocation",
+      "language": "cpp",
+      "example": "# Memory management",
+      "variant": 2
+    },
+    {
+      "id": "memory_2_1_cba09db1",
+      "pattern": "deallocation",
+      "language": "cpp",
+      "example": "# Memory management",
+      "variant": 2
+    },
+    {
+      "id": "memory_2_2_fd744dd6",
+      "pattern": "RAII",
+      "language": "cpp",
+      "example": "# Memory management",
+      "variant": 2
+    }
+  ]
+}

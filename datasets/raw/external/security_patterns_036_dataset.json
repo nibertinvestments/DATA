@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_0",
+    "type": "security",
+    "language": "cpp",
+    "total_vulnerabilities": 4,
+    "created_at": "2025-10-07T23:25:39.714695",
+    "variant": 0
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_0_f9e2ebc3",
+      "vulnerability": "Command Injection",
+      "severity": "medium",
+      "language": "cpp",
+      "vulnerable_code": "# Vulnerable Command Injection code",
+      "fixed_code": "# Fixed Command Injection code",
+      "variant": 0
+    },
+    {
+      "id": "sec_0_96050cbf",
+      "vulnerability": "SSRF",
+      "severity": "high",
+      "language": "cpp",
+      "vulnerable_code": "# Vulnerable SSRF code",
+      "fixed_code": "# Fixed SSRF code",
+      "variant": 0
+    },
+    {
+      "id": "sec_0_2f513114",
+      "vulnerability": "Insecure Deserialization",
+      "severity": "high",
+      "language": "cpp",
+      "vulnerable_code": "# Vulnerable Insecure Deserialization code",
+      "fixed_code": "# Fixed Insecure Deserialization code",
+      "variant": 0
+    },
+    {
+      "id": "sec_0_43dcfced",
+      "vulnerability": "SQL Injection",
+      "severity": "low",
+      "language": "cpp",
+      "vulnerable_code": "# Vulnerable SQL Injection code",
+      "fixed_code": "# Fixed SQL Injection code",
+      "variant": 0
+    }
+  ]
+}
