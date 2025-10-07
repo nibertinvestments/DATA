@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "name": "testing_strategies",
+    "description": "Comprehensive testing strategies and patterns",
+    "total_examples": 2,
+    "test_types": [
+      "unit",
+      "integration",
+      "e2e",
+      "performance"
+    ],
+    "created_at": "2025-10-07T23:11:05.973693"
+  },
+  "testing_examples": [
+    {
+      "id": "test_001",
+      "test_type": "Unit Testing",
+      "description": "Testing individual functions in isolation",
+      "code_example": {
+        "python": "import unittest\n\nclass Calculator:\n    def add(self, a, b):\n        return a + b\n    \n    def divide(self, a, b):\n        if b == 0:\n            raise ValueError(\"Cannot divide by zero\")\n        return a / b\n\nclass TestCalculator(unittest.TestCase):\n    def setUp(self):\n        self.calc = Calculator()\n    \n    def test_add(self):\n        self.assertEqual(self.calc.add(2, 3), 5)\n        self.assertEqual(self.calc.add(-1, 1), 0)\n    \n    def test_divide(self):\n        self.assertEqual(self.calc.divide(10, 2), 5)\n        with self.assertRaises(ValueError):\n            self.calc.divide(10, 0)\n\nif __name__ == '__main__':\n    unittest.main()",
+        "javascript": "const assert = require('assert');\n\nclass Calculator {\n    add(a, b) {\n        return a + b;\n    }\n    \n    divide(a, b) {\n        if (b === 0) {\n            throw new Error('Cannot divide by zero');\n        }\n        return a / b;\n    }\n}\n\ndescribe('Calculator', () => {\n    let calc;\n    \n    beforeEach(() => {\n        calc = new Calculator();\n    });\n    \n    it('should add two numbers', () => {\n        assert.strictEqual(calc.add(2, 3), 5);\n        assert.strictEqual(calc.add(-1, 1), 0);\n    });\n    \n    it('should divide two numbers', () => {\n        assert.strictEqual(calc.divide(10, 2), 5);\n        assert.throws(() => calc.divide(10, 0), Error);\n    });\n});"
+      },
+      "best_practices": [
+        "Test one thing at a time",
+        "Use descriptive test names",
+        "Follow AAA pattern: Arrange, Act, Assert",
+        "Keep tests independent"
+      ]
+    },
+    {
+      "id": "test_002",
+      "test_type": "Integration Testing",
+      "description": "Testing interaction between components",
+      "code_example": {
+        "python": "import unittest\nfrom unittest.mock import Mock, patch\n\nclass UserService:\n    def __init__(self, db, email_service):\n        self.db = db\n        self.email_service = email_service\n    \n    def create_user(self, email, name):\n        # Save to database\n        user_id = self.db.save_user({'email': email, 'name': name})\n        \n        # Send welcome email\n        self.email_service.send_welcome_email(email, name)\n        \n        return user_id\n\nclass TestUserServiceIntegration(unittest.TestCase):\n    def test_create_user_integration(self):\n        # Mock dependencies\n        mock_db = Mock()\n        mock_db.save_user.return_value = 123\n        \n        mock_email = Mock()\n        \n        # Test service with mocked dependencies\n        service = UserService(mock_db, mock_email)\n        user_id = service.create_user('test@example.com', 'Test User')\n        \n        # Verify interactions\n        self.assertEqual(user_id, 123)\n        mock_db.save_user.assert_called_once()\n        mock_email.send_welcome_email.assert_called_once_with(\n            'test@example.com', 'Test User'\n        )"
+      },
+      "best_practices": [
+        "Use mocks for external dependencies",
+        "Test component interactions",
+        "Verify method calls and data flow",
+        "Test error handling between components"
+      ]
+    }
+  ]
+}

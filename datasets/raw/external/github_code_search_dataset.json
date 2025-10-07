@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "source": "github_code_search",
+    "type": "github",
+    "description": "GitHub code repositories with ML/AI focus",
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "cpp",
+      "rust",
+      "go"
+    ],
+    "total_samples": 0,
+    "created_at": "2025-10-07T23:08:43.178434"
+  },
+  "samples": []
+}

@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "security_vulnerabilities",
+    "description": "Common security vulnerabilities and their fixes",
+    "total_vulnerabilities": 3,
+    "severity_levels": [
+      "critical",
+      "high",
+      "medium",
+      "low"
+    ],
+    "created_at": "2025-10-07T23:11:05.973683"
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_001",
+      "vulnerability_type": "SQL Injection",
+      "severity": "critical",
+      "description": "User input directly concatenated into SQL queries",
+      "vulnerable_code": {
+        "python": "def get_user(username):\n    query = f\"SELECT * FROM users WHERE username = '{username}'\"\n    cursor.execute(query)  # VULNERABLE!\n    return cursor.fetchone()",
+        "javascript": "function getUser(username) {\n    const query = \\`SELECT * FROM users WHERE username = '\\${username}'\\`;\n    return db.query(query);  // VULNERABLE!\n}",
+        "java": "public User getUser(String username) {\n    String query = \"SELECT * FROM users WHERE username = '\" + username + \"'\";\n    Statement stmt = connection.createStatement();\n    ResultSet rs = stmt.executeQuery(query);  // VULNERABLE!\n    return parseUser(rs);\n}"
+      },
+      "fixed_code": {
+        "python": "def get_user(username):\n    query = \"SELECT * FROM users WHERE username = ?\"\n    cursor.execute(query, (username,))  # SAFE: Parameterized query\n    return cursor.fetchone()",
+        "javascript": "function getUser(username) {\n    const query = 'SELECT * FROM users WHERE username = $1';\n    return db.query(query, [username]);  // SAFE: Parameterized query\n}",
+        "java": "public User getUser(String username) {\n    String query = \"SELECT * FROM users WHERE username = ?\";\n    PreparedStatement stmt = connection.prepareStatement(query);\n    stmt.setString(1, username);  // SAFE: Prepared statement\n    ResultSet rs = stmt.executeQuery();\n    return parseUser(rs);\n}"
+      },
+      "impact": "Attacker can execute arbitrary SQL commands, read/modify data, or compromise entire database",
+      "prevention": [
+        "Use parameterized queries/prepared statements",
+        "Input validation and sanitization",
+        "Use ORM frameworks",
+        "Principle of least privilege for database accounts"
+      ]
+    },
+    {
+      "id": "sec_002",
+      "vulnerability_type": "Cross-Site Scripting (XSS)",
+      "severity": "high",
+      "description": "Untrusted data included in HTML without escaping",
+      "vulnerable_code": {
+        "python": "from flask import Flask, request\n\n@app.route('/greet')\ndef greet():\n    name = request.args.get('name', '')\n    return f'<h1>Hello {name}!</h1>'  # VULNERABLE!",
+        "javascript": "function displayUserName(name) {\n    document.getElementById('greeting').innerHTML = \n        '<h1>Hello ' + name + '!</h1>';  // VULNERABLE!\n}",
+        "java": "@GetMapping(\"/greet\")\npublic String greet(@RequestParam String name) {\n    return \"<h1>Hello \" + name + \"!</h1>\";  // VULNERABLE!\n}"
+      },
+      "fixed_code": {
+        "python": "from flask import Flask, request, escape\n\n@app.route('/greet')\ndef greet():\n    name = request.args.get('name', '')\n    return f'<h1>Hello {escape(name)}!</h1>'  # SAFE: Escaped output",
+        "javascript": "function displayUserName(name) {\n    const greeting = document.getElementById('greeting');\n    greeting.textContent = 'Hello ' + name + '!';  // SAFE: textContent escapes\n}",
+        "java": "@GetMapping(\"/greet\")\npublic String greet(@RequestParam String name) {\n    return \"<h1>Hello \" + \n        StringEscapeUtils.escapeHtml4(name) + \n        \"!</h1>\";  // SAFE: Escaped output\n}"
+      },
+      "impact": "Attacker can inject malicious scripts, steal session cookies, deface website, or redirect users",
+      "prevention": [
+        "Escape all user input before rendering in HTML",
+        "Use Content Security Policy (CSP)",
+        "Use frameworks that auto-escape by default",
+        "Validate and sanitize input"
+      ]
+    },
+    {
+      "id": "sec_003",
+      "vulnerability_type": "Path Traversal",
+      "severity": "high",
+      "description": "User-controlled file paths without validation",
+      "vulnerable_code": {
+        "python": "def read_file(filename):\n    path = f'/var/data/{filename}'\n    with open(path, 'r') as f:  # VULNERABLE!\n        return f.read()\n# User can pass '../../../etc/passwd' to access system files",
+        "javascript": "const fs = require('fs');\n\nfunction readFile(filename) {\n    const path = \\`/var/data/\\${filename}\\`;\n    return fs.readFileSync(path, 'utf8');  // VULNERABLE!\n}",
+        "java": "public String readFile(String filename) {\n    String path = \"/var/data/\" + filename;\n    return Files.readString(Paths.get(path));  // VULNERABLE!\n}"
+      },
+      "fixed_code": {
+        "python": "import os\nfrom pathlib import Path\n\ndef read_file(filename):\n    # Validate filename - no path separators\n    if '/' in filename or '\\\\' in filename or '..' in filename:\n        raise ValueError(\"Invalid filename\")\n    \n    base_dir = Path('/var/data')\n    file_path = (base_dir / filename).resolve()\n    \n    # Ensure file is within base directory\n    if not str(file_path).startswith(str(base_dir)):\n        raise ValueError(\"Access denied\")\n    \n    with open(file_path, 'r') as f:\n        return f.read()",
+        "javascript": "const fs = require('fs');\nconst path = require('path');\n\nfunction readFile(filename) {\n    // Validate filename - no path separators\n    if (filename.includes('/') || filename.includes('\\\\') || filename.includes('..')) {\n        throw new Error('Invalid filename');\n    }\n    \n    const baseDir = '/var/data';\n    const filePath = path.resolve(baseDir, filename);\n    \n    // Ensure file is within base directory\n    if (!filePath.startsWith(baseDir)) {\n        throw new Error('Access denied');\n    }\n    \n    return fs.readFileSync(filePath, 'utf8');\n}",
+        "java": "import java.nio.file.*;\n\npublic String readFile(String filename) throws IOException {\n    // Validate filename - no path separators\n    if (filename.contains(\"/\") || filename.contains(\"\\\\\") || filename.contains(\"..\")) {\n        throw new IllegalArgumentException(\"Invalid filename\");\n    }\n    \n    Path baseDir = Paths.get(\"/var/data\");\n    Path filePath = baseDir.resolve(filename).normalize();\n    \n    // Ensure file is within base directory\n    if (!filePath.startsWith(baseDir)) {\n        throw new SecurityException(\"Access denied\");\n    }\n    \n    return Files.readString(filePath);\n}"
+      },
+      "impact": "Attacker can read sensitive files, access system files, or overwrite critical data",
+      "prevention": [
+        "Never use user input directly in file paths",
+        "Whitelist allowed filenames",
+        "Use path normalization and validation",
+        "Implement proper access controls"
+      ]
+    }
+  ]
+}

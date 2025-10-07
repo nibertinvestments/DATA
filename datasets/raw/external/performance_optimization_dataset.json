@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "performance_optimization",
+    "description": "Performance optimization patterns and techniques",
+    "total_optimizations": 3,
+    "categories": [
+      "algorithmic",
+      "memory",
+      "caching",
+      "database"
+    ],
+    "created_at": "2025-10-07T23:11:05.973687"
+  },
+  "optimizations": [
+    {
+      "id": "perf_001",
+      "optimization_type": "Algorithmic Complexity",
+      "problem": "Finding duplicates in array",
+      "slow_implementation": {
+        "python": "def has_duplicates_slow(arr):\n    \"\"\"O(n²) time complexity\"\"\"\n    for i in range(len(arr)):\n        for j in range(i + 1, len(arr)):\n            if arr[i] == arr[j]:\n                return True\n    return False",
+        "javascript": "function hasDuplicatesSlow(arr) {\n    // O(n²) time complexity\n    for (let i = 0; i < arr.length; i++) {\n        for (let j = i + 1; j < arr.length; j++) {\n            if (arr[i] === arr[j]) {\n                return true;\n            }\n        }\n    }\n    return false;\n}"
+      },
+      "optimized_implementation": {
+        "python": "def has_duplicates_fast(arr):\n    \"\"\"O(n) time complexity\"\"\"\n    seen = set()\n    for item in arr:\n        if item in seen:\n            return True\n        seen.add(item)\n    return False",
+        "javascript": "function hasDuplicatesFast(arr) {\n    // O(n) time complexity\n    const seen = new Set();\n    for (const item of arr) {\n        if (seen.has(item)) {\n            return true;\n        }\n        seen.add(item);\n    }\n    return false;\n}"
+      },
+      "performance_gain": "From O(n²) to O(n) - 100x faster for large arrays",
+      "explanation": "Using a Set for O(1) lookup instead of nested loops"
+    },
+    {
+      "id": "perf_002",
+      "optimization_type": "Memory Efficiency",
+      "problem": "Processing large files",
+      "slow_implementation": {
+        "python": "def process_large_file_slow(filename):\n    \"\"\"Loads entire file into memory\"\"\"\n    with open(filename, 'r') as f:\n        content = f.read()  # Loads everything at once\n        lines = content.split('\\n')\n        return [line.upper() for line in lines]"
+      },
+      "optimized_implementation": {
+        "python": "def process_large_file_fast(filename):\n    \"\"\"Streams file line by line\"\"\"\n    result = []\n    with open(filename, 'r') as f:\n        for line in f:  # Reads one line at a time\n            result.append(line.strip().upper())\n    return result\n    \n# Even better: Use generator\ndef process_large_file_generator(filename):\n    \"\"\"Memory-efficient generator\"\"\"\n    with open(filename, 'r') as f:\n        for line in f:\n            yield line.strip().upper()"
+      },
+      "performance_gain": "Memory usage reduced from O(file size) to O(1)",
+      "explanation": "Processing data in chunks instead of loading everything"
+    },
+    {
+      "id": "perf_003",
+      "optimization_type": "Caching",
+      "problem": "Repeated expensive computations",
+      "slow_implementation": {
+        "python": "def fibonacci_slow(n):\n    \"\"\"Exponential time complexity O(2^n)\"\"\"\n    if n <= 1:\n        return n\n    return fibonacci_slow(n-1) + fibonacci_slow(n-2)"
+      },
+      "optimized_implementation": {
+        "python": "from functools import lru_cache\n\n@lru_cache(maxsize=None)\ndef fibonacci_fast(n):\n    \"\"\"Linear time complexity O(n) with memoization\"\"\"\n    if n <= 1:\n        return n\n    return fibonacci_fast(n-1) + fibonacci_fast(n-2)\n    \n# Or use dynamic programming\ndef fibonacci_dp(n):\n    \"\"\"O(n) time, O(1) space\"\"\"\n    if n <= 1:\n        return n\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b\n    return b"
+      },
+      "performance_gain": "From exponential O(2^n) to linear O(n)",
+      "explanation": "Caching results to avoid redundant calculations"
+    }
+  ]
+}

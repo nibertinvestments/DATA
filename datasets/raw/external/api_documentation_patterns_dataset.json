@@ -1,0 +1,112 @@
+{
+  "metadata": {
+    "source": "api_documentation_patterns",
+    "type": "synthetic",
+    "description": "API documentation and usage patterns",
+    "languages": [
+      "python",
+      "javascript",
+      "java",
+      "rest"
+    ],
+    "total_patterns": 5,
+    "created_at": "2025-10-07T23:08:43.180184"
+  },
+  "api_patterns": [
+    {
+      "id": "api_001",
+      "language": "python",
+      "api_type": "REST",
+      "name": "HTTP GET Request with Error Handling",
+      "description": "Best practice for making HTTP GET requests",
+      "code_example": "import requests\nfrom typing import Optional, Dict\n\ndef fetch_user_data(user_id: int) -> Optional[Dict]:\n    \"\"\"Fetch user data from API with proper error handling.\"\"\"\n    try:\n        response = requests.get(\n            f'https://api.example.com/users/{user_id}',\n            timeout=10\n        )\n        response.raise_for_status()\n        return response.json()\n    except requests.exceptions.Timeout:\n        print(\"Request timed out\")\n        return None\n    except requests.exceptions.HTTPError as e:\n        print(f\"HTTP error: {e}\")\n        return None\n    except requests.exceptions.RequestException as e:\n        print(f\"Request failed: {e}\")\n        return None",
+      "best_practices": [
+        "Always set timeout",
+        "Use raise_for_status() to catch HTTP errors",
+        "Handle specific exceptions",
+        "Return Optional type"
+      ],
+      "common_mistakes": [
+        "No timeout specified",
+        "Not checking status code",
+        "Catching all exceptions generically"
+      ]
+    },
+    {
+      "id": "api_002",
+      "language": "javascript",
+      "api_type": "REST",
+      "name": "Async API Call with Fetch",
+      "description": "Modern async/await pattern for API calls",
+      "code_example": "async function fetchUserData(userId) {\n    try {\n        const response = await fetch(\n            \\`https://api.example.com/users/\\${userId}\\`,\n            {\n                method: 'GET',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n                signal: AbortSignal.timeout(10000)\n            }\n        );\n        \n        if (!response.ok) {\n            throw new Error(\\`HTTP error! status: \\${response.status}\\`);\n        }\n        \n        const data = await response.json();\n        return data;\n    } catch (error) {\n        if (error.name === 'AbortError') {\n            console.error('Request timed out');\n        } else {\n            console.error('Fetch error:', error);\n        }\n        return null;\n    }\n}",
+      "best_practices": [
+        "Use async/await for cleaner code",
+        "Check response.ok before parsing",
+        "Set timeout with AbortSignal",
+        "Handle specific error types"
+      ],
+      "common_mistakes": [
+        "Not checking response.ok",
+        "No timeout handling",
+        "Generic error handling"
+      ]
+    },
+    {
+      "id": "api_003",
+      "language": "python",
+      "api_type": "REST",
+      "name": "POST Request with JSON Payload",
+      "description": "Creating resources via POST with validation",
+      "code_example": "import requests\nfrom typing import Dict, Optional\n\ndef create_user(user_data: Dict) -> Optional[Dict]:\n    \"\"\"Create a new user via API.\"\"\"\n    required_fields = ['name', 'email']\n    \n    # Validate input\n    if not all(field in user_data for field in required_fields):\n        raise ValueError(f\"Missing required fields: {required_fields}\")\n    \n    try:\n        response = requests.post(\n            'https://api.example.com/users',\n            json=user_data,\n            headers={'Content-Type': 'application/json'},\n            timeout=10\n        )\n        response.raise_for_status()\n        return response.json()\n    except requests.exceptions.RequestException as e:\n        print(f\"Failed to create user: {e}\")\n        return None",
+      "best_practices": [
+        "Validate input before sending",
+        "Use json parameter for automatic serialization",
+        "Set appropriate Content-Type header",
+        "Handle errors gracefully"
+      ],
+      "common_mistakes": [
+        "No input validation",
+        "Manually serializing JSON",
+        "Not setting Content-Type"
+      ]
+    },
+    {
+      "id": "api_004",
+      "language": "java",
+      "api_type": "REST",
+      "name": "HTTP Client with Java 11+",
+      "description": "Modern HTTP client usage in Java",
+      "code_example": "import java.net.URI;\nimport java.net.http.HttpClient;\nimport java.net.http.HttpRequest;\nimport java.net.http.HttpResponse;\nimport java.time.Duration;\n\npublic class ApiClient {\n    private final HttpClient client;\n    \n    public ApiClient() {\n        this.client = HttpClient.newBuilder()\n            .connectTimeout(Duration.ofSeconds(10))\n            .build();\n    }\n    \n    public String fetchUserData(int userId) {\n        try {\n            HttpRequest request = HttpRequest.newBuilder()\n                .uri(URI.create(\"https://api.example.com/users/\" + userId))\n                .timeout(Duration.ofSeconds(10))\n                .GET()\n                .build();\n            \n            HttpResponse<String> response = client.send(\n                request,\n                HttpResponse.BodyHandlers.ofString()\n            );\n            \n            if (response.statusCode() == 200) {\n                return response.body();\n            } else {\n                throw new RuntimeException(\"HTTP error: \" + response.statusCode());\n            }\n        } catch (Exception e) {\n            System.err.println(\"Request failed: \" + e.getMessage());\n            return null;\n        }\n    }\n}",
+      "best_practices": [
+        "Use HttpClient with proper timeout",
+        "Check status code explicitly",
+        "Handle exceptions appropriately",
+        "Reuse HttpClient instance"
+      ],
+      "common_mistakes": [
+        "Creating new client for each request",
+        "Not setting timeout",
+        "Ignoring status codes"
+      ]
+    },
+    {
+      "id": "api_005",
+      "language": "typescript",
+      "api_type": "REST",
+      "name": "Type-Safe API Client",
+      "description": "Type-safe API calls with TypeScript",
+      "code_example": "interface User {\n    id: number;\n    name: string;\n    email: string;\n}\n\ninterface ApiResponse<T> {\n    data: T;\n    success: boolean;\n}\n\nasync function fetchUser(userId: number): Promise<User | null> {\n    try {\n        const response = await fetch(\n            \\`https://api.example.com/users/\\${userId}\\`,\n            {\n                method: 'GET',\n                headers: {\n                    'Content-Type': 'application/json',\n                },\n            }\n        );\n        \n        if (!response.ok) {\n            throw new Error(\\`HTTP error! status: \\${response.status}\\`);\n        }\n        \n        const apiResponse: ApiResponse<User> = await response.json();\n        \n        if (apiResponse.success) {\n            return apiResponse.data;\n        }\n        \n        return null;\n    } catch (error) {\n        console.error('Fetch error:', error);\n        return null;\n    }\n}",
+      "best_practices": [
+        "Define interfaces for type safety",
+        "Use generic types for API responses",
+        "Validate response structure",
+        "Return typed results"
+      ],
+      "common_mistakes": [
+        "Using 'any' type",
+        "Not validating response structure",
+        "Inconsistent return types"
+      ]
+    }
+  ]
+}

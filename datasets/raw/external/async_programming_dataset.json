@@ -1,0 +1,24 @@
+{
+  "metadata": {
+    "name": "async_programming",
+    "description": "Asynchronous programming patterns and best practices",
+    "total_patterns": 1,
+    "created_at": "2025-10-07T23:11:05.973698"
+  },
+  "patterns": [
+    {
+      "id": "async_001",
+      "pattern_name": "Concurrent API Calls",
+      "description": "Make multiple API calls concurrently",
+      "sequential_approach": {
+        "python": "import requests\n\ndef fetch_users_sequential(user_ids):\n    \"\"\"Slow: Sequential fetching\"\"\"\n    users = []\n    for user_id in user_ids:\n        response = requests.get(f'https://api.example.com/users/{user_id}')\n        users.append(response.json())\n    return users\n# Time: n * request_time",
+        "javascript": "async function fetchUsersSequential(userIds) {\n    // Slow: Sequential fetching\n    const users = [];\n    for (const userId of userIds) {\n        const response = await fetch(\\`https://api.example.com/users/\\${userId}\\`);\n        const user = await response.json();\n        users.push(user);\n    }\n    return users;\n}\n// Time: n * request_time"
+      },
+      "concurrent_approach": {
+        "python": "import asyncio\nimport aiohttp\n\nasync def fetch_user(session, user_id):\n    async with session.get(f'https://api.example.com/users/{user_id}') as response:\n        return await response.json()\n\nasync def fetch_users_concurrent(user_ids):\n    \"\"\"Fast: Concurrent fetching\"\"\"\n    async with aiohttp.ClientSession() as session:\n        tasks = [fetch_user(session, user_id) for user_id in user_ids]\n        users = await asyncio.gather(*tasks)\n    return users\n# Time: ~request_time (all parallel)",
+        "javascript": "async function fetchUsersConcurrent(userIds) {\n    // Fast: Concurrent fetching\n    const promises = userIds.map(userId =>\n        fetch(\\`https://api.example.com/users/\\${userId}\\`)\n            .then(response => response.json())\n    );\n    const users = await Promise.all(promises);\n    return users;\n}\n// Time: ~request_time (all parallel)"
+      },
+      "performance_gain": "n times faster for n requests"
+    }
+  ]
+}

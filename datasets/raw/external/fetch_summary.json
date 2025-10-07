@@ -1,0 +1,11 @@
+{
+  "fetch_date": "2025-10-07T23:08:42.954156",
+  "total_sources": 4,
+  "datasets_created": [
+    "github_code_search_dataset.json",
+    "common_programming_errors_dataset.json",
+    "api_documentation_patterns_dataset.json",
+    "code_translation_examples_dataset.json"
+  ],
+  "errors": []
+}
