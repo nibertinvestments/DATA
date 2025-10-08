@@ -542,18 +542,28 @@ class CodeSampleValidator:
                     if result.returncode == 0:
                         passed += 1
                     else:
-                        # Check if it's a real syntax error
+                        # Check if it's a real syntax error vs dependency issue
                         error_output = result.stderr.decode('utf-8', errors='ignore') + result.stdout.decode('utf-8', errors='ignore')
+                        # Ignore unresolved reference errors (dependencies) - focus on syntax
                         if 'error:' in error_output.lower():
-                            failed += 1
-                            failed_files.append(kt_file)
-                            print(f"  ❌ {kt_file.name}")
-                            if self.delete_invalid:
-                                try:
-                                    kt_file.unlink()
-                                    print(f"     🗑️  Deleted {kt_file.name}")
-                                except Exception as del_err:
-                                    print(f"     ⚠️  Could not delete: {del_err}")
+                            # Check if it's only dependency errors
+                            error_lines = [line for line in error_output.split('\n') if 'error:' in line.lower()]
+                            dependency_errors = sum(1 for line in error_lines if 'unresolved reference' in line.lower() or 'unresolved import' in line.lower())
+                            total_errors = len(error_lines)
+                            
+                            # If all errors are dependency-related, consider it passed
+                            if dependency_errors == total_errors and total_errors > 0:
+                                passed += 1
+                            else:
+                                failed += 1
+                                failed_files.append(kt_file)
+                                print(f"  ❌ {kt_file.name}")
+                                if self.delete_invalid:
+                                    try:
+                                        kt_file.unlink()
+                                        print(f"     🗑️  Deleted {kt_file.name}")
+                                    except Exception as del_err:
+                                        print(f"     ⚠️  Could not delete: {del_err}")
                         else:
                             # Warning or other non-critical issue
                             passed += 1
@@ -645,8 +655,10 @@ class CodeSampleValidator:
         
         # Check if ghc is available
         try:
-            subprocess.run(['ghc', '--version'], check=True, capture_output=True, timeout=5)
-        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            result = subprocess.run(['ghc', '--version'], capture_output=True, timeout=5)
+            if result.returncode != 0 and not result.stdout:
+                raise FileNotFoundError()
+        except (FileNotFoundError, subprocess.TimeoutExpired):
             print(f"  ⚠️  Haskell compiler not available, skipping")
             return 0, 0, []
         
