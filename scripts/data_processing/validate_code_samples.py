@@ -384,6 +384,575 @@ class CodeSampleValidator:
         self.failed_files.extend(failed_files)
         return passed, failed, failed_files
     
+    def validate_cpp(self):
+        """Validate C++ samples."""
+        print("⚡ Validating C++ samples...")
+        cpp_path = self.code_samples_path / "cpp"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if g++ is available
+        try:
+            subprocess.run(['g++', '--version'], check=True, capture_output=True, timeout=2)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  C++ compiler not available, skipping")
+            return 0, 0, []
+        
+        for cpp_file in cpp_path.glob("*.cpp"):
+            try:
+                # Compile with syntax check only
+                subprocess.run(
+                    ['g++', '-std=c++17', '-fsyntax-only', '-Wall', str(cpp_file)],
+                    check=True,
+                    capture_output=True,
+                    timeout=10
+                )
+                passed += 1
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(cpp_file)
+                print(f"  ❌ {cpp_file.name}")
+                if self.delete_invalid:
+                    try:
+                        cpp_file.unlink()
+                        print(f"     🗑️  Deleted {cpp_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_csharp(self):
+        """Validate C# samples."""
+        print("🔷 Validating C# samples...")
+        csharp_path = self.code_samples_path / "csharp"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if dotnet is available (use different check)
+        try:
+            result = subprocess.run(['dotnet', '--list-sdks'], capture_output=True, timeout=5)
+            if result.returncode != 0:
+                raise subprocess.CalledProcessError(result.returncode, 'dotnet')
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  .NET compiler not available, skipping")
+            return 0, 0, []
+        
+        # Create a temporary project for validation
+        import tempfile
+        import shutil
+        temp_dir = Path(tempfile.mkdtemp())
+        
+        try:
+            # Initialize a console project
+            subprocess.run(
+                ['dotnet', 'new', 'console', '-n', 'Validator', '-o', str(temp_dir)],
+                check=True,
+                capture_output=True,
+                timeout=30
+            )
+            
+            for cs_file in csharp_path.glob("*.cs"):
+                try:
+                    # Copy file to temp project
+                    dest = temp_dir / cs_file.name
+                    shutil.copy(cs_file, dest)
+                    
+                    # Try to build
+                    result = subprocess.run(
+                        ['dotnet', 'build', '--no-restore'],
+                        cwd=temp_dir,
+                        capture_output=True,
+                        timeout=20
+                    )
+                    
+                    # Remove the copied file
+                    dest.unlink()
+                    
+                    if result.returncode == 0:
+                        passed += 1
+                    else:
+                        # Some errors are expected (missing Program.Main, etc), check for syntax errors
+                        error_output = result.stderr.decode('utf-8', errors='ignore') + result.stdout.decode('utf-8', errors='ignore')
+                        # Real syntax errors contain "error CS" markers
+                        if 'error CS' in error_output and not 'CS5001' in error_output:  # CS5001 is "no entry point"
+                            failed += 1
+                            failed_files.append(cs_file)
+                            print(f"  ❌ {cs_file.name}")
+                            if self.delete_invalid:
+                                try:
+                                    cs_file.unlink()
+                                    print(f"     🗑️  Deleted {cs_file.name}")
+                                except Exception as del_err:
+                                    print(f"     ⚠️  Could not delete: {del_err}")
+                        else:
+                            # No critical syntax errors
+                            passed += 1
+                            
+                except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                    failed += 1
+                    failed_files.append(cs_file)
+                    print(f"  ❌ {cs_file.name}")
+                    if self.delete_invalid:
+                        try:
+                            cs_file.unlink()
+                            print(f"     🗑️  Deleted {cs_file.name}")
+                        except Exception as del_err:
+                            print(f"     ⚠️  Could not delete: {del_err}")
+        finally:
+            # Clean up temp directory
+            shutil.rmtree(temp_dir, ignore_errors=True)
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_kotlin(self):
+        """Validate Kotlin samples."""
+        print("🟣 Validating Kotlin samples...")
+        kotlin_path = self.code_samples_path / "kotlin"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if kotlinc is available
+        try:
+            result = subprocess.run(['kotlinc', '-version'], capture_output=True, timeout=5)
+            # kotlinc -version writes to stderr, check both
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Kotlin compiler not available, skipping")
+            return 0, 0, []
+        
+        import tempfile
+        temp_dir = Path(tempfile.mkdtemp())
+        
+        try:
+            for kt_file in kotlin_path.glob("*.kt"):
+                try:
+                    # Compile to check syntax
+                    result = subprocess.run(
+                        ['kotlinc', str(kt_file), '-d', str(temp_dir)],
+                        capture_output=True,
+                        timeout=45
+                    )
+                    
+                    if result.returncode == 0:
+                        passed += 1
+                    else:
+                        # Check if it's a real syntax error vs dependency issue
+                        error_output = result.stderr.decode('utf-8', errors='ignore') + result.stdout.decode('utf-8', errors='ignore')
+                        # Ignore unresolved reference errors (dependencies) - focus on syntax
+                        if 'error:' in error_output.lower():
+                            # Check if it's only dependency errors
+                            error_lines = [line for line in error_output.split('\n') if 'error:' in line.lower()]
+                            dependency_errors = sum(1 for line in error_lines if 'unresolved reference' in line.lower() or 'unresolved import' in line.lower())
+                            total_errors = len(error_lines)
+                            
+                            # If all errors are dependency-related, consider it passed
+                            if dependency_errors == total_errors and total_errors > 0:
+                                passed += 1
+                            else:
+                                failed += 1
+                                failed_files.append(kt_file)
+                                print(f"  ❌ {kt_file.name}")
+                                if self.delete_invalid:
+                                    try:
+                                        kt_file.unlink()
+                                        print(f"     🗑️  Deleted {kt_file.name}")
+                                    except Exception as del_err:
+                                        print(f"     ⚠️  Could not delete: {del_err}")
+                        else:
+                            # Warning or other non-critical issue
+                            passed += 1
+                            
+                except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                    failed += 1
+                    failed_files.append(kt_file)
+                    print(f"  ❌ {kt_file.name}")
+                    if self.delete_invalid:
+                        try:
+                            kt_file.unlink()
+                            print(f"     🗑️  Deleted {kt_file.name}")
+                        except Exception as del_err:
+                            print(f"     ⚠️  Could not delete: {del_err}")
+        finally:
+            # Clean up temp directory
+            import shutil
+            shutil.rmtree(temp_dir, ignore_errors=True)
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_swift(self):
+        """Validate Swift samples."""
+        print("🍎 Validating Swift samples...")
+        swift_path = self.code_samples_path / "swift"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if swift is available
+        try:
+            subprocess.run(['swift', '--version'], check=True, capture_output=True, timeout=5)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Swift compiler not available, skipping")
+            return 0, 0, []
+        
+        for swift_file in swift_path.glob("*.swift"):
+            try:
+                # Use swiftc to check syntax
+                result = subprocess.run(
+                    ['swiftc', '-parse', str(swift_file)],
+                    capture_output=True,
+                    timeout=15
+                )
+                
+                if result.returncode == 0:
+                    passed += 1
+                else:
+                    # Check for real syntax errors
+                    error_output = result.stderr.decode('utf-8', errors='ignore') + result.stdout.decode('utf-8', errors='ignore')
+                    if 'error:' in error_output:
+                        failed += 1
+                        failed_files.append(swift_file)
+                        print(f"  ❌ {swift_file.name}")
+                        if self.delete_invalid:
+                            try:
+                                swift_file.unlink()
+                                print(f"     🗑️  Deleted {swift_file.name}")
+                            except Exception as del_err:
+                                print(f"     ⚠️  Could not delete: {del_err}")
+                    else:
+                        # Warning only
+                        passed += 1
+                        
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(swift_file)
+                print(f"  ❌ {swift_file.name}")
+                if self.delete_invalid:
+                    try:
+                        swift_file.unlink()
+                        print(f"     🗑️  Deleted {swift_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_haskell(self):
+        """Validate Haskell samples."""
+        print("🔮 Validating Haskell samples...")
+        haskell_path = self.code_samples_path / "haskell"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if ghc is available
+        try:
+            result = subprocess.run(['ghc', '--version'], capture_output=True, timeout=5)
+            if result.returncode != 0 and not result.stdout:
+                raise FileNotFoundError()
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Haskell compiler not available, skipping")
+            return 0, 0, []
+        
+        import tempfile
+        temp_dir = Path(tempfile.mkdtemp())
+        
+        try:
+            for hs_file in haskell_path.glob("*.hs"):
+                try:
+                    # Use ghc to check syntax only
+                    result = subprocess.run(
+                        ['ghc', '-fno-code', '-outputdir', str(temp_dir), str(hs_file)],
+                        capture_output=True,
+                        timeout=20
+                    )
+                    
+                    if result.returncode == 0:
+                        passed += 1
+                    else:
+                        # Check for real syntax/type errors
+                        error_output = result.stderr.decode('utf-8', errors='ignore') + result.stdout.decode('utf-8', errors='ignore')
+                        if 'error:' in error_output.lower():
+                            failed += 1
+                            failed_files.append(hs_file)
+                            print(f"  ❌ {hs_file.name}")
+                            if self.delete_invalid:
+                                try:
+                                    hs_file.unlink()
+                                    print(f"     🗑️  Deleted {hs_file.name}")
+                                except Exception as del_err:
+                                    print(f"     ⚠️  Could not delete: {del_err}")
+                        else:
+                            # Warning only
+                            passed += 1
+                            
+                except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                    failed += 1
+                    failed_files.append(hs_file)
+                    print(f"  ❌ {hs_file.name}")
+                    if self.delete_invalid:
+                        try:
+                            hs_file.unlink()
+                            print(f"     🗑️  Deleted {hs_file.name}")
+                        except Exception as del_err:
+                            print(f"     ⚠️  Could not delete: {del_err}")
+        finally:
+            # Clean up temp directory
+            import shutil
+            shutil.rmtree(temp_dir, ignore_errors=True)
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_scala(self):
+        """Validate Scala samples."""
+        print("🔴 Validating Scala samples...")
+        scala_path = self.code_samples_path / "scala"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if scalac is available
+        try:
+            subprocess.run(['scalac', '-version'], check=True, capture_output=True, timeout=2)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Scala compiler not available, skipping")
+            return 0, 0, []
+        
+        for scala_file in scala_path.glob("*.scala"):
+            try:
+                # Compile to check syntax
+                subprocess.run(
+                    ['scalac', '-d', '/tmp', str(scala_file)],
+                    check=True,
+                    capture_output=True,
+                    timeout=30
+                )
+                passed += 1
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(scala_file)
+                print(f"  ❌ {scala_file.name}")
+                if self.delete_invalid:
+                    try:
+                        scala_file.unlink()
+                        print(f"     🗑️  Deleted {scala_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_dart(self):
+        """Validate Dart samples."""
+        print("🎯 Validating Dart samples...")
+        dart_path = self.code_samples_path / "dart"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if dart is available
+        try:
+            subprocess.run(['dart', '--version'], check=True, capture_output=True, timeout=2)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Dart not available, skipping")
+            return 0, 0, []
+        
+        for dart_file in dart_path.glob("*.dart"):
+            try:
+                # Use dart analyze
+                subprocess.run(
+                    ['dart', 'analyze', str(dart_file)],
+                    check=True,
+                    capture_output=True,
+                    timeout=10
+                )
+                passed += 1
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(dart_file)
+                print(f"  ❌ {dart_file.name}")
+                if self.delete_invalid:
+                    try:
+                        dart_file.unlink()
+                        print(f"     🗑️  Deleted {dart_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_r(self):
+        """Validate R samples."""
+        print("📊 Validating R samples...")
+        r_path = self.code_samples_path / "r"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if Rscript is available
+        try:
+            subprocess.run(['Rscript', '--version'], check=True, capture_output=True, timeout=2)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  R not available, skipping")
+            return 0, 0, []
+        
+        for r_file in r_path.glob("*.R"):
+            try:
+                # Use Rscript to parse
+                subprocess.run(
+                    ['Rscript', '-e', f'parse("{r_file}")'],
+                    check=True,
+                    capture_output=True,
+                    timeout=10
+                )
+                passed += 1
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(r_file)
+                print(f"  ❌ {r_file.name}")
+                if self.delete_invalid:
+                    try:
+                        r_file.unlink()
+                        print(f"     🗑️  Deleted {r_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_lua(self):
+        """Validate Lua samples."""
+        print("🌙 Validating Lua samples...")
+        lua_path = self.code_samples_path / "lua"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if lua is available
+        try:
+            subprocess.run(['lua', '-v'], check=True, capture_output=True, timeout=2)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Lua not available, skipping")
+            return 0, 0, []
+        
+        for lua_file in lua_path.glob("*.lua"):
+            try:
+                # Use lua to check syntax
+                subprocess.run(
+                    ['lua', '-p', str(lua_file)],
+                    check=True,
+                    capture_output=True,
+                    timeout=5
+                )
+                passed += 1
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(lua_file)
+                print(f"  ❌ {lua_file.name}")
+                if self.delete_invalid:
+                    try:
+                        lua_file.unlink()
+                        print(f"     🗑️  Deleted {lua_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_elixir(self):
+        """Validate Elixir samples."""
+        print("💧 Validating Elixir samples...")
+        elixir_path = self.code_samples_path / "elixir"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if elixir is available
+        try:
+            subprocess.run(['elixir', '--version'], check=True, capture_output=True, timeout=2)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Elixir not available, skipping")
+            return 0, 0, []
+        
+        for ex_file in elixir_path.glob("*.ex"):
+            try:
+                # Use elixir to check syntax
+                subprocess.run(
+                    ['elixir', '-c', str(ex_file)],
+                    check=True,
+                    capture_output=True,
+                    timeout=10
+                )
+                passed += 1
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(ex_file)
+                print(f"  ❌ {ex_file.name}")
+                if self.delete_invalid:
+                    try:
+                        ex_file.unlink()
+                        print(f"     🗑️  Deleted {ex_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
+    def validate_solidity(self):
+        """Validate Solidity samples."""
+        print("⛓️  Validating Solidity samples...")
+        solidity_path = self.code_samples_path / "solidity"
+        passed = 0
+        failed = 0
+        failed_files = []
+        
+        # Check if solc is available
+        try:
+            subprocess.run(['solc', '--version'], check=True, capture_output=True, timeout=2)
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            print(f"  ⚠️  Solidity compiler not available, skipping")
+            return 0, 0, []
+        
+        for sol_file in solidity_path.glob("*.sol"):
+            try:
+                # Compile to check syntax
+                subprocess.run(
+                    ['solc', '--optimize', str(sol_file)],
+                    check=True,
+                    capture_output=True,
+                    timeout=10
+                )
+                passed += 1
+            except (subprocess.CalledProcessError, subprocess.TimeoutExpired) as e:
+                failed += 1
+                failed_files.append(sol_file)
+                print(f"  ❌ {sol_file.name}")
+                if self.delete_invalid:
+                    try:
+                        sol_file.unlink()
+                        print(f"     🗑️  Deleted {sol_file.name}")
+                    except Exception as del_err:
+                        print(f"     ⚠️  Could not delete: {del_err}")
+        
+        print(f"  ✅ Passed: {passed}/{passed + failed}")
+        self.failed_files.extend(failed_files)
+        return passed, failed, failed_files
+    
     def count_samples_by_category(self):
         """Count samples by category."""
         print("\n📊 Counting samples by category...")
@@ -461,6 +1030,17 @@ def main():
     results['php'] = validator.validate_php()
     results['ruby'] = validator.validate_ruby()
     results['perl'] = validator.validate_perl()
+    results['cpp'] = validator.validate_cpp()
+    results['csharp'] = validator.validate_csharp()
+    results['kotlin'] = validator.validate_kotlin()
+    results['swift'] = validator.validate_swift()
+    results['haskell'] = validator.validate_haskell()
+    results['scala'] = validator.validate_scala()
+    results['dart'] = validator.validate_dart()
+    results['r'] = validator.validate_r()
+    results['lua'] = validator.validate_lua()
+    results['elixir'] = validator.validate_elixir()
+    results['solidity'] = validator.validate_solidity()
     
     # Count by category
     categories = validator.count_samples_by_category()
