@@ -6,6 +6,8 @@ Creates unique, syntactically correct code samples across multiple languages
 
 import os
 from pathlib import Path
+import subprocess
+import sys
 
 # Base path for code samples
 CODE_SAMPLES_PATH = Path("/home/runner/work/DATA/DATA/code_samples")
@@ -1193,9 +1195,877 @@ def main():
             f.write(content)
         print(f"Created: {filepath}")
     
-    print(f"\nGenerated {len(r_samples)} R samples")
-    print(f"Generated {len(kotlin_samples)} Kotlin samples")
-    print("Total new samples: " + str(len(r_samples) + len(kotlin_samples)))
+    # Generate Python samples
+    python_samples = generate_python_samples()
+    python_path = CODE_SAMPLES_PATH / "python"
+    
+    for filename, content in python_samples.items():
+        filepath = python_path / filename
+        if not filepath.exists():  # Don't overwrite existing files
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate JavaScript samples
+    js_samples = generate_javascript_samples()
+    js_path = CODE_SAMPLES_PATH / "javascript"
+    
+    for filename, content in js_samples.items():
+        filepath = js_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate TypeScript samples
+    ts_samples = generate_typescript_samples()
+    ts_path = CODE_SAMPLES_PATH / "typescript"
+    
+    for filename, content in ts_samples.items():
+        filepath = ts_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate Java samples
+    java_samples = generate_java_samples()
+    java_path = CODE_SAMPLES_PATH / "java"
+    
+    for filename, content in java_samples.items():
+        filepath = java_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate Go samples
+    go_samples = generate_go_samples()
+    go_path = CODE_SAMPLES_PATH / "go"
+    
+    for filename, content in go_samples.items():
+        filepath = go_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate PHP samples
+    php_samples = generate_php_samples()
+    php_path = CODE_SAMPLES_PATH / "php"
+    
+    for filename, content in php_samples.items():
+        filepath = php_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate Ruby samples
+    ruby_samples = generate_ruby_samples()
+    ruby_path = CODE_SAMPLES_PATH / "ruby"
+    
+    for filename, content in ruby_samples.items():
+        filepath = ruby_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate C++ samples
+    cpp_samples = generate_cpp_samples()
+    cpp_path = CODE_SAMPLES_PATH / "cpp"
+    
+    for filename, content in cpp_samples.items():
+        filepath = cpp_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate C# samples
+    csharp_samples = generate_csharp_samples()
+    csharp_path = CODE_SAMPLES_PATH / "csharp"
+    
+    for filename, content in csharp_samples.items():
+        filepath = csharp_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate Swift samples
+    swift_samples = generate_swift_samples()
+    swift_path = CODE_SAMPLES_PATH / "swift"
+    
+    for filename, content in swift_samples.items():
+        filepath = swift_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    # Generate Perl samples
+    perl_samples = generate_perl_samples()
+    perl_path = CODE_SAMPLES_PATH / "perl"
+    
+    for filename, content in perl_samples.items():
+        filepath = perl_path / filename
+        if not filepath.exists():
+            with open(filepath, 'w') as f:
+                f.write(content)
+            print(f"Created: {filepath}")
+    
+    print(f"\nGenerated samples:")
+    print(f"  R: {len(r_samples)}")
+    print(f"  Kotlin: {len(kotlin_samples)}")
+    print(f"  Python: {len(python_samples)}")
+    print(f"  JavaScript: {len(js_samples)}")
+    print(f"  TypeScript: {len(ts_samples)}")
+    print(f"  Java: {len(java_samples)}")
+    print(f"  Go: {len(go_samples)}")
+    print(f"  PHP: {len(php_samples)}")
+    print(f"  Ruby: {len(ruby_samples)}")
+    print(f"  C++: {len(cpp_samples)}")
+    print(f"  C#: {len(csharp_samples)}")
+    print(f"  Swift: {len(swift_samples)}")
+    print(f"  Perl: {len(perl_samples)}")
+    total = sum([len(r_samples), len(kotlin_samples), len(python_samples), len(js_samples),
+                 len(ts_samples), len(java_samples), len(go_samples), len(php_samples),
+                 len(ruby_samples), len(cpp_samples), len(csharp_samples), len(swift_samples),
+                 len(perl_samples)])
+    print(f"Total new samples: {total}")
+
+def generate_python_samples():
+    """Generate additional Python code samples"""
+    samples = {
+        "concurrency_multiprocessing_advanced.py": '''"""
+Advanced Multiprocessing Patterns in Python
+Demonstrates process pools, shared memory, and IPC
+"""
+
+import multiprocessing as mp
+from multiprocessing import Pool, Manager, Queue, Process, Value, Array
+import time
+import os
+
+def worker_function(x):
+    """Simple worker function for pool"""
+    return x * x
+
+def parallel_map_reduce():
+    """Demonstrate map-reduce with process pool"""
+    with Pool(processes=4) as pool:
+        # Map phase
+        numbers = range(1, 100)
+        squared = pool.map(worker_function, numbers)
+        
+        # Reduce phase
+        total = sum(squared)
+        return total
+
+def shared_memory_example():
+    """Demonstrate shared memory between processes"""
+    # Shared value
+    counter = Value('i', 0)
+    
+    # Shared array
+    shared_arr = Array('d', [0.0] * 10)
+    
+    def increment_counter(val, arr, idx):
+        with val.get_lock():
+            val.value += 1
+        arr[idx] = val.value * 2.0
+    
+    processes = []
+    for i in range(5):
+        p = Process(target=increment_counter, args=(counter, shared_arr, i))
+        p.start()
+        processes.append(p)
+    
+    for p in processes:
+        p.join()
+    
+    print(f"Final counter value: {counter.value}")
+    print(f"Shared array: {list(shared_arr[:5])}")
+
+def producer_consumer_pattern():
+    """Demonstrate producer-consumer with Queue"""
+    def producer(queue, items):
+        for item in items:
+            queue.put(item)
+            time.sleep(0.1)
+        queue.put(None)  # Sentinel
+    
+    def consumer(queue):
+        results = []
+        while True:
+            item = queue.get()
+            if item is None:
+                break
+            results.append(item * 2)
+        return results
+    
+    q = Queue()
+    items = range(10)
+    
+    prod = Process(target=producer, args=(q, items))
+    cons = Process(target=consumer, args=(q,))
+    
+    prod.start()
+    cons.start()
+    
+    prod.join()
+    cons.join()
+
+def parallel_computation():
+    """Compute intensive task with parallel execution"""
+    def is_prime(n):
+        if n < 2:
+            return False
+        for i in range(2, int(n ** 0.5) + 1):
+            if n % i == 0:
+                return False
+        return True
+    
+    numbers = range(1, 10000)
+    
+    # Serial execution
+    start = time.time()
+    serial_primes = [n for n in numbers if is_prime(n)]
+    serial_time = time.time() - start
+    
+    # Parallel execution
+    start = time.time()
+    with Pool() as pool:
+        results = pool.map(is_prime, numbers)
+        parallel_primes = [n for n, is_p in zip(numbers, results) if is_p]
+    parallel_time = time.time() - start
+    
+    print(f"Serial time: {serial_time:.4f}s")
+    print(f"Parallel time: {parallel_time:.4f}s")
+    print(f"Speedup: {serial_time / parallel_time:.2f}x")
+    print(f"Found {len(parallel_primes)} primes")
+
+if __name__ == "__main__":
+    print("Advanced Multiprocessing Patterns")
+    print("=================================\\n")
+    
+    print("1. Parallel Map-Reduce:")
+    result = parallel_map_reduce()
+    print(f"   Sum of squares: {result}\\n")
+    
+    print("2. Shared Memory:")
+    shared_memory_example()
+    print()
+    
+    print("3. Producer-Consumer Pattern:")
+    producer_consumer_pattern()
+    print()
+    
+    print("4. Parallel Computation:")
+    parallel_computation()
+''',
+
+        "design_patterns_command.py": '''"""
+Command Design Pattern in Python
+Encapsulates requests as objects for flexible execution
+"""
+
+from abc import ABC, abstractmethod
+from typing import List
+
+# Command interface
+class Command(ABC):
+    @abstractmethod
+    def execute(self):
+        pass
+    
+    @abstractmethod
+    def undo(self):
+        pass
+
+# Receiver class
+class Light:
+    def __init__(self, location: str):
+        self.location = location
+        self.is_on = False
+    
+    def turn_on(self):
+        self.is_on = True
+        print(f"{self.location} light is ON")
+    
+    def turn_off(self):
+        self.is_on = False
+        print(f"{self.location} light is OFF")
+
+# Concrete commands
+class LightOnCommand(Command):
+    def __init__(self, light: Light):
+        self.light = light
+    
+    def execute(self):
+        self.light.turn_on()
+    
+    def undo(self):
+        self.light.turn_off()
+
+class LightOffCommand(Command):
+    def __init__(self, light: Light):
+        self.light = light
+    
+    def execute(self):
+        self.light.turn_off()
+    
+    def undo(self):
+        self.light.turn_on()
+
+# Invoker
+class RemoteControl:
+    def __init__(self):
+        self.commands: List[Command] = []
+        self.history: List[Command] = []
+    
+    def set_command(self, slot: int, command: Command):
+        if len(self.commands) <= slot:
+            self.commands.extend([None] * (slot - len(self.commands) + 1))
+        self.commands[slot] = command
+    
+    def press_button(self, slot: int):
+        if slot < len(self.commands) and self.commands[slot]:
+            self.commands[slot].execute()
+            self.history.append(self.commands[slot])
+    
+    def press_undo(self):
+        if self.history:
+            command = self.history.pop()
+            command.undo()
+
+# Macro command
+class MacroCommand(Command):
+    def __init__(self, commands: List[Command]):
+        self.commands = commands
+    
+    def execute(self):
+        for command in self.commands:
+            command.execute()
+    
+    def undo(self):
+        for command in reversed(self.commands):
+            command.undo()
+
+def main():
+    print("Command Pattern Demonstration")
+    print("============================\\n")
+    
+    # Create receivers
+    living_room_light = Light("Living Room")
+    bedroom_light = Light("Bedroom")
+    
+    # Create commands
+    living_on = LightOnCommand(living_room_light)
+    living_off = LightOffCommand(living_room_light)
+    bedroom_on = LightOnCommand(bedroom_light)
+    bedroom_off = LightOffCommand(bedroom_light)
+    
+    # Set up remote
+    remote = RemoteControl()
+    remote.set_command(0, living_on)
+    remote.set_command(1, living_off)
+    remote.set_command(2, bedroom_on)
+    remote.set_command(3, bedroom_off)
+    
+    # Test commands
+    print("Pressing button 0:")
+    remote.press_button(0)
+    
+    print("\\nPressing button 2:")
+    remote.press_button(2)
+    
+    print("\\nUndoing last command:")
+    remote.press_undo()
+    
+    print("\\nTesting macro command:")
+    all_on = MacroCommand([living_on, bedroom_on])
+    all_on.execute()
+    
+    print("\\nUndoing macro:")
+    all_on.undo()
+
+if __name__ == "__main__":
+    main()
+''',
+    }
+    return samples
+
+def generate_javascript_samples():
+    """Generate additional JavaScript code samples"""
+    samples = {
+        "promises_async_patterns.js": '''/**
+ * Advanced Promise and Async Patterns in JavaScript
+ * Demonstrates promise composition, error handling, and async utilities
+ */
+
+// Promise utility functions
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+// Retry with exponential backoff
+async function retryWithBackoff(fn, maxRetries = 3, baseDelay = 1000) {
+    for (let i = 0; i < maxRetries; i++) {
+        try {
+            return await fn();
+        } catch (error) {
+            if (i === maxRetries - 1) throw error;
+            
+            const delayTime = baseDelay * Math.pow(2, i);
+            console.log(`Retry ${i + 1} after ${delayTime}ms`);
+            await delay(delayTime);
+        }
+    }
+}
+
+// Promise.all with concurrency limit
+async function promiseAllLimit(promises, limit) {
+    const results = [];
+    const executing = [];
+    
+    for (const [index, promise] of promises.entries()) {
+        const p = Promise.resolve(promise).then(
+            result => {
+                results[index] = result;
+            }
+        );
+        
+        results.push(undefined);
+        
+        if (limit <= promises.length) {
+            const e = p.then(() => executing.splice(executing.indexOf(e), 1));
+            executing.push(e);
+            
+            if (executing.length >= limit) {
+                await Promise.race(executing);
+            }
+        }
+    }
+    
+    await Promise.all(executing);
+    return results;
+}
+
+// Promise timeout wrapper
+function withTimeout(promise, timeoutMs) {
+    return Promise.race([
+        promise,
+        new Promise((_, reject) =>
+            setTimeout(() => reject(new Error('Timeout')), timeoutMs)
+        )
+    ]);
+}
+
+// Async queue implementation
+class AsyncQueue {
+    constructor(concurrency = 1) {
+        this.concurrency = concurrency;
+        this.running = 0;
+        this.queue = [];
+    }
+    
+    async add(fn) {
+        return new Promise((resolve, reject) => {
+            this.queue.push({ fn, resolve, reject });
+            this.process();
+        });
+    }
+    
+    async process() {
+        if (this.running >= this.concurrency || this.queue.length === 0) {
+            return;
+        }
+        
+        this.running++;
+        const { fn, resolve, reject } = this.queue.shift();
+        
+        try {
+            const result = await fn();
+            resolve(result);
+        } catch (error) {
+            reject(error);
+        } finally {
+            this.running--;
+            this.process();
+        }
+    }
+}
+
+// Async generator example
+async function* asyncGenerator(items) {
+    for (const item of items) {
+        await delay(100);
+        yield item * 2;
+    }
+}
+
+// Pipeline composition
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+const pipeAsync = (...fns) => x => fns.reduce(async (v, f) => f(await v), x);
+
+// Demonstration
+async function main() {
+    console.log("Advanced Promise Patterns");
+    console.log("========================\\n");
+    
+    // Test retry with backoff
+    console.log("1. Retry with backoff:");
+    let attempts = 0;
+    const flaky = async () => {
+        attempts++;
+        if (attempts < 3) throw new Error("Fail");
+        return "Success";
+    };
+    const result = await retryWithBackoff(flaky);
+    console.log(`Result: ${result}\\n`);
+    
+    // Test async queue
+    console.log("2. Async queue:");
+    const queue = new AsyncQueue(2);
+    const tasks = [1, 2, 3, 4, 5].map(n =>
+        () => delay(100).then(() => n * 2)
+    );
+    const queueResults = await Promise.all(tasks.map(task => queue.add(task)));
+    console.log(`Queue results: ${queueResults}\\n`);
+    
+    // Test async generator
+    console.log("3. Async generator:");
+    for await (const value of asyncGenerator([1, 2, 3])) {
+        console.log(`  Generated: ${value}`);
+    }
+}
+
+main().catch(console.error);
+''',
+
+        "functional_composition.js": '''/**
+ * Functional Programming Composition Patterns
+ * Demonstrates pure functions, composition, and functional utilities
+ */
+
+// Pure function utilities
+const identity = x => x;
+const constant = x => () => x;
+const compose = (...fns) => x => fns.reduceRight((v, f) => f(v), x);
+const pipe = (...fns) => x => fns.reduce((v, f) => f(v), x);
+
+// Currying
+const curry = (fn) => {
+    return function curried(...args) {
+        if (args.length >= fn.length) {
+            return fn.apply(this, args);
+        } else {
+            return function(...args2) {
+                return curried.apply(this, args.concat(args2));
+            };
+        }
+    };
+};
+
+// Partial application
+const partial = (fn, ...presetArgs) => {
+    return (...laterArgs) => fn(...presetArgs, ...laterArgs);
+};
+
+// Function composition utilities
+const map = curry((fn, arr) => arr.map(fn));
+const filter = curry((fn, arr) => arr.filter(fn));
+const reduce = curry((fn, init, arr) => arr.reduce(fn, init));
+
+// Transducers
+const mapping = (fn) => (step) => {
+    return (acc, value) => step(acc, fn(value));
+};
+
+const filtering = (predicate) => (step) => {
+    return (acc, value) => predicate(value) ? step(acc, value) : acc;
+};
+
+const transduce = (xform, step, init, coll) => {
+    const xf = xform(step);
+    return coll.reduce(xf, init);
+};
+
+// Monads
+class Maybe {
+    constructor(value) {
+        this.value = value;
+    }
+    
+    static of(value) {
+        return new Maybe(value);
+    }
+    
+    isNothing() {
+        return this.value === null || this.value === undefined;
+    }
+    
+    map(fn) {
+        return this.isNothing() ? this : Maybe.of(fn(this.value));
+    }
+    
+    flatMap(fn) {
+        return this.isNothing() ? this : fn(this.value);
+    }
+    
+    getOrElse(defaultValue) {
+        return this.isNothing() ? defaultValue : this.value;
+    }
+}
+
+class Either {
+    constructor(value, isRight = true) {
+        this.value = value;
+        this.isRight = isRight;
+    }
+    
+    static right(value) {
+        return new Either(value, true);
+    }
+    
+    static left(value) {
+        return new Either(value, false);
+    }
+    
+    map(fn) {
+        return this.isRight ? Either.right(fn(this.value)) : this;
+    }
+    
+    flatMap(fn) {
+        return this.isRight ? fn(this.value) : this;
+    }
+    
+    fold(leftFn, rightFn) {
+        return this.isRight ? rightFn(this.value) : leftFn(this.value);
+    }
+}
+
+// Lens implementation
+const lens = (getter, setter) => ({
+    get: getter,
+    set: setter,
+    over: (fn, obj) => setter(fn(getter(obj)), obj)
+});
+
+const view = (lens, obj) => lens.get(obj);
+const set = (lens, value, obj) => lens.set(value, obj);
+const over = (lens, fn, obj) => lens.over(fn, obj);
+
+// Demonstration
+function main() {
+    console.log("Functional Composition Patterns");
+    console.log("===============================\\n");
+    
+    // Composition example
+    const double = x => x * 2;
+    const increment = x => x + 1;
+    const square = x => x * x;
+    
+    const transform = pipe(double, increment, square);
+    console.log("1. Function composition:");
+    console.log(`   pipe(double, increment, square)(3) = ${transform(3)}\\n`);
+    
+    // Currying example
+    const add = curry((a, b, c) => a + b + c);
+    console.log("2. Currying:");
+    console.log(`   add(1)(2)(3) = ${add(1)(2)(3)}\\n`);
+    
+    // Maybe monad
+    console.log("3. Maybe monad:");
+    const safeDiv = (a, b) => b === 0 ? Maybe.of(null) : Maybe.of(a / b);
+    console.log(`   10 / 2 = ${safeDiv(10, 2).getOrElse("Error")}`);
+    console.log(`   10 / 0 = ${safeDiv(10, 0).getOrElse("Error")}\\n`);
+    
+    // Transducers
+    console.log("4. Transducers:");
+    const xform = compose(
+        filtering(x => x % 2 === 0),
+        mapping(x => x * 2)
+    );
+    const result = transduce(
+        xform,
+        (acc, x) => acc.concat(x),
+        [],
+        [1, 2, 3, 4, 5, 6]
+    );
+    console.log(`   Result: [${result}]`);
+}
+
+main();
+''',
+    }
+    return samples
+
+def generate_typescript_samples():
+    """Generate TypeScript code samples"""
+    samples = {
+        "generics_advanced.ts": '''/**
+ * Advanced Generic Types in TypeScript
+ * Demonstrates generic constraints, mapped types, and conditional types
+ */
+
+// Generic constraints
+interface Lengthwise {
+    length: number;
+}
+
+function logLength<T extends Lengthwise>(arg: T): T {
+    console.log(arg.length);
+    return arg;
+}
+
+// Generic factory pattern
+interface Constructor<T> {
+    new(...args: any[]): T;
+}
+
+function create<T>(ctor: Constructor<T>, ...args: any[]): T {
+    return new ctor(...args);
+}
+
+// Custom mapped types (avoiding built-in duplicates)
+type MyReadonly<T> = {
+    readonly [P in keyof T]: T[P];
+};
+
+type MyPartial<T> = {
+    [P in keyof T]?: T[P];
+};
+
+type Nullable<T> = {
+    [P in keyof T]: T[P] | null;
+};
+
+// Conditional types
+type Flatten<T> = T extends Array<infer U> ? U : T;
+
+type ExtractPromise<T> = T extends Promise<infer U> ? U : T;
+
+// Advanced generics
+interface Repository<T> {
+    getById(id: string): T | null;
+    getAll(): T[];
+    create(item: Omit<T, 'id'>): T;
+    update(id: string, item: MyPartial<T>): T;
+    delete(id: string): boolean;
+}
+
+class InMemoryRepository<T extends { id: string }> implements Repository<T> {
+    private items: { [key: string]: T } = {};
+    
+    getById(id: string): T | null {
+        return this.items[id] || null;
+    }
+    
+    getAll(): T[] {
+        return Object.values(this.items);
+    }
+    
+    create(item: Omit<T, 'id'>): T {
+        const id = Math.random().toString(36).substr(2, 9);
+        const newItem = { ...item, id } as T;
+        this.items[id] = newItem;
+        return newItem;
+    }
+    
+    update(id: string, item: MyPartial<T>): T {
+        const existing = this.items[id];
+        if (!existing) throw new Error('Not found');
+        const updated = { ...existing, ...item };
+        this.items[id] = updated;
+        return updated;
+    }
+    
+    delete(id: string): boolean {
+        if (this.items[id]) {
+            delete this.items[id];
+            return true;
+        }
+        return false;
+    }
+}
+
+// Type guards
+function isString(value: unknown): value is string {
+    return typeof value === 'string';
+}
+
+function isArray<T>(value: unknown): value is T[] {
+    return Array.isArray(value);
+}
+
+// Utility types
+type DeepPartial<T> = {
+    [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+};
+
+type DeepReadonly<T> = {
+    readonly [P in keyof T]: T[P] extends object ? DeepReadonly<T[P]> : T[P];
+};
+
+// Example usage
+interface User {
+    id: string;
+    name: string;
+    email: string;
+    age: number;
+}
+
+const userRepo = new InMemoryRepository<User>();
+
+console.log("Advanced TypeScript Generics");
+console.log("===========================");
+''',
+    }
+    return samples
+
+def generate_java_samples():
+    """Generate Java code samples"""
+    samples = {}  # Will add later to stay within limits
+    return samples
+
+def generate_go_samples():
+    """Generate Go code samples"""
+    samples = {}
+    return samples
+
+def generate_php_samples():
+    """Generate PHP code samples"""
+    samples = {}
+    return samples
+
+def generate_ruby_samples():
+    """Generate Ruby code samples"""
+    samples = {}
+    return samples
+
+def generate_cpp_samples():
+    """Generate C++ code samples"""
+    samples = {}
+    return samples
+
+def generate_csharp_samples():
+    """Generate C# code samples"""
+    samples = {}
+    return samples
+
+def generate_swift_samples():
+    """Generate Swift code samples"""
+    samples = {}
+    return samples
+
+def generate_perl_samples():
+    """Generate Perl code samples"""
+    samples = {}
+    return samples
 
 if __name__ == "__main__":
     main()
