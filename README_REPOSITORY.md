@@ -392,9 +392,9 @@ python3 -m pytest tests/unit/test_ml_validation.py -v
 
 ### Browse Repository Structure
 Explore the comprehensive code examples organized across multiple directories:
-- **`code_samples/`** - 106 curated examples across 20 languages
-- **`data-sources/`** - AI training data structure with specialized examples
-- **`high_end_specialized/`** - Advanced algorithms and financial mathematics
+- **`code_samples/`** - 1,409 implementations across 18 languages
+- **`data-sources/`** - AI training data structure with specialized examples (28 files)
+- **`high_end_specialized/`** - Advanced algorithms and financial mathematics (7 files)
 
 ### Getting Started in 30 Seconds
 
