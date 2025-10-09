@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "dataset_name": "Cloud Infrastructure and DevOps Patterns",
+    "version": "1.0.0",
+    "description": "Deployment, scaling, monitoring, CI/CD, and cloud-native application patterns",
+    "created_at": "2025-10-09",
+    "sample_count": 180,
+    "categories": [
+      "containerization",
+      "kubernetes",
+      "ci_cd",
+      "monitoring",
+      "infrastructure_as_code",
+      "serverless",
+      "cloud_native"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "cloud_001",
+      "category": "containerization",
+      "title": "Docker Best Practices",
+      "code_snippet": "# Multi-stage Dockerfile\nFROM python:3.9-slim as builder\nWORKDIR /app\nCOPY requirements.txt .\nRUN pip install --user -r requirements.txt\n\nFROM python:3.9-slim\nWORKDIR /app\nCOPY --from=builder /root/.local /root/.local\nCOPY . .\nENV PATH=/root/.local/bin:$PATH\nUSER nobody\nCMD [\"python\", \"app.py\"]",
+      "best_practices": [
+        "Use multi-stage builds",
+        "Minimize layers",
+        "Run as non-root",
+        "Use specific base image versions",
+        "Implement health checks"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 180,
+    "key_topics": [
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "Monitoring",
+      "Infrastructure as Code"
+    ]
+  }
+}

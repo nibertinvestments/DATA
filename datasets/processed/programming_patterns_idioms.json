@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "dataset_name": "Programming Patterns and Idioms Dataset",
+    "version": "1.0.0",
+    "description": "Language-specific patterns, anti-patterns, and best practices across multiple languages",
+    "created_at": "2025-10-09",
+    "sample_count": 240,
+    "categories": [
+      "design_patterns",
+      "idioms",
+      "anti_patterns",
+      "refactoring",
+      "code_smells",
+      "best_practices",
+      "language_specific"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "pat_001",
+      "category": "design_patterns",
+      "title": "Singleton Pattern",
+      "code_snippet": "class Singleton:\n    _instance = None\n    \n    def __new__(cls):\n        if cls._instance is None:\n            cls._instance = super().__new__(cls)\n        return cls._instance\n\n# Thread-safe version\nimport threading\n\nclass ThreadSafeSingleton:\n    _instance = None\n    _lock = threading.Lock()\n    \n    def __new__(cls):\n        if cls._instance is None:\n            with cls._lock:\n                if cls._instance is None:\n                    cls._instance = super().__new__(cls)\n        return cls._instance",
+      "best_practices": [
+        "Use for truly global state only",
+        "Consider dependency injection",
+        "Make thread-safe if needed",
+        "Document singleton behavior"
+      ],
+      "anti_patterns": [
+        "Overusing singletons",
+        "Hidden dependencies",
+        "Testing difficulties"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 240,
+    "key_topics": [
+      "Design patterns",
+      "Idioms",
+      "Anti-patterns",
+      "Refactoring",
+      "Code quality"
+    ]
+  }
+}

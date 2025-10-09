@@ -1,0 +1,41 @@
+{
+  "metadata": {
+    "dataset_name": "Model Evaluation and Metrics Comprehensive Guide",
+    "version": "1.0.0",
+    "description": "Complete guide to evaluating ML models with various metrics and validation techniques",
+    "created_at": "2025-10-09",
+    "sample_count": 190,
+    "categories": [
+      "classification_metrics",
+      "regression_metrics",
+      "cross_validation",
+      "confusion_matrix",
+      "roc_auc",
+      "model_comparison",
+      "statistical_tests"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "eval_001",
+      "category": "classification_metrics",
+      "title": "Classification Metrics Suite",
+      "code_snippet": "from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, roc_auc_score\nfrom sklearn.metrics import classification_report, confusion_matrix\n\nclass ClassificationEvaluator:\n    def evaluate(self, y_true, y_pred, y_proba=None):\n        metrics = {\n            'accuracy': accuracy_score(y_true, y_pred),\n            'precision': precision_score(y_true, y_pred, average='weighted'),\n            'recall': recall_score(y_true, y_pred, average='weighted'),\n            'f1': f1_score(y_true, y_pred, average='weighted')\n        }\n        if y_proba is not None:\n            metrics['roc_auc'] = roc_auc_score(y_true, y_proba, multi_class='ovr')\n        return metrics",
+      "best_practices": [
+        "Use multiple metrics",
+        "Consider class imbalance",
+        "Analyze confusion matrix",
+        "Validate on holdout set"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 190,
+    "key_topics": [
+      "Classification metrics",
+      "Regression metrics",
+      "Cross-validation",
+      "ROC curves"
+    ]
+  }
+}

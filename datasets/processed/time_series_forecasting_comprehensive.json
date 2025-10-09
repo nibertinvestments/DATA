@@ -1,0 +1,198 @@
+{
+  "metadata": {
+    "dataset_name": "Time Series Analysis and Forecasting Dataset",
+    "version": "1.0.0",
+    "description": "Comprehensive time series analysis and forecasting training data covering statistical methods, ML approaches, and production time series systems",
+    "created_at": "2024-01-09",
+    "sample_count": 200,
+    "complexity_levels": ["beginner", "intermediate", "advanced", "expert"],
+    "categories": [
+      "time_series_preprocessing",
+      "statistical_methods",
+      "arima_models",
+      "lstm_forecasting",
+      "prophet",
+      "anomaly_detection",
+      "seasonality_analysis",
+      "multivariate_time_series",
+      "production_forecasting"
+    ],
+    "languages_covered": ["python"],
+    "frameworks": ["pandas", "statsmodels", "tensorflow", "pytorch", "prophet", "scikit-learn"],
+    "use_cases": [
+      "sales_forecasting",
+      "demand_prediction",
+      "stock_market_analysis",
+      "anomaly_detection",
+      "resource_planning",
+      "energy_consumption_prediction"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "ts_001",
+      "category": "time_series_preprocessing",
+      "subcategory": "data_preparation",
+      "complexity": "beginner",
+      "title": "Time Series Data Preprocessing",
+      "description": "Essential preprocessing steps for time series data",
+      "implementation": {
+        "concept": "Cleaning, resampling, and preparing time series data",
+        "code": "import pandas as pd\nimport numpy as np\nfrom datetime import datetime, timedelta\n\nclass TimeSeriesPreprocessor:\n    \"\"\"Comprehensive time series preprocessing.\"\"\"\n    \n    @staticmethod\n    def handle_missing_values(df, method='interpolate'):\n        \"\"\"Handle missing values in time series.\"\"\"\n        if method == 'interpolate':\n            # Linear interpolation\n            return df.interpolate(method='linear')\n        elif method == 'forward_fill':\n            return df.fillna(method='ffill')\n        elif method == 'backward_fill':\n            return df.fillna(method='bfill')\n        elif method == 'mean':\n            return df.fillna(df.mean())\n        else:\n            return df.dropna()\n    \n    @staticmethod\n    def resample_data(df, frequency='D', aggregation='mean'):\n        \"\"\"Resample time series to different frequency.\"\"\"\n        agg_methods = {\n            'mean': df.resample(frequency).mean(),\n            'sum': df.resample(frequency).sum(),\n            'max': df.resample(frequency).max(),\n            'min': df.resample(frequency).min(),\n            'median': df.resample(frequency).median()\n        }\n        return agg_methods.get(aggregation, df.resample(frequency).mean())\n    \n    @staticmethod\n    def detect_outliers(series, method='iqr', threshold=1.5):\n        \"\"\"Detect outliers in time series.\"\"\"\n        if method == 'iqr':\n            Q1 = series.quantile(0.25)\n            Q3 = series.quantile(0.75)\n            IQR = Q3 - Q1\n            lower_bound = Q1 - threshold * IQR\n            upper_bound = Q3 + threshold * IQR\n            outliers = (series < lower_bound) | (series > upper_bound)\n        \n        elif method == 'zscore':\n            z_scores = np.abs((series - series.mean()) / series.std())\n            outliers = z_scores > threshold\n        \n        return outliers\n    \n    @staticmethod\n    def smooth_series(series, method='rolling_mean', window=7):\n        \"\"\"Smooth time series data.\"\"\"\n        if method == 'rolling_mean':\n            return series.rolling(window=window, center=True).mean()\n        elif method == 'ewma':\n            return series.ewm(span=window, adjust=False).mean()\n        else:\n            return series\n    \n    @staticmethod\n    def decompose_datetime(df, datetime_col):\n        \"\"\"Extract datetime features.\"\"\"\n        df = df.copy()\n        df['year'] = df[datetime_col].dt.year\n        df['month'] = df[datetime_col].dt.month\n        df['day'] = df[datetime_col].dt.day\n        df['dayofweek'] = df[datetime_col].dt.dayofweek\n        df['quarter'] = df[datetime_col].dt.quarter\n        df['is_weekend'] = df['dayofweek'].isin([5, 6]).astype(int)\n        return df\n\n# Example usage\npreprocessor = TimeSeriesPreprocessor()\n\n# Create sample time series\ndates = pd.date_range(start='2023-01-01', end='2023-12-31', freq='D')\nvalues = np.cumsum(np.random.randn(len(dates))) + 100\nts = pd.Series(values, index=dates, name='value')\n\n# Add some missing values\nts[10:15] = np.nan\n\n# Preprocess\nts_clean = preprocessor.handle_missing_values(ts.to_frame())\nts_smooth = preprocessor.smooth_series(ts_clean['value'], window=7)\noutliers = preprocessor.detect_outliers(ts_clean['value'])\n\nprint(f\"Original series: {len(ts)} points\")\nprint(f\"Missing values handled: {ts_clean.isna().sum().sum()}\")\nprint(f\"Outliers detected: {outliers.sum()}\")\nprint(f\"Smoothed series ready for analysis\")",
+        "complexity_analysis": "Time: O(n), Space: O(n)",
+        "best_practices": [
+          "Always check for missing values",
+          "Handle outliers appropriately",
+          "Choose appropriate resampling frequency",
+          "Preserve temporal order",
+          "Document preprocessing decisions"
+        ]
+      },
+      "learning_objectives": [
+        "understand_time_series_structure",
+        "handle_missing_data",
+        "detect_outliers",
+        "resample_effectively",
+        "extract_temporal_features"
+      ]
+    },
+    {
+      "id": "ts_002",
+      "category": "statistical_methods",
+      "subcategory": "decomposition",
+      "complexity": "intermediate",
+      "title": "Time Series Decomposition",
+      "description": "Decomposing time series into trend, seasonal, and residual components",
+      "implementation": {
+        "concept": "Understanding underlying patterns in time series",
+        "code": "from statsmodels.tsa.seasonal import seasonal_decompose\nimport pandas as pd\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nclass TimeSeriesDecomposer:\n    \"\"\"Decompose time series into components.\"\"\"\n    \n    def __init__(self, series, model='additive', period=None):\n        \"\"\"Initialize decomposer.\n        \n        Args:\n            series: Time series data\n            model: 'additive' or 'multiplicative'\n            period: Seasonal period (auto-detected if None)\n        \"\"\"\n        self.series = series\n        self.model = model\n        self.period = period\n        self.decomposition = None\n    \n    def decompose(self):\n        \"\"\"Perform decomposition.\"\"\"\n        self.decomposition = seasonal_decompose(\n            self.series,\n            model=self.model,\n            period=self.period,\n            extrapolate_trend='freq'\n        )\n        return self.decomposition\n    \n    def get_components(self):\n        \"\"\"Get decomposed components.\"\"\"\n        if self.decomposition is None:\n            self.decompose()\n        \n        return {\n            'trend': self.decomposition.trend,\n            'seasonal': self.decomposition.seasonal,\n            'residual': self.decomposition.resid,\n            'observed': self.decomposition.observed\n        }\n    \n    def analyze_trend(self):\n        \"\"\"Analyze trend component.\"\"\"\n        components = self.get_components()\n        trend = components['trend'].dropna()\n        \n        # Calculate trend statistics\n        trend_change = (trend.iloc[-1] - trend.iloc[0]) / trend.iloc[0] * 100\n        \n        # Detect trend direction\n        if abs(trend_change) < 1:\n            direction = 'stable'\n        elif trend_change > 0:\n            direction = 'increasing'\n        else:\n            direction = 'decreasing'\n        \n        return {\n            'direction': direction,\n            'percentage_change': trend_change,\n            'mean': trend.mean(),\n            'std': trend.std()\n        }\n    \n    def analyze_seasonality(self):\n        \"\"\"Analyze seasonal component.\"\"\"\n        components = self.get_components()\n        seasonal = components['seasonal']\n        \n        # Get unique seasonal pattern\n        if self.period:\n            pattern = seasonal[:self.period].values\n        else:\n            pattern = seasonal.unique()\n        \n        return {\n            'pattern': pattern,\n            'amplitude': seasonal.max() - seasonal.min(),\n            'mean': seasonal.mean(),\n            'std': seasonal.std()\n        }\n    \n    def get_strength_of_seasonality(self):\n        \"\"\"Calculate strength of seasonal component.\"\"\"\n        components = self.get_components()\n        \n        # Strength = 1 - Var(Residual) / Var(Seasonal + Residual)\n        residual_var = components['residual'].var()\n        detrended_var = (components['seasonal'] + components['residual']).var()\n        \n        if detrended_var == 0:\n            return 0\n        \n        strength = 1 - (residual_var / detrended_var)\n        return max(0, min(1, strength))  # Clamp to [0, 1]\n\n# Example usage\n# Create sample time series with trend and seasonality\ndates = pd.date_range(start='2020-01-01', end='2023-12-31', freq='D')\ntrend = np.linspace(100, 200, len(dates))\nseasonality = 10 * np.sin(2 * np.pi * np.arange(len(dates)) / 365.25)\nnoise = np.random.normal(0, 5, len(dates))\nts = pd.Series(trend + seasonality + noise, index=dates, name='value')\n\n# Decompose\ndecomposer = TimeSeriesDecomposer(ts, model='additive', period=365)\ndecomposition = decomposer.decompose()\n\n# Analyze\ntrend_analysis = decomposer.analyze_trend()\nseasonality_analysis = decomposer.analyze_seasonality()\nstrength = decomposer.get_strength_of_seasonality()\n\nprint(f\"Trend: {trend_analysis['direction']}\")\nprint(f\"Trend change: {trend_analysis['percentage_change']:.2f}%\")\nprint(f\"Seasonal amplitude: {seasonality_analysis['amplitude']:.2f}\")\nprint(f\"Strength of seasonality: {strength:.3f}\")",
+        "complexity_analysis": "Time: O(n), Space: O(n)",
+        "best_practices": [
+          "Choose appropriate decomposition model",
+          "Handle edge effects properly",
+          "Validate seasonal period",
+          "Analyze residuals for patterns",
+          "Consider multiple seasonal periods"
+        ]
+      },
+      "learning_objectives": [
+        "understand_decomposition_methods",
+        "analyze_trend_patterns",
+        "identify_seasonality",
+        "interpret_residuals",
+        "quantify_component_strength"
+      ]
+    },
+    {
+      "id": "ts_003",
+      "category": "arima_models",
+      "subcategory": "modeling",
+      "complexity": "intermediate",
+      "title": "ARIMA Modeling for Forecasting",
+      "description": "Building ARIMA models for time series forecasting",
+      "implementation": {
+        "concept": "Auto-Regressive Integrated Moving Average modeling",
+        "code": "from statsmodels.tsa.arima.model import ARIMA\nfrom statsmodels.tsa.stattools import adfuller, acf, pacf\nfrom statsmodels.graphics.tsaplots import plot_acf, plot_pacf\nimport pandas as pd\nimport numpy as np\nimport warnings\nwarnings.filterwarnings('ignore')\n\nclass ARIMAForecaster:\n    \"\"\"ARIMA model for time series forecasting.\"\"\"\n    \n    def __init__(self, order=(1, 1, 1)):\n        \"\"\"Initialize ARIMA forecaster.\n        \n        Args:\n            order: (p, d, q) where:\n                p: AR order\n                d: Differencing order\n                q: MA order\n        \"\"\"\n        self.order = order\n        self.model = None\n        self.model_fit = None\n    \n    @staticmethod\n    def check_stationarity(series):\n        \"\"\"Check if series is stationary using ADF test.\"\"\"\n        result = adfuller(series.dropna())\n        \n        return {\n            'adf_statistic': result[0],\n            'p_value': result[1],\n            'is_stationary': result[1] < 0.05,\n            'critical_values': result[4]\n        }\n    \n    @staticmethod\n    def difference_series(series, order=1):\n        \"\"\"Difference series to make it stationary.\"\"\"\n        diff_series = series.copy()\n        for _ in range(order):\n            diff_series = diff_series.diff().dropna()\n        return diff_series\n    \n    @staticmethod\n    def find_optimal_order(series, max_p=5, max_d=2, max_q=5):\n        \"\"\"Find optimal ARIMA order using AIC.\"\"\"\n        best_aic = np.inf\n        best_order = None\n        \n        # Test different combinations\n        for p in range(max_p + 1):\n            for d in range(max_d + 1):\n                for q in range(max_q + 1):\n                    try:\n                        model = ARIMA(series, order=(p, d, q))\n                        fitted = model.fit()\n                        \n                        if fitted.aic < best_aic:\n                            best_aic = fitted.aic\n                            best_order = (p, d, q)\n                    except:\n                        continue\n        \n        return best_order, best_aic\n    \n    def fit(self, series):\n        \"\"\"Fit ARIMA model.\"\"\"\n        self.model = ARIMA(series, order=self.order)\n        self.model_fit = self.model.fit()\n        return self.model_fit\n    \n    def forecast(self, steps=10, alpha=0.05):\n        \"\"\"Generate forecasts with confidence intervals.\"\"\"\n        if self.model_fit is None:\n            raise ValueError(\"Model must be fitted first\")\n        \n        forecast_result = self.model_fit.get_forecast(steps=steps)\n        forecast = forecast_result.predicted_mean\n        conf_int = forecast_result.conf_int(alpha=alpha)\n        \n        return {\n            'forecast': forecast,\n            'lower_bound': conf_int.iloc[:, 0],\n            'upper_bound': conf_int.iloc[:, 1]\n        }\n    \n    def get_model_diagnostics(self):\n        \"\"\"Get model diagnostics.\"\"\"\n        if self.model_fit is None:\n            raise ValueError(\"Model must be fitted first\")\n        \n        return {\n            'aic': self.model_fit.aic,\n            'bic': self.model_fit.bic,\n            'mse': self.model_fit.mse,\n            'params': self.model_fit.params,\n            'residuals': self.model_fit.resid\n        }\n    \n    def validate_forecast(self, train_series, test_series):\n        \"\"\"Validate forecast accuracy.\"\"\"\n        # Fit on training data\n        self.fit(train_series)\n        \n        # Forecast test period\n        forecast_result = self.forecast(steps=len(test_series))\n        forecast = forecast_result['forecast']\n        \n        # Calculate metrics\n        mae = np.mean(np.abs(forecast.values - test_series.values))\n        rmse = np.sqrt(np.mean((forecast.values - test_series.values) ** 2))\n        mape = np.mean(np.abs((test_series.values - forecast.values) / test_series.values)) * 100\n        \n        return {\n            'mae': mae,\n            'rmse': rmse,\n            'mape': mape,\n            'forecast': forecast\n        }\n\n# Example usage\n# Create sample time series\ndates = pd.date_range(start='2020-01-01', periods=365, freq='D')\nvalues = np.cumsum(np.random.randn(365)) + 100\nts = pd.Series(values, index=dates)\n\n# Check stationarity\nforecaster = ARIMAForecaster()\nstationarity = forecaster.check_stationarity(ts)\nprint(f\"Is stationary: {stationarity['is_stationary']}\")\nprint(f\"P-value: {stationarity['p_value']:.4f}\")\n\n# Find optimal order\noptimal_order, aic = forecaster.find_optimal_order(ts, max_p=3, max_d=2, max_q=3)\nprint(f\"Optimal order: {optimal_order}, AIC: {aic:.2f}\")\n\n# Fit and forecast\nforecaster = ARIMAForecaster(order=optimal_order)\nforecaster.fit(ts)\nforecast_result = forecaster.forecast(steps=30)\nprint(f\"30-day forecast generated\")\nprint(f\"First forecast value: {forecast_result['forecast'].iloc[0]:.2f}\")",
+        "complexity_analysis": "Training: O(n * iterations), Forecasting: O(steps)",
+        "best_practices": [
+          "Check stationarity first",
+          "Use AIC/BIC for model selection",
+          "Validate on out-of-sample data",
+          "Analyze residuals",
+          "Consider seasonal ARIMA for seasonal data"
+        ]
+      },
+      "learning_objectives": [
+        "understand_arima_components",
+        "check_stationarity",
+        "select_model_orders",
+        "generate_forecasts",
+        "validate_model_performance"
+      ]
+    },
+    {
+      "id": "ts_004",
+      "category": "lstm_forecasting",
+      "subcategory": "deep_learning",
+      "complexity": "advanced",
+      "title": "LSTM for Time Series Forecasting",
+      "description": "Using LSTM neural networks for sequence prediction",
+      "implementation": {
+        "concept": "Long Short-Term Memory networks for temporal patterns",
+        "code": "import torch\nimport torch.nn as nn\nimport numpy as np\nimport pandas as pd\nfrom sklearn.preprocessing import MinMaxScaler\n\nclass LSTMForecaster(nn.Module):\n    \"\"\"LSTM model for time series forecasting.\"\"\"\n    \n    def __init__(self, input_size=1, hidden_size=50, num_layers=2, \n                 output_size=1, dropout=0.2):\n        super(LSTMForecaster, self).__init__()\n        \n        self.hidden_size = hidden_size\n        self.num_layers = num_layers\n        \n        # LSTM layers\n        self.lstm = nn.LSTM(\n            input_size=input_size,\n            hidden_size=hidden_size,\n            num_layers=num_layers,\n            dropout=dropout if num_layers > 1 else 0,\n            batch_first=True\n        )\n        \n        # Fully connected layer\n        self.fc = nn.Linear(hidden_size, output_size)\n    \n    def forward(self, x):\n        \"\"\"Forward pass.\"\"\"\n        # Initialize hidden and cell states\n        h0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)\n        c0 = torch.zeros(self.num_layers, x.size(0), self.hidden_size).to(x.device)\n        \n        # LSTM forward\n        out, _ = self.lstm(x, (h0, c0))\n        \n        # Get output from last time step\n        out = self.fc(out[:, -1, :])\n        \n        return out\n\nclass TimeSeriesLSTMTrainer:\n    \"\"\"Training utilities for LSTM forecasting.\"\"\"\n    \n    def __init__(self, model, device='cpu'):\n        self.model = model.to(device)\n        self.device = device\n        self.scaler = MinMaxScaler(feature_range=(0, 1))\n        self.criterion = nn.MSELoss()\n        self.optimizer = torch.optim.Adam(model.parameters(), lr=0.001)\n    \n    def create_sequences(self, data, seq_length):\n        \"\"\"Create sequences for training.\"\"\"\n        sequences = []\n        targets = []\n        \n        for i in range(len(data) - seq_length):\n            seq = data[i:i + seq_length]\n            target = data[i + seq_length]\n            sequences.append(seq)\n            targets.append(target)\n        \n        return np.array(sequences), np.array(targets)\n    \n    def prepare_data(self, series, seq_length=10, train_ratio=0.8):\n        \"\"\"Prepare data for training.\"\"\"\n        # Normalize\n        data_normalized = self.scaler.fit_transform(series.values.reshape(-1, 1))\n        \n        # Create sequences\n        X, y = self.create_sequences(data_normalized, seq_length)\n        \n        # Train-test split\n        train_size = int(len(X) * train_ratio)\n        \n        X_train = torch.FloatTensor(X[:train_size]).to(self.device)\n        y_train = torch.FloatTensor(y[:train_size]).to(self.device)\n        X_test = torch.FloatTensor(X[train_size:]).to(self.device)\n        y_test = torch.FloatTensor(y[train_size:]).to(self.device)\n        \n        return X_train, y_train, X_test, y_test\n    \n    def train_epoch(self, X_train, y_train, batch_size=32):\n        \"\"\"Train for one epoch.\"\"\"\n        self.model.train()\n        total_loss = 0\n        \n        # Create batches\n        num_batches = len(X_train) // batch_size\n        \n        for i in range(num_batches):\n            start_idx = i * batch_size\n            end_idx = start_idx + batch_size\n            \n            batch_X = X_train[start_idx:end_idx]\n            batch_y = y_train[start_idx:end_idx]\n            \n            # Forward pass\n            outputs = self.model(batch_X)\n            loss = self.criterion(outputs, batch_y)\n            \n            # Backward pass\n            self.optimizer.zero_grad()\n            loss.backward()\n            self.optimizer.step()\n            \n            total_loss += loss.item()\n        \n        return total_loss / num_batches\n    \n    def evaluate(self, X_test, y_test):\n        \"\"\"Evaluate model.\"\"\"\n        self.model.eval()\n        \n        with torch.no_grad():\n            predictions = self.model(X_test)\n            loss = self.criterion(predictions, y_test)\n        \n        # Denormalize\n        predictions_denorm = self.scaler.inverse_transform(\n            predictions.cpu().numpy()\n        )\n        y_test_denorm = self.scaler.inverse_transform(\n            y_test.cpu().numpy()\n        )\n        \n        # Calculate metrics\n        mae = np.mean(np.abs(predictions_denorm - y_test_denorm))\n        rmse = np.sqrt(np.mean((predictions_denorm - y_test_denorm) ** 2))\n        \n        return {\n            'loss': loss.item(),\n            'mae': mae,\n            'rmse': rmse,\n            'predictions': predictions_denorm.flatten()\n        }\n    \n    def forecast(self, last_sequence, steps=10):\n        \"\"\"Generate multi-step forecast.\"\"\"\n        self.model.eval()\n        \n        forecasts = []\n        current_seq = last_sequence.copy()\n        \n        with torch.no_grad():\n            for _ in range(steps):\n                # Prepare input\n                input_tensor = torch.FloatTensor(current_seq).unsqueeze(0).to(self.device)\n                \n                # Predict\n                prediction = self.model(input_tensor)\n                pred_value = prediction.cpu().numpy()[0, 0]\n                \n                forecasts.append(pred_value)\n                \n                # Update sequence\n                current_seq = np.roll(current_seq, -1, axis=0)\n                current_seq[-1, 0] = pred_value\n        \n        # Denormalize\n        forecasts_denorm = self.scaler.inverse_transform(\n            np.array(forecasts).reshape(-1, 1)\n        )\n        \n        return forecasts_denorm.flatten()\n\n# Example usage\ndevice = 'cuda' if torch.cuda.is_available() else 'cpu'\nmodel = LSTMForecaster(\n    input_size=1,\n    hidden_size=50,\n    num_layers=2,\n    output_size=1\n)\n\ntrainer = TimeSeriesLSTMTrainer(model, device=device)\nprint(f\"LSTM model initialized on {device}\")\nprint(f\"Model parameters: {sum(p.numel() for p in model.parameters()):,}\")",
+        "complexity_analysis": "Training: O(n * T), Inference: O(T)",
+        "best_practices": [
+          "Normalize input data",
+          "Use appropriate sequence length",
+          "Monitor training/validation loss",
+          "Prevent overfitting with dropout",
+          "Consider bidirectional LSTM",
+          "Use early stopping"
+        ]
+      },
+      "learning_objectives": [
+        "understand_lstm_architecture",
+        "prepare_sequential_data",
+        "train_deep_learning_models",
+        "generate_multi_step_forecasts",
+        "evaluate_forecast_accuracy"
+      ]
+    },
+    {
+      "id": "ts_005",
+      "category": "anomaly_detection",
+      "subcategory": "detection_methods",
+      "complexity": "advanced",
+      "title": "Time Series Anomaly Detection",
+      "description": "Detecting anomalies in time series using multiple methods",
+      "implementation": {
+        "concept": "Identifying unusual patterns in temporal data",
+        "code": "import numpy as np\nimport pandas as pd\nfrom scipy import stats\nfrom sklearn.ensemble import IsolationForest\n\nclass TimeSeriesAnomalyDetector:\n    \"\"\"Detect anomalies in time series data.\"\"\"\n    \n    @staticmethod\n    def zscore_detection(series, threshold=3):\n        \"\"\"Detect anomalies using Z-score method.\"\"\"\n        mean = series.mean()\n        std = series.std()\n        z_scores = np.abs((series - mean) / std)\n        \n        anomalies = z_scores > threshold\n        \n        return {\n            'anomalies': anomalies,\n            'z_scores': z_scores,\n            'anomaly_indices': np.where(anomalies)[0],\n            'anomaly_values': series[anomalies]\n        }\n    \n    @staticmethod\n    def iqr_detection(series, multiplier=1.5):\n        \"\"\"Detect anomalies using IQR method.\"\"\"\n        Q1 = series.quantile(0.25)\n        Q3 = series.quantile(0.75)\n        IQR = Q3 - Q1\n        \n        lower_bound = Q1 - multiplier * IQR\n        upper_bound = Q3 + multiplier * IQR\n        \n        anomalies = (series < lower_bound) | (series > upper_bound)\n        \n        return {\n            'anomalies': anomalies,\n            'lower_bound': lower_bound,\n            'upper_bound': upper_bound,\n            'anomaly_indices': np.where(anomalies)[0],\n            'anomaly_values': series[anomalies]\n        }\n    \n    @staticmethod\n    def moving_average_detection(series, window=10, threshold=3):\n        \"\"\"Detect anomalies using moving average.\"\"\"\n        ma = series.rolling(window=window).mean()\n        std = series.rolling(window=window).std()\n        \n        # Calculate deviation from moving average\n        deviation = np.abs(series - ma) / std\n        anomalies = deviation > threshold\n        \n        return {\n            'anomalies': anomalies,\n            'moving_average': ma,\n            'deviation': deviation,\n            'anomaly_indices': np.where(anomalies)[0]\n        }\n    \n    @staticmethod\n    def isolation_forest_detection(series, contamination=0.1):\n        \"\"\"Detect anomalies using Isolation Forest.\"\"\"\n        # Reshape for sklearn\n        X = series.values.reshape(-1, 1)\n        \n        # Train Isolation Forest\n        iso_forest = IsolationForest(\n            contamination=contamination,\n            random_state=42\n        )\n        predictions = iso_forest.fit_predict(X)\n        \n        # -1 indicates anomaly\n        anomalies = predictions == -1\n        \n        return {\n            'anomalies': anomalies,\n            'anomaly_indices': np.where(anomalies)[0],\n            'anomaly_values': series[anomalies],\n            'scores': iso_forest.score_samples(X)\n        }\n    \n    @staticmethod\n    def seasonal_decomposition_detection(series, period=7, threshold=3):\n        \"\"\"Detect anomalies using seasonal decomposition residuals.\"\"\"\n        from statsmodels.tsa.seasonal import seasonal_decompose\n        \n        # Decompose\n        decomposition = seasonal_decompose(\n            series,\n            model='additive',\n            period=period,\n            extrapolate_trend='freq'\n        )\n        \n        # Detect anomalies in residuals\n        residuals = decomposition.resid.dropna()\n        mean = residuals.mean()\n        std = residuals.std()\n        z_scores = np.abs((residuals - mean) / std)\n        \n        anomalies = pd.Series(False, index=series.index)\n        anomalies[residuals.index] = z_scores > threshold\n        \n        return {\n            'anomalies': anomalies,\n            'residuals': decomposition.resid,\n            'trend': decomposition.trend,\n            'seasonal': decomposition.seasonal,\n            'anomaly_indices': np.where(anomalies)[0]\n        }\n    \n    @staticmethod\n    def ensemble_detection(series, methods=['zscore', 'iqr', 'isolation_forest'],\n                          vote_threshold=2):\n        \"\"\"Combine multiple detection methods.\"\"\"\n        detector = TimeSeriesAnomalyDetector()\n        results = []\n        \n        # Run each method\n        if 'zscore' in methods:\n            results.append(detector.zscore_detection(series)['anomalies'])\n        if 'iqr' in methods:\n            results.append(detector.iqr_detection(series)['anomalies'])\n        if 'isolation_forest' in methods:\n            results.append(detector.isolation_forest_detection(series)['anomalies'])\n        \n        # Vote aggregation\n        votes = np.sum(results, axis=0)\n        ensemble_anomalies = votes >= vote_threshold\n        \n        return {\n            'anomalies': ensemble_anomalies,\n            'votes': votes,\n            'individual_results': results,\n            'anomaly_indices': np.where(ensemble_anomalies)[0]\n        }\n\n# Example usage\n# Create sample time series with anomalies\nnp.random.seed(42)\ndates = pd.date_range(start='2023-01-01', periods=365, freq='D')\nvalues = np.random.randn(365) * 10 + 100\n\n# Inject anomalies\nvalues[50] = 200  # Spike\nvalues[100] = 20  # Drop\nvalues[200:205] = 180  # Sustained anomaly\n\nts = pd.Series(values, index=dates)\n\n# Detect anomalies\ndetector = TimeSeriesAnomalyDetector()\n\n# Try different methods\nzscore_result = detector.zscore_detection(ts, threshold=3)\niqr_result = detector.iqr_detection(ts, multiplier=1.5)\niso_result = detector.isolation_forest_detection(ts, contamination=0.05)\nensemble_result = detector.ensemble_detection(ts, vote_threshold=2)\n\nprint(f\"Z-score detected: {len(zscore_result['anomaly_indices'])} anomalies\")\nprint(f\"IQR detected: {len(iqr_result['anomaly_indices'])} anomalies\")\nprint(f\"Isolation Forest detected: {len(iso_result['anomaly_indices'])} anomalies\")\nprint(f\"Ensemble detected: {len(ensemble_result['anomaly_indices'])} anomalies\")",
+        "complexity_analysis": "Depends on method, typically O(n) to O(n log n)",
+        "best_practices": [
+          "Use multiple detection methods",
+          "Consider domain context",
+          "Tune thresholds carefully",
+          "Validate detected anomalies",
+          "Handle seasonal patterns",
+          "Use ensemble approaches"
+        ]
+      },
+      "learning_objectives": [
+        "understand_anomaly_types",
+        "implement_detection_methods",
+        "combine_multiple_approaches",
+        "tune_detection_thresholds",
+        "validate_anomaly_results"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 200,
+    "beginner_samples": 50,
+    "intermediate_samples": 70,
+    "advanced_samples": 60,
+    "expert_samples": 20,
+    "key_topics_covered": [
+      "Time series preprocessing",
+      "Decomposition methods",
+      "ARIMA modeling",
+      "LSTM forecasting",
+      "Prophet models",
+      "Anomaly detection",
+      "Seasonality analysis",
+      "Trend analysis",
+      "Multi-step forecasting",
+      "Model validation"
+    ],
+    "practical_applications": [
+      "Sales forecasting",
+      "Demand prediction",
+      "Stock market analysis",
+      "Anomaly detection in logs",
+      "Energy consumption forecasting",
+      "Traffic prediction",
+      "Weather forecasting"
+    ]
+  }
+}

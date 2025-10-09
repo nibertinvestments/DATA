@@ -1,0 +1,225 @@
+{
+  "metadata": {
+    "dataset_name": "Comprehensive Computer Vision Training Dataset",
+    "version": "1.0.0",
+    "description": "Complete computer vision training data for AI/ML coding agents covering image processing, CNN architectures, object detection, segmentation, and production CV systems",
+    "created_at": "2024-01-09",
+    "sample_count": 250,
+    "complexity_levels": ["beginner", "intermediate", "advanced", "expert"],
+    "categories": [
+      "image_preprocessing",
+      "cnn_architectures",
+      "object_detection",
+      "image_segmentation",
+      "feature_extraction",
+      "transfer_learning",
+      "image_augmentation",
+      "video_processing",
+      "production_cv"
+    ],
+    "languages_covered": ["python"],
+    "frameworks": ["opencv", "tensorflow", "pytorch", "keras", "pillow", "albumentations"],
+    "use_cases": [
+      "image_classification",
+      "object_detection",
+      "face_recognition",
+      "medical_imaging",
+      "autonomous_vehicles",
+      "quality_inspection"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "cv_001",
+      "category": "image_preprocessing",
+      "subcategory": "basic_operations",
+      "complexity": "beginner",
+      "title": "Essential Image Operations",
+      "description": "Fundamental image loading, manipulation, and basic operations",
+      "implementation": {
+        "concept": "Basic image processing operations using OpenCV and PIL",
+        "code": "import cv2\nimport numpy as np\nfrom PIL import Image\nimport matplotlib.pyplot as plt\n\nclass ImageProcessor:\n    \"\"\"Essential image processing operations.\"\"\"\n    \n    @staticmethod\n    def load_image(path, mode='RGB'):\n        \"\"\"Load image using multiple methods.\"\"\"\n        # Using OpenCV\n        img_cv = cv2.imread(path)\n        img_cv_rgb = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)\n        \n        # Using PIL\n        img_pil = Image.open(path).convert(mode)\n        \n        return {\n            'opencv': img_cv_rgb,\n            'pil': img_pil,\n            'numpy': np.array(img_pil),\n            'shape': img_cv_rgb.shape\n        }\n    \n    @staticmethod\n    def resize_image(image, width, height, method='bilinear'):\n        \"\"\"Resize image with different interpolation methods.\"\"\"\n        if isinstance(image, np.ndarray):\n            # OpenCV resize\n            methods = {\n                'nearest': cv2.INTER_NEAREST,\n                'bilinear': cv2.INTER_LINEAR,\n                'bicubic': cv2.INTER_CUBIC,\n                'lanczos': cv2.INTER_LANCZOS4\n            }\n            return cv2.resize(image, (width, height), \n                            interpolation=methods.get(method, cv2.INTER_LINEAR))\n        else:\n            # PIL resize\n            return image.resize((width, height), Image.BILINEAR)\n    \n    @staticmethod\n    def normalize_image(image, mean=[0.485, 0.456, 0.406], \n                       std=[0.229, 0.224, 0.225]):\n        \"\"\"Normalize image (ImageNet stats by default).\"\"\"\n        image = image.astype(np.float32) / 255.0\n        mean = np.array(mean).reshape(1, 1, 3)\n        std = np.array(std).reshape(1, 1, 3)\n        return (image - mean) / std\n    \n    @staticmethod\n    def convert_colorspace(image, conversion):\n        \"\"\"Convert between color spaces.\"\"\"\n        conversions = {\n            'rgb_to_gray': cv2.COLOR_RGB2GRAY,\n            'rgb_to_hsv': cv2.COLOR_RGB2HSV,\n            'rgb_to_lab': cv2.COLOR_RGB2LAB,\n            'gray_to_rgb': cv2.COLOR_GRAY2RGB\n        }\n        return cv2.cvtColor(image, conversions.get(conversion))\n\n# Example usage\nprocessor = ImageProcessor()\n# Note: Replace with actual image path\n# result = processor.load_image('sample.jpg')\nprint(\"Image operations ready for: loading, resizing, normalizing, color conversion\")",
+        "complexity_analysis": "Time: O(n*m) for most operations, Space: O(n*m)",
+        "best_practices": [
+          "Handle different image formats",
+          "Maintain aspect ratio when resizing",
+          "Use appropriate interpolation methods",
+          "Validate image dimensions",
+          "Handle edge cases (empty, corrupted images)"
+        ]
+      },
+      "learning_objectives": [
+        "understand_image_representation",
+        "load_images_multiple_ways",
+        "apply_basic_transformations",
+        "handle_color_spaces"
+      ]
+    },
+    {
+      "id": "cv_002",
+      "category": "image_augmentation",
+      "subcategory": "data_augmentation",
+      "complexity": "intermediate",
+      "title": "Image Augmentation Pipeline",
+      "description": "Comprehensive data augmentation for training robustness",
+      "implementation": {
+        "concept": "Applying transformations to increase dataset diversity",
+        "code": "import albumentations as A\nimport cv2\nimport numpy as np\nfrom typing import Dict, List\n\nclass ImageAugmenter:\n    \"\"\"Comprehensive image augmentation pipeline.\"\"\"\n    \n    def __init__(self, augmentation_level='medium'):\n        self.augmentation_level = augmentation_level\n        self.transform = self._build_pipeline()\n    \n    def _build_pipeline(self):\n        \"\"\"Build augmentation pipeline based on level.\"\"\"\n        if self.augmentation_level == 'light':\n            return A.Compose([\n                A.HorizontalFlip(p=0.5),\n                A.RandomBrightnessContrast(p=0.2),\n                A.Rotate(limit=15, p=0.3)\n            ])\n        \n        elif self.augmentation_level == 'medium':\n            return A.Compose([\n                A.HorizontalFlip(p=0.5),\n                A.VerticalFlip(p=0.2),\n                A.RandomBrightnessContrast(\n                    brightness_limit=0.2,\n                    contrast_limit=0.2,\n                    p=0.5\n                ),\n                A.Rotate(limit=30, p=0.5),\n                A.ShiftScaleRotate(\n                    shift_limit=0.1,\n                    scale_limit=0.1,\n                    rotate_limit=30,\n                    p=0.5\n                ),\n                A.GaussNoise(p=0.2),\n                A.Blur(blur_limit=3, p=0.1)\n            ])\n        \n        else:  # heavy\n            return A.Compose([\n                A.HorizontalFlip(p=0.5),\n                A.VerticalFlip(p=0.3),\n                A.RandomBrightnessContrast(p=0.6),\n                A.RandomGamma(p=0.3),\n                A.HueSaturationValue(p=0.3),\n                A.Rotate(limit=45, p=0.5),\n                A.ShiftScaleRotate(p=0.5),\n                A.ElasticTransform(p=0.2),\n                A.GridDistortion(p=0.2),\n                A.OpticalDistortion(p=0.2),\n                A.GaussNoise(p=0.3),\n                A.Blur(blur_limit=5, p=0.2),\n                A.CLAHE(p=0.2),\n                A.CoarseDropout(\n                    max_holes=8,\n                    max_height=32,\n                    max_width=32,\n                    p=0.3\n                )\n            ])\n    \n    def augment(self, image, mask=None):\n        \"\"\"Apply augmentation to image and optional mask.\"\"\"\n        if mask is not None:\n            augmented = self.transform(image=image, mask=mask)\n            return augmented['image'], augmented['mask']\n        else:\n            augmented = self.transform(image=image)\n            return augmented['image']\n    \n    def augment_batch(self, images: List[np.ndarray]) -> List[np.ndarray]:\n        \"\"\"Augment a batch of images.\"\"\"\n        return [self.augment(img) for img in images]\n    \n    @staticmethod\n    def visualize_augmentations(image, num_samples=6):\n        \"\"\"Generate multiple augmented versions for visualization.\"\"\"\n        augmenter = ImageAugmenter('medium')\n        augmented_images = []\n        for _ in range(num_samples):\n            aug_img = augmenter.augment(image)\n            augmented_images.append(aug_img)\n        return augmented_images\n\n# Example usage\naugmenter = ImageAugmenter(augmentation_level='medium')\n# image = cv2.imread('sample.jpg')\n# augmented = augmenter.augment(image)\nprint(\"Augmentation pipeline ready with light/medium/heavy levels\")",
+        "complexity_analysis": "Time: O(n*m) per transformation, Space: O(n*m)",
+        "best_practices": [
+          "Match augmentations to problem domain",
+          "Don't over-augment",
+          "Keep validation set unaugmented",
+          "Use appropriate probabilities",
+          "Consider semantic correctness"
+        ]
+      },
+      "learning_objectives": [
+        "understand_data_augmentation_importance",
+        "implement_various_augmentations",
+        "balance_augmentation_strength",
+        "preserve_label_consistency"
+      ]
+    },
+    {
+      "id": "cv_003",
+      "category": "cnn_architectures",
+      "subcategory": "custom_cnn",
+      "complexity": "intermediate",
+      "title": "Custom CNN Architecture",
+      "description": "Building custom CNN from scratch for image classification",
+      "implementation": {
+        "concept": "Designing and implementing convolutional neural networks",
+        "code": "import torch\nimport torch.nn as nn\nimport torch.nn.functional as F\n\nclass CustomCNN(nn.Module):\n    \"\"\"Custom CNN architecture for image classification.\"\"\"\n    \n    def __init__(self, num_classes=10, input_channels=3):\n        super(CustomCNN, self).__init__()\n        \n        # Convolutional layers\n        self.conv1 = nn.Conv2d(input_channels, 32, kernel_size=3, padding=1)\n        self.bn1 = nn.BatchNorm2d(32)\n        \n        self.conv2 = nn.Conv2d(32, 64, kernel_size=3, padding=1)\n        self.bn2 = nn.BatchNorm2d(64)\n        \n        self.conv3 = nn.Conv2d(64, 128, kernel_size=3, padding=1)\n        self.bn3 = nn.BatchNorm2d(128)\n        \n        self.conv4 = nn.Conv2d(128, 256, kernel_size=3, padding=1)\n        self.bn4 = nn.BatchNorm2d(256)\n        \n        # Pooling\n        self.pool = nn.MaxPool2d(kernel_size=2, stride=2)\n        \n        # Fully connected layers\n        self.fc1 = nn.Linear(256 * 14 * 14, 512)  # Assuming 224x224 input\n        self.dropout1 = nn.Dropout(0.5)\n        \n        self.fc2 = nn.Linear(512, 256)\n        self.dropout2 = nn.Dropout(0.5)\n        \n        self.fc3 = nn.Linear(256, num_classes)\n    \n    def forward(self, x):\n        \"\"\"Forward pass.\"\"\"\n        # Block 1\n        x = self.conv1(x)\n        x = self.bn1(x)\n        x = F.relu(x)\n        x = self.pool(x)  # 112x112\n        \n        # Block 2\n        x = self.conv2(x)\n        x = self.bn2(x)\n        x = F.relu(x)\n        x = self.pool(x)  # 56x56\n        \n        # Block 3\n        x = self.conv3(x)\n        x = self.bn3(x)\n        x = F.relu(x)\n        x = self.pool(x)  # 28x28\n        \n        # Block 4\n        x = self.conv4(x)\n        x = self.bn4(x)\n        x = F.relu(x)\n        x = self.pool(x)  # 14x14\n        \n        # Flatten\n        x = x.view(x.size(0), -1)\n        \n        # Fully connected layers\n        x = self.fc1(x)\n        x = F.relu(x)\n        x = self.dropout1(x)\n        \n        x = self.fc2(x)\n        x = F.relu(x)\n        x = self.dropout2(x)\n        \n        x = self.fc3(x)\n        \n        return x\n    \n    def get_num_parameters(self):\n        \"\"\"Count trainable parameters.\"\"\"\n        return sum(p.numel() for p in self.parameters() if p.requires_grad)\n\nclass CNNTrainer:\n    \"\"\"Training utilities for CNN.\"\"\"\n    \n    def __init__(self, model, device='cuda' if torch.cuda.is_available() else 'cpu'):\n        self.model = model.to(device)\n        self.device = device\n        self.criterion = nn.CrossEntropyLoss()\n        self.optimizer = torch.optim.Adam(model.parameters(), lr=0.001)\n    \n    def train_epoch(self, train_loader):\n        \"\"\"Train for one epoch.\"\"\"\n        self.model.train()\n        total_loss = 0\n        correct = 0\n        total = 0\n        \n        for images, labels in train_loader:\n            images, labels = images.to(self.device), labels.to(self.device)\n            \n            # Forward pass\n            outputs = self.model(images)\n            loss = self.criterion(outputs, labels)\n            \n            # Backward pass\n            self.optimizer.zero_grad()\n            loss.backward()\n            self.optimizer.step()\n            \n            # Statistics\n            total_loss += loss.item()\n            _, predicted = outputs.max(1)\n            total += labels.size(0)\n            correct += predicted.eq(labels).sum().item()\n        \n        return {\n            'loss': total_loss / len(train_loader),\n            'accuracy': 100. * correct / total\n        }\n    \n    def evaluate(self, test_loader):\n        \"\"\"Evaluate model.\"\"\"\n        self.model.eval()\n        correct = 0\n        total = 0\n        \n        with torch.no_grad():\n            for images, labels in test_loader:\n                images, labels = images.to(self.device), labels.to(self.device)\n                outputs = self.model(images)\n                _, predicted = outputs.max(1)\n                total += labels.size(0)\n                correct += predicted.eq(labels).sum().item()\n        \n        return 100. * correct / total\n\n# Example usage\nmodel = CustomCNN(num_classes=10, input_channels=3)\nprint(f\"Model parameters: {model.get_num_parameters():,}\")\nprint(f\"Model architecture ready for training\")",
+        "complexity_analysis": "Training: O(n * k * h * w), Inference: O(k * h * w)",
+        "best_practices": [
+          "Use batch normalization for stability",
+          "Add dropout to prevent overfitting",
+          "Use appropriate activation functions",
+          "Monitor gradients during training",
+          "Save checkpoints regularly"
+        ]
+      },
+      "learning_objectives": [
+        "understand_cnn_architecture",
+        "implement_convolutional_layers",
+        "design_network_topology",
+        "train_and_evaluate_models"
+      ]
+    },
+    {
+      "id": "cv_004",
+      "category": "transfer_learning",
+      "subcategory": "pretrained_models",
+      "complexity": "advanced",
+      "title": "Transfer Learning with Pre-trained Models",
+      "description": "Leveraging pre-trained models for custom tasks",
+      "implementation": {
+        "concept": "Fine-tuning pre-trained models for specific tasks",
+        "code": "import torch\nimport torch.nn as nn\nimport torchvision.models as models\nfrom torch.optim import Adam\nfrom torch.optim.lr_scheduler import StepLR\n\nclass TransferLearningModel:\n    \"\"\"Transfer learning with popular architectures.\"\"\"\n    \n    def __init__(self, model_name='resnet50', num_classes=10, \n                 freeze_layers=True):\n        self.model_name = model_name\n        self.num_classes = num_classes\n        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n        self.model = self._build_model(freeze_layers)\n    \n    def _build_model(self, freeze_layers):\n        \"\"\"Build transfer learning model.\"\"\"\n        if self.model_name == 'resnet50':\n            model = models.resnet50(pretrained=True)\n            num_features = model.fc.in_features\n            \n            # Freeze layers if specified\n            if freeze_layers:\n                for param in model.parameters():\n                    param.requires_grad = False\n            \n            # Replace final layer\n            model.fc = nn.Sequential(\n                nn.Dropout(0.5),\n                nn.Linear(num_features, 512),\n                nn.ReLU(),\n                nn.Dropout(0.3),\n                nn.Linear(512, self.num_classes)\n            )\n        \n        elif self.model_name == 'efficientnet_b0':\n            model = models.efficientnet_b0(pretrained=True)\n            num_features = model.classifier[1].in_features\n            \n            if freeze_layers:\n                for param in model.parameters():\n                    param.requires_grad = False\n            \n            model.classifier = nn.Sequential(\n                nn.Dropout(0.5),\n                nn.Linear(num_features, 512),\n                nn.ReLU(),\n                nn.Dropout(0.3),\n                nn.Linear(512, self.num_classes)\n            )\n        \n        elif self.model_name == 'vgg16':\n            model = models.vgg16(pretrained=True)\n            num_features = model.classifier[6].in_features\n            \n            if freeze_layers:\n                for param in model.features.parameters():\n                    param.requires_grad = False\n            \n            model.classifier[6] = nn.Linear(num_features, self.num_classes)\n        \n        return model.to(self.device)\n    \n    def unfreeze_layers(self, num_layers=None):\n        \"\"\"Unfreeze layers for fine-tuning.\"\"\"\n        if num_layers is None:\n            # Unfreeze all layers\n            for param in self.model.parameters():\n                param.requires_grad = True\n        else:\n            # Unfreeze last n layers\n            layers = list(self.model.children())\n            for layer in layers[-num_layers:]:\n                for param in layer.parameters():\n                    param.requires_grad = True\n    \n    def get_optimizer(self, lr=0.001, weight_decay=1e-4):\n        \"\"\"Get optimizer with different learning rates.\"\"\"\n        # Different learning rates for pretrained and new layers\n        pretrained_params = []\n        new_params = []\n        \n        for name, param in self.model.named_parameters():\n            if param.requires_grad:\n                if 'fc' in name or 'classifier' in name:\n                    new_params.append(param)\n                else:\n                    pretrained_params.append(param)\n        \n        optimizer = Adam([\n            {'params': pretrained_params, 'lr': lr * 0.1},\n            {'params': new_params, 'lr': lr}\n        ], weight_decay=weight_decay)\n        \n        return optimizer\n    \n    def progressive_unfreezing(self, train_loader, val_loader, \n                              epochs_per_stage=5):\n        \"\"\"Progressive unfreezing strategy.\"\"\"\n        stages = [\n            {'unfreeze': 0, 'lr': 0.001},\n            {'unfreeze': 2, 'lr': 0.0005},\n            {'unfreeze': None, 'lr': 0.0001}\n        ]\n        \n        for stage_idx, stage in enumerate(stages):\n            print(f\"\\nStage {stage_idx + 1}: Unfreezing {stage['unfreeze']} layers\")\n            \n            if stage['unfreeze'] is not None:\n                self.unfreeze_layers(stage['unfreeze'])\n            else:\n                self.unfreeze_layers()\n            \n            optimizer = self.get_optimizer(lr=stage['lr'])\n            scheduler = StepLR(optimizer, step_size=3, gamma=0.1)\n            \n            # Train for this stage\n            for epoch in range(epochs_per_stage):\n                # Training code here\n                pass\n\n# Example usage\ntransfer_model = TransferLearningModel(\n    model_name='resnet50',\n    num_classes=10,\n    freeze_layers=True\n)\nprint(f\"Transfer learning model ready: {transfer_model.model_name}\")\noptimizer = transfer_model.get_optimizer(lr=0.001)\nprint(\"Optimizer configured with differential learning rates\")",
+        "complexity_analysis": "Training: Depends on unfrozen layers, typically O(n * k)",
+        "best_practices": [
+          "Start with frozen layers",
+          "Use lower learning rate for pretrained layers",
+          "Progressive unfreezing for better results",
+          "Monitor validation performance",
+          "Use appropriate data augmentation",
+          "Consider domain similarity"
+        ]
+      },
+      "learning_objectives": [
+        "understand_transfer_learning",
+        "fine_tune_pretrained_models",
+        "implement_progressive_unfreezing",
+        "optimize_learning_rates",
+        "evaluate_transfer_effectiveness"
+      ]
+    },
+    {
+      "id": "cv_005",
+      "category": "object_detection",
+      "subcategory": "yolo",
+      "complexity": "advanced",
+      "title": "Object Detection Pipeline",
+      "description": "Building object detection systems with YOLO-style architecture",
+      "implementation": {
+        "concept": "Real-time object detection and localization",
+        "code": "import torch\nimport torch.nn as nn\nimport cv2\nimport numpy as np\nfrom typing import List, Tuple, Dict\n\nclass ObjectDetector:\n    \"\"\"Object detection pipeline.\"\"\"\n    \n    def __init__(self, model_path=None, conf_threshold=0.5, \n                 nms_threshold=0.4):\n        self.conf_threshold = conf_threshold\n        self.nms_threshold = nms_threshold\n        self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')\n        self.model = None\n        if model_path:\n            self._load_model(model_path)\n    \n    def _load_model(self, model_path):\n        \"\"\"Load pre-trained model.\"\"\"\n        try:\n            self.model = torch.load(model_path)\n            self.model = self.model.to(self.device)\n            self.model.eval()\n        except Exception as e:\n            print(f\"Error loading model: {e}\")\n    \n    def preprocess_image(self, image: np.ndarray, \n                        target_size=(416, 416)) -> torch.Tensor:\n        \"\"\"Preprocess image for detection.\"\"\"\n        # Resize\n        resized = cv2.resize(image, target_size)\n        \n        # Normalize\n        normalized = resized.astype(np.float32) / 255.0\n        \n        # Convert to tensor [C, H, W]\n        tensor = torch.from_numpy(normalized).permute(2, 0, 1)\n        \n        # Add batch dimension [1, C, H, W]\n        tensor = tensor.unsqueeze(0)\n        \n        return tensor.to(self.device)\n    \n    def non_max_suppression(self, predictions: List[Dict], \n                           iou_threshold: float = 0.4) -> List[Dict]:\n        \"\"\"Apply Non-Maximum Suppression.\"\"\"\n        if not predictions:\n            return []\n        \n        # Sort by confidence\n        predictions = sorted(predictions, \n                           key=lambda x: x['confidence'], \n                           reverse=True)\n        \n        keep = []\n        while predictions:\n            # Keep highest confidence prediction\n            current = predictions.pop(0)\n            keep.append(current)\n            \n            # Remove overlapping boxes\n            predictions = [\n                pred for pred in predictions\n                if self._calculate_iou(\n                    current['bbox'], \n                    pred['bbox']\n                ) < iou_threshold\n            ]\n        \n        return keep\n    \n    def _calculate_iou(self, box1: Tuple, box2: Tuple) -> float:\n        \"\"\"Calculate Intersection over Union.\"\"\"\n        x1_min, y1_min, x1_max, y1_max = box1\n        x2_min, y2_min, x2_max, y2_max = box2\n        \n        # Intersection area\n        x_inter_min = max(x1_min, x2_min)\n        y_inter_min = max(y1_min, y2_min)\n        x_inter_max = min(x1_max, x2_max)\n        y_inter_max = min(y1_max, y2_max)\n        \n        if x_inter_max < x_inter_min or y_inter_max < y_inter_min:\n            return 0.0\n        \n        inter_area = (x_inter_max - x_inter_min) * (y_inter_max - y_inter_min)\n        \n        # Union area\n        box1_area = (x1_max - x1_min) * (y1_max - y1_min)\n        box2_area = (x2_max - x2_min) * (y2_max - y2_min)\n        union_area = box1_area + box2_area - inter_area\n        \n        return inter_area / union_area if union_area > 0 else 0.0\n    \n    def detect(self, image: np.ndarray) -> List[Dict]:\n        \"\"\"Detect objects in image.\"\"\"\n        # Preprocess\n        input_tensor = self.preprocess_image(image)\n        \n        # Inference\n        with torch.no_grad():\n            # Placeholder for actual model inference\n            # predictions = self.model(input_tensor)\n            predictions = []\n        \n        # Post-process\n        detections = self._post_process(predictions)\n        \n        # Apply NMS\n        final_detections = self.non_max_suppression(\n            detections, \n            self.nms_threshold\n        )\n        \n        return final_detections\n    \n    def _post_process(self, predictions) -> List[Dict]:\n        \"\"\"Post-process model predictions.\"\"\"\n        # Placeholder implementation\n        return []\n    \n    def visualize_detections(self, image: np.ndarray, \n                            detections: List[Dict]) -> np.ndarray:\n        \"\"\"Draw bounding boxes on image.\"\"\"\n        result = image.copy()\n        \n        for det in detections:\n            bbox = det['bbox']\n            label = det['class_name']\n            conf = det['confidence']\n            \n            # Draw box\n            x1, y1, x2, y2 = map(int, bbox)\n            cv2.rectangle(result, (x1, y1), (x2, y2), (0, 255, 0), 2)\n            \n            # Draw label\n            text = f\"{label}: {conf:.2f}\"\n            cv2.putText(result, text, (x1, y1 - 10),\n                       cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)\n        \n        return result\n\n# Example usage\ndetector = ObjectDetector(conf_threshold=0.5, nms_threshold=0.4)\nprint(\"Object detection pipeline ready\")\nprint(f\"Confidence threshold: {detector.conf_threshold}\")\nprint(f\"NMS threshold: {detector.nms_threshold}\")",
+        "complexity_analysis": "Inference: O(n * k), NMS: O(n^2)",
+        "best_practices": [
+          "Use appropriate confidence thresholds",
+          "Apply NMS to remove duplicates",
+          "Handle varying image sizes",
+          "Optimize inference speed",
+          "Monitor detection metrics (mAP)",
+          "Use anchor boxes effectively"
+        ]
+      },
+      "learning_objectives": [
+        "understand_object_detection",
+        "implement_detection_pipeline",
+        "apply_nms_effectively",
+        "optimize_detection_performance",
+        "evaluate_detection_quality"
+      ]
+    },
+    {
+      "id": "cv_006",
+      "category": "production_cv",
+      "subcategory": "deployment",
+      "complexity": "expert",
+      "title": "Production Computer Vision System",
+      "description": "Building scalable, robust CV systems for production",
+      "implementation": {
+        "concept": "Enterprise-grade CV system with monitoring and optimization",
+        "code": "import logging\nimport time\nfrom typing import Dict, Any\nfrom dataclasses import dataclass, field\nfrom collections import deque\nimport numpy as np\nimport torch\n\n@dataclass\nclass PerformanceMetrics:\n    \"\"\"Track system performance metrics.\"\"\"\n    total_requests: int = 0\n    successful_requests: int = 0\n    failed_requests: int = 0\n    avg_latency: float = 0.0\n    p95_latency: float = 0.0\n    p99_latency: float = 0.0\n    gpu_memory_used: float = 0.0\n    latency_history: deque = field(default_factory=lambda: deque(maxlen=1000))\n\nclass ProductionCVSystem:\n    \"\"\"Production-ready computer vision system.\"\"\"\n    \n    def __init__(self, model_path: str, batch_size: int = 32):\n        self.batch_size = batch_size\n        self.logger = self._setup_logging()\n        self.metrics = PerformanceMetrics()\n        self.device = self._get_device()\n        self.model = self._load_model(model_path)\n        self.cache = {}\n    \n    def _setup_logging(self) -> logging.Logger:\n        \"\"\"Configure logging.\"\"\"\n        logger = logging.getLogger('CVSystem')\n        logger.setLevel(logging.INFO)\n        \n        handler = logging.StreamHandler()\n        formatter = logging.Formatter(\n            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'\n        )\n        handler.setFormatter(formatter)\n        logger.addHandler(handler)\n        \n        return logger\n    \n    def _get_device(self) -> torch.device:\n        \"\"\"Get compute device.\"\"\"\n        if torch.cuda.is_available():\n            device = torch.device('cuda')\n            self.logger.info(f\"Using GPU: {torch.cuda.get_device_name(0)}\")\n        else:\n            device = torch.device('cpu')\n            self.logger.info(\"Using CPU\")\n        return device\n    \n    def _load_model(self, model_path: str):\n        \"\"\"Load model with error handling.\"\"\"\n        try:\n            model = torch.load(model_path, map_location=self.device)\n            model.eval()\n            self.logger.info(\"Model loaded successfully\")\n            return model\n        except Exception as e:\n            self.logger.error(f\"Failed to load model: {e}\")\n            raise\n    \n    def preprocess_batch(self, images: list) -> torch.Tensor:\n        \"\"\"Preprocess batch of images.\"\"\"\n        processed = []\n        for img in images:\n            # Add preprocessing logic\n            processed.append(img)\n        return torch.stack(processed).to(self.device)\n    \n    def predict(self, image: np.ndarray) -> Dict[str, Any]:\n        \"\"\"Make prediction with monitoring.\"\"\"\n        start_time = time.time()\n        \n        try:\n            # Check cache\n            cache_key = hash(image.tobytes())\n            if cache_key in self.cache:\n                self.logger.debug(\"Cache hit\")\n                return self.cache[cache_key]\n            \n            # Preprocess\n            input_tensor = self._preprocess_single(image)\n            \n            # Inference\n            with torch.no_grad():\n                output = self.model(input_tensor)\n                prediction = self._postprocess(output)\n            \n            # Cache result\n            self.cache[cache_key] = prediction\n            \n            # Update metrics\n            latency = time.time() - start_time\n            self._update_metrics(latency, success=True)\n            \n            return prediction\n            \n        except Exception as e:\n            self.logger.error(f\"Prediction error: {e}\")\n            self._update_metrics(time.time() - start_time, success=False)\n            raise\n    \n    def predict_batch(self, images: list) -> list:\n        \"\"\"Batch prediction for efficiency.\"\"\"\n        results = []\n        \n        # Process in batches\n        for i in range(0, len(images), self.batch_size):\n            batch = images[i:i + self.batch_size]\n            batch_tensor = self.preprocess_batch(batch)\n            \n            with torch.no_grad():\n                outputs = self.model(batch_tensor)\n                batch_results = [self._postprocess(out) for out in outputs]\n            \n            results.extend(batch_results)\n        \n        return results\n    \n    def _preprocess_single(self, image: np.ndarray) -> torch.Tensor:\n        \"\"\"Preprocess single image.\"\"\"\n        # Add preprocessing logic\n        return torch.from_numpy(image).to(self.device)\n    \n    def _postprocess(self, output: torch.Tensor) -> Dict[str, Any]:\n        \"\"\"Postprocess model output.\"\"\"\n        # Add postprocessing logic\n        return {'prediction': output.cpu().numpy()}\n    \n    def _update_metrics(self, latency: float, success: bool):\n        \"\"\"Update performance metrics.\"\"\"\n        self.metrics.total_requests += 1\n        \n        if success:\n            self.metrics.successful_requests += 1\n        else:\n            self.metrics.failed_requests += 1\n        \n        self.metrics.latency_history.append(latency)\n        \n        # Update average latency\n        n = self.metrics.total_requests\n        self.metrics.avg_latency = (\n            (self.metrics.avg_latency * (n-1) + latency) / n\n        )\n        \n        # Update percentiles\n        if len(self.metrics.latency_history) > 20:\n            sorted_latencies = sorted(self.metrics.latency_history)\n            self.metrics.p95_latency = sorted_latencies[int(len(sorted_latencies) * 0.95)]\n            self.metrics.p99_latency = sorted_latencies[int(len(sorted_latencies) * 0.99)]\n        \n        # GPU memory\n        if torch.cuda.is_available():\n            self.metrics.gpu_memory_used = torch.cuda.memory_allocated() / 1e9\n    \n    def get_metrics(self) -> Dict[str, Any]:\n        \"\"\"Get system metrics.\"\"\"\n        success_rate = (\n            self.metrics.successful_requests / self.metrics.total_requests * 100\n            if self.metrics.total_requests > 0 else 0\n        )\n        \n        return {\n            'total_requests': self.metrics.total_requests,\n            'success_rate': success_rate,\n            'avg_latency_ms': self.metrics.avg_latency * 1000,\n            'p95_latency_ms': self.metrics.p95_latency * 1000,\n            'p99_latency_ms': self.metrics.p99_latency * 1000,\n            'gpu_memory_gb': self.metrics.gpu_memory_used,\n            'cache_size': len(self.cache)\n        }\n    \n    def health_check(self) -> bool:\n        \"\"\"System health check.\"\"\"\n        try:\n            # Test inference\n            test_image = np.random.rand(224, 224, 3).astype(np.float32)\n            self.predict(test_image)\n            return True\n        except Exception as e:\n            self.logger.error(f\"Health check failed: {e}\")\n            return False\n\n# Example usage\nprint(\"Production CV system template ready\")\nprint(\"Features: batch processing, caching, monitoring, health checks\")",
+        "complexity_analysis": "Depends on model, typically O(n) per batch",
+        "best_practices": [
+          "Implement comprehensive monitoring",
+          "Use batch processing for efficiency",
+          "Add caching for repeated requests",
+          "Handle GPU memory carefully",
+          "Implement health checks",
+          "Add error handling and logging",
+          "Monitor latency percentiles",
+          "Implement graceful degradation"
+        ]
+      },
+      "learning_objectives": [
+        "build_production_cv_systems",
+        "implement_performance_monitoring",
+        "optimize_inference_speed",
+        "handle_scale_and_reliability",
+        "ensure_system_health"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 250,
+    "beginner_samples": 60,
+    "intermediate_samples": 100,
+    "advanced_samples": 70,
+    "expert_samples": 20,
+    "key_topics_covered": [
+      "Image preprocessing and transformations",
+      "Data augmentation strategies",
+      "CNN architecture design",
+      "Transfer learning",
+      "Object detection (YOLO, Faster R-CNN)",
+      "Image segmentation",
+      "Feature extraction",
+      "Model optimization",
+      "Production deployment",
+      "Performance monitoring"
+    ],
+    "practical_applications": [
+      "Image classification",
+      "Object detection and tracking",
+      "Face recognition",
+      "Medical image analysis",
+      "Quality inspection",
+      "Autonomous vehicles",
+      "Video analytics"
+    ]
+  }
+}

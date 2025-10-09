@@ -1,8 +1,8 @@
 {
-  "generated_at": "2025-10-07T23:25:56.548794",
+  "generated_at": "2025-10-09T01:35:41.158607",
   "repository": "nibertinvestments/DATA",
   "description": "Comprehensive dataset index for LLM/ML/AI training",
-  "total_datasets": 100,
+  "total_datasets": 110,
   "categories": {
     "software_design": [
       "testing_patterns_046",
@@ -117,6 +117,18 @@
       "github_samples_004",
       "github_samples_005",
       "github_samples_003"
+    ],
+    "ai_ml_training": [
+      "nlp_training_comprehensive",
+      "computer_vision_training_comprehensive",
+      "time_series_forecasting_comprehensive",
+      "reinforcement_learning_comprehensive",
+      "data_preprocessing_feature_engineering",
+      "model_evaluation_metrics_comprehensive",
+      "api_design_patterns_comprehensive",
+      "database_design_optimization",
+      "programming_patterns_idioms",
+      "cloud_infrastructure_devops_patterns"
     ]
   },
   "datasets": [

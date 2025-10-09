@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "dataset_name": "Data Preprocessing and Feature Engineering Dataset",
+    "version": "1.0.0",
+    "description": "Complete guide to data preprocessing, feature engineering, and data transformation for ML",
+    "created_at": "2025-10-09",
+    "sample_count": 220,
+    "complexity_levels": [
+      "beginner",
+      "intermediate",
+      "advanced"
+    ],
+    "categories": [
+      "data_cleaning",
+      "feature_scaling",
+      "encoding_categorical",
+      "feature_extraction",
+      "dimensionality_reduction",
+      "handling_imbalance",
+      "feature_selection",
+      "pipeline_construction"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "prep_001",
+      "category": "data_cleaning",
+      "title": "Comprehensive Data Cleaning Pipeline",
+      "code_snippet": "from sklearn.preprocessing import StandardScaler, LabelEncoder\nimport pandas as pd\nimport numpy as np\n\nclass DataCleaner:\n    def clean(self, df):\n        df = self.handle_missing(df)\n        df = self.remove_duplicates(df)\n        df = self.handle_outliers(df)\n        return df\n    \n    def handle_missing(self, df):\n        for col in df.columns:\n            if df[col].dtype in ['float64', 'int64']:\n                df[col].fillna(df[col].median(), inplace=True)\n            else:\n                df[col].fillna(df[col].mode()[0], inplace=True)\n        return df",
+      "best_practices": [
+        "Understand missing data patterns",
+        "Choose appropriate imputation",
+        "Document all transformations",
+        "Validate cleaned data"
+      ]
+    },
+    {
+      "id": "prep_002",
+      "category": "feature_scaling",
+      "title": "Feature Scaling Techniques",
+      "code_snippet": "from sklearn.preprocessing import StandardScaler, MinMaxScaler, RobustScaler\n\nclass FeatureScaler:\n    def __init__(self, method='standard'):\n        if method == 'standard':\n            self.scaler = StandardScaler()\n        elif method == 'minmax':\n            self.scaler = MinMaxScaler()\n        elif method == 'robust':\n            self.scaler = RobustScaler()\n    \n    def fit_transform(self, X):\n        return self.scaler.fit_transform(X)\n    \n    def transform(self, X):\n        return self.scaler.transform(X)",
+      "best_practices": [
+        "Scale after train-test split",
+        "Use StandardScaler for normal distributions",
+        "Use RobustScaler for outliers",
+        "Save scalers for production"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 220,
+    "key_topics": [
+      "Data cleaning",
+      "Feature scaling",
+      "Encoding",
+      "Feature selection",
+      "Pipelines"
+    ]
+  }
+}
