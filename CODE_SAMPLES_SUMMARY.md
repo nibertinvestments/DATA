@@ -202,7 +202,7 @@ All generated code samples follow these principles:
 ## Use Cases for AI Training
 
 ### 1. Code Generation
-Train models to generate syntactically correct code in any of the 20 languages.
+Train models to generate syntactically correct code in any of the 18 languages.
 
 ### 2. Code Translation
 Enable cross-language translation (e.g., Python to Java, JavaScript to TypeScript).
@@ -319,7 +319,7 @@ This massive code sample collection provides a comprehensive foundation for trai
 - Best practices and design patterns
 - Real-world programming scenarios
 
-The diverse, high-quality samples across 20 languages ensure robust training data for next-generation AI coding assistants.
+The diverse, high-quality samples across 18 languages ensure robust training data for next-generation AI coding assistants.
 
 ---
 
