@@ -1,14 +1,14 @@
 # Data Sources for AI Coding Agents
 
-This directory contains comprehensive datasets and resources designed specifically for training and assisting AI coding agents. The structure is organized to provide error-free, well-documented coding examples, patterns, and references that complement the main `code_samples/` directory which contains 140+ production-ready implementations across 20 programming languages.
+This directory contains comprehensive datasets and resources designed specifically for training and assisting AI coding agents. The structure is organized to provide error-free, well-documented coding examples, patterns, and references that complement the main `code_samples/` directory which contains 1,409 production-ready implementations across 18 programming languages.
 
 ## Directory Structure
 
 ### Relationship with Main Repository
 This directory complements the main [`code_samples/`](../code_samples/) directory:
-- **`code_samples/`**: 140+ production-ready implementations across 20 languages
-- **`data-sources/`**: Specialized AI training data and educational resources
-- **`high_end_specialized/`**: Advanced algorithms and financial mathematics
+- **`code_samples/`**: 1,409 production-ready implementations across 18 languages
+- **`data-sources/`**: Specialized AI training data and educational resources (28 files)
+- **`high_end_specialized/`**: Advanced algorithms and financial mathematics (7 files)
 
 ### Programming Languages  
 Each programming language has its own directory containing various types of coding data:
