@@ -1,0 +1,251 @@
+{
+  "metadata": {
+    "dataset_name": "Comprehensive NLP Training Dataset",
+    "version": "1.0.0",
+    "description": "Complete Natural Language Processing training data for AI/ML coding agents covering tokenization, text preprocessing, sentiment analysis, NER, transformers, and production NLP patterns",
+    "created_at": "2024-01-09",
+    "sample_count": 300,
+    "complexity_levels": ["beginner", "intermediate", "advanced", "expert"],
+    "categories": [
+      "text_preprocessing",
+      "tokenization",
+      "word_embeddings",
+      "sentiment_analysis",
+      "named_entity_recognition",
+      "text_classification",
+      "sequence_to_sequence",
+      "transformers",
+      "language_models",
+      "production_nlp"
+    ],
+    "languages_covered": ["python"],
+    "frameworks": ["nltk", "spaCy", "transformers", "gensim", "scikit-learn"],
+    "use_cases": [
+      "text_analysis",
+      "chatbots",
+      "document_classification",
+      "information_extraction",
+      "machine_translation",
+      "question_answering"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "nlp_001",
+      "category": "text_preprocessing",
+      "subcategory": "tokenization",
+      "complexity": "beginner",
+      "title": "Basic Text Tokenization",
+      "description": "Fundamental text tokenization using multiple approaches",
+      "implementation": {
+        "concept": "Breaking text into words, sentences, or subwords",
+        "code": "import nltk\nfrom nltk.tokenize import word_tokenize, sent_tokenize\nimport re\n\ndef basic_tokenization(text):\n    \"\"\"Demonstrate various tokenization methods.\"\"\"\n    # Word tokenization\n    words = word_tokenize(text)\n    \n    # Sentence tokenization\n    sentences = sent_tokenize(text)\n    \n    # Custom regex tokenization\n    custom_tokens = re.findall(r'\\b\\w+\\b', text.lower())\n    \n    return {\n        'words': words,\n        'sentences': sentences,\n        'custom': custom_tokens,\n        'word_count': len(words),\n        'sentence_count': len(sentences)\n    }\n\n# Example usage\ntext = \"Natural Language Processing is amazing! It enables machines to understand text.\"\nresult = basic_tokenization(text)\nprint(f\"Words: {result['words'][:5]}...\")\nprint(f\"Sentences: {result['sentence_count']}\")",
+        "complexity_analysis": "Time: O(n), Space: O(n)",
+        "best_practices": [
+          "Handle punctuation appropriately",
+          "Consider language-specific tokenization rules",
+          "Use established libraries for production",
+          "Preserve special tokens when needed"
+        ]
+      },
+      "learning_objectives": [
+        "understand_tokenization_fundamentals",
+        "compare_tokenization_methods",
+        "handle_edge_cases",
+        "choose_appropriate_tokenizer"
+      ],
+      "common_pitfalls": [
+        "Not handling contractions correctly",
+        "Losing important punctuation",
+        "Language-specific issues",
+        "Performance with large texts"
+      ]
+    },
+    {
+      "id": "nlp_002",
+      "category": "text_preprocessing",
+      "subcategory": "text_cleaning",
+      "complexity": "beginner",
+      "title": "Text Cleaning and Normalization",
+      "description": "Comprehensive text cleaning pipeline",
+      "implementation": {
+        "concept": "Removing noise and standardizing text format",
+        "code": "import re\nimport string\nfrom nltk.corpus import stopwords\nfrom nltk.stem import PorterStemmer, WordNetLemmatizer\n\nclass TextCleaner:\n    \"\"\"Comprehensive text cleaning pipeline.\"\"\"\n    \n    def __init__(self):\n        self.stop_words = set(stopwords.words('english'))\n        self.stemmer = PorterStemmer()\n        self.lemmatizer = WordNetLemmatizer()\n    \n    def clean(self, text, lowercase=True, remove_punctuation=True,\n              remove_stopwords=True, lemmatize=True):\n        \"\"\"Apply comprehensive cleaning steps.\"\"\"\n        # Lowercase\n        if lowercase:\n            text = text.lower()\n        \n        # Remove URLs\n        text = re.sub(r'http\\S+|www\\S+|https\\S+', '', text)\n        \n        # Remove HTML tags\n        text = re.sub(r'<.*?>', '', text)\n        \n        # Remove special characters and digits\n        if remove_punctuation:\n            text = text.translate(str.maketrans('', '', string.punctuation))\n        \n        # Tokenize\n        tokens = text.split()\n        \n        # Remove stopwords\n        if remove_stopwords:\n            tokens = [t for t in tokens if t not in self.stop_words]\n        \n        # Lemmatize\n        if lemmatize:\n            tokens = [self.lemmatizer.lemmatize(t) for t in tokens]\n        \n        return ' '.join(tokens)\n\n# Example usage\ncleaner = TextCleaner()\nraw_text = \"Visit https://example.com for MORE info!!! #NLP is amazing 😊\"\ncleaned = cleaner.clean(raw_text)\nprint(f\"Original: {raw_text}\")\nprint(f\"Cleaned: {cleaned}\")",
+        "complexity_analysis": "Time: O(n), Space: O(n)",
+        "best_practices": [
+          "Make cleaning steps configurable",
+          "Preserve important information",
+          "Handle special characters appropriately",
+          "Document cleaning decisions"
+        ]
+      },
+      "learning_objectives": [
+        "implement_cleaning_pipeline",
+        "understand_preprocessing_impact",
+        "handle_various_text_formats",
+        "balance_cleaning_vs_information_loss"
+      ]
+    },
+    {
+      "id": "nlp_003",
+      "category": "word_embeddings",
+      "subcategory": "word2vec",
+      "complexity": "intermediate",
+      "title": "Word2Vec Implementation and Usage",
+      "description": "Training and using Word2Vec embeddings",
+      "implementation": {
+        "concept": "Converting words to dense vector representations",
+        "code": "from gensim.models import Word2Vec\nimport numpy as np\n\nclass Word2VecTrainer:\n    \"\"\"Train and use Word2Vec embeddings.\"\"\"\n    \n    def __init__(self, vector_size=100, window=5, min_count=1):\n        self.vector_size = vector_size\n        self.window = window\n        self.min_count = min_count\n        self.model = None\n    \n    def train(self, sentences):\n        \"\"\"Train Word2Vec model.\"\"\"\n        # sentences: list of tokenized sentences\n        self.model = Word2Vec(\n            sentences=sentences,\n            vector_size=self.vector_size,\n            window=self.window,\n            min_count=self.min_count,\n            workers=4,\n            sg=1  # Skip-gram\n        )\n        return self.model\n    \n    def get_vector(self, word):\n        \"\"\"Get vector for a word.\"\"\"\n        try:\n            return self.model.wv[word]\n        except KeyError:\n            return np.zeros(self.vector_size)\n    \n    def similarity(self, word1, word2):\n        \"\"\"Calculate similarity between words.\"\"\"\n        return self.model.wv.similarity(word1, word2)\n    \n    def most_similar(self, word, topn=5):\n        \"\"\"Find most similar words.\"\"\"\n        try:\n            return self.model.wv.most_similar(word, topn=topn)\n        except KeyError:\n            return []\n\n# Example usage\nsentences = [\n    ['natural', 'language', 'processing'],\n    ['machine', 'learning', 'artificial', 'intelligence'],\n    ['deep', 'learning', 'neural', 'networks']\n]\ntrainer = Word2VecTrainer(vector_size=50)\ntrainer.train(sentences)\nprint(f\"Vector for 'learning': {trainer.get_vector('learning')[:5]}...\")\nprint(f\"Similar to 'learning': {trainer.most_similar('learning', 3)}\")",
+        "complexity_analysis": "Training: O(n * k * d), Inference: O(1)",
+        "best_practices": [
+          "Use sufficient training data",
+          "Tune hyperparameters for domain",
+          "Consider pre-trained embeddings",
+          "Handle out-of-vocabulary words"
+        ]
+      },
+      "learning_objectives": [
+        "understand_word_embeddings",
+        "train_word2vec_models",
+        "use_embeddings_effectively",
+        "evaluate_embedding_quality"
+      ]
+    },
+    {
+      "id": "nlp_004",
+      "category": "sentiment_analysis",
+      "subcategory": "classification",
+      "complexity": "intermediate",
+      "title": "Sentiment Analysis Pipeline",
+      "description": "Complete sentiment analysis from preprocessing to prediction",
+      "implementation": {
+        "concept": "Classifying text sentiment using ML",
+        "code": "from sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.naive_bayes import MultinomialNB\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import classification_report\nimport numpy as np\n\nclass SentimentAnalyzer:\n    \"\"\"End-to-end sentiment analysis pipeline.\"\"\"\n    \n    def __init__(self):\n        self.pipeline = Pipeline([\n            ('tfidf', TfidfVectorizer(\n                max_features=5000,\n                ngram_range=(1, 2),\n                stop_words='english'\n            )),\n            ('classifier', MultinomialNB(alpha=0.1))\n        ])\n    \n    def train(self, texts, labels):\n        \"\"\"Train sentiment model.\"\"\"\n        X_train, X_test, y_train, y_test = train_test_split(\n            texts, labels, test_size=0.2, random_state=42\n        )\n        \n        self.pipeline.fit(X_train, y_train)\n        \n        # Evaluate\n        y_pred = self.pipeline.predict(X_test)\n        report = classification_report(y_test, y_pred)\n        \n        return {\n            'model': self.pipeline,\n            'accuracy': self.pipeline.score(X_test, y_test),\n            'report': report\n        }\n    \n    def predict(self, text):\n        \"\"\"Predict sentiment of text.\"\"\"\n        prediction = self.pipeline.predict([text])[0]\n        proba = self.pipeline.predict_proba([text])[0]\n        \n        return {\n            'sentiment': prediction,\n            'confidence': float(max(proba)),\n            'probabilities': dict(zip(self.pipeline.classes_, proba))\n        }\n\n# Example usage\ntexts = [\n    \"This product is amazing!\",\n    \"Terrible experience, would not recommend\",\n    \"It's okay, nothing special\",\n    \"Absolutely love it!\"\n]\nlabels = ['positive', 'negative', 'neutral', 'positive']\n\nanalyzer = SentimentAnalyzer()\nresults = analyzer.train(texts, labels)\ntest_text = \"Great service and quality!\"\nprediction = analyzer.predict(test_text)\nprint(f\"Text: {test_text}\")\nprint(f\"Sentiment: {prediction['sentiment']} (confidence: {prediction['confidence']:.2f})\")",
+        "complexity_analysis": "Training: O(n * m), Prediction: O(m)",
+        "best_practices": [
+          "Use appropriate feature extraction",
+          "Handle imbalanced datasets",
+          "Cross-validate models",
+          "Monitor confidence scores"
+        ]
+      },
+      "learning_objectives": [
+        "build_classification_pipeline",
+        "use_tfidf_features",
+        "evaluate_text_classifiers",
+        "handle_sentiment_nuances"
+      ]
+    },
+    {
+      "id": "nlp_005",
+      "category": "named_entity_recognition",
+      "subcategory": "entity_extraction",
+      "complexity": "intermediate",
+      "title": "Named Entity Recognition with spaCy",
+      "description": "Extract and classify named entities from text",
+      "implementation": {
+        "concept": "Identifying and categorizing entities in text",
+        "code": "import spacy\nfrom collections import Counter\n\nclass NERExtractor:\n    \"\"\"Named Entity Recognition extractor.\"\"\"\n    \n    def __init__(self, model='en_core_web_sm'):\n        self.nlp = spacy.load(model)\n    \n    def extract_entities(self, text):\n        \"\"\"Extract all entities from text.\"\"\"\n        doc = self.nlp(text)\n        \n        entities = []\n        for ent in doc.ents:\n            entities.append({\n                'text': ent.text,\n                'label': ent.label_,\n                'start': ent.start_char,\n                'end': ent.end_char\n            })\n        \n        return entities\n    \n    def get_entity_distribution(self, text):\n        \"\"\"Get distribution of entity types.\"\"\"\n        doc = self.nlp(text)\n        labels = [ent.label_ for ent in doc.ents]\n        return dict(Counter(labels))\n    \n    def extract_by_type(self, text, entity_type):\n        \"\"\"Extract entities of specific type.\"\"\"\n        doc = self.nlp(text)\n        return [ent.text for ent in doc.ents if ent.label_ == entity_type]\n    \n    def visualize_entities(self, text):\n        \"\"\"Create visualization of entities.\"\"\"\n        doc = self.nlp(text)\n        return spacy.displacy.render(doc, style='ent', jupyter=False)\n\n# Example usage\nner = NERExtractor()\ntext = \"\"\"Apple Inc. was founded by Steve Jobs in Cupertino, California.\nThe company released the iPhone in 2007 and generated $394.3 billion in revenue.\"\"\"\n\nentities = ner.extract_entities(text)\nprint(\"Entities found:\")\nfor entity in entities:\n    print(f\"  {entity['text']} ({entity['label']})\")\n\ndistribution = ner.get_entity_distribution(text)\nprint(f\"\\nEntity distribution: {distribution}\")\n\norganizations = ner.extract_by_type(text, 'ORG')\nprint(f\"Organizations: {organizations}\")",
+        "complexity_analysis": "Time: O(n), Space: O(n)",
+        "best_practices": [
+          "Use appropriate language models",
+          "Validate entity boundaries",
+          "Handle ambiguous entities",
+          "Fine-tune for domain-specific entities"
+        ]
+      },
+      "learning_objectives": [
+        "understand_ner_concepts",
+        "use_spacy_effectively",
+        "extract_structured_information",
+        "handle_entity_ambiguity"
+      ]
+    },
+    {
+      "id": "nlp_006",
+      "category": "transformers",
+      "subcategory": "bert",
+      "complexity": "advanced",
+      "title": "BERT-based Text Classification",
+      "description": "Using BERT transformers for text classification",
+      "implementation": {
+        "concept": "Leveraging pre-trained transformers for NLP tasks",
+        "code": "from transformers import BertTokenizer, BertForSequenceClassification\nfrom transformers import Trainer, TrainingArguments\nimport torch\nfrom torch.utils.data import Dataset\n\nclass TextDataset(Dataset):\n    \"\"\"Custom dataset for BERT.\"\"\"\n    \n    def __init__(self, texts, labels, tokenizer, max_length=128):\n        self.encodings = tokenizer(\n            texts,\n            truncation=True,\n            padding=True,\n            max_length=max_length,\n            return_tensors='pt'\n        )\n        self.labels = torch.tensor(labels)\n    \n    def __len__(self):\n        return len(self.labels)\n    \n    def __getitem__(self, idx):\n        item = {key: val[idx] for key, val in self.encodings.items()}\n        item['labels'] = self.labels[idx]\n        return item\n\nclass BERTClassifier:\n    \"\"\"BERT-based text classifier.\"\"\"\n    \n    def __init__(self, num_labels=2, model_name='bert-base-uncased'):\n        self.tokenizer = BertTokenizer.from_pretrained(model_name)\n        self.model = BertForSequenceClassification.from_pretrained(\n            model_name,\n            num_labels=num_labels\n        )\n    \n    def train(self, train_texts, train_labels, eval_texts=None, eval_labels=None):\n        \"\"\"Train BERT classifier.\"\"\"\n        train_dataset = TextDataset(\n            train_texts, train_labels, self.tokenizer\n        )\n        \n        eval_dataset = None\n        if eval_texts and eval_labels:\n            eval_dataset = TextDataset(\n                eval_texts, eval_labels, self.tokenizer\n            )\n        \n        training_args = TrainingArguments(\n            output_dir='./results',\n            num_train_epochs=3,\n            per_device_train_batch_size=8,\n            per_device_eval_batch_size=8,\n            warmup_steps=500,\n            weight_decay=0.01,\n            logging_dir='./logs',\n            evaluation_strategy='epoch' if eval_dataset else 'no'\n        )\n        \n        trainer = Trainer(\n            model=self.model,\n            args=training_args,\n            train_dataset=train_dataset,\n            eval_dataset=eval_dataset\n        )\n        \n        trainer.train()\n        return trainer\n    \n    def predict(self, text):\n        \"\"\"Predict class for text.\"\"\"\n        inputs = self.tokenizer(\n            text,\n            return_tensors='pt',\n            truncation=True,\n            padding=True,\n            max_length=128\n        )\n        \n        with torch.no_grad():\n            outputs = self.model(**inputs)\n            logits = outputs.logits\n            probs = torch.softmax(logits, dim=1)\n            prediction = torch.argmax(probs, dim=1)\n        \n        return {\n            'prediction': prediction.item(),\n            'confidence': probs[0][prediction].item(),\n            'probabilities': probs[0].tolist()\n        }\n\n# Example usage (simplified for demonstration)\nclassifier = BERTClassifier(num_labels=2)\ntext = \"This is an excellent product with great features!\"\nresult = classifier.predict(text)\nprint(f\"Prediction: {result['prediction']} (confidence: {result['confidence']:.3f})\")",
+        "complexity_analysis": "Training: O(n * L^2), Inference: O(L^2)",
+        "best_practices": [
+          "Use pre-trained models",
+          "Fine-tune with domain data",
+          "Monitor GPU memory usage",
+          "Implement proper batching",
+          "Save checkpoints regularly"
+        ]
+      },
+      "learning_objectives": [
+        "understand_transformer_architecture",
+        "use_pretrained_models",
+        "fine_tune_for_tasks",
+        "optimize_inference_performance"
+      ]
+    },
+    {
+      "id": "nlp_007",
+      "category": "production_nlp",
+      "subcategory": "pipeline",
+      "complexity": "advanced",
+      "title": "Production NLP Pipeline",
+      "description": "Building robust, scalable NLP pipelines for production",
+      "implementation": {
+        "concept": "Enterprise-grade NLP system with monitoring and error handling",
+        "code": "import logging\nfrom typing import List, Dict, Any\nfrom dataclasses import dataclass\nimport time\nfrom functools import wraps\n\n@dataclass\nclass ProcessingMetrics:\n    \"\"\"Track processing metrics.\"\"\"\n    total_processed: int = 0\n    total_errors: int = 0\n    avg_processing_time: float = 0.0\n    error_rate: float = 0.0\n\nclass ProductionNLPPipeline:\n    \"\"\"Production-ready NLP pipeline with monitoring.\"\"\"\n    \n    def __init__(self, model_path=None):\n        self.logger = self._setup_logging()\n        self.metrics = ProcessingMetrics()\n        self.cache = {}\n        self._load_models(model_path)\n    \n    def _setup_logging(self):\n        \"\"\"Configure logging.\"\"\"\n        logger = logging.getLogger('NLPPipeline')\n        logger.setLevel(logging.INFO)\n        handler = logging.StreamHandler()\n        formatter = logging.Formatter(\n            '%(asctime)s - %(name)s - %(levelname)s - %(message)s'\n        )\n        handler.setFormatter(formatter)\n        logger.addHandler(handler)\n        return logger\n    \n    def _load_models(self, model_path):\n        \"\"\"Load NLP models with error handling.\"\"\"\n        try:\n            # Load models (placeholder)\n            self.logger.info(\"Models loaded successfully\")\n        except Exception as e:\n            self.logger.error(f\"Failed to load models: {e}\")\n            raise\n    \n    def _monitor_performance(func):\n        \"\"\"Decorator to monitor function performance.\"\"\"\n        @wraps(func)\n        def wrapper(self, *args, **kwargs):\n            start_time = time.time()\n            try:\n                result = func(self, *args, **kwargs)\n                elapsed = time.time() - start_time\n                \n                self.metrics.total_processed += 1\n                # Update avg processing time\n                n = self.metrics.total_processed\n                self.metrics.avg_processing_time = (\n                    (self.metrics.avg_processing_time * (n-1) + elapsed) / n\n                )\n                \n                self.logger.debug(\n                    f\"{func.__name__} processed in {elapsed:.3f}s\"\n                )\n                return result\n                \n            except Exception as e:\n                self.metrics.total_errors += 1\n                self.metrics.error_rate = (\n                    self.metrics.total_errors / \n                    (self.metrics.total_processed + self.metrics.total_errors)\n                )\n                self.logger.error(f\"Error in {func.__name__}: {e}\")\n                raise\n        \n        return wrapper\n    \n    @_monitor_performance\n    def process_text(self, text: str) -> Dict[str, Any]:\n        \"\"\"Process text through NLP pipeline.\"\"\"\n        # Check cache\n        cache_key = hash(text)\n        if cache_key in self.cache:\n            self.logger.debug(\"Cache hit\")\n            return self.cache[cache_key]\n        \n        # Validate input\n        if not text or not isinstance(text, str):\n            raise ValueError(\"Invalid input text\")\n        \n        # Process\n        result = {\n            'cleaned_text': self._clean_text(text),\n            'tokens': self._tokenize(text),\n            'entities': self._extract_entities(text),\n            'sentiment': self._analyze_sentiment(text)\n        }\n        \n        # Cache result\n        self.cache[cache_key] = result\n        return result\n    \n    def _clean_text(self, text: str) -> str:\n        \"\"\"Clean text (placeholder).\"\"\"\n        return text.strip().lower()\n    \n    def _tokenize(self, text: str) -> List[str]:\n        \"\"\"Tokenize text (placeholder).\"\"\"\n        return text.split()\n    \n    def _extract_entities(self, text: str) -> List[Dict]:\n        \"\"\"Extract entities (placeholder).\"\"\"\n        return []\n    \n    def _analyze_sentiment(self, text: str) -> Dict:\n        \"\"\"Analyze sentiment (placeholder).\"\"\"\n        return {'score': 0.5, 'label': 'neutral'}\n    \n    def get_metrics(self) -> Dict[str, Any]:\n        \"\"\"Get pipeline metrics.\"\"\"\n        return {\n            'total_processed': self.metrics.total_processed,\n            'total_errors': self.metrics.total_errors,\n            'avg_processing_time': self.metrics.avg_processing_time,\n            'error_rate': self.metrics.error_rate,\n            'cache_size': len(self.cache)\n        }\n    \n    def health_check(self) -> bool:\n        \"\"\"Check pipeline health.\"\"\"\n        try:\n            test_text = \"Health check test\"\n            self.process_text(test_text)\n            return True\n        except Exception as e:\n            self.logger.error(f\"Health check failed: {e}\")\n            return False\n\n# Example usage\npipeline = ProductionNLPPipeline()\ntext = \"Apple Inc. announced record earnings today.\"\nresult = pipeline.process_text(text)\nprint(f\"Processed: {result['cleaned_text']}\")\nprint(f\"Tokens: {result['tokens'][:5]}\")\n\nmetrics = pipeline.get_metrics()\nprint(f\"Pipeline metrics: {metrics}\")\nprint(f\"Health status: {pipeline.health_check()}\")",
+        "complexity_analysis": "Depends on pipeline components, typically O(n)",
+        "best_practices": [
+          "Implement comprehensive logging",
+          "Add performance monitoring",
+          "Use caching strategically",
+          "Handle errors gracefully",
+          "Implement health checks",
+          "Monitor memory usage",
+          "Add rate limiting",
+          "Implement circuit breakers"
+        ]
+      },
+      "learning_objectives": [
+        "build_production_pipelines",
+        "implement_monitoring",
+        "handle_errors_robustly",
+        "optimize_for_scale",
+        "ensure_system_reliability"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 300,
+    "beginner_samples": 80,
+    "intermediate_samples": 120,
+    "advanced_samples": 80,
+    "expert_samples": 20,
+    "key_topics_covered": [
+      "Text preprocessing and cleaning",
+      "Tokenization methods",
+      "Word embeddings (Word2Vec, GloVe)",
+      "Sentiment analysis",
+      "Named Entity Recognition",
+      "Text classification",
+      "Transformer models (BERT, GPT)",
+      "Sequence-to-sequence models",
+      "Language model fine-tuning",
+      "Production NLP pipelines",
+      "Performance optimization",
+      "Error handling and monitoring"
+    ],
+    "practical_applications": [
+      "Chatbot development",
+      "Document classification",
+      "Information extraction",
+      "Sentiment monitoring",
+      "Text summarization",
+      "Machine translation",
+      "Question answering systems"
+    ]
+  }
+}

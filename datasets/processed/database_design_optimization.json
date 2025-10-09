@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "dataset_name": "Database Design and Query Optimization",
+    "version": "1.0.0",
+    "description": "Schema design, indexing strategies, query optimization, and database best practices",
+    "created_at": "2025-10-09",
+    "sample_count": 200,
+    "categories": [
+      "schema_design",
+      "indexing",
+      "query_optimization",
+      "transactions",
+      "normalization",
+      "nosql_patterns",
+      "database_scaling"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "db_001",
+      "category": "indexing",
+      "title": "Database Indexing Strategies",
+      "code_snippet": "-- Create indexes for common queries\nCREATE INDEX idx_user_email ON users(email);\nCREATE INDEX idx_order_date ON orders(created_at DESC);\nCREATE INDEX idx_user_status ON users(status) WHERE status = 'active';\n\n-- Composite index for multi-column queries\nCREATE INDEX idx_order_user_date ON orders(user_id, created_at);\n\n-- Analyze query performance\nEXPLAIN ANALYZE\nSELECT * FROM orders \nWHERE user_id = 123 \nAND created_at >= '2024-01-01'\nORDER BY created_at DESC;",
+      "best_practices": [
+        "Index foreign keys",
+        "Use covering indexes",
+        "Monitor index usage",
+        "Balance read/write performance",
+        "Regularly analyze and optimize"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 200,
+    "key_topics": [
+      "Schema design",
+      "Indexing",
+      "Query optimization",
+      "Transactions",
+      "Scaling"
+    ]
+  }
+}

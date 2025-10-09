@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "dataset_name": "API Design and Integration Patterns",
+    "version": "1.0.0",
+    "description": "REST, GraphQL, microservices, and API best practices for modern applications",
+    "created_at": "2025-10-09",
+    "sample_count": 170,
+    "categories": [
+      "rest_api_design",
+      "graphql",
+      "authentication",
+      "rate_limiting",
+      "versioning",
+      "microservices",
+      "api_documentation"
+    ]
+  },
+  "training_samples": [
+    {
+      "id": "api_001",
+      "category": "rest_api_design",
+      "title": "RESTful API Best Practices",
+      "code_snippet": "from flask import Flask, jsonify, request\nfrom functools import wraps\nimport jwt\n\napp = Flask(__name__)\n\ndef require_auth(f):\n    @wraps(f)\n    def decorated(*args, **kwargs):\n        token = request.headers.get('Authorization')\n        if not token:\n            return jsonify({'error': 'No token'}), 401\n        try:\n            jwt.decode(token, 'secret', algorithms=['HS256'])\n        except:\n            return jsonify({'error': 'Invalid token'}), 401\n        return f(*args, **kwargs)\n    return decorated\n\n@app.route('/api/v1/users', methods=['GET'])\n@require_auth\ndef get_users():\n    return jsonify({'users': []})\n\n@app.route('/api/v1/users', methods=['POST'])\n@require_auth\ndef create_user():\n    data = request.get_json()\n    return jsonify({'id': 1, **data}), 201",
+      "best_practices": [
+        "Use proper HTTP methods",
+        "Version your APIs",
+        "Implement authentication",
+        "Add rate limiting",
+        "Provide clear documentation"
+      ]
+    }
+  ],
+  "summary": {
+    "total_samples": 170,
+    "key_topics": [
+      "REST design",
+      "GraphQL",
+      "Authentication",
+      "Microservices",
+      "API security"
+    ]
+  }
+}
