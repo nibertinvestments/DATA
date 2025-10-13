@@ -8,7 +8,7 @@
 
 ## 🎯 Mission Accomplished
 
-Successfully added **309 new dataset files** containing **1,936+ training samples** specifically designed for AI, ML, and LLM training.
+Successfully added **309 new dataset files** containing **1,936+ structured training samples** in the 12 new processed datasets, plus **297 diverse external datasets** with additional samples, specifically designed for AI, ML, and LLM training.
 
 ---
 
@@ -54,7 +54,8 @@ Successfully added **309 new dataset files** containing **1,936+ training sample
 
 ### After Addition
 - Datasets: **430 files** (+309, +256% increase)
-- Training samples: **5,000+** (+2,000+, +67% increase)
+- Structured training samples in processed datasets: **1,936**
+- External dataset files: **297** (with additional samples)
 - Repository size: **~4.0MB** (+2.4MB, +150% increase)
 
 ---
@@ -217,10 +218,10 @@ for dataset_file in external_dir.glob('*.json'):
 | Metric | Count |
 |--------|-------|
 | **New Dataset Files** | 309 |
-| **New Training Samples** | 1,936+ |
+| **Structured Training Samples (12 processed datasets)** | 1,936 |
+| **External Dataset Files** | 297 |
 | **AI Training Datasets** | 6 |
 | **Synthetic Pattern Datasets** | 6 |
-| **External Raw Datasets** | 297 |
 | **Languages Covered** | 18+ |
 | **Dataset Categories** | 40+ |
 | **Repository Size Increase** | +2.4MB |
@@ -265,7 +266,7 @@ While this addition is complete, potential future enhancements could include:
 
 ## 🎉 Conclusion
 
-This massive data addition transforms the repository into a comprehensive resource for AI/ML/LLM training in the software development domain. With 309 new files and 1,936+ training samples, the repository now provides extensive coverage of programming patterns, algorithms, data structures, and best practices across 18+ programming languages.
+This massive data addition transforms the repository into a comprehensive resource for AI/ML/LLM training in the software development domain. With 309 new files including 1,936 structured training samples in 12 processed datasets and 297 diverse external datasets, the repository now provides extensive coverage of programming patterns, algorithms, data structures, and best practices across 18+ programming languages.
 
 The data is production-ready, well-documented, and optimized for AI training applications. All datasets have been validated and are ready for use in training AI coding agents, fine-tuning language models, and conducting software engineering research.
 
