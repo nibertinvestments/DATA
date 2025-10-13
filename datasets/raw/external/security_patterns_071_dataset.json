@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_0",
+    "type": "security",
+    "language": "rust",
+    "total_vulnerabilities": 5,
+    "created_at": "2025-10-13T23:32:22.336912",
+    "variant": 0
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_0_f3bca285",
+      "vulnerability": "XSS",
+      "severity": "medium",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable XSS code",
+      "fixed_code": "# Fixed XSS code",
+      "variant": 0
+    },
+    {
+      "id": "sec_0_2c61ce32",
+      "vulnerability": "SQL Injection",
+      "severity": "low",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable SQL Injection code",
+      "fixed_code": "# Fixed SQL Injection code",
+      "variant": 0
+    },
+    {
+      "id": "sec_0_6b4326f6",
+      "vulnerability": "CSRF",
+      "severity": "medium",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable CSRF code",
+      "fixed_code": "# Fixed CSRF code",
+      "variant": 0
+    },
+    {
+      "id": "sec_0_fb99a446",
+      "vulnerability": "Command Injection",
+      "severity": "medium",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable Command Injection code",
+      "fixed_code": "# Fixed Command Injection code",
+      "variant": 0
+    },
+    {
+      "id": "sec_0_3a2ba129",
+      "vulnerability": "Authentication Bypass",
+      "severity": "critical",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable Authentication Bypass code",
+      "fixed_code": "# Fixed Authentication Bypass code",
+      "variant": 0
+    }
+  ]
+}

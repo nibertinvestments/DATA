@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_3",
+    "type": "performance",
+    "language": "go",
+    "total_optimizations": 5,
+    "created_at": "2025-10-13T23:32:22.338892",
+    "variant": 3
+  },
+  "optimizations": [
+    {
+      "id": "perf_3_0_6e218491",
+      "optimization_type": "parallelization",
+      "language": "go",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "12x faster",
+      "variant": 3
+    },
+    {
+      "id": "perf_3_1_1e6e4ef7",
+      "optimization_type": "caching",
+      "language": "go",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "47x faster",
+      "variant": 3
+    },
+    {
+      "id": "perf_3_2_35069b64",
+      "optimization_type": "caching",
+      "language": "go",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "46x faster",
+      "variant": 3
+    },
+    {
+      "id": "perf_3_3_ab69387c",
+      "optimization_type": "algorithmic",
+      "language": "go",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "83x faster",
+      "variant": 3
+    },
+    {
+      "id": "perf_3_4_ec5f8f33",
+      "optimization_type": "memory",
+      "language": "go",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "73x faster",
+      "variant": 3
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "cli_tools_variant_1",
+    "type": "cli",
+    "language": "rust",
+    "total_tools": 2,
+    "created_at": "2025-10-13T23:32:22.349304",
+    "variant": 1
+  },
+  "tools": [
+    {
+      "id": "cli_1_0_467d5338",
+      "tool_name": "tool_1_0",
+      "language": "rust",
+      "command": "# CLI command",
+      "variant": 1
+    },
+    {
+      "id": "cli_1_1_c874081b",
+      "tool_name": "tool_1_1",
+      "language": "rust",
+      "command": "# CLI command",
+      "variant": 1
+    }
+  ]
+}

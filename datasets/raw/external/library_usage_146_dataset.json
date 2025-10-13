@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "name": "library_usage_variant_5",
+    "type": "library_patterns",
+    "language": "python",
+    "total_examples": 5,
+    "created_at": "2025-10-13T23:32:22.348551",
+    "variant": 5
+  },
+  "usage_patterns": [
+    {
+      "id": "lib_5_0_9da31e79",
+      "library": "library_1",
+      "language": "python",
+      "usage_example": "# Library usage",
+      "variant": 5
+    },
+    {
+      "id": "lib_5_1_2fa850d8",
+      "library": "library_2",
+      "language": "python",
+      "usage_example": "# Library usage",
+      "variant": 5
+    },
+    {
+      "id": "lib_5_2_6c2ed02d",
+      "library": "library_3",
+      "language": "python",
+      "usage_example": "# Library usage",
+      "variant": 5
+    },
+    {
+      "id": "lib_5_3_5d3c7007",
+      "library": "library_4",
+      "language": "python",
+      "usage_example": "# Library usage",
+      "variant": 5
+    },
+    {
+      "id": "lib_5_4_884c0e4e",
+      "library": "library_5",
+      "language": "python",
+      "usage_example": "# Library usage",
+      "variant": 5
+    }
+  ]
+}

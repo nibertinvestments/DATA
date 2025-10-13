@@ -1,0 +1,66 @@
+{
+  "metadata": {
+    "name": "api_patterns_variant_9",
+    "type": "api_usage",
+    "description": "API patterns for go, java, cpp",
+    "languages": [
+      "go",
+      "java",
+      "cpp"
+    ],
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.332167",
+    "variant": 9
+  },
+  "api_patterns": [
+    {
+      "id": "api_9_000_6e47ce28",
+      "language": "java",
+      "api_type": "SOAP",
+      "method": "GET",
+      "name": "API DELETE Request Pattern",
+      "description": "Best practice for POST requests in java",
+      "code_example": "# API request in java\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 9
+    },
+    {
+      "id": "api_9_001_303b09ac",
+      "language": "cpp",
+      "api_type": "GraphQL",
+      "method": "PATCH",
+      "name": "API PATCH Request Pattern",
+      "description": "Best practice for GET requests in cpp",
+      "code_example": "# API request in cpp\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 9
+    },
+    {
+      "id": "api_9_002_5cc93b96",
+      "language": "java",
+      "api_type": "WebSocket",
+      "method": "DELETE",
+      "name": "API GET Request Pattern",
+      "description": "Best practice for PATCH requests in java",
+      "code_example": "# API request in java\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 9
+    }
+  ]
+}

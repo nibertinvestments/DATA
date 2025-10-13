@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_0",
+    "type": "error_analysis",
+    "description": "Error patterns for java, typescript, python",
+    "languages": [
+      "java",
+      "typescript",
+      "python"
+    ],
+    "total_patterns": 7,
+    "created_at": "2025-10-13T23:32:22.326947",
+    "variant": 0
+  },
+  "error_patterns": [
+    {
+      "id": "err_0_000_7cfd8817",
+      "language": "java",
+      "error_type": "RecursionError",
+      "description": "RecursionError in java",
+      "buggy_code": "# Buggy java code that causes RecursionError\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for RecursionError\n# ... implementation ...",
+      "explanation": "How to fix RecursionError in java",
+      "severity": "high",
+      "category": "syntax",
+      "variant": 0
+    },
+    {
+      "id": "err_0_001_0d517257",
+      "language": "typescript",
+      "error_type": "ClassCastException",
+      "description": "ClassCastException in typescript",
+      "buggy_code": "# Buggy typescript code that causes ClassCastException\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for ClassCastException\n# ... implementation ...",
+      "explanation": "How to fix ClassCastException in typescript",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 0
+    },
+    {
+      "id": "err_0_002_96c1d925",
+      "language": "java",
+      "error_type": "NameError",
+      "description": "NameError in java",
+      "buggy_code": "# Buggy java code that causes NameError\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for NameError\n# ... implementation ...",
+      "explanation": "How to fix NameError in java",
+      "severity": "medium",
+      "category": "runtime",
+      "variant": 0
+    },
+    {
+      "id": "err_0_003_dc5a9ed1",
+      "language": "java",
+      "error_type": "StackOverflow",
+      "description": "StackOverflow in java",
+      "buggy_code": "# Buggy java code that causes StackOverflow\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for StackOverflow\n# ... implementation ...",
+      "explanation": "How to fix StackOverflow in java",
+      "severity": "medium",
+      "category": "runtime",
+      "variant": 0
+    },
+    {
+      "id": "err_0_004_a8d80f07",
+      "language": "python",
+      "error_type": "BufferOverflow",
+      "description": "BufferOverflow in python",
+      "buggy_code": "# Buggy python code that causes BufferOverflow\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for BufferOverflow\n# ... implementation ...",
+      "explanation": "How to fix BufferOverflow in python",
+      "severity": "high",
+      "category": "runtime",
+      "variant": 0
+    },
+    {
+      "id": "err_0_005_76cfb355",
+      "language": "typescript",
+      "error_type": "SegmentationFault",
+      "description": "SegmentationFault in typescript",
+      "buggy_code": "# Buggy typescript code that causes SegmentationFault\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for SegmentationFault\n# ... implementation ...",
+      "explanation": "How to fix SegmentationFault in typescript",
+      "severity": "high",
+      "category": "logic",
+      "variant": 0
+    },
+    {
+      "id": "err_0_006_7ae930ea",
+      "language": "typescript",
+      "error_type": "IndexError",
+      "description": "IndexError in typescript",
+      "buggy_code": "# Buggy typescript code that causes IndexError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for IndexError\n# ... implementation ...",
+      "explanation": "How to fix IndexError in typescript",
+      "severity": "high",
+      "category": "logic",
+      "variant": 0
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_7",
+    "type": "security",
+    "language": "rust",
+    "total_vulnerabilities": 4,
+    "created_at": "2025-10-13T23:32:22.337921",
+    "variant": 7
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_7_59fe0de2",
+      "vulnerability": "Command Injection",
+      "severity": "medium",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable Command Injection code",
+      "fixed_code": "# Fixed Command Injection code",
+      "variant": 7
+    },
+    {
+      "id": "sec_7_d7752f2b",
+      "vulnerability": "CSRF",
+      "severity": "low",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable CSRF code",
+      "fixed_code": "# Fixed CSRF code",
+      "variant": 7
+    },
+    {
+      "id": "sec_7_7df5a58e",
+      "vulnerability": "Path Traversal",
+      "severity": "critical",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable Path Traversal code",
+      "fixed_code": "# Fixed Path Traversal code",
+      "variant": 7
+    },
+    {
+      "id": "sec_7_14cc3707",
+      "vulnerability": "SQL Injection",
+      "severity": "high",
+      "language": "rust",
+      "vulnerable_code": "# Vulnerable SQL Injection code",
+      "fixed_code": "# Fixed SQL Injection code",
+      "variant": 7
+    }
+  ]
+}

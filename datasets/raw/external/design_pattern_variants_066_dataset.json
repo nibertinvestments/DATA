@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_5",
+    "type": "design_patterns",
+    "language": "java",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.336206",
+    "variant": 5
+  },
+  "patterns": [
+    {
+      "id": "pattern_5_6bfbc901",
+      "name": "Decorator Pattern",
+      "category": "creational",
+      "language": "java",
+      "implementation": "# Decorator in java",
+      "variant": 5
+    },
+    {
+      "id": "pattern_5_ebdc10ec",
+      "name": "Proxy Pattern",
+      "category": "creational",
+      "language": "java",
+      "implementation": "# Proxy in java",
+      "variant": 5
+    },
+    {
+      "id": "pattern_5_dde235d2",
+      "name": "Command Pattern",
+      "category": "structural",
+      "language": "java",
+      "implementation": "# Command in java",
+      "variant": 5
+    },
+    {
+      "id": "pattern_5_b7d4b44a",
+      "name": "Singleton Pattern",
+      "category": "structural",
+      "language": "java",
+      "implementation": "# Singleton in java",
+      "variant": 5
+    }
+  ]
+}

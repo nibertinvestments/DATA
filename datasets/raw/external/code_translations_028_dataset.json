@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "code_translations_variant_7",
+    "type": "cross_language",
+    "description": "Cross-language searching implementations",
+    "languages": [
+      "go",
+      "java",
+      "rust",
+      "cpp",
+      "typescript",
+      "ruby"
+    ],
+    "algorithm": "searching",
+    "total_examples": 1,
+    "created_at": "2025-10-13T23:32:22.329930",
+    "variant": 7
+  },
+  "translation_examples": [
+    {
+      "id": "trans_7_5848ef83",
+      "concept": "searching_variant_7",
+      "description": "Implement searching algorithm",
+      "difficulty": "intermediate",
+      "implementations": {
+        "go": "# searching implementation in go\n# ... code ...",
+        "java": "# searching implementation in java\n# ... code ...",
+        "rust": "# searching implementation in rust\n# ... code ...",
+        "cpp": "# searching implementation in cpp\n# ... code ...",
+        "typescript": "# searching implementation in typescript\n# ... code ...",
+        "ruby": "# searching implementation in ruby\n# ... code ..."
+      },
+      "variant": 7
+    }
+  ]
+}

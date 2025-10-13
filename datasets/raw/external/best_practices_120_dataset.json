@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_9",
+    "type": "best_practices",
+    "topic": "serverless",
+    "language": "go",
+    "total_practices": 7,
+    "created_at": "2025-10-13T23:32:22.344877",
+    "variant": 9
+  },
+  "practices": [
+    {
+      "id": "practice_9_0_f9feee95",
+      "practice": "Best practice #1",
+      "topic": "serverless",
+      "language": "go",
+      "description": "Recommended approach for serverless",
+      "example": "# Example code",
+      "variant": 9
+    },
+    {
+      "id": "practice_9_1_d2bf8f73",
+      "practice": "Best practice #2",
+      "topic": "serverless",
+      "language": "go",
+      "description": "Recommended approach for serverless",
+      "example": "# Example code",
+      "variant": 9
+    },
+    {
+      "id": "practice_9_2_93e77158",
+      "practice": "Best practice #3",
+      "topic": "serverless",
+      "language": "go",
+      "description": "Recommended approach for serverless",
+      "example": "# Example code",
+      "variant": 9
+    },
+    {
+      "id": "practice_9_3_ee179307",
+      "practice": "Best practice #4",
+      "topic": "serverless",
+      "language": "go",
+      "description": "Recommended approach for serverless",
+      "example": "# Example code",
+      "variant": 9
+    },
+    {
+      "id": "practice_9_4_c19a6eff",
+      "practice": "Best practice #5",
+      "topic": "serverless",
+      "language": "go",
+      "description": "Recommended approach for serverless",
+      "example": "# Example code",
+      "variant": 9
+    },
+    {
+      "id": "practice_9_5_034b51d3",
+      "practice": "Best practice #6",
+      "topic": "serverless",
+      "language": "go",
+      "description": "Recommended approach for serverless",
+      "example": "# Example code",
+      "variant": 9
+    },
+    {
+      "id": "practice_9_6_d0852cf5",
+      "practice": "Best practice #7",
+      "topic": "serverless",
+      "language": "go",
+      "description": "Recommended approach for serverless",
+      "example": "# Example code",
+      "variant": 9
+    }
+  ]
+}

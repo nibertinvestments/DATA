@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_0",
+    "type": "anti_patterns",
+    "language": "python",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.345031",
+    "variant": 0
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_0_47de663a",
+      "pattern": "Copy-Paste",
+      "language": "python",
+      "bad_example": "# Anti-pattern: Copy-Paste",
+      "good_example": "# Better approach",
+      "variant": 0
+    },
+    {
+      "id": "anti_0_45467266",
+      "pattern": "Hard Coding",
+      "language": "python",
+      "bad_example": "# Anti-pattern: Hard Coding",
+      "good_example": "# Better approach",
+      "variant": 0
+    }
+  ]
+}

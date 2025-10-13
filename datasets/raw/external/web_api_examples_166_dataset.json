@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "name": "web_api_examples_variant_5",
+    "type": "web_api",
+    "language": "go",
+    "total_endpoints": 5,
+    "created_at": "2025-10-13T23:32:22.351239",
+    "variant": 5
+  },
+  "apis": [
+    {
+      "id": "webapi_5_0_f5af1842",
+      "endpoint": "/api/v5/resource_0",
+      "method": "GET",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 5
+    },
+    {
+      "id": "webapi_5_1_48d9e6b7",
+      "endpoint": "/api/v5/resource_1",
+      "method": "PUT",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 5
+    },
+    {
+      "id": "webapi_5_2_940b675a",
+      "endpoint": "/api/v5/resource_2",
+      "method": "GET",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 5
+    },
+    {
+      "id": "webapi_5_3_6bb31232",
+      "endpoint": "/api/v5/resource_3",
+      "method": "PUT",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 5
+    },
+    {
+      "id": "webapi_5_4_3ace0ff5",
+      "endpoint": "/api/v5/resource_4",
+      "method": "GET",
+      "language": "go",
+      "implementation": "# API endpoint code",
+      "variant": 5
+    }
+  ]
+}

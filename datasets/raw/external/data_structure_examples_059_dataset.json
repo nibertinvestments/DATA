@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_8",
+    "type": "data_structures",
+    "language": "typescript",
+    "total_examples": 4,
+    "created_at": "2025-10-13T23:32:22.335156",
+    "variant": 8
+  },
+  "examples": [
+    {
+      "id": "ds_8_490c99f2",
+      "structure": "queue",
+      "language": "typescript",
+      "implementation": "# queue implementation in typescript",
+      "operations": [
+        "insert",
+        "traverse",
+        "delete"
+      ],
+      "variant": 8
+    },
+    {
+      "id": "ds_8_2c0761bd",
+      "structure": "set",
+      "language": "typescript",
+      "implementation": "# set implementation in typescript",
+      "operations": [
+        "insert",
+        "traverse",
+        "search"
+      ],
+      "variant": 8
+    },
+    {
+      "id": "ds_8_8d740a33",
+      "structure": "graph",
+      "language": "typescript",
+      "implementation": "# graph implementation in typescript",
+      "operations": [
+        "delete",
+        "traverse"
+      ],
+      "variant": 8
+    },
+    {
+      "id": "ds_8_08e1158d",
+      "structure": "array",
+      "language": "typescript",
+      "implementation": "# array implementation in typescript",
+      "operations": [
+        "search",
+        "delete"
+      ],
+      "variant": 8
+    }
+  ]
+}

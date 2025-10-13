@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_8",
+    "type": "design_patterns",
+    "language": "python",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.336639",
+    "variant": 8
+  },
+  "patterns": [
+    {
+      "id": "pattern_8_74e696df",
+      "name": "Facade Pattern",
+      "category": "structural",
+      "language": "python",
+      "implementation": "# Facade in python",
+      "variant": 8
+    },
+    {
+      "id": "pattern_8_9d9a2d20",
+      "name": "Strategy Pattern",
+      "category": "behavioral",
+      "language": "python",
+      "implementation": "# Strategy in python",
+      "variant": 8
+    },
+    {
+      "id": "pattern_8_97a1f155",
+      "name": "Singleton Pattern",
+      "category": "creational",
+      "language": "python",
+      "implementation": "# Singleton in python",
+      "variant": 8
+    },
+    {
+      "id": "pattern_8_09c3ab3f",
+      "name": "Proxy Pattern",
+      "category": "behavioral",
+      "language": "python",
+      "implementation": "# Proxy in python",
+      "variant": 8
+    }
+  ]
+}

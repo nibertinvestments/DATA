@@ -2,15 +2,15 @@
   "metadata": {
     "name": "github_samples_variant_1",
     "type": "github_api",
-    "description": "GitHub repositories for machine learning",
+    "description": "GitHub repositories for cli tool",
     "languages": [
-      "swift",
-      "rust",
-      "typescript"
+      "ruby",
+      "matlab",
+      "cpp"
     ],
-    "query": "machine learning",
+    "query": "cli tool",
     "total_samples": 0,
-    "created_at": "2025-10-07T23:25:39.502792",
+    "created_at": "2025-10-13T23:32:21.759942",
     "variant": 1
   },
   "samples": []

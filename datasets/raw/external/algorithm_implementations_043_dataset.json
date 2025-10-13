@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "name": "algorithm_implementations_variant_2",
+    "type": "algorithms",
+    "language": "ruby",
+    "total_implementations": 5,
+    "created_at": "2025-10-13T23:32:22.332673",
+    "variant": 2
+  },
+  "implementations": [
+    {
+      "id": "algo_2_dc65b882",
+      "name": "tree_implementation",
+      "language": "ruby",
+      "complexity": "O(n)",
+      "code": "# tree implementation in ruby\n# ... code ...",
+      "variant": 2
+    },
+    {
+      "id": "algo_2_e344de8e",
+      "name": "string_implementation",
+      "language": "ruby",
+      "complexity": "O(n²)",
+      "code": "# string implementation in ruby\n# ... code ...",
+      "variant": 2
+    },
+    {
+      "id": "algo_2_9ef46563",
+      "name": "stack_implementation",
+      "language": "ruby",
+      "complexity": "O(n²)",
+      "code": "# stack implementation in ruby\n# ... code ...",
+      "variant": 2
+    },
+    {
+      "id": "algo_2_dbef4a56",
+      "name": "divide_conquer_implementation",
+      "language": "ruby",
+      "complexity": "O(log n)",
+      "code": "# divide_conquer implementation in ruby\n# ... code ...",
+      "variant": 2
+    },
+    {
+      "id": "algo_2_ee78bd8c",
+      "name": "sorting_implementation",
+      "language": "ruby",
+      "complexity": "O(1)",
+      "code": "# sorting implementation in ruby\n# ... code ...",
+      "variant": 2
+    }
+  ]
+}

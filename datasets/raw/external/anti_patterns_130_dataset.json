@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_9",
+    "type": "anti_patterns",
+    "language": "go",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.346272",
+    "variant": 9
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_9_3fffd1de",
+      "pattern": "Spaghetti Code",
+      "language": "go",
+      "bad_example": "# Anti-pattern: Spaghetti Code",
+      "good_example": "# Better approach",
+      "variant": 9
+    },
+    {
+      "id": "anti_9_95c0aa69",
+      "pattern": "God Object",
+      "language": "go",
+      "bad_example": "# Anti-pattern: God Object",
+      "good_example": "# Better approach",
+      "variant": 9
+    },
+    {
+      "id": "anti_9_95eadbed",
+      "pattern": "Copy-Paste",
+      "language": "go",
+      "bad_example": "# Anti-pattern: Copy-Paste",
+      "good_example": "# Better approach",
+      "variant": 9
+    },
+    {
+      "id": "anti_9_6513baa5",
+      "pattern": "Premature Optimization",
+      "language": "go",
+      "bad_example": "# Anti-pattern: Premature Optimization",
+      "good_example": "# Better approach",
+      "variant": 9
+    }
+  ]
+}

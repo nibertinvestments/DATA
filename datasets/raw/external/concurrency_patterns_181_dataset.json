@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_0",
+    "type": "concurrency",
+    "language": "go",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.353499",
+    "variant": 0
+  },
+  "patterns": [
+    {
+      "id": "concur_0_0_ad219feb",
+      "pattern": "mutex",
+      "language": "go",
+      "example": "# Concurrency pattern",
+      "variant": 0
+    },
+    {
+      "id": "concur_0_1_20a35df7",
+      "pattern": "channel",
+      "language": "go",
+      "example": "# Concurrency pattern",
+      "variant": 0
+    },
+    {
+      "id": "concur_0_2_49370be9",
+      "pattern": "channel",
+      "language": "go",
+      "example": "# Concurrency pattern",
+      "variant": 0
+    }
+  ]
+}

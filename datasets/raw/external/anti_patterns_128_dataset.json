@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_7",
+    "type": "anti_patterns",
+    "language": "python",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.346011",
+    "variant": 7
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_7_bba1333e",
+      "pattern": "Hard Coding",
+      "language": "python",
+      "bad_example": "# Anti-pattern: Hard Coding",
+      "good_example": "# Better approach",
+      "variant": 7
+    },
+    {
+      "id": "anti_7_25fc3dc9",
+      "pattern": "Spaghetti Code",
+      "language": "python",
+      "bad_example": "# Anti-pattern: Spaghetti Code",
+      "good_example": "# Better approach",
+      "variant": 7
+    }
+  ]
+}

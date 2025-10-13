@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_4",
+    "type": "security",
+    "language": "javascript",
+    "total_vulnerabilities": 4,
+    "created_at": "2025-10-13T23:32:22.337473",
+    "variant": 4
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_4_c5baf39f",
+      "vulnerability": "Authentication Bypass",
+      "severity": "critical",
+      "language": "javascript",
+      "vulnerable_code": "# Vulnerable Authentication Bypass code",
+      "fixed_code": "# Fixed Authentication Bypass code",
+      "variant": 4
+    },
+    {
+      "id": "sec_4_bc678b77",
+      "vulnerability": "SSRF",
+      "severity": "low",
+      "language": "javascript",
+      "vulnerable_code": "# Vulnerable SSRF code",
+      "fixed_code": "# Fixed SSRF code",
+      "variant": 4
+    },
+    {
+      "id": "sec_4_2ea607ac",
+      "vulnerability": "XXE",
+      "severity": "critical",
+      "language": "javascript",
+      "vulnerable_code": "# Vulnerable XXE code",
+      "fixed_code": "# Fixed XXE code",
+      "variant": 4
+    },
+    {
+      "id": "sec_4_2717fea0",
+      "vulnerability": "Path Traversal",
+      "severity": "critical",
+      "language": "javascript",
+      "vulnerable_code": "# Vulnerable Path Traversal code",
+      "fixed_code": "# Fixed Path Traversal code",
+      "variant": 4
+    }
+  ]
+}

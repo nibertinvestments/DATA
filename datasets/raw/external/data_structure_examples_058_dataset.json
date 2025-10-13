@@ -1,0 +1,49 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_7",
+    "type": "data_structures",
+    "language": "go",
+    "total_examples": 3,
+    "created_at": "2025-10-13T23:32:22.335000",
+    "variant": 7
+  },
+  "examples": [
+    {
+      "id": "ds_7_13eab561",
+      "structure": "queue",
+      "language": "go",
+      "implementation": "# queue implementation in go",
+      "operations": [
+        "traverse",
+        "insert",
+        "search"
+      ],
+      "variant": 7
+    },
+    {
+      "id": "ds_7_578ee9ad",
+      "structure": "tree",
+      "language": "go",
+      "implementation": "# tree implementation in go",
+      "operations": [
+        "traverse",
+        "delete",
+        "search"
+      ],
+      "variant": 7
+    },
+    {
+      "id": "ds_7_d9b1a205",
+      "structure": "array",
+      "language": "go",
+      "implementation": "# array implementation in go",
+      "operations": [
+        "insert",
+        "traverse",
+        "search",
+        "delete"
+      ],
+      "variant": 7
+    }
+  ]
+}

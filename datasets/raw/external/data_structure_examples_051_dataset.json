@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_0",
+    "type": "data_structures",
+    "language": "go",
+    "total_examples": 4,
+    "created_at": "2025-10-13T23:32:22.333896",
+    "variant": 0
+  },
+  "examples": [
+    {
+      "id": "ds_0_66e33e8d",
+      "structure": "hash_table",
+      "language": "go",
+      "implementation": "# hash_table implementation in go",
+      "operations": [
+        "delete",
+        "insert"
+      ],
+      "variant": 0
+    },
+    {
+      "id": "ds_0_d083f847",
+      "structure": "linked_list",
+      "language": "go",
+      "implementation": "# linked_list implementation in go",
+      "operations": [
+        "search",
+        "insert",
+        "delete"
+      ],
+      "variant": 0
+    },
+    {
+      "id": "ds_0_ce1c461b",
+      "structure": "graph",
+      "language": "go",
+      "implementation": "# graph implementation in go",
+      "operations": [
+        "insert",
+        "delete"
+      ],
+      "variant": 0
+    },
+    {
+      "id": "ds_0_6860e040",
+      "structure": "trie",
+      "language": "go",
+      "implementation": "# trie implementation in go",
+      "operations": [
+        "traverse",
+        "insert",
+        "search",
+        "delete"
+      ],
+      "variant": 0
+    }
+  ]
+}

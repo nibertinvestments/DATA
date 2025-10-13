@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_1",
+    "type": "best_practices",
+    "topic": "algorithms",
+    "language": "javascript",
+    "total_practices": 8,
+    "created_at": "2025-10-13T23:32:22.343547",
+    "variant": 1
+  },
+  "practices": [
+    {
+      "id": "practice_1_0_1ef639e4",
+      "practice": "Best practice #1",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_1_20277013",
+      "practice": "Best practice #2",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_2_8b855c7f",
+      "practice": "Best practice #3",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_3_1bd101bb",
+      "practice": "Best practice #4",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_4_0ebcc18b",
+      "practice": "Best practice #5",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_5_738a94fd",
+      "practice": "Best practice #6",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_6_36018cce",
+      "practice": "Best practice #7",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    },
+    {
+      "id": "practice_1_7_a266cd67",
+      "practice": "Best practice #8",
+      "topic": "algorithms",
+      "language": "javascript",
+      "description": "Recommended approach for algorithms",
+      "example": "# Example code",
+      "variant": 1
+    }
+  ]
+}

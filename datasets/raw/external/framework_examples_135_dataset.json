@@ -1,0 +1,54 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_4",
+    "type": "framework_usage",
+    "framework": "nest",
+    "total_examples": 6,
+    "created_at": "2025-10-13T23:32:22.347065",
+    "variant": 4
+  },
+  "examples": [
+    {
+      "id": "framework_4_0_57d3f4ff",
+      "framework": "nest",
+      "feature": "Feature #1",
+      "code": "# nest example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_1_7f1eb954",
+      "framework": "nest",
+      "feature": "Feature #2",
+      "code": "# nest example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_2_56bbf995",
+      "framework": "nest",
+      "feature": "Feature #3",
+      "code": "# nest example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_3_b1469836",
+      "framework": "nest",
+      "feature": "Feature #4",
+      "code": "# nest example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_4_380552c8",
+      "framework": "nest",
+      "feature": "Feature #5",
+      "code": "# nest example",
+      "variant": 4
+    },
+    {
+      "id": "framework_4_5_ed8ea5f1",
+      "framework": "nest",
+      "feature": "Feature #6",
+      "code": "# nest example",
+      "variant": 4
+    }
+  ]
+}

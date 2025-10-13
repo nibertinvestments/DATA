@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_4",
+    "type": "best_practices",
+    "topic": "mobile",
+    "language": "cpp",
+    "total_practices": 5,
+    "created_at": "2025-10-13T23:32:22.344060",
+    "variant": 4
+  },
+  "practices": [
+    {
+      "id": "practice_4_0_a0457e9c",
+      "practice": "Best practice #1",
+      "topic": "mobile",
+      "language": "cpp",
+      "description": "Recommended approach for mobile",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_1_cc1b868b",
+      "practice": "Best practice #2",
+      "topic": "mobile",
+      "language": "cpp",
+      "description": "Recommended approach for mobile",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_2_03c3b2fc",
+      "practice": "Best practice #3",
+      "topic": "mobile",
+      "language": "cpp",
+      "description": "Recommended approach for mobile",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_3_530ef59a",
+      "practice": "Best practice #4",
+      "topic": "mobile",
+      "language": "cpp",
+      "description": "Recommended approach for mobile",
+      "example": "# Example code",
+      "variant": 4
+    },
+    {
+      "id": "practice_4_4_d6155dfe",
+      "practice": "Best practice #5",
+      "topic": "mobile",
+      "language": "cpp",
+      "description": "Recommended approach for mobile",
+      "example": "# Example code",
+      "variant": 4
+    }
+  ]
+}

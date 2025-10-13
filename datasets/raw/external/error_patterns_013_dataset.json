@@ -1,0 +1,113 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_2",
+    "type": "error_analysis",
+    "description": "Error patterns for python, typescript, rust",
+    "languages": [
+      "python",
+      "typescript",
+      "rust"
+    ],
+    "total_patterns": 8,
+    "created_at": "2025-10-13T23:32:22.327508",
+    "variant": 2
+  },
+  "error_patterns": [
+    {
+      "id": "err_2_000_947099c6",
+      "language": "typescript",
+      "error_type": "IllegalStateException",
+      "description": "IllegalStateException in typescript",
+      "buggy_code": "# Buggy typescript code that causes IllegalStateException\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for IllegalStateException\n# ... implementation ...",
+      "explanation": "How to fix IllegalStateException in typescript",
+      "severity": "medium",
+      "category": "syntax",
+      "variant": 2
+    },
+    {
+      "id": "err_2_001_d56a0f9d",
+      "language": "rust",
+      "error_type": "NameError",
+      "description": "NameError in rust",
+      "buggy_code": "# Buggy rust code that causes NameError\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for NameError\n# ... implementation ...",
+      "explanation": "How to fix NameError in rust",
+      "severity": "medium",
+      "category": "syntax",
+      "variant": 2
+    },
+    {
+      "id": "err_2_002_e392e139",
+      "language": "typescript",
+      "error_type": "KeyError",
+      "description": "KeyError in typescript",
+      "buggy_code": "# Buggy typescript code that causes KeyError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for KeyError\n# ... implementation ...",
+      "explanation": "How to fix KeyError in typescript",
+      "severity": "medium",
+      "category": "logic",
+      "variant": 2
+    },
+    {
+      "id": "err_2_003_a28a6968",
+      "language": "rust",
+      "error_type": "ConcurrentModificationException",
+      "description": "ConcurrentModificationException in rust",
+      "buggy_code": "# Buggy rust code that causes ConcurrentModificationException\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for ConcurrentModificationException\n# ... implementation ...",
+      "explanation": "How to fix ConcurrentModificationException in rust",
+      "severity": "high",
+      "category": "logic",
+      "variant": 2
+    },
+    {
+      "id": "err_2_004_469ba447",
+      "language": "typescript",
+      "error_type": "SyntaxError",
+      "description": "SyntaxError in typescript",
+      "buggy_code": "# Buggy typescript code that causes SyntaxError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for SyntaxError\n# ... implementation ...",
+      "explanation": "How to fix SyntaxError in typescript",
+      "severity": "low",
+      "category": "runtime",
+      "variant": 2
+    },
+    {
+      "id": "err_2_005_164a9db8",
+      "language": "python",
+      "error_type": "URIError",
+      "description": "URIError in python",
+      "buggy_code": "# Buggy python code that causes URIError\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for URIError\n# ... implementation ...",
+      "explanation": "How to fix URIError in python",
+      "severity": "medium",
+      "category": "type",
+      "variant": 2
+    },
+    {
+      "id": "err_2_006_d99ae475",
+      "language": "rust",
+      "error_type": "HeapCorruption",
+      "description": "HeapCorruption in rust",
+      "buggy_code": "# Buggy rust code that causes HeapCorruption\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for HeapCorruption\n# ... implementation ...",
+      "explanation": "How to fix HeapCorruption in rust",
+      "severity": "critical",
+      "category": "logic",
+      "variant": 2
+    },
+    {
+      "id": "err_2_007_00bdfa47",
+      "language": "typescript",
+      "error_type": "BufferOverflow",
+      "description": "BufferOverflow in typescript",
+      "buggy_code": "# Buggy typescript code that causes BufferOverflow\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for BufferOverflow\n# ... implementation ...",
+      "explanation": "How to fix BufferOverflow in typescript",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 2
+    }
+  ]
+}

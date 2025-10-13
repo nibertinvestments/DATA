@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_5",
+    "type": "concurrency",
+    "language": "java",
+    "total_patterns": 5,
+    "created_at": "2025-10-13T23:32:22.354102",
+    "variant": 5
+  },
+  "patterns": [
+    {
+      "id": "concur_5_0_15b2c23e",
+      "pattern": "mutex",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 5
+    },
+    {
+      "id": "concur_5_1_0114341e",
+      "pattern": "semaphore",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 5
+    },
+    {
+      "id": "concur_5_2_c70298c7",
+      "pattern": "channel",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 5
+    },
+    {
+      "id": "concur_5_3_467d4737",
+      "pattern": "actor",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 5
+    },
+    {
+      "id": "concur_5_4_428f1568",
+      "pattern": "actor",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 5
+    }
+  ]
+}

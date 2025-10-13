@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_1",
+    "type": "performance",
+    "language": "rust",
+    "total_optimizations": 2,
+    "created_at": "2025-10-13T23:32:22.338536",
+    "variant": 1
+  },
+  "optimizations": [
+    {
+      "id": "perf_1_0_f1ed3eea",
+      "optimization_type": "algorithmic",
+      "language": "rust",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "8x faster",
+      "variant": 1
+    },
+    {
+      "id": "perf_1_1_fc25c391",
+      "optimization_type": "lazy_loading",
+      "language": "rust",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "54x faster",
+      "variant": 1
+    }
+  ]
+}

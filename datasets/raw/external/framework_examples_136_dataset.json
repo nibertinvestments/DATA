@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_5",
+    "type": "framework_usage",
+    "framework": "preact",
+    "total_examples": 4,
+    "created_at": "2025-10-13T23:32:22.347203",
+    "variant": 5
+  },
+  "examples": [
+    {
+      "id": "framework_5_0_0927bee4",
+      "framework": "preact",
+      "feature": "Feature #1",
+      "code": "# preact example",
+      "variant": 5
+    },
+    {
+      "id": "framework_5_1_76a90fe3",
+      "framework": "preact",
+      "feature": "Feature #2",
+      "code": "# preact example",
+      "variant": 5
+    },
+    {
+      "id": "framework_5_2_b156815a",
+      "framework": "preact",
+      "feature": "Feature #3",
+      "code": "# preact example",
+      "variant": 5
+    },
+    {
+      "id": "framework_5_3_9f0302d6",
+      "framework": "preact",
+      "feature": "Feature #4",
+      "code": "# preact example",
+      "variant": 5
+    }
+  ]
+}

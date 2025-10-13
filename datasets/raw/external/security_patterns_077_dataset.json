@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_6",
+    "type": "security",
+    "language": "java",
+    "total_vulnerabilities": 4,
+    "created_at": "2025-10-13T23:32:22.337779",
+    "variant": 6
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_6_327b1854",
+      "vulnerability": "Path Traversal",
+      "severity": "medium",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable Path Traversal code",
+      "fixed_code": "# Fixed Path Traversal code",
+      "variant": 6
+    },
+    {
+      "id": "sec_6_1970f132",
+      "vulnerability": "SSRF",
+      "severity": "medium",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable SSRF code",
+      "fixed_code": "# Fixed SSRF code",
+      "variant": 6
+    },
+    {
+      "id": "sec_6_0513af1a",
+      "vulnerability": "XXE",
+      "severity": "high",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable XXE code",
+      "fixed_code": "# Fixed XXE code",
+      "variant": 6
+    },
+    {
+      "id": "sec_6_9471eb5b",
+      "vulnerability": "SQL Injection",
+      "severity": "critical",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable SQL Injection code",
+      "fixed_code": "# Fixed SQL Injection code",
+      "variant": 6
+    }
+  ]
+}

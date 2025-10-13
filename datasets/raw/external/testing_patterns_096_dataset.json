@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_5",
+    "type": "testing",
+    "language": "cpp",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.340562",
+    "variant": 5
+  },
+  "patterns": [
+    {
+      "id": "test_5_a64b6fc1",
+      "test_type": "regression",
+      "language": "cpp",
+      "example": "# regression test example",
+      "framework": "junit",
+      "variant": 5
+    },
+    {
+      "id": "test_5_6930aba9",
+      "test_type": "unit",
+      "language": "cpp",
+      "example": "# unit test example",
+      "framework": "rspec",
+      "variant": 5
+    },
+    {
+      "id": "test_5_2fbe7246",
+      "test_type": "integration",
+      "language": "cpp",
+      "example": "# integration test example",
+      "framework": "junit",
+      "variant": 5
+    }
+  ]
+}

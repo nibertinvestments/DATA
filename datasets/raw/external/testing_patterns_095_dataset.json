@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_4",
+    "type": "testing",
+    "language": "go",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.340431",
+    "variant": 4
+  },
+  "patterns": [
+    {
+      "id": "test_4_719a31eb",
+      "test_type": "unit",
+      "language": "go",
+      "example": "# unit test example",
+      "framework": "junit",
+      "variant": 4
+    },
+    {
+      "id": "test_4_79f3c3ed",
+      "test_type": "security",
+      "language": "go",
+      "example": "# security test example",
+      "framework": "jest",
+      "variant": 4
+    },
+    {
+      "id": "test_4_89a68557",
+      "test_type": "e2e",
+      "language": "go",
+      "example": "# e2e test example",
+      "framework": "jest",
+      "variant": 4
+    }
+  ]
+}

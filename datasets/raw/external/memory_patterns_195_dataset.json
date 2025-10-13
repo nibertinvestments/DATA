@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "memory_patterns_variant_4",
+    "type": "memory_management",
+    "language": "rust",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.355238",
+    "variant": 4
+  },
+  "patterns": [
+    {
+      "id": "memory_4_0_25b22f7a",
+      "pattern": "allocation",
+      "language": "rust",
+      "example": "# Memory management",
+      "variant": 4
+    },
+    {
+      "id": "memory_4_1_7211579d",
+      "pattern": "smart_pointer",
+      "language": "rust",
+      "example": "# Memory management",
+      "variant": 4
+    },
+    {
+      "id": "memory_4_2_630942ac",
+      "pattern": "deallocation",
+      "language": "rust",
+      "example": "# Memory management",
+      "variant": 4
+    }
+  ]
+}

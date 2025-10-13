@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_9",
+    "type": "error_analysis",
+    "description": "Error patterns for rust, typescript, go",
+    "languages": [
+      "rust",
+      "typescript",
+      "go"
+    ],
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.328860",
+    "variant": 9
+  },
+  "error_patterns": [
+    {
+      "id": "err_9_000_9cc47882",
+      "language": "rust",
+      "error_type": "SystemError",
+      "description": "SystemError in rust",
+      "buggy_code": "# Buggy rust code that causes SystemError\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for SystemError\n# ... implementation ...",
+      "explanation": "How to fix SystemError in rust",
+      "severity": "low",
+      "category": "logic",
+      "variant": 9
+    },
+    {
+      "id": "err_9_001_1c4a69fd",
+      "language": "rust",
+      "error_type": "StopIteration",
+      "description": "StopIteration in rust",
+      "buggy_code": "# Buggy rust code that causes StopIteration\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for StopIteration\n# ... implementation ...",
+      "explanation": "How to fix StopIteration in rust",
+      "severity": "medium",
+      "category": "runtime",
+      "variant": 9
+    },
+    {
+      "id": "err_9_002_8ae83dee",
+      "language": "rust",
+      "error_type": "ZeroDivisionError",
+      "description": "ZeroDivisionError in rust",
+      "buggy_code": "# Buggy rust code that causes ZeroDivisionError\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for ZeroDivisionError\n# ... implementation ...",
+      "explanation": "How to fix ZeroDivisionError in rust",
+      "severity": "medium",
+      "category": "logic",
+      "variant": 9
+    },
+    {
+      "id": "err_9_003_f0117105",
+      "language": "rust",
+      "error_type": "ValueError",
+      "description": "ValueError in rust",
+      "buggy_code": "# Buggy rust code that causes ValueError\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for ValueError\n# ... implementation ...",
+      "explanation": "How to fix ValueError in rust",
+      "severity": "high",
+      "category": "type",
+      "variant": 9
+    }
+  ]
+}

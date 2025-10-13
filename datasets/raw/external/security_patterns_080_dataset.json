@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_9",
+    "type": "security",
+    "language": "go",
+    "total_vulnerabilities": 4,
+    "created_at": "2025-10-13T23:32:22.338203",
+    "variant": 9
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_9_a363dfc9",
+      "vulnerability": "Insecure Deserialization",
+      "severity": "critical",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable Insecure Deserialization code",
+      "fixed_code": "# Fixed Insecure Deserialization code",
+      "variant": 9
+    },
+    {
+      "id": "sec_9_451f0150",
+      "vulnerability": "XXE",
+      "severity": "low",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable XXE code",
+      "fixed_code": "# Fixed XXE code",
+      "variant": 9
+    },
+    {
+      "id": "sec_9_8794fa4c",
+      "vulnerability": "Path Traversal",
+      "severity": "low",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable Path Traversal code",
+      "fixed_code": "# Fixed Path Traversal code",
+      "variant": 9
+    },
+    {
+      "id": "sec_9_d521ea2f",
+      "vulnerability": "XSS",
+      "severity": "medium",
+      "language": "go",
+      "vulnerable_code": "# Vulnerable XSS code",
+      "fixed_code": "# Fixed XSS code",
+      "variant": 9
+    }
+  ]
+}

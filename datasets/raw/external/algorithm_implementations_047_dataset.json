@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "algorithm_implementations_variant_6",
+    "type": "algorithms",
+    "language": "java",
+    "total_implementations": 4,
+    "created_at": "2025-10-13T23:32:22.333274",
+    "variant": 6
+  },
+  "implementations": [
+    {
+      "id": "algo_6_89b3c361",
+      "name": "linked_list_implementation",
+      "language": "java",
+      "complexity": "O(n²)",
+      "code": "# linked_list implementation in java\n# ... code ...",
+      "variant": 6
+    },
+    {
+      "id": "algo_6_ae4a9bb2",
+      "name": "queue_implementation",
+      "language": "java",
+      "complexity": "O(n log n)",
+      "code": "# queue implementation in java\n# ... code ...",
+      "variant": 6
+    },
+    {
+      "id": "algo_6_44b98074",
+      "name": "array_implementation",
+      "language": "java",
+      "complexity": "O(n log n)",
+      "code": "# array implementation in java\n# ... code ...",
+      "variant": 6
+    },
+    {
+      "id": "algo_6_e62861db",
+      "name": "backtracking_implementation",
+      "language": "java",
+      "complexity": "O(log n)",
+      "code": "# backtracking implementation in java\n# ... code ...",
+      "variant": 6
+    }
+  ]
+}

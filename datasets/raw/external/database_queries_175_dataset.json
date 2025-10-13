@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "name": "database_queries_variant_4",
+    "type": "database",
+    "database_type": "graph",
+    "total_queries": 5,
+    "created_at": "2025-10-13T23:32:22.352527",
+    "variant": 4
+  },
+  "queries": [
+    {
+      "id": "dbquery_4_0_460496ec",
+      "database_type": "graph",
+      "query_type": "insert",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 4
+    },
+    {
+      "id": "dbquery_4_1_f8f5cbdb",
+      "database_type": "graph",
+      "query_type": "update",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 4
+    },
+    {
+      "id": "dbquery_4_2_2b8c2da7",
+      "database_type": "graph",
+      "query_type": "select",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 4
+    },
+    {
+      "id": "dbquery_4_3_972dffe9",
+      "database_type": "graph",
+      "query_type": "insert",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 4
+    },
+    {
+      "id": "dbquery_4_4_580f9d16",
+      "database_type": "graph",
+      "query_type": "select",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 4
+    }
+  ]
+}

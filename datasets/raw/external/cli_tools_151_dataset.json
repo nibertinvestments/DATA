@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "cli_tools_variant_0",
+    "type": "cli",
+    "language": "python",
+    "total_tools": 2,
+    "created_at": "2025-10-13T23:32:22.349192",
+    "variant": 0
+  },
+  "tools": [
+    {
+      "id": "cli_0_0_3b7fbbb9",
+      "tool_name": "tool_0_0",
+      "language": "python",
+      "command": "# CLI command",
+      "variant": 0
+    },
+    {
+      "id": "cli_0_1_4150980e",
+      "tool_name": "tool_0_1",
+      "language": "python",
+      "command": "# CLI command",
+      "variant": 0
+    }
+  ]
+}

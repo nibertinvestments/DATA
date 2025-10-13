@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_8",
+    "type": "error_analysis",
+    "description": "Error patterns for javascript, rust, typescript",
+    "languages": [
+      "javascript",
+      "rust",
+      "typescript"
+    ],
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.328692",
+    "variant": 8
+  },
+  "error_patterns": [
+    {
+      "id": "err_8_000_e350a6a1",
+      "language": "typescript",
+      "error_type": "ZeroDivisionError",
+      "description": "ZeroDivisionError in typescript",
+      "buggy_code": "# Buggy typescript code that causes ZeroDivisionError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for ZeroDivisionError\n# ... implementation ...",
+      "explanation": "How to fix ZeroDivisionError in typescript",
+      "severity": "low",
+      "category": "memory",
+      "variant": 8
+    },
+    {
+      "id": "err_8_001_c94febd5",
+      "language": "typescript",
+      "error_type": "AttributeError",
+      "description": "AttributeError in typescript",
+      "buggy_code": "# Buggy typescript code that causes AttributeError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for AttributeError\n# ... implementation ...",
+      "explanation": "How to fix AttributeError in typescript",
+      "severity": "high",
+      "category": "logic",
+      "variant": 8
+    },
+    {
+      "id": "err_8_002_93345715",
+      "language": "typescript",
+      "error_type": "ValueError",
+      "description": "ValueError in typescript",
+      "buggy_code": "# Buggy typescript code that causes ValueError\n# ... implementation ...",
+      "fixed_code": "# Fixed typescript code for ValueError\n# ... implementation ...",
+      "explanation": "How to fix ValueError in typescript",
+      "severity": "critical",
+      "category": "runtime",
+      "variant": 8
+    },
+    {
+      "id": "err_8_003_18277169",
+      "language": "rust",
+      "error_type": "ClassCastException",
+      "description": "ClassCastException in rust",
+      "buggy_code": "# Buggy rust code that causes ClassCastException\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for ClassCastException\n# ... implementation ...",
+      "explanation": "How to fix ClassCastException in rust",
+      "severity": "medium",
+      "category": "logic",
+      "variant": 8
+    }
+  ]
+}

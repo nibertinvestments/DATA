@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_2",
+    "type": "best_practices",
+    "topic": "games",
+    "language": "go",
+    "total_practices": 8,
+    "created_at": "2025-10-13T23:32:22.343726",
+    "variant": 2
+  },
+  "practices": [
+    {
+      "id": "practice_2_0_f30b44f0",
+      "practice": "Best practice #1",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_1_03b7dfd3",
+      "practice": "Best practice #2",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_2_133ec81b",
+      "practice": "Best practice #3",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_3_c73c29aa",
+      "practice": "Best practice #4",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_4_399d2c7e",
+      "practice": "Best practice #5",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_5_f3c58f8d",
+      "practice": "Best practice #6",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_6_a93d43ff",
+      "practice": "Best practice #7",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    },
+    {
+      "id": "practice_2_7_265e57d2",
+      "practice": "Best practice #8",
+      "topic": "games",
+      "language": "go",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 2
+    }
+  ]
+}

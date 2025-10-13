@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "memory_patterns_variant_8",
+    "type": "memory_management",
+    "language": "cpp",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.355745",
+    "variant": 8
+  },
+  "patterns": [
+    {
+      "id": "memory_8_0_e6910863",
+      "pattern": "allocation",
+      "language": "cpp",
+      "example": "# Memory management",
+      "variant": 8
+    },
+    {
+      "id": "memory_8_1_32fa09e5",
+      "pattern": "allocation",
+      "language": "cpp",
+      "example": "# Memory management",
+      "variant": 8
+    },
+    {
+      "id": "memory_8_2_b88008a8",
+      "pattern": "smart_pointer",
+      "language": "cpp",
+      "example": "# Memory management",
+      "variant": 8
+    },
+    {
+      "id": "memory_8_3_ed9381a3",
+      "pattern": "smart_pointer",
+      "language": "cpp",
+      "example": "# Memory management",
+      "variant": 8
+    }
+  ]
+}

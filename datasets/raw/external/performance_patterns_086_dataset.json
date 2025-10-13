@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_5",
+    "type": "performance",
+    "language": "cpp",
+    "total_optimizations": 3,
+    "created_at": "2025-10-13T23:32:22.339178",
+    "variant": 5
+  },
+  "optimizations": [
+    {
+      "id": "perf_5_0_0b3f8a2e",
+      "optimization_type": "parallelization",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "3x faster",
+      "variant": 5
+    },
+    {
+      "id": "perf_5_1_20829eef",
+      "optimization_type": "parallelization",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "29x faster",
+      "variant": 5
+    },
+    {
+      "id": "perf_5_2_811dc7fe",
+      "optimization_type": "lazy_loading",
+      "language": "cpp",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "28x faster",
+      "variant": 5
+    }
+  ]
+}

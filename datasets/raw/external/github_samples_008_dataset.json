@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "name": "github_samples_variant_7",
+    "type": "github_api",
+    "description": "GitHub repositories for library",
+    "languages": [
+      "go",
+      "python",
+      "matlab"
+    ],
+    "query": "library",
+    "total_samples": 0,
+    "created_at": "2025-10-13T23:32:22.181938",
+    "variant": 7
+  },
+  "samples": []
+}

@@ -1,0 +1,58 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_0",
+    "type": "best_practices",
+    "topic": "parsing",
+    "language": "javascript",
+    "total_practices": 5,
+    "created_at": "2025-10-13T23:32:22.343352",
+    "variant": 0
+  },
+  "practices": [
+    {
+      "id": "practice_0_0_0b5028e8",
+      "practice": "Best practice #1",
+      "topic": "parsing",
+      "language": "javascript",
+      "description": "Recommended approach for parsing",
+      "example": "# Example code",
+      "variant": 0
+    },
+    {
+      "id": "practice_0_1_4cddfced",
+      "practice": "Best practice #2",
+      "topic": "parsing",
+      "language": "javascript",
+      "description": "Recommended approach for parsing",
+      "example": "# Example code",
+      "variant": 0
+    },
+    {
+      "id": "practice_0_2_3c3306d5",
+      "practice": "Best practice #3",
+      "topic": "parsing",
+      "language": "javascript",
+      "description": "Recommended approach for parsing",
+      "example": "# Example code",
+      "variant": 0
+    },
+    {
+      "id": "practice_0_3_de498ec6",
+      "practice": "Best practice #4",
+      "topic": "parsing",
+      "language": "javascript",
+      "description": "Recommended approach for parsing",
+      "example": "# Example code",
+      "variant": 0
+    },
+    {
+      "id": "practice_0_4_1b5a83e2",
+      "practice": "Best practice #5",
+      "topic": "parsing",
+      "language": "javascript",
+      "description": "Recommended approach for parsing",
+      "example": "# Example code",
+      "variant": 0
+    }
+  ]
+}

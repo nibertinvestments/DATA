@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "cli_tools_variant_6",
+    "type": "cli",
+    "language": "python",
+    "total_tools": 3,
+    "created_at": "2025-10-13T23:32:22.350026",
+    "variant": 6
+  },
+  "tools": [
+    {
+      "id": "cli_6_0_4eb8a766",
+      "tool_name": "tool_6_0",
+      "language": "python",
+      "command": "# CLI command",
+      "variant": 6
+    },
+    {
+      "id": "cli_6_1_0776643d",
+      "tool_name": "tool_6_1",
+      "language": "python",
+      "command": "# CLI command",
+      "variant": 6
+    },
+    {
+      "id": "cli_6_2_777d5201",
+      "tool_name": "tool_6_2",
+      "language": "python",
+      "command": "# CLI command",
+      "variant": 6
+    }
+  ]
+}

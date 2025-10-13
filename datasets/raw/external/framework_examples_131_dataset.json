@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_0",
+    "type": "framework_usage",
+    "framework": "backbone",
+    "total_examples": 5,
+    "created_at": "2025-10-13T23:32:22.346436",
+    "variant": 0
+  },
+  "examples": [
+    {
+      "id": "framework_0_0_59cc0c8f",
+      "framework": "backbone",
+      "feature": "Feature #1",
+      "code": "# backbone example",
+      "variant": 0
+    },
+    {
+      "id": "framework_0_1_6f7223d6",
+      "framework": "backbone",
+      "feature": "Feature #2",
+      "code": "# backbone example",
+      "variant": 0
+    },
+    {
+      "id": "framework_0_2_1327b066",
+      "framework": "backbone",
+      "feature": "Feature #3",
+      "code": "# backbone example",
+      "variant": 0
+    },
+    {
+      "id": "framework_0_3_0836358d",
+      "framework": "backbone",
+      "feature": "Feature #4",
+      "code": "# backbone example",
+      "variant": 0
+    },
+    {
+      "id": "framework_0_4_80854d33",
+      "framework": "backbone",
+      "feature": "Feature #5",
+      "code": "# backbone example",
+      "variant": 0
+    }
+  ]
+}

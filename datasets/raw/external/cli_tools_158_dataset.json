@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "cli_tools_variant_7",
+    "type": "cli",
+    "language": "node",
+    "total_tools": 3,
+    "created_at": "2025-10-13T23:32:22.350150",
+    "variant": 7
+  },
+  "tools": [
+    {
+      "id": "cli_7_0_3a38617f",
+      "tool_name": "tool_7_0",
+      "language": "node",
+      "command": "# CLI command",
+      "variant": 7
+    },
+    {
+      "id": "cli_7_1_596ee8e3",
+      "tool_name": "tool_7_1",
+      "language": "node",
+      "command": "# CLI command",
+      "variant": 7
+    },
+    {
+      "id": "cli_7_2_f3b8ab0d",
+      "tool_name": "tool_7_2",
+      "language": "node",
+      "command": "# CLI command",
+      "variant": 7
+    }
+  ]
+}

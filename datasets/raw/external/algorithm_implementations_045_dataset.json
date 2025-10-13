@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "name": "algorithm_implementations_variant_4",
+    "type": "algorithms",
+    "language": "cpp",
+    "total_implementations": 5,
+    "created_at": "2025-10-13T23:32:22.332988",
+    "variant": 4
+  },
+  "implementations": [
+    {
+      "id": "algo_4_39318be9",
+      "name": "linked_list_implementation",
+      "language": "cpp",
+      "complexity": "O(n log n)",
+      "code": "# linked_list implementation in cpp\n# ... code ...",
+      "variant": 4
+    },
+    {
+      "id": "algo_4_30c1ee36",
+      "name": "divide_conquer_implementation",
+      "language": "cpp",
+      "complexity": "O(1)",
+      "code": "# divide_conquer implementation in cpp\n# ... code ...",
+      "variant": 4
+    },
+    {
+      "id": "algo_4_acd4cbf4",
+      "name": "queue_implementation",
+      "language": "cpp",
+      "complexity": "O(log n)",
+      "code": "# queue implementation in cpp\n# ... code ...",
+      "variant": 4
+    },
+    {
+      "id": "algo_4_2fd4b98b",
+      "name": "segment_tree_implementation",
+      "language": "cpp",
+      "complexity": "O(n)",
+      "code": "# segment_tree implementation in cpp\n# ... code ...",
+      "variant": 4
+    },
+    {
+      "id": "algo_4_4c75e6d1",
+      "name": "hash_table_implementation",
+      "language": "cpp",
+      "complexity": "O(log n)",
+      "code": "# hash_table implementation in cpp\n# ... code ...",
+      "variant": 4
+    }
+  ]
+}

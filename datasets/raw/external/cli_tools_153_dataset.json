@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "cli_tools_variant_2",
+    "type": "cli",
+    "language": "node",
+    "total_tools": 4,
+    "created_at": "2025-10-13T23:32:22.349463",
+    "variant": 2
+  },
+  "tools": [
+    {
+      "id": "cli_2_0_4d133a23",
+      "tool_name": "tool_2_0",
+      "language": "node",
+      "command": "# CLI command",
+      "variant": 2
+    },
+    {
+      "id": "cli_2_1_4c8e67d8",
+      "tool_name": "tool_2_1",
+      "language": "node",
+      "command": "# CLI command",
+      "variant": 2
+    },
+    {
+      "id": "cli_2_2_71bf322a",
+      "tool_name": "tool_2_2",
+      "language": "node",
+      "command": "# CLI command",
+      "variant": 2
+    },
+    {
+      "id": "cli_2_3_c15acf03",
+      "tool_name": "tool_2_3",
+      "language": "node",
+      "command": "# CLI command",
+      "variant": 2
+    }
+  ]
+}

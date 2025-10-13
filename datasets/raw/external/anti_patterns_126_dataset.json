@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_5",
+    "type": "anti_patterns",
+    "language": "java",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.345687",
+    "variant": 5
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_5_603c8233",
+      "pattern": "Magic Numbers",
+      "language": "java",
+      "bad_example": "# Anti-pattern: Magic Numbers",
+      "good_example": "# Better approach",
+      "variant": 5
+    },
+    {
+      "id": "anti_5_97a02cd2",
+      "pattern": "God Object",
+      "language": "java",
+      "bad_example": "# Anti-pattern: God Object",
+      "good_example": "# Better approach",
+      "variant": 5
+    }
+  ]
+}

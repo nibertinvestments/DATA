@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "name": "api_patterns_variant_6",
+    "type": "api_usage",
+    "description": "API patterns for javascript, go, rust",
+    "languages": [
+      "javascript",
+      "go",
+      "rust"
+    ],
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.331655",
+    "variant": 6
+  },
+  "api_patterns": [
+    {
+      "id": "api_6_000_c83ef0ad",
+      "language": "go",
+      "api_type": "REST",
+      "method": "PUT",
+      "name": "API POST Request Pattern",
+      "description": "Best practice for POST requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 6
+    },
+    {
+      "id": "api_6_001_a44a8f08",
+      "language": "javascript",
+      "api_type": "SOAP",
+      "method": "POST",
+      "name": "API PUT Request Pattern",
+      "description": "Best practice for DELETE requests in javascript",
+      "code_example": "# API request in javascript\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 6
+    },
+    {
+      "id": "api_6_002_489b64cb",
+      "language": "go",
+      "api_type": "GraphQL",
+      "method": "GET",
+      "name": "API PUT Request Pattern",
+      "description": "Best practice for POST requests in go",
+      "code_example": "# API request in go\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses"
+      ],
+      "variant": 6
+    }
+  ]
+}
