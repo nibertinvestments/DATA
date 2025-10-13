@@ -8,7 +8,7 @@
 
 ## 🎯 Mission Accomplished
 
-Successfully added **309 new dataset files** containing **1,936+ structured training samples** in the 12 new processed datasets, plus **297 diverse external datasets** with additional samples, specifically designed for AI, ML, and LLM training.
+Successfully added **309 new dataset files** specifically designed for AI, ML, and LLM training. This includes **1,936 structured training samples** in the 12 new processed datasets, plus **297 diverse external datasets** with additional samples.
 
 ---
 
@@ -266,7 +266,7 @@ While this addition is complete, potential future enhancements could include:
 
 ## 🎉 Conclusion
 
-This massive data addition transforms the repository into a comprehensive resource for AI/ML/LLM training in the software development domain. With 309 new files including 1,936 structured training samples in 12 processed datasets and 297 diverse external datasets, the repository now provides extensive coverage of programming patterns, algorithms, data structures, and best practices across 18+ programming languages.
+This massive data addition transforms the repository into a comprehensive resource for AI/ML/LLM training in the software development domain. With 309 new files including 1,936 structured training samples in 12 processed datasets and 297 diverse external datasets, this represents a significant expansion. The repository now provides extensive coverage of programming patterns, algorithms, data structures, and best practices across 18+ programming languages.
 
 The data is production-ready, well-documented, and optimized for AI training applications. All datasets have been validated and are ready for use in training AI coding agents, fine-tuning language models, and conducting software engineering research.
 
