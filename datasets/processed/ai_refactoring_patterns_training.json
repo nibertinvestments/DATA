@@ -1,0 +1,535 @@
+{
+  "metadata": {
+    "name": "refactoring_patterns_training_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:34:30.349850",
+    "total_samples": 82,
+    "patterns": [
+      "remove_dead_code",
+      "extract_interface",
+      "rename_method",
+      "extract_method",
+      "security_fix",
+      "split_class",
+      "introduce_parameter_object",
+      "move_method",
+      "push_down_method",
+      "introduce_null_object",
+      "inline_method",
+      "extract_variable",
+      "replace_conditional_with_polymorphism",
+      "pull_up_method",
+      "inline_variable"
+    ],
+    "purpose": "AI code refactoring training"
+  },
+  "samples": [
+    {
+      "id": "refactoring_0001",
+      "before_code": "def process_user(name, email, age, address, phone):\n    # Too many parameters\n    pass",
+      "after_code": "class UserInfo:\n    def __init__(self, name, email, age, address, phone):\n        self.name = name\n        self.email = email\n        self.age = age\n        self.address = address\n        self.phone = phone\n\ndef process_user(user_info: UserInfo):\n    pass",
+      "refactoring_pattern": "introduce_parameter_object",
+      "language": "python",
+      "code_smell": "long_parameter_list",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0002",
+      "before_code": "if (user.type === 'admin') {\n    // admin logic\n} else if (user.type === 'moderator') {\n    // moderator logic\n} else if (user.type === 'user') {\n    // user logic\n}",
+      "after_code": "const handlers = {\n    admin: () => { /* admin logic */ },\n    moderator: () => { /* moderator logic */ },\n    user: () => { /* user logic */ }\n};\n\nhandlers[user.type]();",
+      "refactoring_pattern": "replace_conditional_with_polymorphism",
+      "language": "javascript",
+      "code_smell": "switch_statements",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0003",
+      "before_code": "public void calculateTotal() {\n    double total = 0;\n    for (Item item : items) {\n        total += item.price * item.quantity;\n        if (item.discount > 0) {\n            total -= item.discount;\n        }\n    }\n    this.total = total;\n}",
+      "after_code": "public void calculateTotal() {\n    this.total = items.stream()\n        .mapToDouble(item -> item.getDiscountedPrice())\n        .sum();\n}\n\nclass Item {\n    double getDiscountedPrice() {\n        return price * quantity - discount;\n    }\n}",
+      "refactoring_pattern": "extract_method",
+      "language": "java",
+      "code_smell": "long_method",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0004",
+      "before_code": "def get_user_data(id):\n    user = db.query('SELECT * FROM users WHERE id = ' + str(id))\n    return user",
+      "after_code": "def get_user_data(id):\n    query = 'SELECT * FROM users WHERE id = ?'\n    user = db.query(query, (id,))\n    return user",
+      "refactoring_pattern": "security_fix",
+      "language": "python",
+      "code_smell": "sql_injection_vulnerability",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0005",
+      "before_code": "class DataProcessor {\n    processData() { /* ... */ }\n    saveToDatabase() { /* ... */ }\n    sendEmail() { /* ... */ }\n    generateReport() { /* ... */ }\n}",
+      "after_code": "class DataProcessor {\n    processData() { /* ... */ }\n}\n\nclass DatabaseService {\n    save(data) { /* ... */ }\n}\n\nclass EmailService {\n    send(message) { /* ... */ }\n}\n\nclass ReportGenerator {\n    generate(data) { /* ... */ }\n}",
+      "refactoring_pattern": "split_class",
+      "language": "javascript",
+      "code_smell": "large_class",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0006",
+      "refactoring_pattern": "extract_method",
+      "language": "typescript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0007",
+      "refactoring_pattern": "extract_method",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0008",
+      "refactoring_pattern": "extract_method",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0009",
+      "refactoring_pattern": "extract_method",
+      "language": "javascript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0010",
+      "refactoring_pattern": "extract_method",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0011",
+      "refactoring_pattern": "extract_method",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0012",
+      "refactoring_pattern": "extract_method",
+      "language": "php",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0013",
+      "refactoring_pattern": "inline_method",
+      "language": "typescript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0014",
+      "refactoring_pattern": "inline_method",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0015",
+      "refactoring_pattern": "inline_method",
+      "language": "typescript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0016",
+      "refactoring_pattern": "inline_method",
+      "language": "swift",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0017",
+      "refactoring_pattern": "inline_method",
+      "language": "typescript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0018",
+      "refactoring_pattern": "inline_method",
+      "language": "php",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0019",
+      "refactoring_pattern": "inline_method",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0020",
+      "refactoring_pattern": "extract_variable",
+      "language": "ruby",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0021",
+      "refactoring_pattern": "extract_variable",
+      "language": "cpp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0022",
+      "refactoring_pattern": "extract_variable",
+      "language": "swift",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0023",
+      "refactoring_pattern": "extract_variable",
+      "language": "python",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0024",
+      "refactoring_pattern": "extract_variable",
+      "language": "javascript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0025",
+      "refactoring_pattern": "extract_variable",
+      "language": "cpp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0026",
+      "refactoring_pattern": "extract_variable",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0027",
+      "refactoring_pattern": "inline_variable",
+      "language": "rust",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0028",
+      "refactoring_pattern": "inline_variable",
+      "language": "go",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0029",
+      "refactoring_pattern": "inline_variable",
+      "language": "javascript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0030",
+      "refactoring_pattern": "inline_variable",
+      "language": "csharp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0031",
+      "refactoring_pattern": "inline_variable",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0032",
+      "refactoring_pattern": "inline_variable",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0033",
+      "refactoring_pattern": "inline_variable",
+      "language": "typescript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0034",
+      "refactoring_pattern": "rename_method",
+      "language": "javascript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0035",
+      "refactoring_pattern": "rename_method",
+      "language": "cpp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0036",
+      "refactoring_pattern": "rename_method",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0037",
+      "refactoring_pattern": "rename_method",
+      "language": "cpp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0038",
+      "refactoring_pattern": "rename_method",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0039",
+      "refactoring_pattern": "rename_method",
+      "language": "javascript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0040",
+      "refactoring_pattern": "rename_method",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0041",
+      "refactoring_pattern": "move_method",
+      "language": "php",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0042",
+      "refactoring_pattern": "move_method",
+      "language": "php",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0043",
+      "refactoring_pattern": "move_method",
+      "language": "ruby",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0044",
+      "refactoring_pattern": "move_method",
+      "language": "javascript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0045",
+      "refactoring_pattern": "move_method",
+      "language": "python",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0046",
+      "refactoring_pattern": "move_method",
+      "language": "csharp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0047",
+      "refactoring_pattern": "move_method",
+      "language": "csharp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0048",
+      "refactoring_pattern": "pull_up_method",
+      "language": "go",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0049",
+      "refactoring_pattern": "pull_up_method",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0050",
+      "refactoring_pattern": "pull_up_method",
+      "language": "ruby",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0051",
+      "refactoring_pattern": "pull_up_method",
+      "language": "csharp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0052",
+      "refactoring_pattern": "pull_up_method",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0053",
+      "refactoring_pattern": "pull_up_method",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0054",
+      "refactoring_pattern": "pull_up_method",
+      "language": "swift",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0055",
+      "refactoring_pattern": "push_down_method",
+      "language": "cpp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0056",
+      "refactoring_pattern": "push_down_method",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0057",
+      "refactoring_pattern": "push_down_method",
+      "language": "csharp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0058",
+      "refactoring_pattern": "push_down_method",
+      "language": "go",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0059",
+      "refactoring_pattern": "push_down_method",
+      "language": "cpp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0060",
+      "refactoring_pattern": "push_down_method",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0061",
+      "refactoring_pattern": "push_down_method",
+      "language": "rust",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0062",
+      "refactoring_pattern": "extract_interface",
+      "language": "go",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0063",
+      "refactoring_pattern": "extract_interface",
+      "language": "javascript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0064",
+      "refactoring_pattern": "extract_interface",
+      "language": "csharp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0065",
+      "refactoring_pattern": "extract_interface",
+      "language": "csharp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0066",
+      "refactoring_pattern": "extract_interface",
+      "language": "ruby",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0067",
+      "refactoring_pattern": "extract_interface",
+      "language": "php",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0068",
+      "refactoring_pattern": "extract_interface",
+      "language": "ruby",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0069",
+      "refactoring_pattern": "introduce_null_object",
+      "language": "ruby",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0070",
+      "refactoring_pattern": "introduce_null_object",
+      "language": "php",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0071",
+      "refactoring_pattern": "introduce_null_object",
+      "language": "python",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0072",
+      "refactoring_pattern": "introduce_null_object",
+      "language": "ruby",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0073",
+      "refactoring_pattern": "introduce_null_object",
+      "language": "php",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0074",
+      "refactoring_pattern": "introduce_null_object",
+      "language": "rust",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0075",
+      "refactoring_pattern": "introduce_null_object",
+      "language": "typescript",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0076",
+      "refactoring_pattern": "remove_dead_code",
+      "language": "rust",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0077",
+      "refactoring_pattern": "remove_dead_code",
+      "language": "rust",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0078",
+      "refactoring_pattern": "remove_dead_code",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0079",
+      "refactoring_pattern": "remove_dead_code",
+      "language": "cpp",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0080",
+      "refactoring_pattern": "remove_dead_code",
+      "language": "rust",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0081",
+      "refactoring_pattern": "remove_dead_code",
+      "language": "kotlin",
+      "training_objective": "code_refactoring"
+    },
+    {
+      "id": "refactoring_0082",
+      "refactoring_pattern": "remove_dead_code",
+      "language": "java",
+      "training_objective": "code_refactoring"
+    }
+  ]
+}

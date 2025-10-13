@@ -1,0 +1,638 @@
+{
+  "metadata": {
+    "name": "security_patterns_training_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:34:30.349984",
+    "total_samples": 85,
+    "vulnerability_types": [
+      "path_traversal",
+      "xxe",
+      "insufficient_logging",
+      "hardcoded_credentials",
+      "command_injection",
+      "code_injection",
+      "xss",
+      "sql_injection",
+      "broken_access_control",
+      "security_misconfiguration",
+      "sensitive_data_exposure",
+      "buffer_overflow",
+      "insecure_deserialization",
+      "ssrf",
+      "broken_authentication"
+    ],
+    "purpose": "AI security vulnerability detection training"
+  },
+  "samples": [
+    {
+      "id": "security_0001",
+      "vulnerable_code": "query = f\"SELECT * FROM users WHERE username = '{username}'\"",
+      "secure_code": "query = \"SELECT * FROM users WHERE username = ?\"\ncursor.execute(query, (username,))",
+      "vulnerability_type": "sql_injection",
+      "language": "python",
+      "severity": "critical",
+      "cwe_id": "CWE-89",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0002",
+      "vulnerable_code": "eval(user_input)",
+      "secure_code": "# Avoid eval, use safe alternatives like json.loads() or ast.literal_eval()",
+      "vulnerability_type": "code_injection",
+      "language": "python",
+      "severity": "critical",
+      "cwe_id": "CWE-95",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0003",
+      "vulnerable_code": "element.innerHTML = userInput;",
+      "secure_code": "element.textContent = userInput;\n// or sanitize: DOMPurify.sanitize(userInput);",
+      "vulnerability_type": "xss",
+      "language": "javascript",
+      "severity": "high",
+      "cwe_id": "CWE-79",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0004",
+      "vulnerable_code": "Runtime.getRuntime().exec(\"ls \" + userInput);",
+      "secure_code": "ProcessBuilder pb = new ProcessBuilder(\"ls\", userInput);\npb.start();",
+      "vulnerability_type": "command_injection",
+      "language": "java",
+      "severity": "critical",
+      "cwe_id": "CWE-78",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0005",
+      "vulnerable_code": "password = \"admin123\"  # Hardcoded password",
+      "secure_code": "password = os.environ.get('DB_PASSWORD')\nif not password:\n    raise ValueError('DB_PASSWORD not set')",
+      "vulnerability_type": "hardcoded_credentials",
+      "language": "python",
+      "severity": "high",
+      "cwe_id": "CWE-798",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0006",
+      "vulnerability_type": "buffer_overflow",
+      "language": "python",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0007",
+      "vulnerability_type": "buffer_overflow",
+      "language": "php",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0008",
+      "vulnerability_type": "buffer_overflow",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0009",
+      "vulnerability_type": "buffer_overflow",
+      "language": "typescript",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0010",
+      "vulnerability_type": "buffer_overflow",
+      "language": "ruby",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0011",
+      "vulnerability_type": "buffer_overflow",
+      "language": "go",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0012",
+      "vulnerability_type": "buffer_overflow",
+      "language": "go",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0013",
+      "vulnerability_type": "buffer_overflow",
+      "language": "python",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0014",
+      "vulnerability_type": "path_traversal",
+      "language": "swift",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0015",
+      "vulnerability_type": "path_traversal",
+      "language": "javascript",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0016",
+      "vulnerability_type": "path_traversal",
+      "language": "rust",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0017",
+      "vulnerability_type": "path_traversal",
+      "language": "csharp",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0018",
+      "vulnerability_type": "path_traversal",
+      "language": "php",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0019",
+      "vulnerability_type": "path_traversal",
+      "language": "typescript",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0020",
+      "vulnerability_type": "path_traversal",
+      "language": "php",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0021",
+      "vulnerability_type": "path_traversal",
+      "language": "php",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0022",
+      "vulnerability_type": "xxe",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0023",
+      "vulnerability_type": "xxe",
+      "language": "typescript",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0024",
+      "vulnerability_type": "xxe",
+      "language": "cpp",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0025",
+      "vulnerability_type": "xxe",
+      "language": "java",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0026",
+      "vulnerability_type": "xxe",
+      "language": "ruby",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0027",
+      "vulnerability_type": "xxe",
+      "language": "typescript",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0028",
+      "vulnerability_type": "xxe",
+      "language": "typescript",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0029",
+      "vulnerability_type": "xxe",
+      "language": "javascript",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0030",
+      "vulnerability_type": "ssrf",
+      "language": "python",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0031",
+      "vulnerability_type": "ssrf",
+      "language": "typescript",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0032",
+      "vulnerability_type": "ssrf",
+      "language": "java",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0033",
+      "vulnerability_type": "ssrf",
+      "language": "rust",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0034",
+      "vulnerability_type": "ssrf",
+      "language": "csharp",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0035",
+      "vulnerability_type": "ssrf",
+      "language": "kotlin",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0036",
+      "vulnerability_type": "ssrf",
+      "language": "php",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0037",
+      "vulnerability_type": "ssrf",
+      "language": "kotlin",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0038",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "swift",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0039",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "rust",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0040",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "kotlin",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0041",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "javascript",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0042",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "go",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0043",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "kotlin",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0044",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "cpp",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0045",
+      "vulnerability_type": "insecure_deserialization",
+      "language": "cpp",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0046",
+      "vulnerability_type": "broken_authentication",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0047",
+      "vulnerability_type": "broken_authentication",
+      "language": "php",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0048",
+      "vulnerability_type": "broken_authentication",
+      "language": "python",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0049",
+      "vulnerability_type": "broken_authentication",
+      "language": "go",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0050",
+      "vulnerability_type": "broken_authentication",
+      "language": "java",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0051",
+      "vulnerability_type": "broken_authentication",
+      "language": "python",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0052",
+      "vulnerability_type": "broken_authentication",
+      "language": "rust",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0053",
+      "vulnerability_type": "broken_authentication",
+      "language": "javascript",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0054",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "cpp",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0055",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "go",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0056",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "swift",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0057",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "ruby",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0058",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "go",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0059",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "cpp",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0060",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "rust",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0061",
+      "vulnerability_type": "sensitive_data_exposure",
+      "language": "typescript",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0062",
+      "vulnerability_type": "broken_access_control",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0063",
+      "vulnerability_type": "broken_access_control",
+      "language": "javascript",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0064",
+      "vulnerability_type": "broken_access_control",
+      "language": "swift",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0065",
+      "vulnerability_type": "broken_access_control",
+      "language": "kotlin",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0066",
+      "vulnerability_type": "broken_access_control",
+      "language": "javascript",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0067",
+      "vulnerability_type": "broken_access_control",
+      "language": "php",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0068",
+      "vulnerability_type": "broken_access_control",
+      "language": "typescript",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0069",
+      "vulnerability_type": "broken_access_control",
+      "language": "rust",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0070",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "java",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0071",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "java",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0072",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "php",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0073",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "kotlin",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0074",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "javascript",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0075",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "ruby",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0076",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "php",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0077",
+      "vulnerability_type": "security_misconfiguration",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0078",
+      "vulnerability_type": "insufficient_logging",
+      "language": "java",
+      "severity": "high",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0079",
+      "vulnerability_type": "insufficient_logging",
+      "language": "swift",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0080",
+      "vulnerability_type": "insufficient_logging",
+      "language": "php",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0081",
+      "vulnerability_type": "insufficient_logging",
+      "language": "javascript",
+      "severity": "medium",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0082",
+      "vulnerability_type": "insufficient_logging",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0083",
+      "vulnerability_type": "insufficient_logging",
+      "language": "swift",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0084",
+      "vulnerability_type": "insufficient_logging",
+      "language": "csharp",
+      "severity": "low",
+      "training_objective": "security_vulnerability_detection"
+    },
+    {
+      "id": "security_0085",
+      "vulnerability_type": "insufficient_logging",
+      "language": "kotlin",
+      "severity": "critical",
+      "training_objective": "security_vulnerability_detection"
+    }
+  ]
+}

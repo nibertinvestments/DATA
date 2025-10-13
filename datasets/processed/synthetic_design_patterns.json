@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "name": "design_patterns_synthetic_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:35:35.744345",
+    "total_samples": 111,
+    "categories": [
+      "creational",
+      "structural",
+      "behavioral"
+    ],
+    "purpose": "AI design pattern recognition training"
+  },
+  "samples": [
+    {
+      "id": "pattern_00001",
+      "pattern": "singleton",
+      "language": "python",
+      "category": "creational",
+      "use_case": "singleton implementation in python"
+    },
+    {
+      "id": "pattern_00002",
+      "pattern": "singleton",
+      "language": "javascript",
+      "category": "creational",
+      "use_case": "singleton implementation in javascript"
+    },
+    {
+      "id": "pattern_00003",
+      "pattern": "singleton",
+      "language": "java",
+      "category": "creational",
+      "use_case": "singleton implementation in java"
+    },
+    {
+      "id": "pattern_00004",
+      "pattern": "singleton",
+      "language": "cpp",
+      "category": "creational",
+      "use_case": "singleton implementation in cpp"
+    },
+    {
+      "id": "pattern_00005",
+      "pattern": "singleton",
+      "language": "csharp",
+      "category": "creational",
+      "use_case": "singleton implementation in csharp"
+    },
+    {
+      "id": "pattern_00006",
+      "pattern": "singleton",
+      "language": "go",
+      "category": "creational",
+      "use_case": "singleton implementation in go"
+    },
+    {
+      "id": "pattern_00007",
+      "pattern": "factory_method",
+      "language": "python",
+      "category": "creational",
+      "use_case": "factory_method implementation in python"
+    },
+    {
+      "id": "pattern_00008",
+      "pattern": "factory_method",
+      "language": "javascript",
+      "category": "creational",
+      "use_case": "factory_method implementation in javascript"
+    },
+    {
+      "id": "pattern_00009",
+      "pattern": "factory_method",
+      "language": "java",
+      "category": "creational",
+      "use_case": "factory_method implementation in java"
+    },
+    {
+      "id": "pattern_00010",
+      "pattern": "factory_method",
+      "language": "cpp",
+      "category": "creational",
+      "use_case": "factory_method implementation in cpp"
+    },
+    {
+      "id": "pattern_00011",
+      "pattern": "factory_method",
+      "language": "csharp",
+      "category": "creational",
+      "use_case": "factory_method implementation in csharp"
+    },
+    {
+      "id": "pattern_00012",
+      "pattern": "factory_method",
+      "language": "go",
+      "category": "creational",
+      "use_case": "factory_method implementation in go"
+    },
+    {
+      "id": "pattern_00013",
+      "pattern": "abstract_factory",
+      "language": "python",
+      "category": "creational",
+      "use_case": "abstract_factory implementation in python"
+    },
+    {
+      "id": "pattern_00014",
+      "pattern": "abstract_factory",
+      "language": "javascript",
+      "category": "creational",
+      "use_case": "abstract_factory implementation in javascript"
+    },
+    {
+      "id": "pattern_00015",
+      "pattern": "abstract_factory",
+      "language": "java",
+      "category": "creational",
+      "use_case": "abstract_factory implementation in java"
+    },
+    {
+      "id": "pattern_00016",
+      "pattern": "abstract_factory",
+      "language": "cpp",
+      "category": "creational",
+      "use_case": "abstract_factory implementation in cpp"
+    },
+    {
+      "id": "pattern_00017",
+      "pattern": "abstract_factory",
+      "language": "csharp",
+      "category": "creational",
+      "use_case": "abstract_factory implementation in csharp"
+    },
+    {
+      "id": "pattern_00018",
+      "pattern": "abstract_factory",
+      "language": "go",
+      "category": "creational",
+      "use_case": "abstract_factory implementation in go"
+    },
+    {
+      "id": "pattern_00019",
+      "pattern": "builder",
+      "language": "python",
+      "category": "creational",
+      "use_case": "builder implementation in python"
+    },
+    {
+      "id": "pattern_00020",
+      "pattern": "builder",
+      "language": "javascript",
+      "category": "creational",
+      "use_case": "builder implementation in javascript"
+    },
+    {
+      "id": "pattern_00021",
+      "pattern": "builder",
+      "language": "java",
+      "category": "creational",
+      "use_case": "builder implementation in java"
+    },
+    {
+      "id": "pattern_00022",
+      "pattern": "builder",
+      "language": "cpp",
+      "category": "creational",
+      "use_case": "builder implementation in cpp"
+    },
+    {
+      "id": "pattern_00023",
+      "pattern": "builder",
+      "language": "csharp",
+      "category": "creational",
+      "use_case": "builder implementation in csharp"
+    },
+    {
+      "id": "pattern_00024",
+      "pattern": "builder",
+      "language": "go",
+      "category": "creational",
+      "use_case": "builder implementation in go"
+    },
+    {
+      "id": "pattern_00025",
+      "pattern": "prototype",
+      "language": "python",
+      "category": "creational",
+      "use_case": "prototype implementation in python"
+    },
+    {
+      "id": "pattern_00026",
+      "pattern": "prototype",
+      "language": "javascript",
+      "category": "creational",
+      "use_case": "prototype implementation in javascript"
+    },
+    {
+      "id": "pattern_00027",
+      "pattern": "prototype",
+      "language": "java",
+      "category": "creational",
+      "use_case": "prototype implementation in java"
+    },
+    {
+      "id": "pattern_00028",
+      "pattern": "prototype",
+      "language": "cpp",
+      "category": "creational",
+      "use_case": "prototype implementation in cpp"
+    },
+    {
+      "id": "pattern_00029",
+      "pattern": "prototype",
+      "language": "csharp",
+      "category": "creational",
+      "use_case": "prototype implementation in csharp"
+    },
+    {
+      "id": "pattern_00030",
+      "pattern": "prototype",
+      "language": "go",
+      "category": "creational",
+      "use_case": "prototype implementation in go"
+    },
+    {
+      "id": "pattern_00031",
+      "pattern": "object_pool",
+      "language": "python",
+      "category": "creational",
+      "use_case": "object_pool implementation in python"
+    },
+    {
+      "id": "pattern_00032",
+      "pattern": "object_pool",
+      "language": "javascript",
+      "category": "creational",
+      "use_case": "object_pool implementation in javascript"
+    },
+    {
+      "id": "pattern_00033",
+      "pattern": "object_pool",
+      "language": "java",
+      "category": "creational",
+      "use_case": "object_pool implementation in java"
+    },
+    {
+      "id": "pattern_00034",
+      "pattern": "object_pool",
+      "language": "cpp",
+      "category": "creational",
+      "use_case": "object_pool implementation in cpp"
+    },
+    {
+      "id": "pattern_00035",
+      "pattern": "object_pool",
+      "language": "csharp",
+      "category": "creational",
+      "use_case": "object_pool implementation in csharp"
+    },
+    {
+      "id": "pattern_00036",
+      "pattern": "object_pool",
+      "language": "go",
+      "category": "creational",
+      "use_case": "object_pool implementation in go"
+    },
+    {
+      "id": "pattern_00037",
+      "pattern": "adapter",
+      "language": "python",
+      "category": "structural",
+      "use_case": "adapter implementation in python"
+    },
+    {
+      "id": "pattern_00038",
+      "pattern": "adapter",
+      "language": "javascript",
+      "category": "structural",
+      "use_case": "adapter implementation in javascript"
+    },
+    {
+      "id": "pattern_00039",
+      "pattern": "adapter",
+      "language": "java",
+      "category": "structural",
+      "use_case": "adapter implementation in java"
+    },
+    {
+      "id": "pattern_00040",
+      "pattern": "adapter",
+      "language": "cpp",
+      "category": "structural",
+      "use_case": "adapter implementation in cpp"
+    },
+    {
+      "id": "pattern_00041",
+      "pattern": "adapter",
+      "language": "csharp",
+      "category": "structural",
+      "use_case": "adapter implementation in csharp"
+    },
+    {
+      "id": "pattern_00042",
+      "pattern": "bridge",
+      "language": "python",
+      "category": "structural",
+      "use_case": "bridge implementation in python"
+    },
+    {
+      "id": "pattern_00043",
+      "pattern": "bridge",
+      "language": "javascript",
+      "category": "structural",
+      "use_case": "bridge implementation in javascript"
+    },
+    {
+      "id": "pattern_00044",
+      "pattern": "bridge",
+      "language": "java",
+      "category": "structural",
+      "use_case": "bridge implementation in java"
+    },
+    {
+      "id": "pattern_00045",
+      "pattern": "bridge",
+      "language": "cpp",
+      "category": "structural",
+      "use_case": "bridge implementation in cpp"
+    },
+    {
+      "id": "pattern_00046",
+      "pattern": "bridge",
+      "language": "csharp",
+      "category": "structural",
+      "use_case": "bridge implementation in csharp"
+    },
+    {
+      "id": "pattern_00047",
+      "pattern": "composite",
+      "language": "python",
+      "category": "structural",
+      "use_case": "composite implementation in python"
+    },
+    {
+      "id": "pattern_00048",
+      "pattern": "composite",
+      "language": "javascript",
+      "category": "structural",
+      "use_case": "composite implementation in javascript"
+    },
+    {
+      "id": "pattern_00049",
+      "pattern": "composite",
+      "language": "java",
+      "category": "structural",
+      "use_case": "composite implementation in java"
+    },
+    {
+      "id": "pattern_00050",
+      "pattern": "composite",
+      "language": "cpp",
+      "category": "structural",
+      "use_case": "composite implementation in cpp"
+    },
+    {
+      "id": "pattern_00051",
+      "pattern": "composite",
+      "language": "csharp",
+      "category": "structural",
+      "use_case": "composite implementation in csharp"
+    },
+    {
+      "id": "pattern_00052",
+      "pattern": "decorator",
+      "language": "python",
+      "category": "structural",
+      "use_case": "decorator implementation in python"
+    },
+    {
+      "id": "pattern_00053",
+      "pattern": "decorator",
+      "language": "javascript",
+      "category": "structural",
+      "use_case": "decorator implementation in javascript"
+    },
+    {
+      "id": "pattern_00054",
+      "pattern": "decorator",
+      "language": "java",
+      "category": "structural",
+      "use_case": "decorator implementation in java"
+    },
+    {
+      "id": "pattern_00055",
+      "pattern": "decorator",
+      "language": "cpp",
+      "category": "structural",
+      "use_case": "decorator implementation in cpp"
+    },
+    {
+      "id": "pattern_00056",
+      "pattern": "decorator",
+      "language": "csharp",
+      "category": "structural",
+      "use_case": "decorator implementation in csharp"
+    },
+    {
+      "id": "pattern_00057",
+      "pattern": "facade",
+      "language": "python",
+      "category": "structural",
+      "use_case": "facade implementation in python"
+    },
+    {
+      "id": "pattern_00058",
+      "pattern": "facade",
+      "language": "javascript",
+      "category": "structural",
+      "use_case": "facade implementation in javascript"
+    },
+    {
+      "id": "pattern_00059",
+      "pattern": "facade",
+      "language": "java",
+      "category": "structural",
+      "use_case": "facade implementation in java"
+    },
+    {
+      "id": "pattern_00060",
+      "pattern": "facade",
+      "language": "cpp",
+      "category": "structural",
+      "use_case": "facade implementation in cpp"
+    },
+    {
+      "id": "pattern_00061",
+      "pattern": "facade",
+      "language": "csharp",
+      "category": "structural",
+      "use_case": "facade implementation in csharp"
+    },
+    {
+      "id": "pattern_00062",
+      "pattern": "flyweight",
+      "language": "python",
+      "category": "structural",
+      "use_case": "flyweight implementation in python"
+    },
+    {
+      "id": "pattern_00063",
+      "pattern": "flyweight",
+      "language": "javascript",
+      "category": "structural",
+      "use_case": "flyweight implementation in javascript"
+    },
+    {
+      "id": "pattern_00064",
+      "pattern": "flyweight",
+      "language": "java",
+      "category": "structural",
+      "use_case": "flyweight implementation in java"
+    },
+    {
+      "id": "pattern_00065",
+      "pattern": "flyweight",
+      "language": "cpp",
+      "category": "structural",
+      "use_case": "flyweight implementation in cpp"
+    },
+    {
+      "id": "pattern_00066",
+      "pattern": "flyweight",
+      "language": "csharp",
+      "category": "structural",
+      "use_case": "flyweight implementation in csharp"
+    },
+    {
+      "id": "pattern_00067",
+      "pattern": "proxy",
+      "language": "python",
+      "category": "structural",
+      "use_case": "proxy implementation in python"
+    },
+    {
+      "id": "pattern_00068",
+      "pattern": "proxy",
+      "language": "javascript",
+      "category": "structural",
+      "use_case": "proxy implementation in javascript"
+    },
+    {
+      "id": "pattern_00069",
+      "pattern": "proxy",
+      "language": "java",
+      "category": "structural",
+      "use_case": "proxy implementation in java"
+    },
+    {
+      "id": "pattern_00070",
+      "pattern": "proxy",
+      "language": "cpp",
+      "category": "structural",
+      "use_case": "proxy implementation in cpp"
+    },
+    {
+      "id": "pattern_00071",
+      "pattern": "proxy",
+      "language": "csharp",
+      "category": "structural",
+      "use_case": "proxy implementation in csharp"
+    },
+    {
+      "id": "pattern_00072",
+      "pattern": "chain_of_responsibility",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "chain_of_responsibility implementation in python"
+    },
+    {
+      "id": "pattern_00073",
+      "pattern": "chain_of_responsibility",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "chain_of_responsibility implementation in javascript"
+    },
+    {
+      "id": "pattern_00074",
+      "pattern": "chain_of_responsibility",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "chain_of_responsibility implementation in java"
+    },
+    {
+      "id": "pattern_00075",
+      "pattern": "chain_of_responsibility",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "chain_of_responsibility implementation in csharp"
+    },
+    {
+      "id": "pattern_00076",
+      "pattern": "command",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "command implementation in python"
+    },
+    {
+      "id": "pattern_00077",
+      "pattern": "command",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "command implementation in javascript"
+    },
+    {
+      "id": "pattern_00078",
+      "pattern": "command",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "command implementation in java"
+    },
+    {
+      "id": "pattern_00079",
+      "pattern": "command",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "command implementation in csharp"
+    },
+    {
+      "id": "pattern_00080",
+      "pattern": "iterator",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "iterator implementation in python"
+    },
+    {
+      "id": "pattern_00081",
+      "pattern": "iterator",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "iterator implementation in javascript"
+    },
+    {
+      "id": "pattern_00082",
+      "pattern": "iterator",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "iterator implementation in java"
+    },
+    {
+      "id": "pattern_00083",
+      "pattern": "iterator",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "iterator implementation in csharp"
+    },
+    {
+      "id": "pattern_00084",
+      "pattern": "mediator",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "mediator implementation in python"
+    },
+    {
+      "id": "pattern_00085",
+      "pattern": "mediator",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "mediator implementation in javascript"
+    },
+    {
+      "id": "pattern_00086",
+      "pattern": "mediator",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "mediator implementation in java"
+    },
+    {
+      "id": "pattern_00087",
+      "pattern": "mediator",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "mediator implementation in csharp"
+    },
+    {
+      "id": "pattern_00088",
+      "pattern": "memento",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "memento implementation in python"
+    },
+    {
+      "id": "pattern_00089",
+      "pattern": "memento",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "memento implementation in javascript"
+    },
+    {
+      "id": "pattern_00090",
+      "pattern": "memento",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "memento implementation in java"
+    },
+    {
+      "id": "pattern_00091",
+      "pattern": "memento",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "memento implementation in csharp"
+    },
+    {
+      "id": "pattern_00092",
+      "pattern": "observer",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "observer implementation in python"
+    },
+    {
+      "id": "pattern_00093",
+      "pattern": "observer",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "observer implementation in javascript"
+    },
+    {
+      "id": "pattern_00094",
+      "pattern": "observer",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "observer implementation in java"
+    },
+    {
+      "id": "pattern_00095",
+      "pattern": "observer",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "observer implementation in csharp"
+    },
+    {
+      "id": "pattern_00096",
+      "pattern": "state",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "state implementation in python"
+    },
+    {
+      "id": "pattern_00097",
+      "pattern": "state",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "state implementation in javascript"
+    },
+    {
+      "id": "pattern_00098",
+      "pattern": "state",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "state implementation in java"
+    },
+    {
+      "id": "pattern_00099",
+      "pattern": "state",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "state implementation in csharp"
+    },
+    {
+      "id": "pattern_00100",
+      "pattern": "strategy",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "strategy implementation in python"
+    },
+    {
+      "id": "pattern_00101",
+      "pattern": "strategy",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "strategy implementation in javascript"
+    },
+    {
+      "id": "pattern_00102",
+      "pattern": "strategy",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "strategy implementation in java"
+    },
+    {
+      "id": "pattern_00103",
+      "pattern": "strategy",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "strategy implementation in csharp"
+    },
+    {
+      "id": "pattern_00104",
+      "pattern": "template_method",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "template_method implementation in python"
+    },
+    {
+      "id": "pattern_00105",
+      "pattern": "template_method",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "template_method implementation in javascript"
+    },
+    {
+      "id": "pattern_00106",
+      "pattern": "template_method",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "template_method implementation in java"
+    },
+    {
+      "id": "pattern_00107",
+      "pattern": "template_method",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "template_method implementation in csharp"
+    },
+    {
+      "id": "pattern_00108",
+      "pattern": "visitor",
+      "language": "python",
+      "category": "behavioral",
+      "use_case": "visitor implementation in python"
+    },
+    {
+      "id": "pattern_00109",
+      "pattern": "visitor",
+      "language": "javascript",
+      "category": "behavioral",
+      "use_case": "visitor implementation in javascript"
+    },
+    {
+      "id": "pattern_00110",
+      "pattern": "visitor",
+      "language": "java",
+      "category": "behavioral",
+      "use_case": "visitor implementation in java"
+    },
+    {
+      "id": "pattern_00111",
+      "pattern": "visitor",
+      "language": "csharp",
+      "category": "behavioral",
+      "use_case": "visitor implementation in csharp"
+    }
+  ]
+}

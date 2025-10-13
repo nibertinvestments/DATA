@@ -1,0 +1,2766 @@
+{
+  "metadata": {
+    "name": "api_design_patterns_synthetic_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:35:35.744608",
+    "total_samples": 350,
+    "api_types": [
+      "REST",
+      "GraphQL",
+      "WebSocket"
+    ],
+    "purpose": "AI API design pattern training"
+  },
+  "samples": [
+    {
+      "id": "api_00001",
+      "pattern": "resource_based_urls",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00002",
+      "pattern": "resource_based_urls",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00003",
+      "pattern": "resource_based_urls",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00004",
+      "pattern": "resource_based_urls",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00005",
+      "pattern": "resource_based_urls",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00006",
+      "pattern": "resource_based_urls",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00007",
+      "pattern": "resource_based_urls",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00008",
+      "pattern": "resource_based_urls",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00009",
+      "pattern": "resource_based_urls",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00010",
+      "pattern": "resource_based_urls",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00011",
+      "pattern": "resource_based_urls",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00012",
+      "pattern": "resource_based_urls",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00013",
+      "pattern": "resource_based_urls",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00014",
+      "pattern": "resource_based_urls",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00015",
+      "pattern": "resource_based_urls",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00016",
+      "pattern": "resource_based_urls",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00017",
+      "pattern": "resource_based_urls",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00018",
+      "pattern": "resource_based_urls",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00019",
+      "pattern": "resource_based_urls",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00020",
+      "pattern": "resource_based_urls",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00021",
+      "pattern": "resource_based_urls",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00022",
+      "pattern": "resource_based_urls",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00023",
+      "pattern": "resource_based_urls",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00024",
+      "pattern": "resource_based_urls",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00025",
+      "pattern": "resource_based_urls",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00026",
+      "pattern": "http_verbs",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00027",
+      "pattern": "http_verbs",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00028",
+      "pattern": "http_verbs",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00029",
+      "pattern": "http_verbs",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00030",
+      "pattern": "http_verbs",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00031",
+      "pattern": "http_verbs",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00032",
+      "pattern": "http_verbs",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00033",
+      "pattern": "http_verbs",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00034",
+      "pattern": "http_verbs",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00035",
+      "pattern": "http_verbs",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00036",
+      "pattern": "http_verbs",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00037",
+      "pattern": "http_verbs",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00038",
+      "pattern": "http_verbs",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00039",
+      "pattern": "http_verbs",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00040",
+      "pattern": "http_verbs",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00041",
+      "pattern": "http_verbs",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00042",
+      "pattern": "http_verbs",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00043",
+      "pattern": "http_verbs",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00044",
+      "pattern": "http_verbs",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00045",
+      "pattern": "http_verbs",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00046",
+      "pattern": "http_verbs",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00047",
+      "pattern": "http_verbs",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00048",
+      "pattern": "http_verbs",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00049",
+      "pattern": "http_verbs",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00050",
+      "pattern": "http_verbs",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00051",
+      "pattern": "status_codes",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00052",
+      "pattern": "status_codes",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00053",
+      "pattern": "status_codes",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00054",
+      "pattern": "status_codes",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00055",
+      "pattern": "status_codes",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00056",
+      "pattern": "status_codes",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00057",
+      "pattern": "status_codes",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00058",
+      "pattern": "status_codes",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00059",
+      "pattern": "status_codes",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00060",
+      "pattern": "status_codes",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00061",
+      "pattern": "status_codes",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00062",
+      "pattern": "status_codes",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00063",
+      "pattern": "status_codes",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00064",
+      "pattern": "status_codes",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00065",
+      "pattern": "status_codes",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00066",
+      "pattern": "status_codes",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00067",
+      "pattern": "status_codes",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00068",
+      "pattern": "status_codes",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00069",
+      "pattern": "status_codes",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00070",
+      "pattern": "status_codes",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00071",
+      "pattern": "status_codes",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00072",
+      "pattern": "status_codes",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00073",
+      "pattern": "status_codes",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00074",
+      "pattern": "status_codes",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00075",
+      "pattern": "status_codes",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00076",
+      "pattern": "pagination",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00077",
+      "pattern": "pagination",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00078",
+      "pattern": "pagination",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00079",
+      "pattern": "pagination",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00080",
+      "pattern": "pagination",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00081",
+      "pattern": "pagination",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00082",
+      "pattern": "pagination",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00083",
+      "pattern": "pagination",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00084",
+      "pattern": "pagination",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00085",
+      "pattern": "pagination",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00086",
+      "pattern": "pagination",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00087",
+      "pattern": "pagination",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00088",
+      "pattern": "pagination",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00089",
+      "pattern": "pagination",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00090",
+      "pattern": "pagination",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00091",
+      "pattern": "pagination",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00092",
+      "pattern": "pagination",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00093",
+      "pattern": "pagination",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00094",
+      "pattern": "pagination",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00095",
+      "pattern": "pagination",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00096",
+      "pattern": "pagination",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00097",
+      "pattern": "pagination",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00098",
+      "pattern": "pagination",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00099",
+      "pattern": "pagination",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00100",
+      "pattern": "pagination",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00101",
+      "pattern": "filtering",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00102",
+      "pattern": "filtering",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00103",
+      "pattern": "filtering",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00104",
+      "pattern": "filtering",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00105",
+      "pattern": "filtering",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00106",
+      "pattern": "filtering",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00107",
+      "pattern": "filtering",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00108",
+      "pattern": "filtering",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00109",
+      "pattern": "filtering",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00110",
+      "pattern": "filtering",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00111",
+      "pattern": "filtering",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00112",
+      "pattern": "filtering",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00113",
+      "pattern": "filtering",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00114",
+      "pattern": "filtering",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00115",
+      "pattern": "filtering",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00116",
+      "pattern": "filtering",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00117",
+      "pattern": "filtering",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00118",
+      "pattern": "filtering",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00119",
+      "pattern": "filtering",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00120",
+      "pattern": "filtering",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00121",
+      "pattern": "filtering",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00122",
+      "pattern": "filtering",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00123",
+      "pattern": "filtering",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00124",
+      "pattern": "filtering",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00125",
+      "pattern": "filtering",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00126",
+      "pattern": "sorting",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00127",
+      "pattern": "sorting",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00128",
+      "pattern": "sorting",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00129",
+      "pattern": "sorting",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00130",
+      "pattern": "sorting",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00131",
+      "pattern": "sorting",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00132",
+      "pattern": "sorting",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00133",
+      "pattern": "sorting",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00134",
+      "pattern": "sorting",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00135",
+      "pattern": "sorting",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00136",
+      "pattern": "sorting",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00137",
+      "pattern": "sorting",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00138",
+      "pattern": "sorting",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00139",
+      "pattern": "sorting",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00140",
+      "pattern": "sorting",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00141",
+      "pattern": "sorting",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00142",
+      "pattern": "sorting",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00143",
+      "pattern": "sorting",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00144",
+      "pattern": "sorting",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00145",
+      "pattern": "sorting",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00146",
+      "pattern": "sorting",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00147",
+      "pattern": "sorting",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00148",
+      "pattern": "sorting",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00149",
+      "pattern": "sorting",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00150",
+      "pattern": "sorting",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00151",
+      "pattern": "versioning",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00152",
+      "pattern": "versioning",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00153",
+      "pattern": "versioning",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00154",
+      "pattern": "versioning",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00155",
+      "pattern": "versioning",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00156",
+      "pattern": "versioning",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00157",
+      "pattern": "versioning",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00158",
+      "pattern": "versioning",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00159",
+      "pattern": "versioning",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00160",
+      "pattern": "versioning",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00161",
+      "pattern": "versioning",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00162",
+      "pattern": "versioning",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00163",
+      "pattern": "versioning",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00164",
+      "pattern": "versioning",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00165",
+      "pattern": "versioning",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00166",
+      "pattern": "versioning",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00167",
+      "pattern": "versioning",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00168",
+      "pattern": "versioning",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00169",
+      "pattern": "versioning",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00170",
+      "pattern": "versioning",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00171",
+      "pattern": "versioning",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00172",
+      "pattern": "versioning",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00173",
+      "pattern": "versioning",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00174",
+      "pattern": "versioning",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00175",
+      "pattern": "versioning",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00176",
+      "pattern": "hateoas",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00177",
+      "pattern": "hateoas",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00178",
+      "pattern": "hateoas",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00179",
+      "pattern": "hateoas",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00180",
+      "pattern": "hateoas",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00181",
+      "pattern": "hateoas",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00182",
+      "pattern": "hateoas",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00183",
+      "pattern": "hateoas",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00184",
+      "pattern": "hateoas",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00185",
+      "pattern": "hateoas",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00186",
+      "pattern": "hateoas",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00187",
+      "pattern": "hateoas",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00188",
+      "pattern": "hateoas",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00189",
+      "pattern": "hateoas",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00190",
+      "pattern": "hateoas",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00191",
+      "pattern": "hateoas",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00192",
+      "pattern": "hateoas",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00193",
+      "pattern": "hateoas",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00194",
+      "pattern": "hateoas",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00195",
+      "pattern": "hateoas",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00196",
+      "pattern": "hateoas",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00197",
+      "pattern": "hateoas",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00198",
+      "pattern": "hateoas",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00199",
+      "pattern": "hateoas",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00200",
+      "pattern": "hateoas",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00201",
+      "pattern": "rate_limiting",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00202",
+      "pattern": "rate_limiting",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00203",
+      "pattern": "rate_limiting",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00204",
+      "pattern": "rate_limiting",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00205",
+      "pattern": "rate_limiting",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00206",
+      "pattern": "rate_limiting",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00207",
+      "pattern": "rate_limiting",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00208",
+      "pattern": "rate_limiting",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00209",
+      "pattern": "rate_limiting",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00210",
+      "pattern": "rate_limiting",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00211",
+      "pattern": "rate_limiting",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00212",
+      "pattern": "rate_limiting",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00213",
+      "pattern": "rate_limiting",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00214",
+      "pattern": "rate_limiting",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00215",
+      "pattern": "rate_limiting",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00216",
+      "pattern": "rate_limiting",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00217",
+      "pattern": "rate_limiting",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00218",
+      "pattern": "rate_limiting",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00219",
+      "pattern": "rate_limiting",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00220",
+      "pattern": "rate_limiting",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00221",
+      "pattern": "rate_limiting",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00222",
+      "pattern": "rate_limiting",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00223",
+      "pattern": "rate_limiting",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00224",
+      "pattern": "rate_limiting",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00225",
+      "pattern": "rate_limiting",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00226",
+      "pattern": "authentication",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00227",
+      "pattern": "authentication",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00228",
+      "pattern": "authentication",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00229",
+      "pattern": "authentication",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00230",
+      "pattern": "authentication",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00231",
+      "pattern": "authentication",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00232",
+      "pattern": "authentication",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00233",
+      "pattern": "authentication",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00234",
+      "pattern": "authentication",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00235",
+      "pattern": "authentication",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00236",
+      "pattern": "authentication",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00237",
+      "pattern": "authentication",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00238",
+      "pattern": "authentication",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00239",
+      "pattern": "authentication",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00240",
+      "pattern": "authentication",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00241",
+      "pattern": "authentication",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00242",
+      "pattern": "authentication",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00243",
+      "pattern": "authentication",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00244",
+      "pattern": "authentication",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00245",
+      "pattern": "authentication",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00246",
+      "pattern": "authentication",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00247",
+      "pattern": "authentication",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00248",
+      "pattern": "authentication",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00249",
+      "pattern": "authentication",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00250",
+      "pattern": "authentication",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00251",
+      "pattern": "caching",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00252",
+      "pattern": "caching",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00253",
+      "pattern": "caching",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00254",
+      "pattern": "caching",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00255",
+      "pattern": "caching",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00256",
+      "pattern": "caching",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00257",
+      "pattern": "caching",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00258",
+      "pattern": "caching",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00259",
+      "pattern": "caching",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00260",
+      "pattern": "caching",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00261",
+      "pattern": "caching",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00262",
+      "pattern": "caching",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00263",
+      "pattern": "caching",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00264",
+      "pattern": "caching",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00265",
+      "pattern": "caching",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00266",
+      "pattern": "caching",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00267",
+      "pattern": "caching",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00268",
+      "pattern": "caching",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00269",
+      "pattern": "caching",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00270",
+      "pattern": "caching",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00271",
+      "pattern": "caching",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00272",
+      "pattern": "caching",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00273",
+      "pattern": "caching",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00274",
+      "pattern": "caching",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00275",
+      "pattern": "caching",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00276",
+      "pattern": "error_handling",
+      "language": "python",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00277",
+      "pattern": "error_handling",
+      "language": "python",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00278",
+      "pattern": "error_handling",
+      "language": "python",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00279",
+      "pattern": "error_handling",
+      "language": "python",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00280",
+      "pattern": "error_handling",
+      "language": "python",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00281",
+      "pattern": "error_handling",
+      "language": "javascript",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00282",
+      "pattern": "error_handling",
+      "language": "javascript",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00283",
+      "pattern": "error_handling",
+      "language": "javascript",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00284",
+      "pattern": "error_handling",
+      "language": "javascript",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00285",
+      "pattern": "error_handling",
+      "language": "javascript",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00286",
+      "pattern": "error_handling",
+      "language": "java",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00287",
+      "pattern": "error_handling",
+      "language": "java",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00288",
+      "pattern": "error_handling",
+      "language": "java",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00289",
+      "pattern": "error_handling",
+      "language": "java",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00290",
+      "pattern": "error_handling",
+      "language": "java",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00291",
+      "pattern": "error_handling",
+      "language": "go",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00292",
+      "pattern": "error_handling",
+      "language": "go",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00293",
+      "pattern": "error_handling",
+      "language": "go",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00294",
+      "pattern": "error_handling",
+      "language": "go",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00295",
+      "pattern": "error_handling",
+      "language": "go",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00296",
+      "pattern": "error_handling",
+      "language": "php",
+      "framework": "express",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00297",
+      "pattern": "error_handling",
+      "language": "php",
+      "framework": "django",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00298",
+      "pattern": "error_handling",
+      "language": "php",
+      "framework": "spring",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00299",
+      "pattern": "error_handling",
+      "language": "php",
+      "framework": "gin",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00300",
+      "pattern": "error_handling",
+      "language": "php",
+      "framework": "laravel",
+      "api_type": "REST",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00301",
+      "pattern": "schema_definition",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00302",
+      "pattern": "schema_definition",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00303",
+      "pattern": "schema_definition",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00304",
+      "pattern": "schema_definition",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00305",
+      "pattern": "queries",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00306",
+      "pattern": "queries",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00307",
+      "pattern": "queries",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00308",
+      "pattern": "queries",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00309",
+      "pattern": "mutations",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00310",
+      "pattern": "mutations",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00311",
+      "pattern": "mutations",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00312",
+      "pattern": "mutations",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00313",
+      "pattern": "subscriptions",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00314",
+      "pattern": "subscriptions",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00315",
+      "pattern": "subscriptions",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00316",
+      "pattern": "subscriptions",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00317",
+      "pattern": "resolvers",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00318",
+      "pattern": "resolvers",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00319",
+      "pattern": "resolvers",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00320",
+      "pattern": "resolvers",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00321",
+      "pattern": "data_loaders",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00322",
+      "pattern": "data_loaders",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00323",
+      "pattern": "data_loaders",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00324",
+      "pattern": "data_loaders",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00325",
+      "pattern": "pagination",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00326",
+      "pattern": "pagination",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00327",
+      "pattern": "pagination",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00328",
+      "pattern": "pagination",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00329",
+      "pattern": "error_handling",
+      "language": "javascript",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00330",
+      "pattern": "error_handling",
+      "language": "python",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00331",
+      "pattern": "error_handling",
+      "language": "java",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00332",
+      "pattern": "error_handling",
+      "language": "go",
+      "api_type": "GraphQL",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00333",
+      "pattern": "connection_handling",
+      "language": "javascript",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00334",
+      "pattern": "connection_handling",
+      "language": "python",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00335",
+      "pattern": "connection_handling",
+      "language": "java",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00336",
+      "pattern": "message_broadcasting",
+      "language": "javascript",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00337",
+      "pattern": "message_broadcasting",
+      "language": "python",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00338",
+      "pattern": "message_broadcasting",
+      "language": "java",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00339",
+      "pattern": "rooms",
+      "language": "javascript",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00340",
+      "pattern": "rooms",
+      "language": "python",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00341",
+      "pattern": "rooms",
+      "language": "java",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00342",
+      "pattern": "authentication",
+      "language": "javascript",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00343",
+      "pattern": "authentication",
+      "language": "python",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00344",
+      "pattern": "authentication",
+      "language": "java",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00345",
+      "pattern": "heartbeat",
+      "language": "javascript",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00346",
+      "pattern": "heartbeat",
+      "language": "python",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00347",
+      "pattern": "heartbeat",
+      "language": "java",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00348",
+      "pattern": "reconnection",
+      "language": "javascript",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00349",
+      "pattern": "reconnection",
+      "language": "python",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    },
+    {
+      "id": "api_00350",
+      "pattern": "reconnection",
+      "language": "java",
+      "api_type": "WebSocket",
+      "category": "api_design"
+    }
+  ]
+}

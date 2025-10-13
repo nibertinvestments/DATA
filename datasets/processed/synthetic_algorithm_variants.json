@@ -1,0 +1,1233 @@
+{
+  "metadata": {
+    "name": "algorithm_variants_synthetic_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:35:35.743870",
+    "total_samples": 152,
+    "categories": [
+      "sorting",
+      "searching",
+      "graph",
+      "dynamic_programming"
+    ],
+    "purpose": "AI algorithm understanding training"
+  },
+  "samples": [
+    {
+      "id": "algo_00001",
+      "algorithm": "bubble_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00002",
+      "algorithm": "bubble_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00003",
+      "algorithm": "bubble_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00004",
+      "algorithm": "bubble_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00005",
+      "algorithm": "bubble_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00006",
+      "algorithm": "insertion_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00007",
+      "algorithm": "insertion_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00008",
+      "algorithm": "insertion_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00009",
+      "algorithm": "insertion_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00010",
+      "algorithm": "insertion_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00011",
+      "algorithm": "selection_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00012",
+      "algorithm": "selection_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00013",
+      "algorithm": "selection_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00014",
+      "algorithm": "selection_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00015",
+      "algorithm": "selection_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00016",
+      "algorithm": "merge_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00017",
+      "algorithm": "merge_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00018",
+      "algorithm": "merge_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00019",
+      "algorithm": "merge_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00020",
+      "algorithm": "merge_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00021",
+      "algorithm": "quick_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00022",
+      "algorithm": "quick_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00023",
+      "algorithm": "quick_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00024",
+      "algorithm": "quick_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00025",
+      "algorithm": "quick_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00026",
+      "algorithm": "heap_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00027",
+      "algorithm": "heap_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00028",
+      "algorithm": "heap_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00029",
+      "algorithm": "heap_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00030",
+      "algorithm": "heap_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00031",
+      "algorithm": "radix_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00032",
+      "algorithm": "radix_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00033",
+      "algorithm": "radix_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00034",
+      "algorithm": "radix_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00035",
+      "algorithm": "radix_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00036",
+      "algorithm": "counting_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00037",
+      "algorithm": "counting_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00038",
+      "algorithm": "counting_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00039",
+      "algorithm": "counting_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00040",
+      "algorithm": "counting_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00041",
+      "algorithm": "bucket_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00042",
+      "algorithm": "bucket_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00043",
+      "algorithm": "bucket_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00044",
+      "algorithm": "bucket_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00045",
+      "algorithm": "bucket_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00046",
+      "algorithm": "shell_sort",
+      "language": "python",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00047",
+      "algorithm": "shell_sort",
+      "language": "javascript",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00048",
+      "algorithm": "shell_sort",
+      "language": "java",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00049",
+      "algorithm": "shell_sort",
+      "language": "cpp",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00050",
+      "algorithm": "shell_sort",
+      "language": "go",
+      "category": "sorting",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "varies by algorithm"
+    },
+    {
+      "id": "algo_00051",
+      "algorithm": "linear_search",
+      "language": "python",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00052",
+      "algorithm": "linear_search",
+      "language": "javascript",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00053",
+      "algorithm": "linear_search",
+      "language": "java",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00054",
+      "algorithm": "linear_search",
+      "language": "cpp",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00055",
+      "algorithm": "linear_search",
+      "language": "rust",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00056",
+      "algorithm": "binary_search",
+      "language": "python",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00057",
+      "algorithm": "binary_search",
+      "language": "javascript",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00058",
+      "algorithm": "binary_search",
+      "language": "java",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00059",
+      "algorithm": "binary_search",
+      "language": "cpp",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00060",
+      "algorithm": "binary_search",
+      "language": "rust",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00061",
+      "algorithm": "jump_search",
+      "language": "python",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00062",
+      "algorithm": "jump_search",
+      "language": "javascript",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00063",
+      "algorithm": "jump_search",
+      "language": "java",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00064",
+      "algorithm": "jump_search",
+      "language": "cpp",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00065",
+      "algorithm": "jump_search",
+      "language": "rust",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00066",
+      "algorithm": "interpolation_search",
+      "language": "python",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00067",
+      "algorithm": "interpolation_search",
+      "language": "javascript",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00068",
+      "algorithm": "interpolation_search",
+      "language": "java",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00069",
+      "algorithm": "interpolation_search",
+      "language": "cpp",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00070",
+      "algorithm": "interpolation_search",
+      "language": "rust",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00071",
+      "algorithm": "exponential_search",
+      "language": "python",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00072",
+      "algorithm": "exponential_search",
+      "language": "javascript",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00073",
+      "algorithm": "exponential_search",
+      "language": "java",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00074",
+      "algorithm": "exponential_search",
+      "language": "cpp",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00075",
+      "algorithm": "exponential_search",
+      "language": "rust",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00076",
+      "algorithm": "fibonacci_search",
+      "language": "python",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00077",
+      "algorithm": "fibonacci_search",
+      "language": "javascript",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00078",
+      "algorithm": "fibonacci_search",
+      "language": "java",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00079",
+      "algorithm": "fibonacci_search",
+      "language": "cpp",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00080",
+      "algorithm": "fibonacci_search",
+      "language": "rust",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00081",
+      "algorithm": "ternary_search",
+      "language": "python",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00082",
+      "algorithm": "ternary_search",
+      "language": "javascript",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00083",
+      "algorithm": "ternary_search",
+      "language": "java",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00084",
+      "algorithm": "ternary_search",
+      "language": "cpp",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00085",
+      "algorithm": "ternary_search",
+      "language": "rust",
+      "category": "searching",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(1) to O(n)"
+    },
+    {
+      "id": "algo_00086",
+      "algorithm": "bfs",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00087",
+      "algorithm": "bfs",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00088",
+      "algorithm": "bfs",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00089",
+      "algorithm": "bfs",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00090",
+      "algorithm": "dfs",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00091",
+      "algorithm": "dfs",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00092",
+      "algorithm": "dfs",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00093",
+      "algorithm": "dfs",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00094",
+      "algorithm": "dijkstra",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00095",
+      "algorithm": "dijkstra",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00096",
+      "algorithm": "dijkstra",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00097",
+      "algorithm": "dijkstra",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00098",
+      "algorithm": "bellman_ford",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00099",
+      "algorithm": "bellman_ford",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00100",
+      "algorithm": "bellman_ford",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00101",
+      "algorithm": "bellman_ford",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00102",
+      "algorithm": "floyd_warshall",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00103",
+      "algorithm": "floyd_warshall",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00104",
+      "algorithm": "floyd_warshall",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00105",
+      "algorithm": "floyd_warshall",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00106",
+      "algorithm": "prims_mst",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00107",
+      "algorithm": "prims_mst",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00108",
+      "algorithm": "prims_mst",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00109",
+      "algorithm": "prims_mst",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00110",
+      "algorithm": "kruskals_mst",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00111",
+      "algorithm": "kruskals_mst",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00112",
+      "algorithm": "kruskals_mst",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00113",
+      "algorithm": "kruskals_mst",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00114",
+      "algorithm": "topological_sort",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00115",
+      "algorithm": "topological_sort",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00116",
+      "algorithm": "topological_sort",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00117",
+      "algorithm": "topological_sort",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00118",
+      "algorithm": "strongly_connected_components",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00119",
+      "algorithm": "strongly_connected_components",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00120",
+      "algorithm": "strongly_connected_components",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00121",
+      "algorithm": "strongly_connected_components",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00122",
+      "algorithm": "articulation_points",
+      "language": "python",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00123",
+      "algorithm": "articulation_points",
+      "language": "java",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00124",
+      "algorithm": "articulation_points",
+      "language": "cpp",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00125",
+      "algorithm": "articulation_points",
+      "language": "go",
+      "category": "graph",
+      "time_complexity": "varies by algorithm",
+      "space_complexity": "O(V) to O(V+E)"
+    },
+    {
+      "id": "algo_00126",
+      "algorithm": "fibonacci",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00127",
+      "algorithm": "fibonacci",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00128",
+      "algorithm": "fibonacci",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00129",
+      "algorithm": "knapsack",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00130",
+      "algorithm": "knapsack",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00131",
+      "algorithm": "knapsack",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00132",
+      "algorithm": "longest_common_subsequence",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00133",
+      "algorithm": "longest_common_subsequence",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00134",
+      "algorithm": "longest_common_subsequence",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00135",
+      "algorithm": "edit_distance",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00136",
+      "algorithm": "edit_distance",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00137",
+      "algorithm": "edit_distance",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00138",
+      "algorithm": "coin_change",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00139",
+      "algorithm": "coin_change",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00140",
+      "algorithm": "coin_change",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00141",
+      "algorithm": "matrix_chain_multiplication",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00142",
+      "algorithm": "matrix_chain_multiplication",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00143",
+      "algorithm": "matrix_chain_multiplication",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00144",
+      "algorithm": "rod_cutting",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00145",
+      "algorithm": "rod_cutting",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00146",
+      "algorithm": "rod_cutting",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00147",
+      "algorithm": "subset_sum",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00148",
+      "algorithm": "subset_sum",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00149",
+      "algorithm": "subset_sum",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00150",
+      "algorithm": "partition_problem",
+      "language": "python",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00151",
+      "algorithm": "partition_problem",
+      "language": "java",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    },
+    {
+      "id": "algo_00152",
+      "algorithm": "partition_problem",
+      "language": "cpp",
+      "category": "dynamic_programming",
+      "time_complexity": "O(n²) to O(n³)",
+      "space_complexity": "O(n) to O(n²)"
+    }
+  ]
+}

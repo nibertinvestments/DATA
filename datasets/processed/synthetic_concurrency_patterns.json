@@ -1,0 +1,688 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_synthetic_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:35:35.744901",
+    "total_samples": 96,
+    "categories": [
+      "threading",
+      "async",
+      "parallel"
+    ],
+    "purpose": "AI concurrency pattern training"
+  },
+  "samples": [
+    {
+      "id": "concurrency_00001",
+      "pattern": "thread_pool",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00002",
+      "pattern": "thread_pool",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00003",
+      "pattern": "thread_pool",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00004",
+      "pattern": "thread_pool",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00005",
+      "pattern": "thread_pool",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00006",
+      "pattern": "producer_consumer",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00007",
+      "pattern": "producer_consumer",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00008",
+      "pattern": "producer_consumer",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00009",
+      "pattern": "producer_consumer",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00010",
+      "pattern": "producer_consumer",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00011",
+      "pattern": "reader_writer",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00012",
+      "pattern": "reader_writer",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00013",
+      "pattern": "reader_writer",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00014",
+      "pattern": "reader_writer",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00015",
+      "pattern": "reader_writer",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00016",
+      "pattern": "mutex",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00017",
+      "pattern": "mutex",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00018",
+      "pattern": "mutex",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00019",
+      "pattern": "mutex",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00020",
+      "pattern": "mutex",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00021",
+      "pattern": "semaphore",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00022",
+      "pattern": "semaphore",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00023",
+      "pattern": "semaphore",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00024",
+      "pattern": "semaphore",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00025",
+      "pattern": "semaphore",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00026",
+      "pattern": "condition_variable",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00027",
+      "pattern": "condition_variable",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00028",
+      "pattern": "condition_variable",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00029",
+      "pattern": "condition_variable",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00030",
+      "pattern": "condition_variable",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00031",
+      "pattern": "barrier",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00032",
+      "pattern": "barrier",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00033",
+      "pattern": "barrier",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00034",
+      "pattern": "barrier",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00035",
+      "pattern": "barrier",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00036",
+      "pattern": "thread_local_storage",
+      "language": "python",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00037",
+      "pattern": "thread_local_storage",
+      "language": "java",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00038",
+      "pattern": "thread_local_storage",
+      "language": "cpp",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00039",
+      "pattern": "thread_local_storage",
+      "language": "go",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00040",
+      "pattern": "thread_local_storage",
+      "language": "rust",
+      "category": "threading",
+      "complexity": "medium to high"
+    },
+    {
+      "id": "concurrency_00041",
+      "pattern": "async_await",
+      "language": "python",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00042",
+      "pattern": "async_await",
+      "language": "javascript",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00043",
+      "pattern": "async_await",
+      "language": "csharp",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00044",
+      "pattern": "async_await",
+      "language": "rust",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00045",
+      "pattern": "promises",
+      "language": "python",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00046",
+      "pattern": "promises",
+      "language": "javascript",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00047",
+      "pattern": "promises",
+      "language": "csharp",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00048",
+      "pattern": "promises",
+      "language": "rust",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00049",
+      "pattern": "futures",
+      "language": "python",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00050",
+      "pattern": "futures",
+      "language": "javascript",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00051",
+      "pattern": "futures",
+      "language": "csharp",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00052",
+      "pattern": "futures",
+      "language": "rust",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00053",
+      "pattern": "coroutines",
+      "language": "python",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00054",
+      "pattern": "coroutines",
+      "language": "javascript",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00055",
+      "pattern": "coroutines",
+      "language": "csharp",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00056",
+      "pattern": "coroutines",
+      "language": "rust",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00057",
+      "pattern": "event_loop",
+      "language": "python",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00058",
+      "pattern": "event_loop",
+      "language": "javascript",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00059",
+      "pattern": "event_loop",
+      "language": "csharp",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00060",
+      "pattern": "event_loop",
+      "language": "rust",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00061",
+      "pattern": "callback_hell_solution",
+      "language": "python",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00062",
+      "pattern": "callback_hell_solution",
+      "language": "javascript",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00063",
+      "pattern": "callback_hell_solution",
+      "language": "csharp",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00064",
+      "pattern": "callback_hell_solution",
+      "language": "rust",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00065",
+      "pattern": "async_generators",
+      "language": "python",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00066",
+      "pattern": "async_generators",
+      "language": "javascript",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00067",
+      "pattern": "async_generators",
+      "language": "csharp",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00068",
+      "pattern": "async_generators",
+      "language": "rust",
+      "category": "async",
+      "complexity": "medium"
+    },
+    {
+      "id": "concurrency_00069",
+      "pattern": "map_reduce",
+      "language": "python",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00070",
+      "pattern": "map_reduce",
+      "language": "java",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00071",
+      "pattern": "map_reduce",
+      "language": "go",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00072",
+      "pattern": "map_reduce",
+      "language": "rust",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00073",
+      "pattern": "fork_join",
+      "language": "python",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00074",
+      "pattern": "fork_join",
+      "language": "java",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00075",
+      "pattern": "fork_join",
+      "language": "go",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00076",
+      "pattern": "fork_join",
+      "language": "rust",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00077",
+      "pattern": "worker_pool",
+      "language": "python",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00078",
+      "pattern": "worker_pool",
+      "language": "java",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00079",
+      "pattern": "worker_pool",
+      "language": "go",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00080",
+      "pattern": "worker_pool",
+      "language": "rust",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00081",
+      "pattern": "pipeline",
+      "language": "python",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00082",
+      "pattern": "pipeline",
+      "language": "java",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00083",
+      "pattern": "pipeline",
+      "language": "go",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00084",
+      "pattern": "pipeline",
+      "language": "rust",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00085",
+      "pattern": "scatter_gather",
+      "language": "python",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00086",
+      "pattern": "scatter_gather",
+      "language": "java",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00087",
+      "pattern": "scatter_gather",
+      "language": "go",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00088",
+      "pattern": "scatter_gather",
+      "language": "rust",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00089",
+      "pattern": "data_parallelism",
+      "language": "python",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00090",
+      "pattern": "data_parallelism",
+      "language": "java",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00091",
+      "pattern": "data_parallelism",
+      "language": "go",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00092",
+      "pattern": "data_parallelism",
+      "language": "rust",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00093",
+      "pattern": "task_parallelism",
+      "language": "python",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00094",
+      "pattern": "task_parallelism",
+      "language": "java",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00095",
+      "pattern": "task_parallelism",
+      "language": "go",
+      "category": "parallel",
+      "complexity": "high"
+    },
+    {
+      "id": "concurrency_00096",
+      "pattern": "task_parallelism",
+      "language": "rust",
+      "category": "parallel",
+      "complexity": "high"
+    }
+  ]
+}
