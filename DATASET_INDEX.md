@@ -5,13 +5,11 @@
 ## Version Information
 - **Last Updated**: October 2025
 - **Repository**: nibertinvestments/DATA
-- **Total Datasets**: 430+ JSON datasets (31 processed, 399+ raw, 8 sample datasets)
-- **New Datasets Added**: 309 files (12 processed AI/ML training, 297 raw external)
+- **Total Datasets**: 336 JSON datasets (31 processed, 297 raw, 8 sample datasets)
 - **Total Code Samples**: 1,409 production-ready implementations
-- **Total Training Samples**: 5,000+ (including 2,633+ new samples)
+- **Total Training Samples**: 2,381 individual training samples
 - **Languages Covered**: 18 programming languages
-- **New AI Training Datasets**: 6 specialized datasets (483 samples)
-- **New Synthetic Datasets**: 6 comprehensive datasets (1,453 samples)
+- **Specialized Content**: 72 files (data-sources, high-end algorithms, scripts, tests)
 
 ---
 

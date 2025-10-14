@@ -591,12 +591,12 @@ These datasets are specifically designed for training AI coding agents, machine 
 
 ---
 
-**Repository Statistics After Addition**:
-- Total Datasets: 430+ files
+**Repository Statistics**:
+- Total Datasets: 336 files
 - Total Code Samples: 1,409 files
-- Total Training Samples: 5,000+ (including existing)
-- Repository Size: ~4.0MB
-- Programming Languages: 18+
+- Total Training Samples: 2,381 individual samples
+- Repository Size: ~15MB
+- Programming Languages: 18
 - Dataset Categories: 40+
 
-This represents a **165% increase** in dataset files and positions the repository as a comprehensive resource for AI/ML training in software development domains.
+This represents a comprehensive collection positioning the repository as a valuable resource for AI/ML training in software development domains.

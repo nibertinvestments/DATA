@@ -538,9 +538,10 @@ if __name__ == "__main__":
 Content Volume:
 ├── Code Files: 1,409 implementations  
 ├── Programming Languages: 18 with full coverage
-├── Dataset Files: 129 JSON files
-├── Documentation: 63 comprehensive markdown files
-└── Repository Size: 5.4MB curated content
+├── Dataset Files: 336 JSON files (2,381 samples)
+├── Documentation: 30 files (24 markdown + 6 HTML)
+├── Specialized Content: 72 files
+└── Repository Size: ~15MB curated content
 
 Quality Metrics:
 ├── Code Quality: High-quality, well-documented implementations
