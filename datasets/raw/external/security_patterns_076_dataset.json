@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_5",
+    "type": "security",
+    "language": "java",
+    "total_vulnerabilities": 5,
+    "created_at": "2025-10-13T23:32:22.337624",
+    "variant": 5
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_5_8fda92ba",
+      "vulnerability": "XXE",
+      "severity": "low",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable XXE code",
+      "fixed_code": "# Fixed XXE code",
+      "variant": 5
+    },
+    {
+      "id": "sec_5_166b1add",
+      "vulnerability": "XSS",
+      "severity": "critical",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable XSS code",
+      "fixed_code": "# Fixed XSS code",
+      "variant": 5
+    },
+    {
+      "id": "sec_5_40da8bf5",
+      "vulnerability": "SQL Injection",
+      "severity": "high",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable SQL Injection code",
+      "fixed_code": "# Fixed SQL Injection code",
+      "variant": 5
+    },
+    {
+      "id": "sec_5_292b5930",
+      "vulnerability": "Path Traversal",
+      "severity": "low",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable Path Traversal code",
+      "fixed_code": "# Fixed Path Traversal code",
+      "variant": 5
+    },
+    {
+      "id": "sec_5_99f95dea",
+      "vulnerability": "Command Injection",
+      "severity": "critical",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable Command Injection code",
+      "fixed_code": "# Fixed Command Injection code",
+      "variant": 5
+    }
+  ]
+}

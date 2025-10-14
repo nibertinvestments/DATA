@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_6",
+    "type": "concurrency",
+    "language": "rust",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.354232",
+    "variant": 6
+  },
+  "patterns": [
+    {
+      "id": "concur_6_0_baefc724",
+      "pattern": "semaphore",
+      "language": "rust",
+      "example": "# Concurrency pattern",
+      "variant": 6
+    },
+    {
+      "id": "concur_6_1_b3a8d7d9",
+      "pattern": "thread_pool",
+      "language": "rust",
+      "example": "# Concurrency pattern",
+      "variant": 6
+    }
+  ]
+}

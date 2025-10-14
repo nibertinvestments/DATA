@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_9",
+    "type": "testing",
+    "language": "python",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.341064",
+    "variant": 9
+  },
+  "patterns": [
+    {
+      "id": "test_9_e3392e26",
+      "test_type": "unit",
+      "language": "python",
+      "example": "# unit test example",
+      "framework": "jest",
+      "variant": 9
+    },
+    {
+      "id": "test_9_2a43a82e",
+      "test_type": "integration",
+      "language": "python",
+      "example": "# integration test example",
+      "framework": "junit",
+      "variant": 9
+    }
+  ]
+}

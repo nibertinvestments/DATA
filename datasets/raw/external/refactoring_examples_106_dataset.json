@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_5",
+    "type": "refactoring",
+    "language": "go",
+    "total_examples": 3,
+    "created_at": "2025-10-13T23:32:22.341973",
+    "variant": 5
+  },
+  "refactorings": [
+    {
+      "id": "refactor_5_0_2ad6dae5",
+      "refactoring_type": "inline",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 5
+    },
+    {
+      "id": "refactor_5_1_a2a2a4ba",
+      "refactoring_type": "rename",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 5
+    },
+    {
+      "id": "refactor_5_2_b3b43527",
+      "refactoring_type": "extract_class",
+      "language": "go",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 5
+    }
+  ]
+}

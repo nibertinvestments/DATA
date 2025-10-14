@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "web_api_examples_variant_8",
+    "type": "web_api",
+    "language": "python",
+    "total_endpoints": 3,
+    "created_at": "2025-10-13T23:32:22.351673",
+    "variant": 8
+  },
+  "apis": [
+    {
+      "id": "webapi_8_0_8e40545e",
+      "endpoint": "/api/v8/resource_0",
+      "method": "PUT",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 8
+    },
+    {
+      "id": "webapi_8_1_57427796",
+      "endpoint": "/api/v8/resource_1",
+      "method": "POST",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 8
+    },
+    {
+      "id": "webapi_8_2_48179ab2",
+      "endpoint": "/api/v8/resource_2",
+      "method": "PUT",
+      "language": "python",
+      "implementation": "# API endpoint code",
+      "variant": 8
+    }
+  ]
+}

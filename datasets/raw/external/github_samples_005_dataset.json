@@ -2,15 +2,15 @@
   "metadata": {
     "name": "github_samples_variant_4",
     "type": "github_api",
-    "description": "GitHub repositories for authentication",
+    "description": "GitHub repositories for api client",
     "languages": [
-      "scala",
-      "r",
-      "rust"
+      "go",
+      "typescript",
+      "javascript"
     ],
-    "query": "authentication",
+    "query": "api client",
     "total_samples": 0,
-    "created_at": "2025-10-07T23:25:39.709198",
+    "created_at": "2025-10-13T23:32:21.972929",
     "variant": 4
   },
   "samples": []

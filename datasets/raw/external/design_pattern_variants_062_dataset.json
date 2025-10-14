@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_1",
+    "type": "design_patterns",
+    "language": "go",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.335700",
+    "variant": 1
+  },
+  "patterns": [
+    {
+      "id": "pattern_1_d1fb0f26",
+      "name": "Proxy Pattern",
+      "category": "structural",
+      "language": "go",
+      "implementation": "# Proxy in go",
+      "variant": 1
+    },
+    {
+      "id": "pattern_1_ff3a4f4e",
+      "name": "Iterator Pattern",
+      "category": "behavioral",
+      "language": "go",
+      "implementation": "# Iterator in go",
+      "variant": 1
+    }
+  ]
+}

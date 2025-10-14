@@ -1,0 +1,39 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_0",
+    "type": "performance",
+    "language": "python",
+    "total_optimizations": 3,
+    "created_at": "2025-10-13T23:32:22.338405",
+    "variant": 0
+  },
+  "optimizations": [
+    {
+      "id": "perf_0_0_c6f99e0d",
+      "optimization_type": "lazy_loading",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "21x faster",
+      "variant": 0
+    },
+    {
+      "id": "perf_0_1_97d38950",
+      "optimization_type": "algorithmic",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "66x faster",
+      "variant": 0
+    },
+    {
+      "id": "perf_0_2_ae3e0362",
+      "optimization_type": "parallelization",
+      "language": "python",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "16x faster",
+      "variant": 0
+    }
+  ]
+}

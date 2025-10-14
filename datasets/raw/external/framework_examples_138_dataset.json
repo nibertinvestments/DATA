@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_7",
+    "type": "framework_usage",
+    "framework": "laravel",
+    "total_examples": 3,
+    "created_at": "2025-10-13T23:32:22.347465",
+    "variant": 7
+  },
+  "examples": [
+    {
+      "id": "framework_7_0_264a8e12",
+      "framework": "laravel",
+      "feature": "Feature #1",
+      "code": "# laravel example",
+      "variant": 7
+    },
+    {
+      "id": "framework_7_1_f797e114",
+      "framework": "laravel",
+      "feature": "Feature #2",
+      "code": "# laravel example",
+      "variant": 7
+    },
+    {
+      "id": "framework_7_2_81146105",
+      "framework": "laravel",
+      "feature": "Feature #3",
+      "code": "# laravel example",
+      "variant": 7
+    }
+  ]
+}

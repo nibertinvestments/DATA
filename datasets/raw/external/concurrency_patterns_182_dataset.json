@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_1",
+    "type": "concurrency",
+    "language": "java",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.353619",
+    "variant": 1
+  },
+  "patterns": [
+    {
+      "id": "concur_1_0_687cfc62",
+      "pattern": "thread_pool",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 1
+    },
+    {
+      "id": "concur_1_1_8cf5d64f",
+      "pattern": "mutex",
+      "language": "java",
+      "example": "# Concurrency pattern",
+      "variant": 1
+    }
+  ]
+}

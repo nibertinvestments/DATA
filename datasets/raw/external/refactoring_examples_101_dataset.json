@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_0",
+    "type": "refactoring",
+    "language": "cpp",
+    "total_examples": 4,
+    "created_at": "2025-10-13T23:32:22.341190",
+    "variant": 0
+  },
+  "refactorings": [
+    {
+      "id": "refactor_0_0_ac620789",
+      "refactoring_type": "extract_class",
+      "language": "cpp",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    },
+    {
+      "id": "refactor_0_1_d1a9165e",
+      "refactoring_type": "extract_method",
+      "language": "cpp",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    },
+    {
+      "id": "refactor_0_2_e8428c30",
+      "refactoring_type": "move",
+      "language": "cpp",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    },
+    {
+      "id": "refactor_0_3_da9935de",
+      "refactoring_type": "extract_method",
+      "language": "cpp",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 0
+    }
+  ]
+}

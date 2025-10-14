@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "code_translations_variant_6",
+    "type": "cross_language",
+    "description": "Cross-language dynamic_programming implementations",
+    "languages": [
+      "ruby",
+      "javascript",
+      "java",
+      "rust",
+      "typescript",
+      "go"
+    ],
+    "algorithm": "dynamic_programming",
+    "total_examples": 1,
+    "created_at": "2025-10-13T23:32:22.329802",
+    "variant": 6
+  },
+  "translation_examples": [
+    {
+      "id": "trans_6_a4b714c6",
+      "concept": "dynamic_programming_variant_6",
+      "description": "Implement dynamic_programming algorithm",
+      "difficulty": "beginner",
+      "implementations": {
+        "ruby": "# dynamic_programming implementation in ruby\n# ... code ...",
+        "javascript": "# dynamic_programming implementation in javascript\n# ... code ...",
+        "java": "# dynamic_programming implementation in java\n# ... code ...",
+        "rust": "# dynamic_programming implementation in rust\n# ... code ...",
+        "typescript": "# dynamic_programming implementation in typescript\n# ... code ...",
+        "go": "# dynamic_programming implementation in go\n# ... code ..."
+      },
+      "variant": 6
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "name": "algorithm_implementations_variant_3",
+    "type": "algorithms",
+    "language": "cpp",
+    "total_implementations": 5,
+    "created_at": "2025-10-13T23:32:22.332825",
+    "variant": 3
+  },
+  "implementations": [
+    {
+      "id": "algo_3_59d257b7",
+      "name": "sliding_window_implementation",
+      "language": "cpp",
+      "complexity": "O(n)",
+      "code": "# sliding_window implementation in cpp\n# ... code ...",
+      "variant": 3
+    },
+    {
+      "id": "algo_3_5ec7fca4",
+      "name": "searching_implementation",
+      "language": "cpp",
+      "complexity": "O(n)",
+      "code": "# searching implementation in cpp\n# ... code ...",
+      "variant": 3
+    },
+    {
+      "id": "algo_3_d346e846",
+      "name": "queue_implementation",
+      "language": "cpp",
+      "complexity": "O(n log n)",
+      "code": "# queue implementation in cpp\n# ... code ...",
+      "variant": 3
+    },
+    {
+      "id": "algo_3_5b58240b",
+      "name": "backtracking_implementation",
+      "language": "cpp",
+      "complexity": "O(log n)",
+      "code": "# backtracking implementation in cpp\n# ... code ...",
+      "variant": 3
+    },
+    {
+      "id": "algo_3_a9eeacf0",
+      "name": "fenwick_tree_implementation",
+      "language": "cpp",
+      "complexity": "O(n²)",
+      "code": "# fenwick_tree implementation in cpp\n# ... code ...",
+      "variant": 3
+    }
+  ]
+}

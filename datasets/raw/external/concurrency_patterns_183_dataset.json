@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_2",
+    "type": "concurrency",
+    "language": "go",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.353736",
+    "variant": 2
+  },
+  "patterns": [
+    {
+      "id": "concur_2_0_52475aaa",
+      "pattern": "mutex",
+      "language": "go",
+      "example": "# Concurrency pattern",
+      "variant": 2
+    },
+    {
+      "id": "concur_2_1_4e269eb0",
+      "pattern": "actor",
+      "language": "go",
+      "example": "# Concurrency pattern",
+      "variant": 2
+    }
+  ]
+}

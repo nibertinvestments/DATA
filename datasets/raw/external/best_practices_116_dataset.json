@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_5",
+    "type": "best_practices",
+    "topic": "async",
+    "language": "ruby",
+    "total_practices": 8,
+    "created_at": "2025-10-13T23:32:22.344212",
+    "variant": 5
+  },
+  "practices": [
+    {
+      "id": "practice_5_0_1d6c66b3",
+      "practice": "Best practice #1",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    },
+    {
+      "id": "practice_5_1_13f3ca3d",
+      "practice": "Best practice #2",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    },
+    {
+      "id": "practice_5_2_79b6a999",
+      "practice": "Best practice #3",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    },
+    {
+      "id": "practice_5_3_070a7759",
+      "practice": "Best practice #4",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    },
+    {
+      "id": "practice_5_4_b16abd04",
+      "practice": "Best practice #5",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    },
+    {
+      "id": "practice_5_5_e2a0d22d",
+      "practice": "Best practice #6",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    },
+    {
+      "id": "practice_5_6_1cc9b757",
+      "practice": "Best practice #7",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    },
+    {
+      "id": "practice_5_7_2adb78fb",
+      "practice": "Best practice #8",
+      "topic": "async",
+      "language": "ruby",
+      "description": "Recommended approach for async",
+      "example": "# Example code",
+      "variant": 5
+    }
+  ]
+}

@@ -1,0 +1,868 @@
+{
+  "metadata": {
+    "name": "code_completion_training_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:34:30.349402",
+    "total_samples": 105,
+    "languages": [
+      "javascript",
+      "go",
+      "rust",
+      "python",
+      "java"
+    ],
+    "purpose": "AI code completion training"
+  },
+  "samples": [
+    {
+      "id": "code_completion_0001",
+      "prompt": "def binary_search(arr, target):",
+      "completion": "\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+      "full_code": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1",
+      "language": "python",
+      "category": "algorithms",
+      "complexity": "O(log n)",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0002",
+      "prompt": "function quickSort(arr) {",
+      "completion": "\n  if (arr.length <= 1) return arr;\n  const pivot = arr[Math.floor(arr.length / 2)];\n  const left = arr.filter(x => x < pivot);\n  const middle = arr.filter(x => x === pivot);\n  const right = arr.filter(x => x > pivot);\n  return [...quickSort(left), ...middle, ...quickSort(right)];\n}",
+      "full_code": "function quickSort(arr) {\n  if (arr.length <= 1) return arr;\n  const pivot = arr[Math.floor(arr.length / 2)];\n  const left = arr.filter(x => x < pivot);\n  const middle = arr.filter(x => x === pivot);\n  const right = arr.filter(x => x > pivot);\n  return [...quickSort(left), ...middle, ...quickSort(right)];\n}",
+      "language": "javascript",
+      "category": "algorithms",
+      "complexity": "O(n log n)",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0003",
+      "prompt": "public class LinkedList<T> {",
+      "completion": "\n    private Node<T> head;\n    private int size;\n    \n    private class Node<T> {\n        T data;\n        Node<T> next;\n        \n        Node(T data) {\n            this.data = data;\n            this.next = null;\n        }\n    }\n    \n    public void add(T data) {\n        Node<T> newNode = new Node<>(data);\n        if (head == null) {\n            head = newNode;\n        } else {\n            Node<T> current = head;\n            while (current.next != null) {\n                current = current.next;\n            }\n            current.next = newNode;\n        }\n        size++;\n    }\n}",
+      "full_code": "public class LinkedList<T> {\n    private Node<T> head;\n    private int size;\n    \n    private class Node<T> {\n        T data;\n        Node<T> next;\n        \n        Node(T data) {\n            this.data = data;\n            this.next = null;\n        }\n    }\n    \n    public void add(T data) {\n        Node<T> newNode = new Node<>(data);\n        if (head == null) {\n            head = newNode;\n        } else {\n            Node<T> current = head;\n            while (current.next != null) {\n                current = current.next;\n            }\n            current.next = newNode;\n        }\n        size++;\n    }\n}",
+      "language": "java",
+      "category": "data_structures",
+      "complexity": "O(1) insert at head",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0004",
+      "prompt": "async function fetchUserData(userId) {",
+      "completion": "\n  try {\n    const response = await fetch(`/api/users/${userId}`);\n    if (!response.ok) {\n      throw new Error(`HTTP error! status: ${response.status}`);\n    }\n    const data = await response.json();\n    return data;\n  } catch (error) {\n    console.error('Error fetching user data:', error);\n    throw error;\n  }\n}",
+      "full_code": "async function fetchUserData(userId) {\n  try {\n    const response = await fetch(`/api/users/${userId}`);\n    if (!response.ok) {\n      throw new Error(`HTTP error! status: ${response.status}`);\n    }\n    const data = await response.json();\n    return data;\n  } catch (error) {\n    console.error('Error fetching user data:', error);\n    throw error;\n  }\n}",
+      "language": "javascript",
+      "category": "async_programming",
+      "complexity": "O(1)",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0005",
+      "prompt": "def merge_sort(arr):",
+      "completion": "\n    if len(arr) <= 1:\n        return arr\n    \n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n    \n    return merge(left, right)\n\ndef merge(left, right):\n    result = []\n    i = j = 0\n    \n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    result.extend(left[i:])\n    result.extend(right[j:])\n    return result",
+      "full_code": "def merge_sort(arr):\n    if len(arr) <= 1:\n        return arr\n    \n    mid = len(arr) // 2\n    left = merge_sort(arr[:mid])\n    right = merge_sort(arr[mid:])\n    \n    return merge(left, right)\n\ndef merge(left, right):\n    result = []\n    i = j = 0\n    \n    while i < len(left) and j < len(right):\n        if left[i] <= right[j]:\n            result.append(left[i])\n            i += 1\n        else:\n            result.append(right[j])\n            j += 1\n    \n    result.extend(left[i:])\n    result.extend(right[j:])\n    return result",
+      "language": "python",
+      "category": "algorithms",
+      "complexity": "O(n log n)",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0006",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_0():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0007",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_1():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0008",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_2():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0009",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_3():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0010",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_4():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0011",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_5():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0012",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_6():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0013",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_7():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0014",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_8():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0015",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_9():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0016",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_10():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0017",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_11():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0018",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_12():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0019",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_13():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0020",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_14():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0021",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_15():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0022",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_16():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0023",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_17():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0024",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_18():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0025",
+      "prompt": "# python function implementation\n",
+      "completion": "def example_function_19():\n    # Implementation here\n    pass",
+      "language": "python",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0026",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_0():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0027",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_1():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0028",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_2():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0029",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_3():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0030",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_4():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0031",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_5():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0032",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_6():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0033",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_7():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0034",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_8():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0035",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_9():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0036",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_10():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0037",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_11():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0038",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_12():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0039",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_13():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0040",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_14():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0041",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_15():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0042",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_16():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0043",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_17():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0044",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_18():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0045",
+      "prompt": "# javascript function implementation\n",
+      "completion": "def example_function_19():\n    # Implementation here\n    pass",
+      "language": "javascript",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0046",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_0():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0047",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_1():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0048",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_2():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0049",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_3():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0050",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_4():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0051",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_5():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0052",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_6():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0053",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_7():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0054",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_8():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0055",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_9():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0056",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_10():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0057",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_11():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0058",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_12():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0059",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_13():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0060",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_14():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0061",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_15():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0062",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_16():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0063",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_17():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0064",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_18():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0065",
+      "prompt": "# java function implementation\n",
+      "completion": "def example_function_19():\n    # Implementation here\n    pass",
+      "language": "java",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0066",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_0():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0067",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_1():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0068",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_2():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0069",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_3():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0070",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_4():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0071",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_5():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0072",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_6():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0073",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_7():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0074",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_8():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0075",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_9():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0076",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_10():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0077",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_11():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0078",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_12():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0079",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_13():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0080",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_14():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0081",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_15():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0082",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_16():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0083",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_17():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0084",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_18():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0085",
+      "prompt": "# go function implementation\n",
+      "completion": "def example_function_19():\n    # Implementation here\n    pass",
+      "language": "go",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0086",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_0():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0087",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_1():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0088",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_2():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0089",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_3():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0090",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_4():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0091",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_5():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0092",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_6():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0093",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_7():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0094",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_8():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0095",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_9():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0096",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_10():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0097",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_11():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0098",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_12():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0099",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_13():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0100",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_14():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0101",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_15():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0102",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_16():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0103",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_17():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0104",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_18():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    },
+    {
+      "id": "code_completion_0105",
+      "prompt": "# rust function implementation\n",
+      "completion": "def example_function_19():\n    # Implementation here\n    pass",
+      "language": "rust",
+      "category": "general",
+      "training_objective": "code_completion"
+    }
+  ]
+}

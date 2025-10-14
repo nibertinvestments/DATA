@@ -1,0 +1,114 @@
+{
+  "metadata": {
+    "name": "api_patterns_variant_4",
+    "type": "api_usage",
+    "description": "API patterns for python, cpp, java",
+    "languages": [
+      "python",
+      "cpp",
+      "java"
+    ],
+    "total_patterns": 6,
+    "created_at": "2025-10-13T23:32:22.331176",
+    "variant": 4
+  },
+  "api_patterns": [
+    {
+      "id": "api_4_000_78086bf3",
+      "language": "cpp",
+      "api_type": "SOAP",
+      "method": "POST",
+      "name": "API PATCH Request Pattern",
+      "description": "Best practice for GET requests in cpp",
+      "code_example": "# API request in cpp\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "api_4_001_b7f027a7",
+      "language": "python",
+      "api_type": "REST",
+      "method": "PUT",
+      "name": "API PUT Request Pattern",
+      "description": "Best practice for GET requests in python",
+      "code_example": "# API request in python\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "api_4_002_fcae5468",
+      "language": "cpp",
+      "api_type": "WebSocket",
+      "method": "PATCH",
+      "name": "API PUT Request Pattern",
+      "description": "Best practice for POST requests in cpp",
+      "code_example": "# API request in cpp\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "api_4_003_95a7202b",
+      "language": "cpp",
+      "api_type": "WebSocket",
+      "method": "POST",
+      "name": "API POST Request Pattern",
+      "description": "Best practice for POST requests in cpp",
+      "code_example": "# API request in cpp\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "api_4_004_78c7f63f",
+      "language": "python",
+      "api_type": "gRPC",
+      "method": "PUT",
+      "name": "API POST Request Pattern",
+      "description": "Best practice for PATCH requests in python",
+      "code_example": "# API request in python\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "api_4_005_6a977c7d",
+      "language": "java",
+      "api_type": "REST",
+      "method": "POST",
+      "name": "API PUT Request Pattern",
+      "description": "Best practice for DELETE requests in java",
+      "code_example": "# API request in java\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic"
+      ],
+      "variant": 4
+    }
+  ]
+}

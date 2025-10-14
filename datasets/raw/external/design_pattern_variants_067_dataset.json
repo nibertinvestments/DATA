@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_6",
+    "type": "design_patterns",
+    "language": "go",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.336349",
+    "variant": 6
+  },
+  "patterns": [
+    {
+      "id": "pattern_6_544b12fb",
+      "name": "Iterator Pattern",
+      "category": "creational",
+      "language": "go",
+      "implementation": "# Iterator in go",
+      "variant": 6
+    },
+    {
+      "id": "pattern_6_ea060f99",
+      "name": "Adapter Pattern",
+      "category": "structural",
+      "language": "go",
+      "implementation": "# Adapter in go",
+      "variant": 6
+    },
+    {
+      "id": "pattern_6_78ea7eec",
+      "name": "Observer Pattern",
+      "category": "structural",
+      "language": "go",
+      "implementation": "# Observer in go",
+      "variant": 6
+    },
+    {
+      "id": "pattern_6_9987ed20",
+      "name": "Command Pattern",
+      "category": "behavioral",
+      "language": "go",
+      "implementation": "# Command in go",
+      "variant": 6
+    }
+  ]
+}

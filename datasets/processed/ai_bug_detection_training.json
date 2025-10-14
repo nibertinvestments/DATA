@@ -1,0 +1,707 @@
+{
+  "metadata": {
+    "name": "bug_detection_training_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:34:30.349555",
+    "total_samples": 95,
+    "bug_types": [
+      "ConcurrentModificationException",
+      "async_handling",
+      "MemoryLeak",
+      "TypeError",
+      "missing_validation",
+      "null_pointer",
+      "RaceCondition",
+      "closure_binding",
+      "DeadLock",
+      "KeyError",
+      "off_by_one",
+      "ValueError",
+      "IndexError",
+      "NullPointerException"
+    ],
+    "purpose": "AI bug detection and fixing training"
+  },
+  "samples": [
+    {
+      "id": "bug_detection_0001",
+      "buggy_code": "def divide(a, b):\n    return a / b",
+      "fixed_code": "def divide(a, b):\n    if b == 0:\n        raise ValueError('Cannot divide by zero')\n    return a / b",
+      "bug_type": "missing_validation",
+      "language": "python",
+      "severity": "high",
+      "explanation": "Missing zero division check",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0002",
+      "buggy_code": "for (let i = 0; i <= arr.length; i++) {\n  console.log(arr[i]);\n}",
+      "fixed_code": "for (let i = 0; i < arr.length; i++) {\n  console.log(arr[i]);\n}",
+      "bug_type": "off_by_one",
+      "language": "javascript",
+      "severity": "medium",
+      "explanation": "Array index out of bounds due to <= instead of <",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0003",
+      "buggy_code": "String s = null;\nint length = s.length();",
+      "fixed_code": "String s = null;\nif (s != null) {\n    int length = s.length();\n} else {\n    // Handle null case\n}",
+      "bug_type": "null_pointer",
+      "language": "java",
+      "severity": "high",
+      "explanation": "NullPointerException when accessing null string",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0004",
+      "buggy_code": "items = []\nfor i in range(10):\n    items.append(lambda: i)",
+      "fixed_code": "items = []\nfor i in range(10):\n    items.append(lambda i=i: i)",
+      "bug_type": "closure_binding",
+      "language": "python",
+      "severity": "medium",
+      "explanation": "Lambda captures variable reference, not value",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0005",
+      "buggy_code": "async function getData() {\n  fetch('/api/data')\n    .then(res => res.json())\n    .then(data => console.log(data));\n  console.log('Done');\n}",
+      "fixed_code": "async function getData() {\n  const res = await fetch('/api/data');\n  const data = await res.json();\n  console.log(data);\n  console.log('Done');\n}",
+      "bug_type": "async_handling",
+      "language": "javascript",
+      "severity": "medium",
+      "explanation": "Not properly awaiting async operations",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0006",
+      "bug_type": "IndexError",
+      "language": "javascript",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0007",
+      "bug_type": "IndexError",
+      "language": "typescript",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0008",
+      "bug_type": "IndexError",
+      "language": "go",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0009",
+      "bug_type": "IndexError",
+      "language": "swift",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0010",
+      "bug_type": "IndexError",
+      "language": "python",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0011",
+      "bug_type": "IndexError",
+      "language": "swift",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0012",
+      "bug_type": "IndexError",
+      "language": "go",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0013",
+      "bug_type": "IndexError",
+      "language": "go",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0014",
+      "bug_type": "IndexError",
+      "language": "cpp",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0015",
+      "bug_type": "IndexError",
+      "language": "python",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0016",
+      "bug_type": "KeyError",
+      "language": "kotlin",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0017",
+      "bug_type": "KeyError",
+      "language": "go",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0018",
+      "bug_type": "KeyError",
+      "language": "rust",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0019",
+      "bug_type": "KeyError",
+      "language": "cpp",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0020",
+      "bug_type": "KeyError",
+      "language": "javascript",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0021",
+      "bug_type": "KeyError",
+      "language": "typescript",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0022",
+      "bug_type": "KeyError",
+      "language": "rust",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0023",
+      "bug_type": "KeyError",
+      "language": "php",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0024",
+      "bug_type": "KeyError",
+      "language": "rust",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0025",
+      "bug_type": "KeyError",
+      "language": "kotlin",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0026",
+      "bug_type": "TypeError",
+      "language": "swift",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0027",
+      "bug_type": "TypeError",
+      "language": "php",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0028",
+      "bug_type": "TypeError",
+      "language": "cpp",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0029",
+      "bug_type": "TypeError",
+      "language": "php",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0030",
+      "bug_type": "TypeError",
+      "language": "swift",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0031",
+      "bug_type": "TypeError",
+      "language": "ruby",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0032",
+      "bug_type": "TypeError",
+      "language": "java",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0033",
+      "bug_type": "TypeError",
+      "language": "kotlin",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0034",
+      "bug_type": "TypeError",
+      "language": "php",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0035",
+      "bug_type": "TypeError",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0036",
+      "bug_type": "ValueError",
+      "language": "javascript",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0037",
+      "bug_type": "ValueError",
+      "language": "cpp",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0038",
+      "bug_type": "ValueError",
+      "language": "cpp",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0039",
+      "bug_type": "ValueError",
+      "language": "python",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0040",
+      "bug_type": "ValueError",
+      "language": "ruby",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0041",
+      "bug_type": "ValueError",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0042",
+      "bug_type": "ValueError",
+      "language": "java",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0043",
+      "bug_type": "ValueError",
+      "language": "rust",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0044",
+      "bug_type": "ValueError",
+      "language": "php",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0045",
+      "bug_type": "ValueError",
+      "language": "kotlin",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0046",
+      "bug_type": "NullPointerException",
+      "language": "javascript",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0047",
+      "bug_type": "NullPointerException",
+      "language": "typescript",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0048",
+      "bug_type": "NullPointerException",
+      "language": "swift",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0049",
+      "bug_type": "NullPointerException",
+      "language": "swift",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0050",
+      "bug_type": "NullPointerException",
+      "language": "php",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0051",
+      "bug_type": "NullPointerException",
+      "language": "java",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0052",
+      "bug_type": "NullPointerException",
+      "language": "python",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0053",
+      "bug_type": "NullPointerException",
+      "language": "typescript",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0054",
+      "bug_type": "NullPointerException",
+      "language": "rust",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0055",
+      "bug_type": "NullPointerException",
+      "language": "rust",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0056",
+      "bug_type": "ConcurrentModificationException",
+      "language": "cpp",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0057",
+      "bug_type": "ConcurrentModificationException",
+      "language": "go",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0058",
+      "bug_type": "ConcurrentModificationException",
+      "language": "php",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0059",
+      "bug_type": "ConcurrentModificationException",
+      "language": "kotlin",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0060",
+      "bug_type": "ConcurrentModificationException",
+      "language": "rust",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0061",
+      "bug_type": "ConcurrentModificationException",
+      "language": "csharp",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0062",
+      "bug_type": "ConcurrentModificationException",
+      "language": "java",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0063",
+      "bug_type": "ConcurrentModificationException",
+      "language": "cpp",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0064",
+      "bug_type": "ConcurrentModificationException",
+      "language": "rust",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0065",
+      "bug_type": "ConcurrentModificationException",
+      "language": "kotlin",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0066",
+      "bug_type": "MemoryLeak",
+      "language": "java",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0067",
+      "bug_type": "MemoryLeak",
+      "language": "swift",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0068",
+      "bug_type": "MemoryLeak",
+      "language": "rust",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0069",
+      "bug_type": "MemoryLeak",
+      "language": "java",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0070",
+      "bug_type": "MemoryLeak",
+      "language": "cpp",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0071",
+      "bug_type": "MemoryLeak",
+      "language": "typescript",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0072",
+      "bug_type": "MemoryLeak",
+      "language": "python",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0073",
+      "bug_type": "MemoryLeak",
+      "language": "java",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0074",
+      "bug_type": "MemoryLeak",
+      "language": "javascript",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0075",
+      "bug_type": "MemoryLeak",
+      "language": "csharp",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0076",
+      "bug_type": "RaceCondition",
+      "language": "php",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0077",
+      "bug_type": "RaceCondition",
+      "language": "rust",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0078",
+      "bug_type": "RaceCondition",
+      "language": "php",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0079",
+      "bug_type": "RaceCondition",
+      "language": "ruby",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0080",
+      "bug_type": "RaceCondition",
+      "language": "python",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0081",
+      "bug_type": "RaceCondition",
+      "language": "typescript",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0082",
+      "bug_type": "RaceCondition",
+      "language": "swift",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0083",
+      "bug_type": "RaceCondition",
+      "language": "kotlin",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0084",
+      "bug_type": "RaceCondition",
+      "language": "ruby",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0085",
+      "bug_type": "RaceCondition",
+      "language": "typescript",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0086",
+      "bug_type": "DeadLock",
+      "language": "javascript",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0087",
+      "bug_type": "DeadLock",
+      "language": "javascript",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0088",
+      "bug_type": "DeadLock",
+      "language": "rust",
+      "severity": "high",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0089",
+      "bug_type": "DeadLock",
+      "language": "typescript",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0090",
+      "bug_type": "DeadLock",
+      "language": "ruby",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0091",
+      "bug_type": "DeadLock",
+      "language": "csharp",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0092",
+      "bug_type": "DeadLock",
+      "language": "kotlin",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0093",
+      "bug_type": "DeadLock",
+      "language": "csharp",
+      "severity": "critical",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0094",
+      "bug_type": "DeadLock",
+      "language": "php",
+      "severity": "medium",
+      "training_objective": "bug_detection_and_fixing"
+    },
+    {
+      "id": "bug_detection_0095",
+      "bug_type": "DeadLock",
+      "language": "javascript",
+      "severity": "low",
+      "training_objective": "bug_detection_and_fixing"
+    }
+  ]
+}

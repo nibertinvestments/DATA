@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_0",
+    "type": "testing",
+    "language": "javascript",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.339878",
+    "variant": 0
+  },
+  "patterns": [
+    {
+      "id": "test_0_fa3baf37",
+      "test_type": "regression",
+      "language": "javascript",
+      "example": "# regression test example",
+      "framework": "mocha",
+      "variant": 0
+    },
+    {
+      "id": "test_0_5b3f9840",
+      "test_type": "e2e",
+      "language": "javascript",
+      "example": "# e2e test example",
+      "framework": "mocha",
+      "variant": 0
+    },
+    {
+      "id": "test_0_4f81e5b6",
+      "test_type": "security",
+      "language": "javascript",
+      "example": "# security test example",
+      "framework": "rspec",
+      "variant": 0
+    },
+    {
+      "id": "test_0_87c63dcc",
+      "test_type": "unit",
+      "language": "javascript",
+      "example": "# unit test example",
+      "framework": "rspec",
+      "variant": 0
+    }
+  ]
+}

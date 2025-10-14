@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_7",
+    "type": "refactoring",
+    "language": "rust",
+    "total_examples": 5,
+    "created_at": "2025-10-13T23:32:22.342918",
+    "variant": 7
+  },
+  "refactorings": [
+    {
+      "id": "refactor_7_0_83f7cf97",
+      "refactoring_type": "move",
+      "language": "rust",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 7
+    },
+    {
+      "id": "refactor_7_1_63bbeb56",
+      "refactoring_type": "extract_method",
+      "language": "rust",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 7
+    },
+    {
+      "id": "refactor_7_2_b6235935",
+      "refactoring_type": "inline",
+      "language": "rust",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 7
+    },
+    {
+      "id": "refactor_7_3_1654402b",
+      "refactoring_type": "rename",
+      "language": "rust",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 7
+    },
+    {
+      "id": "refactor_7_4_3c0cebc0",
+      "refactoring_type": "inline",
+      "language": "rust",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 7
+    }
+  ]
+}

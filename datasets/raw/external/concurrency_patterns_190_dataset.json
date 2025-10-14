@@ -1,0 +1,40 @@
+{
+  "metadata": {
+    "name": "concurrency_patterns_variant_9",
+    "type": "concurrency",
+    "language": "python",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.354613",
+    "variant": 9
+  },
+  "patterns": [
+    {
+      "id": "concur_9_0_f89c5b97",
+      "pattern": "channel",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 9
+    },
+    {
+      "id": "concur_9_1_590e69b1",
+      "pattern": "mutex",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 9
+    },
+    {
+      "id": "concur_9_2_34a07268",
+      "pattern": "semaphore",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 9
+    },
+    {
+      "id": "concur_9_3_23bf17e3",
+      "pattern": "actor",
+      "language": "python",
+      "example": "# Concurrency pattern",
+      "variant": 9
+    }
+  ]
+}

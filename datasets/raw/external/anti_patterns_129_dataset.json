@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_8",
+    "type": "anti_patterns",
+    "language": "cpp",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.346141",
+    "variant": 8
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_8_86619bef",
+      "pattern": "Magic Numbers",
+      "language": "cpp",
+      "bad_example": "# Anti-pattern: Magic Numbers",
+      "good_example": "# Better approach",
+      "variant": 8
+    },
+    {
+      "id": "anti_8_a60a36b5",
+      "pattern": "Spaghetti Code",
+      "language": "cpp",
+      "bad_example": "# Anti-pattern: Spaghetti Code",
+      "good_example": "# Better approach",
+      "variant": 8
+    },
+    {
+      "id": "anti_8_5acf55ee",
+      "pattern": "Hard Coding",
+      "language": "cpp",
+      "bad_example": "# Anti-pattern: Hard Coding",
+      "good_example": "# Better approach",
+      "variant": 8
+    }
+  ]
+}

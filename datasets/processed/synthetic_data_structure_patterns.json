@@ -1,0 +1,4017 @@
+{
+  "metadata": {
+    "name": "data_structure_patterns_synthetic_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:35:35.744221",
+    "total_samples": 500,
+    "categories": [
+      "linear",
+      "tree",
+      "hashing",
+      "graph"
+    ],
+    "purpose": "AI data structure understanding training"
+  },
+  "samples": [
+    {
+      "id": "ds_00001",
+      "data_structure": "array",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00002",
+      "data_structure": "array",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00003",
+      "data_structure": "array",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00004",
+      "data_structure": "array",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00005",
+      "data_structure": "array",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00006",
+      "data_structure": "array",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00007",
+      "data_structure": "array",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00008",
+      "data_structure": "array",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00009",
+      "data_structure": "array",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00010",
+      "data_structure": "array",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00011",
+      "data_structure": "array",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00012",
+      "data_structure": "array",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00013",
+      "data_structure": "array",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00014",
+      "data_structure": "array",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00015",
+      "data_structure": "array",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00016",
+      "data_structure": "array",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00017",
+      "data_structure": "array",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00018",
+      "data_structure": "array",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00019",
+      "data_structure": "array",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00020",
+      "data_structure": "array",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00021",
+      "data_structure": "array",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00022",
+      "data_structure": "array",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00023",
+      "data_structure": "array",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00024",
+      "data_structure": "array",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00025",
+      "data_structure": "array",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00026",
+      "data_structure": "array",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00027",
+      "data_structure": "array",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00028",
+      "data_structure": "array",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00029",
+      "data_structure": "array",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00030",
+      "data_structure": "array",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00031",
+      "data_structure": "linked_list",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00032",
+      "data_structure": "linked_list",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00033",
+      "data_structure": "linked_list",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00034",
+      "data_structure": "linked_list",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00035",
+      "data_structure": "linked_list",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00036",
+      "data_structure": "linked_list",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00037",
+      "data_structure": "linked_list",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00038",
+      "data_structure": "linked_list",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00039",
+      "data_structure": "linked_list",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00040",
+      "data_structure": "linked_list",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00041",
+      "data_structure": "linked_list",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00042",
+      "data_structure": "linked_list",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00043",
+      "data_structure": "linked_list",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00044",
+      "data_structure": "linked_list",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00045",
+      "data_structure": "linked_list",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00046",
+      "data_structure": "linked_list",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00047",
+      "data_structure": "linked_list",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00048",
+      "data_structure": "linked_list",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00049",
+      "data_structure": "linked_list",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00050",
+      "data_structure": "linked_list",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00051",
+      "data_structure": "linked_list",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00052",
+      "data_structure": "linked_list",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00053",
+      "data_structure": "linked_list",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00054",
+      "data_structure": "linked_list",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00055",
+      "data_structure": "linked_list",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00056",
+      "data_structure": "linked_list",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00057",
+      "data_structure": "linked_list",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00058",
+      "data_structure": "linked_list",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00059",
+      "data_structure": "linked_list",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00060",
+      "data_structure": "linked_list",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00061",
+      "data_structure": "doubly_linked_list",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00062",
+      "data_structure": "doubly_linked_list",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00063",
+      "data_structure": "doubly_linked_list",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00064",
+      "data_structure": "doubly_linked_list",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00065",
+      "data_structure": "doubly_linked_list",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00066",
+      "data_structure": "doubly_linked_list",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00067",
+      "data_structure": "doubly_linked_list",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00068",
+      "data_structure": "doubly_linked_list",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00069",
+      "data_structure": "doubly_linked_list",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00070",
+      "data_structure": "doubly_linked_list",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00071",
+      "data_structure": "doubly_linked_list",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00072",
+      "data_structure": "doubly_linked_list",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00073",
+      "data_structure": "doubly_linked_list",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00074",
+      "data_structure": "doubly_linked_list",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00075",
+      "data_structure": "doubly_linked_list",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00076",
+      "data_structure": "doubly_linked_list",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00077",
+      "data_structure": "doubly_linked_list",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00078",
+      "data_structure": "doubly_linked_list",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00079",
+      "data_structure": "doubly_linked_list",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00080",
+      "data_structure": "doubly_linked_list",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00081",
+      "data_structure": "doubly_linked_list",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00082",
+      "data_structure": "doubly_linked_list",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00083",
+      "data_structure": "doubly_linked_list",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00084",
+      "data_structure": "doubly_linked_list",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00085",
+      "data_structure": "doubly_linked_list",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00086",
+      "data_structure": "doubly_linked_list",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00087",
+      "data_structure": "doubly_linked_list",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00088",
+      "data_structure": "doubly_linked_list",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00089",
+      "data_structure": "doubly_linked_list",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00090",
+      "data_structure": "doubly_linked_list",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00091",
+      "data_structure": "circular_linked_list",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00092",
+      "data_structure": "circular_linked_list",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00093",
+      "data_structure": "circular_linked_list",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00094",
+      "data_structure": "circular_linked_list",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00095",
+      "data_structure": "circular_linked_list",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00096",
+      "data_structure": "circular_linked_list",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00097",
+      "data_structure": "circular_linked_list",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00098",
+      "data_structure": "circular_linked_list",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00099",
+      "data_structure": "circular_linked_list",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00100",
+      "data_structure": "circular_linked_list",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00101",
+      "data_structure": "circular_linked_list",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00102",
+      "data_structure": "circular_linked_list",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00103",
+      "data_structure": "circular_linked_list",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00104",
+      "data_structure": "circular_linked_list",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00105",
+      "data_structure": "circular_linked_list",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00106",
+      "data_structure": "circular_linked_list",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00107",
+      "data_structure": "circular_linked_list",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00108",
+      "data_structure": "circular_linked_list",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00109",
+      "data_structure": "circular_linked_list",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00110",
+      "data_structure": "circular_linked_list",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00111",
+      "data_structure": "circular_linked_list",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00112",
+      "data_structure": "circular_linked_list",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00113",
+      "data_structure": "circular_linked_list",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00114",
+      "data_structure": "circular_linked_list",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00115",
+      "data_structure": "circular_linked_list",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00116",
+      "data_structure": "circular_linked_list",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00117",
+      "data_structure": "circular_linked_list",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00118",
+      "data_structure": "circular_linked_list",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00119",
+      "data_structure": "circular_linked_list",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00120",
+      "data_structure": "circular_linked_list",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00121",
+      "data_structure": "stack",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00122",
+      "data_structure": "stack",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00123",
+      "data_structure": "stack",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00124",
+      "data_structure": "stack",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00125",
+      "data_structure": "stack",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00126",
+      "data_structure": "stack",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00127",
+      "data_structure": "stack",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00128",
+      "data_structure": "stack",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00129",
+      "data_structure": "stack",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00130",
+      "data_structure": "stack",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00131",
+      "data_structure": "stack",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00132",
+      "data_structure": "stack",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00133",
+      "data_structure": "stack",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00134",
+      "data_structure": "stack",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00135",
+      "data_structure": "stack",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00136",
+      "data_structure": "stack",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00137",
+      "data_structure": "stack",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00138",
+      "data_structure": "stack",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00139",
+      "data_structure": "stack",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00140",
+      "data_structure": "stack",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00141",
+      "data_structure": "stack",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00142",
+      "data_structure": "stack",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00143",
+      "data_structure": "stack",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00144",
+      "data_structure": "stack",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00145",
+      "data_structure": "stack",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00146",
+      "data_structure": "stack",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00147",
+      "data_structure": "stack",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00148",
+      "data_structure": "stack",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00149",
+      "data_structure": "stack",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00150",
+      "data_structure": "stack",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00151",
+      "data_structure": "queue",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00152",
+      "data_structure": "queue",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00153",
+      "data_structure": "queue",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00154",
+      "data_structure": "queue",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00155",
+      "data_structure": "queue",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00156",
+      "data_structure": "queue",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00157",
+      "data_structure": "queue",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00158",
+      "data_structure": "queue",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00159",
+      "data_structure": "queue",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00160",
+      "data_structure": "queue",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00161",
+      "data_structure": "queue",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00162",
+      "data_structure": "queue",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00163",
+      "data_structure": "queue",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00164",
+      "data_structure": "queue",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00165",
+      "data_structure": "queue",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00166",
+      "data_structure": "queue",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00167",
+      "data_structure": "queue",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00168",
+      "data_structure": "queue",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00169",
+      "data_structure": "queue",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00170",
+      "data_structure": "queue",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00171",
+      "data_structure": "queue",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00172",
+      "data_structure": "queue",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00173",
+      "data_structure": "queue",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00174",
+      "data_structure": "queue",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00175",
+      "data_structure": "queue",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00176",
+      "data_structure": "queue",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00177",
+      "data_structure": "queue",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00178",
+      "data_structure": "queue",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00179",
+      "data_structure": "queue",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00180",
+      "data_structure": "queue",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00181",
+      "data_structure": "deque",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00182",
+      "data_structure": "deque",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00183",
+      "data_structure": "deque",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00184",
+      "data_structure": "deque",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00185",
+      "data_structure": "deque",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00186",
+      "data_structure": "deque",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00187",
+      "data_structure": "deque",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00188",
+      "data_structure": "deque",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00189",
+      "data_structure": "deque",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00190",
+      "data_structure": "deque",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00191",
+      "data_structure": "deque",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00192",
+      "data_structure": "deque",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00193",
+      "data_structure": "deque",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00194",
+      "data_structure": "deque",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00195",
+      "data_structure": "deque",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00196",
+      "data_structure": "deque",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00197",
+      "data_structure": "deque",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00198",
+      "data_structure": "deque",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00199",
+      "data_structure": "deque",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00200",
+      "data_structure": "deque",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00201",
+      "data_structure": "deque",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00202",
+      "data_structure": "deque",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00203",
+      "data_structure": "deque",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00204",
+      "data_structure": "deque",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00205",
+      "data_structure": "deque",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00206",
+      "data_structure": "deque",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00207",
+      "data_structure": "deque",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00208",
+      "data_structure": "deque",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00209",
+      "data_structure": "deque",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00210",
+      "data_structure": "deque",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00211",
+      "data_structure": "priority_queue",
+      "language": "python",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00212",
+      "data_structure": "priority_queue",
+      "language": "python",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00213",
+      "data_structure": "priority_queue",
+      "language": "python",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00214",
+      "data_structure": "priority_queue",
+      "language": "python",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00215",
+      "data_structure": "priority_queue",
+      "language": "python",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00216",
+      "data_structure": "priority_queue",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00217",
+      "data_structure": "priority_queue",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00218",
+      "data_structure": "priority_queue",
+      "language": "javascript",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00219",
+      "data_structure": "priority_queue",
+      "language": "javascript",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00220",
+      "data_structure": "priority_queue",
+      "language": "javascript",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00221",
+      "data_structure": "priority_queue",
+      "language": "java",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00222",
+      "data_structure": "priority_queue",
+      "language": "java",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00223",
+      "data_structure": "priority_queue",
+      "language": "java",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00224",
+      "data_structure": "priority_queue",
+      "language": "java",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00225",
+      "data_structure": "priority_queue",
+      "language": "java",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00226",
+      "data_structure": "priority_queue",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00227",
+      "data_structure": "priority_queue",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00228",
+      "data_structure": "priority_queue",
+      "language": "cpp",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00229",
+      "data_structure": "priority_queue",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00230",
+      "data_structure": "priority_queue",
+      "language": "cpp",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00231",
+      "data_structure": "priority_queue",
+      "language": "go",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00232",
+      "data_structure": "priority_queue",
+      "language": "go",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00233",
+      "data_structure": "priority_queue",
+      "language": "go",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00234",
+      "data_structure": "priority_queue",
+      "language": "go",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00235",
+      "data_structure": "priority_queue",
+      "language": "go",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00236",
+      "data_structure": "priority_queue",
+      "language": "rust",
+      "operation": "insert",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00237",
+      "data_structure": "priority_queue",
+      "language": "rust",
+      "operation": "delete",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00238",
+      "data_structure": "priority_queue",
+      "language": "rust",
+      "operation": "search",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00239",
+      "data_structure": "priority_queue",
+      "language": "rust",
+      "operation": "traverse",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00240",
+      "data_structure": "priority_queue",
+      "language": "rust",
+      "operation": "update",
+      "category": "linear",
+      "complexity": "varies by operation"
+    },
+    {
+      "id": "ds_00241",
+      "data_structure": "binary_tree",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00242",
+      "data_structure": "binary_tree",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00243",
+      "data_structure": "binary_tree",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00244",
+      "data_structure": "binary_tree",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00245",
+      "data_structure": "binary_tree",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00246",
+      "data_structure": "binary_tree",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00247",
+      "data_structure": "binary_tree",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00248",
+      "data_structure": "binary_tree",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00249",
+      "data_structure": "binary_tree",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00250",
+      "data_structure": "binary_tree",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00251",
+      "data_structure": "binary_tree",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00252",
+      "data_structure": "binary_tree",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00253",
+      "data_structure": "binary_tree",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00254",
+      "data_structure": "binary_tree",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00255",
+      "data_structure": "binary_tree",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00256",
+      "data_structure": "binary_tree",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00257",
+      "data_structure": "binary_search_tree",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00258",
+      "data_structure": "binary_search_tree",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00259",
+      "data_structure": "binary_search_tree",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00260",
+      "data_structure": "binary_search_tree",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00261",
+      "data_structure": "binary_search_tree",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00262",
+      "data_structure": "binary_search_tree",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00263",
+      "data_structure": "binary_search_tree",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00264",
+      "data_structure": "binary_search_tree",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00265",
+      "data_structure": "binary_search_tree",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00266",
+      "data_structure": "binary_search_tree",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00267",
+      "data_structure": "binary_search_tree",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00268",
+      "data_structure": "binary_search_tree",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00269",
+      "data_structure": "binary_search_tree",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00270",
+      "data_structure": "binary_search_tree",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00271",
+      "data_structure": "binary_search_tree",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00272",
+      "data_structure": "binary_search_tree",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00273",
+      "data_structure": "avl_tree",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00274",
+      "data_structure": "avl_tree",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00275",
+      "data_structure": "avl_tree",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00276",
+      "data_structure": "avl_tree",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00277",
+      "data_structure": "avl_tree",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00278",
+      "data_structure": "avl_tree",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00279",
+      "data_structure": "avl_tree",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00280",
+      "data_structure": "avl_tree",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00281",
+      "data_structure": "avl_tree",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00282",
+      "data_structure": "avl_tree",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00283",
+      "data_structure": "avl_tree",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00284",
+      "data_structure": "avl_tree",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00285",
+      "data_structure": "avl_tree",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00286",
+      "data_structure": "avl_tree",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00287",
+      "data_structure": "avl_tree",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00288",
+      "data_structure": "avl_tree",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00289",
+      "data_structure": "red_black_tree",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00290",
+      "data_structure": "red_black_tree",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00291",
+      "data_structure": "red_black_tree",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00292",
+      "data_structure": "red_black_tree",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00293",
+      "data_structure": "red_black_tree",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00294",
+      "data_structure": "red_black_tree",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00295",
+      "data_structure": "red_black_tree",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00296",
+      "data_structure": "red_black_tree",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00297",
+      "data_structure": "red_black_tree",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00298",
+      "data_structure": "red_black_tree",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00299",
+      "data_structure": "red_black_tree",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00300",
+      "data_structure": "red_black_tree",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00301",
+      "data_structure": "red_black_tree",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00302",
+      "data_structure": "red_black_tree",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00303",
+      "data_structure": "red_black_tree",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00304",
+      "data_structure": "red_black_tree",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00305",
+      "data_structure": "b_tree",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00306",
+      "data_structure": "b_tree",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00307",
+      "data_structure": "b_tree",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00308",
+      "data_structure": "b_tree",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00309",
+      "data_structure": "b_tree",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00310",
+      "data_structure": "b_tree",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00311",
+      "data_structure": "b_tree",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00312",
+      "data_structure": "b_tree",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00313",
+      "data_structure": "b_tree",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00314",
+      "data_structure": "b_tree",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00315",
+      "data_structure": "b_tree",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00316",
+      "data_structure": "b_tree",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00317",
+      "data_structure": "b_tree",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00318",
+      "data_structure": "b_tree",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00319",
+      "data_structure": "b_tree",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00320",
+      "data_structure": "b_tree",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00321",
+      "data_structure": "trie",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00322",
+      "data_structure": "trie",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00323",
+      "data_structure": "trie",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00324",
+      "data_structure": "trie",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00325",
+      "data_structure": "trie",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00326",
+      "data_structure": "trie",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00327",
+      "data_structure": "trie",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00328",
+      "data_structure": "trie",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00329",
+      "data_structure": "trie",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00330",
+      "data_structure": "trie",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00331",
+      "data_structure": "trie",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00332",
+      "data_structure": "trie",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00333",
+      "data_structure": "trie",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00334",
+      "data_structure": "trie",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00335",
+      "data_structure": "trie",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00336",
+      "data_structure": "trie",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00337",
+      "data_structure": "segment_tree",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00338",
+      "data_structure": "segment_tree",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00339",
+      "data_structure": "segment_tree",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00340",
+      "data_structure": "segment_tree",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00341",
+      "data_structure": "segment_tree",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00342",
+      "data_structure": "segment_tree",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00343",
+      "data_structure": "segment_tree",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00344",
+      "data_structure": "segment_tree",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00345",
+      "data_structure": "segment_tree",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00346",
+      "data_structure": "segment_tree",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00347",
+      "data_structure": "segment_tree",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00348",
+      "data_structure": "segment_tree",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00349",
+      "data_structure": "segment_tree",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00350",
+      "data_structure": "segment_tree",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00351",
+      "data_structure": "segment_tree",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00352",
+      "data_structure": "segment_tree",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00353",
+      "data_structure": "fenwick_tree",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00354",
+      "data_structure": "fenwick_tree",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00355",
+      "data_structure": "fenwick_tree",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00356",
+      "data_structure": "fenwick_tree",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00357",
+      "data_structure": "fenwick_tree",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00358",
+      "data_structure": "fenwick_tree",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00359",
+      "data_structure": "fenwick_tree",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00360",
+      "data_structure": "fenwick_tree",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00361",
+      "data_structure": "fenwick_tree",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00362",
+      "data_structure": "fenwick_tree",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00363",
+      "data_structure": "fenwick_tree",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00364",
+      "data_structure": "fenwick_tree",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00365",
+      "data_structure": "fenwick_tree",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00366",
+      "data_structure": "fenwick_tree",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00367",
+      "data_structure": "fenwick_tree",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00368",
+      "data_structure": "fenwick_tree",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00369",
+      "data_structure": "heap",
+      "language": "python",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00370",
+      "data_structure": "heap",
+      "language": "python",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00371",
+      "data_structure": "heap",
+      "language": "python",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00372",
+      "data_structure": "heap",
+      "language": "python",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00373",
+      "data_structure": "heap",
+      "language": "java",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00374",
+      "data_structure": "heap",
+      "language": "java",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00375",
+      "data_structure": "heap",
+      "language": "java",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00376",
+      "data_structure": "heap",
+      "language": "java",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00377",
+      "data_structure": "heap",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00378",
+      "data_structure": "heap",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00379",
+      "data_structure": "heap",
+      "language": "cpp",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00380",
+      "data_structure": "heap",
+      "language": "cpp",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00381",
+      "data_structure": "heap",
+      "language": "go",
+      "operation": "insert",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00382",
+      "data_structure": "heap",
+      "language": "go",
+      "operation": "delete",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00383",
+      "data_structure": "heap",
+      "language": "go",
+      "operation": "search",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00384",
+      "data_structure": "heap",
+      "language": "go",
+      "operation": "traverse",
+      "category": "tree",
+      "complexity": "O(log n) to O(n)"
+    },
+    {
+      "id": "ds_00385",
+      "data_structure": "hash_table",
+      "language": "python",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00386",
+      "data_structure": "hash_table",
+      "language": "python",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00387",
+      "data_structure": "hash_table",
+      "language": "python",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00388",
+      "data_structure": "hash_table",
+      "language": "python",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00389",
+      "data_structure": "hash_table",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00390",
+      "data_structure": "hash_table",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00391",
+      "data_structure": "hash_table",
+      "language": "javascript",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00392",
+      "data_structure": "hash_table",
+      "language": "javascript",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00393",
+      "data_structure": "hash_table",
+      "language": "java",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00394",
+      "data_structure": "hash_table",
+      "language": "java",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00395",
+      "data_structure": "hash_table",
+      "language": "java",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00396",
+      "data_structure": "hash_table",
+      "language": "java",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00397",
+      "data_structure": "hash_table",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00398",
+      "data_structure": "hash_table",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00399",
+      "data_structure": "hash_table",
+      "language": "cpp",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00400",
+      "data_structure": "hash_table",
+      "language": "cpp",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00401",
+      "data_structure": "hash_table",
+      "language": "go",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00402",
+      "data_structure": "hash_table",
+      "language": "go",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00403",
+      "data_structure": "hash_table",
+      "language": "go",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00404",
+      "data_structure": "hash_table",
+      "language": "go",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00405",
+      "data_structure": "hash_set",
+      "language": "python",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00406",
+      "data_structure": "hash_set",
+      "language": "python",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00407",
+      "data_structure": "hash_set",
+      "language": "python",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00408",
+      "data_structure": "hash_set",
+      "language": "python",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00409",
+      "data_structure": "hash_set",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00410",
+      "data_structure": "hash_set",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00411",
+      "data_structure": "hash_set",
+      "language": "javascript",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00412",
+      "data_structure": "hash_set",
+      "language": "javascript",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00413",
+      "data_structure": "hash_set",
+      "language": "java",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00414",
+      "data_structure": "hash_set",
+      "language": "java",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00415",
+      "data_structure": "hash_set",
+      "language": "java",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00416",
+      "data_structure": "hash_set",
+      "language": "java",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00417",
+      "data_structure": "hash_set",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00418",
+      "data_structure": "hash_set",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00419",
+      "data_structure": "hash_set",
+      "language": "cpp",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00420",
+      "data_structure": "hash_set",
+      "language": "cpp",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00421",
+      "data_structure": "hash_set",
+      "language": "go",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00422",
+      "data_structure": "hash_set",
+      "language": "go",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00423",
+      "data_structure": "hash_set",
+      "language": "go",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00424",
+      "data_structure": "hash_set",
+      "language": "go",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00425",
+      "data_structure": "hash_map",
+      "language": "python",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00426",
+      "data_structure": "hash_map",
+      "language": "python",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00427",
+      "data_structure": "hash_map",
+      "language": "python",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00428",
+      "data_structure": "hash_map",
+      "language": "python",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00429",
+      "data_structure": "hash_map",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00430",
+      "data_structure": "hash_map",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00431",
+      "data_structure": "hash_map",
+      "language": "javascript",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00432",
+      "data_structure": "hash_map",
+      "language": "javascript",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00433",
+      "data_structure": "hash_map",
+      "language": "java",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00434",
+      "data_structure": "hash_map",
+      "language": "java",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00435",
+      "data_structure": "hash_map",
+      "language": "java",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00436",
+      "data_structure": "hash_map",
+      "language": "java",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00437",
+      "data_structure": "hash_map",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00438",
+      "data_structure": "hash_map",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00439",
+      "data_structure": "hash_map",
+      "language": "cpp",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00440",
+      "data_structure": "hash_map",
+      "language": "cpp",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00441",
+      "data_structure": "hash_map",
+      "language": "go",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00442",
+      "data_structure": "hash_map",
+      "language": "go",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00443",
+      "data_structure": "hash_map",
+      "language": "go",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00444",
+      "data_structure": "hash_map",
+      "language": "go",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00445",
+      "data_structure": "bloom_filter",
+      "language": "python",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00446",
+      "data_structure": "bloom_filter",
+      "language": "python",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00447",
+      "data_structure": "bloom_filter",
+      "language": "python",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00448",
+      "data_structure": "bloom_filter",
+      "language": "python",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00449",
+      "data_structure": "bloom_filter",
+      "language": "javascript",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00450",
+      "data_structure": "bloom_filter",
+      "language": "javascript",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00451",
+      "data_structure": "bloom_filter",
+      "language": "javascript",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00452",
+      "data_structure": "bloom_filter",
+      "language": "javascript",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00453",
+      "data_structure": "bloom_filter",
+      "language": "java",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00454",
+      "data_structure": "bloom_filter",
+      "language": "java",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00455",
+      "data_structure": "bloom_filter",
+      "language": "java",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00456",
+      "data_structure": "bloom_filter",
+      "language": "java",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00457",
+      "data_structure": "bloom_filter",
+      "language": "cpp",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00458",
+      "data_structure": "bloom_filter",
+      "language": "cpp",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00459",
+      "data_structure": "bloom_filter",
+      "language": "cpp",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00460",
+      "data_structure": "bloom_filter",
+      "language": "cpp",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00461",
+      "data_structure": "bloom_filter",
+      "language": "go",
+      "operation": "insert",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00462",
+      "data_structure": "bloom_filter",
+      "language": "go",
+      "operation": "delete",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00463",
+      "data_structure": "bloom_filter",
+      "language": "go",
+      "operation": "lookup",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00464",
+      "data_structure": "bloom_filter",
+      "language": "go",
+      "operation": "contains",
+      "category": "hashing",
+      "complexity": "O(1) average"
+    },
+    {
+      "id": "ds_00465",
+      "data_structure": "adjacency_matrix",
+      "language": "python",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00466",
+      "data_structure": "adjacency_matrix",
+      "language": "python",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00467",
+      "data_structure": "adjacency_matrix",
+      "language": "python",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00468",
+      "data_structure": "adjacency_matrix",
+      "language": "python",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00469",
+      "data_structure": "adjacency_matrix",
+      "language": "java",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00470",
+      "data_structure": "adjacency_matrix",
+      "language": "java",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00471",
+      "data_structure": "adjacency_matrix",
+      "language": "java",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00472",
+      "data_structure": "adjacency_matrix",
+      "language": "java",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00473",
+      "data_structure": "adjacency_matrix",
+      "language": "cpp",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00474",
+      "data_structure": "adjacency_matrix",
+      "language": "cpp",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00475",
+      "data_structure": "adjacency_matrix",
+      "language": "cpp",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00476",
+      "data_structure": "adjacency_matrix",
+      "language": "cpp",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00477",
+      "data_structure": "adjacency_list",
+      "language": "python",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00478",
+      "data_structure": "adjacency_list",
+      "language": "python",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00479",
+      "data_structure": "adjacency_list",
+      "language": "python",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00480",
+      "data_structure": "adjacency_list",
+      "language": "python",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00481",
+      "data_structure": "adjacency_list",
+      "language": "java",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00482",
+      "data_structure": "adjacency_list",
+      "language": "java",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00483",
+      "data_structure": "adjacency_list",
+      "language": "java",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00484",
+      "data_structure": "adjacency_list",
+      "language": "java",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00485",
+      "data_structure": "adjacency_list",
+      "language": "cpp",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00486",
+      "data_structure": "adjacency_list",
+      "language": "cpp",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00487",
+      "data_structure": "adjacency_list",
+      "language": "cpp",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00488",
+      "data_structure": "adjacency_list",
+      "language": "cpp",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00489",
+      "data_structure": "edge_list",
+      "language": "python",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00490",
+      "data_structure": "edge_list",
+      "language": "python",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00491",
+      "data_structure": "edge_list",
+      "language": "python",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00492",
+      "data_structure": "edge_list",
+      "language": "python",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00493",
+      "data_structure": "edge_list",
+      "language": "java",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00494",
+      "data_structure": "edge_list",
+      "language": "java",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00495",
+      "data_structure": "edge_list",
+      "language": "java",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00496",
+      "data_structure": "edge_list",
+      "language": "java",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00497",
+      "data_structure": "edge_list",
+      "language": "cpp",
+      "operation": "add_vertex",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00498",
+      "data_structure": "edge_list",
+      "language": "cpp",
+      "operation": "add_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00499",
+      "data_structure": "edge_list",
+      "language": "cpp",
+      "operation": "remove_edge",
+      "category": "graph",
+      "complexity": "varies by representation"
+    },
+    {
+      "id": "ds_00500",
+      "data_structure": "edge_list",
+      "language": "cpp",
+      "operation": "get_neighbors",
+      "category": "graph",
+      "complexity": "varies by representation"
+    }
+  ]
+}

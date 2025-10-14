@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_9",
+    "type": "design_patterns",
+    "language": "cpp",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.336775",
+    "variant": 9
+  },
+  "patterns": [
+    {
+      "id": "pattern_9_dd26df5a",
+      "name": "Iterator Pattern",
+      "category": "behavioral",
+      "language": "cpp",
+      "implementation": "# Iterator in cpp",
+      "variant": 9
+    },
+    {
+      "id": "pattern_9_3d5b61ed",
+      "name": "Singleton Pattern",
+      "category": "creational",
+      "language": "cpp",
+      "implementation": "# Singleton in cpp",
+      "variant": 9
+    }
+  ]
+}

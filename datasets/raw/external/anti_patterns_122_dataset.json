@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "anti_patterns_variant_1",
+    "type": "anti_patterns",
+    "language": "cpp",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.345154",
+    "variant": 1
+  },
+  "anti_patterns": [
+    {
+      "id": "anti_1_5f734dae",
+      "pattern": "God Object",
+      "language": "cpp",
+      "bad_example": "# Anti-pattern: God Object",
+      "good_example": "# Better approach",
+      "variant": 1
+    },
+    {
+      "id": "anti_1_6ffe63a0",
+      "pattern": "Spaghetti Code",
+      "language": "cpp",
+      "bad_example": "# Anti-pattern: Spaghetti Code",
+      "good_example": "# Better approach",
+      "variant": 1
+    },
+    {
+      "id": "anti_1_d651bf83",
+      "pattern": "Copy-Paste",
+      "language": "cpp",
+      "bad_example": "# Anti-pattern: Copy-Paste",
+      "good_example": "# Better approach",
+      "variant": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_4",
+    "type": "design_patterns",
+    "language": "javascript",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.336081",
+    "variant": 4
+  },
+  "patterns": [
+    {
+      "id": "pattern_4_d92d0446",
+      "name": "Observer Pattern",
+      "category": "behavioral",
+      "language": "javascript",
+      "implementation": "# Observer in javascript",
+      "variant": 4
+    },
+    {
+      "id": "pattern_4_6fa1f413",
+      "name": "Iterator Pattern",
+      "category": "behavioral",
+      "language": "javascript",
+      "implementation": "# Iterator in javascript",
+      "variant": 4
+    }
+  ]
+}

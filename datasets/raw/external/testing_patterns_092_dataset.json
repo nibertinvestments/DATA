@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_1",
+    "type": "testing",
+    "language": "go",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.340015",
+    "variant": 1
+  },
+  "patterns": [
+    {
+      "id": "test_1_fe47e74e",
+      "test_type": "e2e",
+      "language": "go",
+      "example": "# e2e test example",
+      "framework": "pytest",
+      "variant": 1
+    },
+    {
+      "id": "test_1_1cbbf4d3",
+      "test_type": "performance",
+      "language": "go",
+      "example": "# performance test example",
+      "framework": "jest",
+      "variant": 1
+    },
+    {
+      "id": "test_1_3e02ac7e",
+      "test_type": "integration",
+      "language": "go",
+      "example": "# integration test example",
+      "framework": "pytest",
+      "variant": 1
+    }
+  ]
+}

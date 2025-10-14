@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_5",
+    "type": "error_analysis",
+    "description": "Error patterns for go, rust, cpp",
+    "languages": [
+      "go",
+      "rust",
+      "cpp"
+    ],
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.328122",
+    "variant": 5
+  },
+  "error_patterns": [
+    {
+      "id": "err_5_000_b1016378",
+      "language": "rust",
+      "error_type": "NameError",
+      "description": "NameError in rust",
+      "buggy_code": "# Buggy rust code that causes NameError\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for NameError\n# ... implementation ...",
+      "explanation": "How to fix NameError in rust",
+      "severity": "low",
+      "category": "syntax",
+      "variant": 5
+    },
+    {
+      "id": "err_5_001_956bb380",
+      "language": "rust",
+      "error_type": "StopIteration",
+      "description": "StopIteration in rust",
+      "buggy_code": "# Buggy rust code that causes StopIteration\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for StopIteration\n# ... implementation ...",
+      "explanation": "How to fix StopIteration in rust",
+      "severity": "critical",
+      "category": "logic",
+      "variant": 5
+    },
+    {
+      "id": "err_5_002_f6ac2329",
+      "language": "cpp",
+      "error_type": "NullPointerException",
+      "description": "NullPointerException in cpp",
+      "buggy_code": "# Buggy cpp code that causes NullPointerException\n# ... implementation ...",
+      "fixed_code": "# Fixed cpp code for NullPointerException\n# ... implementation ...",
+      "explanation": "How to fix NullPointerException in cpp",
+      "severity": "low",
+      "category": "syntax",
+      "variant": 5
+    },
+    {
+      "id": "err_5_003_241f6929",
+      "language": "rust",
+      "error_type": "IndexError",
+      "description": "IndexError in rust",
+      "buggy_code": "# Buggy rust code that causes IndexError\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for IndexError\n# ... implementation ...",
+      "explanation": "How to fix IndexError in rust",
+      "severity": "high",
+      "category": "type",
+      "variant": 5
+    }
+  ]
+}

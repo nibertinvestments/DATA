@@ -1,0 +1,33 @@
+{
+  "metadata": {
+    "name": "framework_examples_variant_8",
+    "type": "framework_usage",
+    "framework": "svelte",
+    "total_examples": 3,
+    "created_at": "2025-10-13T23:32:22.347591",
+    "variant": 8
+  },
+  "examples": [
+    {
+      "id": "framework_8_0_d8abd221",
+      "framework": "svelte",
+      "feature": "Feature #1",
+      "code": "# svelte example",
+      "variant": 8
+    },
+    {
+      "id": "framework_8_1_95a5349c",
+      "framework": "svelte",
+      "feature": "Feature #2",
+      "code": "# svelte example",
+      "variant": 8
+    },
+    {
+      "id": "framework_8_2_2b1bdf26",
+      "framework": "svelte",
+      "feature": "Feature #3",
+      "code": "# svelte example",
+      "variant": 8
+    }
+  ]
+}

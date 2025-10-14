@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "memory_patterns_variant_9",
+    "type": "memory_management",
+    "language": "rust",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.355865",
+    "variant": 9
+  },
+  "patterns": [
+    {
+      "id": "memory_9_0_7d04c55c",
+      "pattern": "deallocation",
+      "language": "rust",
+      "example": "# Memory management",
+      "variant": 9
+    },
+    {
+      "id": "memory_9_1_7556bc4b",
+      "pattern": "RAII",
+      "language": "rust",
+      "example": "# Memory management",
+      "variant": 9
+    }
+  ]
+}

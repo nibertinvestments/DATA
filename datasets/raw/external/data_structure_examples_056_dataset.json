@@ -1,0 +1,50 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_5",
+    "type": "data_structures",
+    "language": "go",
+    "total_examples": 3,
+    "created_at": "2025-10-13T23:32:22.334693",
+    "variant": 5
+  },
+  "examples": [
+    {
+      "id": "ds_5_5cb693f1",
+      "structure": "heap",
+      "language": "go",
+      "implementation": "# heap implementation in go",
+      "operations": [
+        "search",
+        "insert",
+        "traverse",
+        "delete"
+      ],
+      "variant": 5
+    },
+    {
+      "id": "ds_5_fc4cc33b",
+      "structure": "linked_list",
+      "language": "go",
+      "implementation": "# linked_list implementation in go",
+      "operations": [
+        "delete",
+        "search",
+        "traverse",
+        "insert"
+      ],
+      "variant": 5
+    },
+    {
+      "id": "ds_5_213a4677",
+      "structure": "graph",
+      "language": "go",
+      "implementation": "# graph implementation in go",
+      "operations": [
+        "traverse",
+        "insert",
+        "search"
+      ],
+      "variant": 5
+    }
+  ]
+}

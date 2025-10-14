@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "name": "security_patterns_variant_2",
+    "type": "security",
+    "language": "java",
+    "total_vulnerabilities": 2,
+    "created_at": "2025-10-13T23:32:22.337204",
+    "variant": 2
+  },
+  "vulnerabilities": [
+    {
+      "id": "sec_2_ad4e357e",
+      "vulnerability": "Authentication Bypass",
+      "severity": "high",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable Authentication Bypass code",
+      "fixed_code": "# Fixed Authentication Bypass code",
+      "variant": 2
+    },
+    {
+      "id": "sec_2_82d0da3f",
+      "vulnerability": "Command Injection",
+      "severity": "critical",
+      "language": "java",
+      "vulnerable_code": "# Vulnerable Command Injection code",
+      "fixed_code": "# Fixed Command Injection code",
+      "variant": 2
+    }
+  ]
+}

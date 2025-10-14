@@ -1,0 +1,36 @@
+{
+  "metadata": {
+    "name": "testing_patterns_variant_8",
+    "type": "testing",
+    "language": "rust",
+    "total_patterns": 3,
+    "created_at": "2025-10-13T23:32:22.340943",
+    "variant": 8
+  },
+  "patterns": [
+    {
+      "id": "test_8_0e7724f0",
+      "test_type": "e2e",
+      "language": "rust",
+      "example": "# e2e test example",
+      "framework": "mocha",
+      "variant": 8
+    },
+    {
+      "id": "test_8_01a4665f",
+      "test_type": "integration",
+      "language": "rust",
+      "example": "# integration test example",
+      "framework": "junit",
+      "variant": 8
+    },
+    {
+      "id": "test_8_34f4e991",
+      "test_type": "regression",
+      "language": "rust",
+      "example": "# regression test example",
+      "framework": "mocha",
+      "variant": 8
+    }
+  ]
+}

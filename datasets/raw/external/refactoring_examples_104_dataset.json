@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_3",
+    "type": "refactoring",
+    "language": "javascript",
+    "total_examples": 4,
+    "created_at": "2025-10-13T23:32:22.341675",
+    "variant": 3
+  },
+  "refactorings": [
+    {
+      "id": "refactor_3_0_128311b5",
+      "refactoring_type": "extract_class",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 3
+    },
+    {
+      "id": "refactor_3_1_b03db839",
+      "refactoring_type": "inline",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 3
+    },
+    {
+      "id": "refactor_3_2_cbac13e6",
+      "refactoring_type": "rename",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 3
+    },
+    {
+      "id": "refactor_3_3_0be3cbba",
+      "refactoring_type": "rename",
+      "language": "javascript",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 3
+    }
+  ]
+}

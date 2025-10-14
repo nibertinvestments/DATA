@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "name": "best_practices_variant_8",
+    "type": "best_practices",
+    "topic": "games",
+    "language": "ruby",
+    "total_practices": 8,
+    "created_at": "2025-10-13T23:32:22.344705",
+    "variant": 8
+  },
+  "practices": [
+    {
+      "id": "practice_8_0_c02c4aa3",
+      "practice": "Best practice #1",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    },
+    {
+      "id": "practice_8_1_c0602297",
+      "practice": "Best practice #2",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    },
+    {
+      "id": "practice_8_2_3cbfddda",
+      "practice": "Best practice #3",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    },
+    {
+      "id": "practice_8_3_db2308ac",
+      "practice": "Best practice #4",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    },
+    {
+      "id": "practice_8_4_aafaf3c7",
+      "practice": "Best practice #5",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    },
+    {
+      "id": "practice_8_5_96774332",
+      "practice": "Best practice #6",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    },
+    {
+      "id": "practice_8_6_90818631",
+      "practice": "Best practice #7",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    },
+    {
+      "id": "practice_8_7_9edfa468",
+      "practice": "Best practice #8",
+      "topic": "games",
+      "language": "ruby",
+      "description": "Recommended approach for games",
+      "example": "# Example code",
+      "variant": 8
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "refactoring_examples_variant_2",
+    "type": "refactoring",
+    "language": "java",
+    "total_examples": 5,
+    "created_at": "2025-10-13T23:32:22.341527",
+    "variant": 2
+  },
+  "refactorings": [
+    {
+      "id": "refactor_2_0_26cf19b4",
+      "refactoring_type": "extract_class",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_1_447e77ee",
+      "refactoring_type": "inline",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_2_7baab610",
+      "refactoring_type": "extract_class",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_3_6370be04",
+      "refactoring_type": "move",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    },
+    {
+      "id": "refactor_2_4_f95850ab",
+      "refactoring_type": "rename",
+      "language": "java",
+      "before": "# Code before refactoring",
+      "after": "# Code after refactoring",
+      "reason": "Improve code quality",
+      "variant": 2
+    }
+  ]
+}

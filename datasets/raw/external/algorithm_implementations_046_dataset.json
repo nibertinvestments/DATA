@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "algorithm_implementations_variant_5",
+    "type": "algorithms",
+    "language": "java",
+    "total_implementations": 4,
+    "created_at": "2025-10-13T23:32:22.333133",
+    "variant": 5
+  },
+  "implementations": [
+    {
+      "id": "algo_5_e7c816d0",
+      "name": "hash_table_implementation",
+      "language": "java",
+      "complexity": "O(n log n)",
+      "code": "# hash_table implementation in java\n# ... code ...",
+      "variant": 5
+    },
+    {
+      "id": "algo_5_6e84ebac",
+      "name": "graph_implementation",
+      "language": "java",
+      "complexity": "O(1)",
+      "code": "# graph implementation in java\n# ... code ...",
+      "variant": 5
+    },
+    {
+      "id": "algo_5_547dfa34",
+      "name": "queue_implementation",
+      "language": "java",
+      "complexity": "O(log n)",
+      "code": "# queue implementation in java\n# ... code ...",
+      "variant": 5
+    },
+    {
+      "id": "algo_5_183ec7ea",
+      "name": "tree_implementation",
+      "language": "java",
+      "complexity": "O(n)",
+      "code": "# tree implementation in java\n# ... code ...",
+      "variant": 5
+    }
+  ]
+}

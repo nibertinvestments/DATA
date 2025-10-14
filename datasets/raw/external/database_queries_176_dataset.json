@@ -1,0 +1,68 @@
+{
+  "metadata": {
+    "name": "database_queries_variant_5",
+    "type": "database",
+    "database_type": "nosql",
+    "total_queries": 7,
+    "created_at": "2025-10-13T23:32:22.352673",
+    "variant": 5
+  },
+  "queries": [
+    {
+      "id": "dbquery_5_0_a9e6e301",
+      "database_type": "nosql",
+      "query_type": "update",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 5
+    },
+    {
+      "id": "dbquery_5_1_9390f5a8",
+      "database_type": "nosql",
+      "query_type": "select",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 5
+    },
+    {
+      "id": "dbquery_5_2_ab061619",
+      "database_type": "nosql",
+      "query_type": "update",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 5
+    },
+    {
+      "id": "dbquery_5_3_30560f4d",
+      "database_type": "nosql",
+      "query_type": "update",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 5
+    },
+    {
+      "id": "dbquery_5_4_774f2060",
+      "database_type": "nosql",
+      "query_type": "join",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 5
+    },
+    {
+      "id": "dbquery_5_5_5024fe7b",
+      "database_type": "nosql",
+      "query_type": "join",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 5
+    },
+    {
+      "id": "dbquery_5_6_802c7490",
+      "database_type": "nosql",
+      "query_type": "delete",
+      "query": "# Database query example",
+      "optimization": "# Optimized version",
+      "variant": 5
+    }
+  ]
+}

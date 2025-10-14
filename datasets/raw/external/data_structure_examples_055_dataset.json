@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "name": "data_structures_variant_4",
+    "type": "data_structures",
+    "language": "javascript",
+    "total_examples": 4,
+    "created_at": "2025-10-13T23:32:22.334541",
+    "variant": 4
+  },
+  "examples": [
+    {
+      "id": "ds_4_c81f2525",
+      "structure": "hash_table",
+      "language": "javascript",
+      "implementation": "# hash_table implementation in javascript",
+      "operations": [
+        "delete",
+        "search",
+        "traverse"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "ds_4_bbac73bd",
+      "structure": "heap",
+      "language": "javascript",
+      "implementation": "# heap implementation in javascript",
+      "operations": [
+        "delete",
+        "insert",
+        "search"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "ds_4_e5e4ff83",
+      "structure": "stack",
+      "language": "javascript",
+      "implementation": "# stack implementation in javascript",
+      "operations": [
+        "delete",
+        "insert",
+        "search"
+      ],
+      "variant": 4
+    },
+    {
+      "id": "ds_4_94c7a5d3",
+      "structure": "set",
+      "language": "javascript",
+      "implementation": "# set implementation in javascript",
+      "operations": [
+        "search",
+        "delete"
+      ],
+      "variant": 4
+    }
+  ]
+}

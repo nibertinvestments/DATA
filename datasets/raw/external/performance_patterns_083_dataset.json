@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_2",
+    "type": "performance",
+    "language": "rust",
+    "total_optimizations": 5,
+    "created_at": "2025-10-13T23:32:22.338667",
+    "variant": 2
+  },
+  "optimizations": [
+    {
+      "id": "perf_2_0_e3142907",
+      "optimization_type": "algorithmic",
+      "language": "rust",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "2x faster",
+      "variant": 2
+    },
+    {
+      "id": "perf_2_1_30997ffa",
+      "optimization_type": "lazy_loading",
+      "language": "rust",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "94x faster",
+      "variant": 2
+    },
+    {
+      "id": "perf_2_2_0484c97a",
+      "optimization_type": "parallelization",
+      "language": "rust",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "41x faster",
+      "variant": 2
+    },
+    {
+      "id": "perf_2_3_8b9a7e30",
+      "optimization_type": "caching",
+      "language": "rust",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "100x faster",
+      "variant": 2
+    },
+    {
+      "id": "perf_2_4_ec02bdef",
+      "optimization_type": "memory",
+      "language": "rust",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "56x faster",
+      "variant": 2
+    }
+  ]
+}

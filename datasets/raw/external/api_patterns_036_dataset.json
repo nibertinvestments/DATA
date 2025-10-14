@@ -1,0 +1,100 @@
+{
+  "metadata": {
+    "name": "api_patterns_variant_5",
+    "type": "api_usage",
+    "description": "API patterns for python, javascript, java",
+    "languages": [
+      "python",
+      "javascript",
+      "java"
+    ],
+    "total_patterns": 5,
+    "created_at": "2025-10-13T23:32:22.331474",
+    "variant": 5
+  },
+  "api_patterns": [
+    {
+      "id": "api_5_000_4769e9c0",
+      "language": "java",
+      "api_type": "gRPC",
+      "method": "DELETE",
+      "name": "API PUT Request Pattern",
+      "description": "Best practice for GET requests in java",
+      "code_example": "# API request in java\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 5
+    },
+    {
+      "id": "api_5_001_154d5657",
+      "language": "javascript",
+      "api_type": "gRPC",
+      "method": "PATCH",
+      "name": "API PATCH Request Pattern",
+      "description": "Best practice for PUT requests in javascript",
+      "code_example": "# API request in javascript\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 5
+    },
+    {
+      "id": "api_5_002_44592646",
+      "language": "python",
+      "api_type": "WebSocket",
+      "method": "GET",
+      "name": "API DELETE Request Pattern",
+      "description": "Best practice for PATCH requests in python",
+      "code_example": "# API request in python\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 5
+    },
+    {
+      "id": "api_5_003_400f909e",
+      "language": "python",
+      "api_type": "SOAP",
+      "method": "GET",
+      "name": "API PATCH Request Pattern",
+      "description": "Best practice for PUT requests in python",
+      "code_example": "# API request in python\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses",
+        "Retry logic",
+        "Rate limiting"
+      ],
+      "variant": 5
+    },
+    {
+      "id": "api_5_004_416a2764",
+      "language": "python",
+      "api_type": "gRPC",
+      "method": "POST",
+      "name": "API PATCH Request Pattern",
+      "description": "Best practice for PATCH requests in python",
+      "code_example": "# API request in python\n# ... code ...",
+      "best_practices": [
+        "Use timeout",
+        "Handle errors",
+        "Validate responses"
+      ],
+      "variant": 5
+    }
+  ]
+}

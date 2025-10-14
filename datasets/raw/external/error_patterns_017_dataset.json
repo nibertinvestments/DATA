@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "name": "error_patterns_variant_6",
+    "type": "error_analysis",
+    "description": "Error patterns for python, rust, java",
+    "languages": [
+      "python",
+      "rust",
+      "java"
+    ],
+    "total_patterns": 5,
+    "created_at": "2025-10-13T23:32:22.328296",
+    "variant": 6
+  },
+  "error_patterns": [
+    {
+      "id": "err_6_000_674959b1",
+      "language": "python",
+      "error_type": "ZeroDivisionError",
+      "description": "ZeroDivisionError in python",
+      "buggy_code": "# Buggy python code that causes ZeroDivisionError\n# ... implementation ...",
+      "fixed_code": "# Fixed python code for ZeroDivisionError\n# ... implementation ...",
+      "explanation": "How to fix ZeroDivisionError in python",
+      "severity": "low",
+      "category": "runtime",
+      "variant": 6
+    },
+    {
+      "id": "err_6_001_da705303",
+      "language": "rust",
+      "error_type": "IllegalStateException",
+      "description": "IllegalStateException in rust",
+      "buggy_code": "# Buggy rust code that causes IllegalStateException\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for IllegalStateException\n# ... implementation ...",
+      "explanation": "How to fix IllegalStateException in rust",
+      "severity": "medium",
+      "category": "memory",
+      "variant": 6
+    },
+    {
+      "id": "err_6_002_91e4864a",
+      "language": "rust",
+      "error_type": "NullPointerException",
+      "description": "NullPointerException in rust",
+      "buggy_code": "# Buggy rust code that causes NullPointerException\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for NullPointerException\n# ... implementation ...",
+      "explanation": "How to fix NullPointerException in rust",
+      "severity": "high",
+      "category": "type",
+      "variant": 6
+    },
+    {
+      "id": "err_6_003_5688bb77",
+      "language": "java",
+      "error_type": "ConcurrentModificationException",
+      "description": "ConcurrentModificationException in java",
+      "buggy_code": "# Buggy java code that causes ConcurrentModificationException\n# ... implementation ...",
+      "fixed_code": "# Fixed java code for ConcurrentModificationException\n# ... implementation ...",
+      "explanation": "How to fix ConcurrentModificationException in java",
+      "severity": "low",
+      "category": "syntax",
+      "variant": 6
+    },
+    {
+      "id": "err_6_004_834560c9",
+      "language": "rust",
+      "error_type": "SegmentationFault",
+      "description": "SegmentationFault in rust",
+      "buggy_code": "# Buggy rust code that causes SegmentationFault\n# ... implementation ...",
+      "fixed_code": "# Fixed rust code for SegmentationFault\n# ... implementation ...",
+      "explanation": "How to fix SegmentationFault in rust",
+      "severity": "low",
+      "category": "logic",
+      "variant": 6
+    }
+  ]
+}

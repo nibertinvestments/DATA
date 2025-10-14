@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_2",
+    "type": "design_patterns",
+    "language": "java",
+    "total_patterns": 4,
+    "created_at": "2025-10-13T23:32:22.335831",
+    "variant": 2
+  },
+  "patterns": [
+    {
+      "id": "pattern_2_e7840f34",
+      "name": "Command Pattern",
+      "category": "behavioral",
+      "language": "java",
+      "implementation": "# Command in java",
+      "variant": 2
+    },
+    {
+      "id": "pattern_2_797ac39b",
+      "name": "Observer Pattern",
+      "category": "structural",
+      "language": "java",
+      "implementation": "# Observer in java",
+      "variant": 2
+    },
+    {
+      "id": "pattern_2_4e6c8c5d",
+      "name": "Facade Pattern",
+      "category": "behavioral",
+      "language": "java",
+      "implementation": "# Facade in java",
+      "variant": 2
+    },
+    {
+      "id": "pattern_2_15168199",
+      "name": "Iterator Pattern",
+      "category": "behavioral",
+      "language": "java",
+      "implementation": "# Iterator in java",
+      "variant": 2
+    }
+  ]
+}

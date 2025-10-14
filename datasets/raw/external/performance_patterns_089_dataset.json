@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "name": "performance_patterns_variant_8",
+    "type": "performance",
+    "language": "javascript",
+    "total_optimizations": 5,
+    "created_at": "2025-10-13T23:32:22.339611",
+    "variant": 8
+  },
+  "optimizations": [
+    {
+      "id": "perf_8_0_77825923",
+      "optimization_type": "memory",
+      "language": "javascript",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "42x faster",
+      "variant": 8
+    },
+    {
+      "id": "perf_8_1_8115c992",
+      "optimization_type": "memory",
+      "language": "javascript",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "32x faster",
+      "variant": 8
+    },
+    {
+      "id": "perf_8_2_3f238966",
+      "optimization_type": "caching",
+      "language": "javascript",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "7x faster",
+      "variant": 8
+    },
+    {
+      "id": "perf_8_3_e76f195f",
+      "optimization_type": "caching",
+      "language": "javascript",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "56x faster",
+      "variant": 8
+    },
+    {
+      "id": "perf_8_4_8f52627b",
+      "optimization_type": "caching",
+      "language": "javascript",
+      "before": "# Slow implementation",
+      "after": "# Optimized implementation",
+      "improvement": "86x faster",
+      "variant": 8
+    }
+  ]
+}

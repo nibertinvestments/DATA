@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "name": "code_translation_training_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:34:30.349684",
+    "total_samples": 55,
+    "language_pairs": 55,
+    "purpose": "AI code translation training"
+  },
+  "samples": [
+    {
+      "id": "translation_0001",
+      "source_language": "python",
+      "target_language": "javascript",
+      "source_code": "def sum_array(arr):\n    return sum(arr)",
+      "target_code": "function sumArray(arr) {\n  return arr.reduce((a, b) => a + b, 0);\n}",
+      "concept": "array_sum",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0002",
+      "source_language": "javascript",
+      "target_language": "python",
+      "source_code": "const double = x => x * 2;",
+      "target_code": "double = lambda x: x * 2",
+      "concept": "lambda_function",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0003",
+      "source_language": "python",
+      "target_language": "java",
+      "source_code": "class Person:\n    def __init__(self, name):\n        self.name = name",
+      "target_code": "public class Person {\n    private String name;\n    \n    public Person(String name) {\n        this.name = name;\n    }\n}",
+      "concept": "class_definition",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0004",
+      "source_language": "java",
+      "target_language": "go",
+      "source_code": "List<String> names = new ArrayList<>();\nnames.add(\"Alice\");",
+      "target_code": "names := make([]string, 0)\nnames = append(names, \"Alice\")",
+      "concept": "list_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0005",
+      "source_language": "rust",
+      "target_language": "cpp",
+      "source_code": "let mut vec = Vec::new();\nvec.push(42);",
+      "target_code": "std::vector<int> vec;\nvec.push_back(42);",
+      "concept": "vector_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0006",
+      "source_language": "ruby",
+      "target_language": "java",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0007",
+      "source_language": "swift",
+      "target_language": "python",
+      "concept": "data_structures",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0008",
+      "source_language": "typescript",
+      "target_language": "javascript",
+      "concept": "error_handling",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0009",
+      "source_language": "ruby",
+      "target_language": "rust",
+      "concept": "functions",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0010",
+      "source_language": "python",
+      "target_language": "cpp",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0011",
+      "source_language": "swift",
+      "target_language": "csharp",
+      "concept": "functions",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0012",
+      "source_language": "go",
+      "target_language": "cpp",
+      "concept": "functions",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0013",
+      "source_language": "kotlin",
+      "target_language": "csharp",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0014",
+      "source_language": "kotlin",
+      "target_language": "ruby",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0015",
+      "source_language": "java",
+      "target_language": "go",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0016",
+      "source_language": "swift",
+      "target_language": "rust",
+      "concept": "functions",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0017",
+      "source_language": "kotlin",
+      "target_language": "csharp",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0018",
+      "source_language": "rust",
+      "target_language": "go",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0019",
+      "source_language": "ruby",
+      "target_language": "swift",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0020",
+      "source_language": "cpp",
+      "target_language": "swift",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0021",
+      "source_language": "typescript",
+      "target_language": "ruby",
+      "concept": "data_structures",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0022",
+      "source_language": "java",
+      "target_language": "javascript",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0023",
+      "source_language": "ruby",
+      "target_language": "rust",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0024",
+      "source_language": "php",
+      "target_language": "go",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0025",
+      "source_language": "cpp",
+      "target_language": "typescript",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0026",
+      "source_language": "php",
+      "target_language": "swift",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0027",
+      "source_language": "python",
+      "target_language": "php",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0028",
+      "source_language": "csharp",
+      "target_language": "java",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0029",
+      "source_language": "javascript",
+      "target_language": "csharp",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0030",
+      "source_language": "swift",
+      "target_language": "java",
+      "concept": "data_structures",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0031",
+      "source_language": "kotlin",
+      "target_language": "csharp",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0032",
+      "source_language": "rust",
+      "target_language": "python",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0033",
+      "source_language": "rust",
+      "target_language": "ruby",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0034",
+      "source_language": "typescript",
+      "target_language": "javascript",
+      "concept": "error_handling",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0035",
+      "source_language": "python",
+      "target_language": "typescript",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0036",
+      "source_language": "go",
+      "target_language": "csharp",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0037",
+      "source_language": "python",
+      "target_language": "cpp",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0038",
+      "source_language": "go",
+      "target_language": "php",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0039",
+      "source_language": "python",
+      "target_language": "typescript",
+      "concept": "functions",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0040",
+      "source_language": "rust",
+      "target_language": "python",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0041",
+      "source_language": "python",
+      "target_language": "csharp",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0042",
+      "source_language": "typescript",
+      "target_language": "php",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0043",
+      "source_language": "csharp",
+      "target_language": "go",
+      "concept": "error_handling",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0044",
+      "source_language": "java",
+      "target_language": "javascript",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0045",
+      "source_language": "python",
+      "target_language": "ruby",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0046",
+      "source_language": "javascript",
+      "target_language": "cpp",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0047",
+      "source_language": "go",
+      "target_language": "csharp",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0048",
+      "source_language": "go",
+      "target_language": "swift",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0049",
+      "source_language": "python",
+      "target_language": "rust",
+      "concept": "error_handling",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0050",
+      "source_language": "swift",
+      "target_language": "ruby",
+      "concept": "classes",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0051",
+      "source_language": "go",
+      "target_language": "swift",
+      "concept": "loops",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0052",
+      "source_language": "javascript",
+      "target_language": "java",
+      "concept": "conditionals",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0053",
+      "source_language": "swift",
+      "target_language": "javascript",
+      "concept": "error_handling",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0054",
+      "source_language": "ruby",
+      "target_language": "php",
+      "concept": "async_operations",
+      "training_objective": "code_translation"
+    },
+    {
+      "id": "translation_0055",
+      "source_language": "swift",
+      "target_language": "kotlin",
+      "concept": "data_structures",
+      "training_objective": "code_translation"
+    }
+  ]
+}

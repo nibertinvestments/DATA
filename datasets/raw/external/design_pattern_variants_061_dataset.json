@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "name": "design_patterns_variant_0",
+    "type": "design_patterns",
+    "language": "rust",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.335576",
+    "variant": 0
+  },
+  "patterns": [
+    {
+      "id": "pattern_0_3361311f",
+      "name": "Singleton Pattern",
+      "category": "creational",
+      "language": "rust",
+      "implementation": "# Singleton in rust",
+      "variant": 0
+    },
+    {
+      "id": "pattern_0_847de27d",
+      "name": "Strategy Pattern",
+      "category": "creational",
+      "language": "rust",
+      "implementation": "# Strategy in rust",
+      "variant": 0
+    }
+  ]
+}

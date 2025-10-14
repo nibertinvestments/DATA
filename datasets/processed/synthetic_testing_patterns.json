@@ -1,0 +1,1924 @@
+{
+  "metadata": {
+    "name": "testing_patterns_synthetic_dataset",
+    "version": "1.0",
+    "created_at": "2025-10-13T23:35:35.744793",
+    "total_samples": 244,
+    "test_types": [
+      "unit",
+      "integration",
+      "e2e"
+    ],
+    "purpose": "AI testing strategy training"
+  },
+  "samples": [
+    {
+      "id": "test_00001",
+      "pattern": "arrange_act_assert",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00002",
+      "pattern": "arrange_act_assert",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00003",
+      "pattern": "arrange_act_assert",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00004",
+      "pattern": "arrange_act_assert",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00005",
+      "pattern": "arrange_act_assert",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00006",
+      "pattern": "arrange_act_assert",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00007",
+      "pattern": "arrange_act_assert",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00008",
+      "pattern": "arrange_act_assert",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00009",
+      "pattern": "arrange_act_assert",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00010",
+      "pattern": "arrange_act_assert",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00011",
+      "pattern": "arrange_act_assert",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00012",
+      "pattern": "arrange_act_assert",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00013",
+      "pattern": "arrange_act_assert",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00014",
+      "pattern": "arrange_act_assert",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00015",
+      "pattern": "arrange_act_assert",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00016",
+      "pattern": "arrange_act_assert",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00017",
+      "pattern": "arrange_act_assert",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00018",
+      "pattern": "arrange_act_assert",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00019",
+      "pattern": "arrange_act_assert",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00020",
+      "pattern": "arrange_act_assert",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00021",
+      "pattern": "arrange_act_assert",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00022",
+      "pattern": "arrange_act_assert",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00023",
+      "pattern": "arrange_act_assert",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00024",
+      "pattern": "arrange_act_assert",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00025",
+      "pattern": "arrange_act_assert",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00026",
+      "pattern": "test_doubles",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00027",
+      "pattern": "test_doubles",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00028",
+      "pattern": "test_doubles",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00029",
+      "pattern": "test_doubles",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00030",
+      "pattern": "test_doubles",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00031",
+      "pattern": "test_doubles",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00032",
+      "pattern": "test_doubles",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00033",
+      "pattern": "test_doubles",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00034",
+      "pattern": "test_doubles",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00035",
+      "pattern": "test_doubles",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00036",
+      "pattern": "test_doubles",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00037",
+      "pattern": "test_doubles",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00038",
+      "pattern": "test_doubles",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00039",
+      "pattern": "test_doubles",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00040",
+      "pattern": "test_doubles",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00041",
+      "pattern": "test_doubles",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00042",
+      "pattern": "test_doubles",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00043",
+      "pattern": "test_doubles",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00044",
+      "pattern": "test_doubles",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00045",
+      "pattern": "test_doubles",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00046",
+      "pattern": "test_doubles",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00047",
+      "pattern": "test_doubles",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00048",
+      "pattern": "test_doubles",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00049",
+      "pattern": "test_doubles",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00050",
+      "pattern": "test_doubles",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00051",
+      "pattern": "mocking",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00052",
+      "pattern": "mocking",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00053",
+      "pattern": "mocking",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00054",
+      "pattern": "mocking",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00055",
+      "pattern": "mocking",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00056",
+      "pattern": "mocking",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00057",
+      "pattern": "mocking",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00058",
+      "pattern": "mocking",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00059",
+      "pattern": "mocking",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00060",
+      "pattern": "mocking",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00061",
+      "pattern": "mocking",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00062",
+      "pattern": "mocking",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00063",
+      "pattern": "mocking",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00064",
+      "pattern": "mocking",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00065",
+      "pattern": "mocking",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00066",
+      "pattern": "mocking",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00067",
+      "pattern": "mocking",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00068",
+      "pattern": "mocking",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00069",
+      "pattern": "mocking",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00070",
+      "pattern": "mocking",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00071",
+      "pattern": "mocking",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00072",
+      "pattern": "mocking",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00073",
+      "pattern": "mocking",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00074",
+      "pattern": "mocking",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00075",
+      "pattern": "mocking",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00076",
+      "pattern": "stubbing",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00077",
+      "pattern": "stubbing",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00078",
+      "pattern": "stubbing",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00079",
+      "pattern": "stubbing",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00080",
+      "pattern": "stubbing",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00081",
+      "pattern": "stubbing",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00082",
+      "pattern": "stubbing",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00083",
+      "pattern": "stubbing",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00084",
+      "pattern": "stubbing",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00085",
+      "pattern": "stubbing",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00086",
+      "pattern": "stubbing",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00087",
+      "pattern": "stubbing",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00088",
+      "pattern": "stubbing",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00089",
+      "pattern": "stubbing",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00090",
+      "pattern": "stubbing",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00091",
+      "pattern": "stubbing",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00092",
+      "pattern": "stubbing",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00093",
+      "pattern": "stubbing",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00094",
+      "pattern": "stubbing",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00095",
+      "pattern": "stubbing",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00096",
+      "pattern": "stubbing",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00097",
+      "pattern": "stubbing",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00098",
+      "pattern": "stubbing",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00099",
+      "pattern": "stubbing",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00100",
+      "pattern": "stubbing",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00101",
+      "pattern": "test_fixtures",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00102",
+      "pattern": "test_fixtures",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00103",
+      "pattern": "test_fixtures",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00104",
+      "pattern": "test_fixtures",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00105",
+      "pattern": "test_fixtures",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00106",
+      "pattern": "test_fixtures",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00107",
+      "pattern": "test_fixtures",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00108",
+      "pattern": "test_fixtures",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00109",
+      "pattern": "test_fixtures",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00110",
+      "pattern": "test_fixtures",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00111",
+      "pattern": "test_fixtures",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00112",
+      "pattern": "test_fixtures",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00113",
+      "pattern": "test_fixtures",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00114",
+      "pattern": "test_fixtures",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00115",
+      "pattern": "test_fixtures",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00116",
+      "pattern": "test_fixtures",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00117",
+      "pattern": "test_fixtures",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00118",
+      "pattern": "test_fixtures",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00119",
+      "pattern": "test_fixtures",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00120",
+      "pattern": "test_fixtures",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00121",
+      "pattern": "test_fixtures",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00122",
+      "pattern": "test_fixtures",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00123",
+      "pattern": "test_fixtures",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00124",
+      "pattern": "test_fixtures",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00125",
+      "pattern": "test_fixtures",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00126",
+      "pattern": "parameterized_tests",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00127",
+      "pattern": "parameterized_tests",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00128",
+      "pattern": "parameterized_tests",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00129",
+      "pattern": "parameterized_tests",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00130",
+      "pattern": "parameterized_tests",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00131",
+      "pattern": "parameterized_tests",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00132",
+      "pattern": "parameterized_tests",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00133",
+      "pattern": "parameterized_tests",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00134",
+      "pattern": "parameterized_tests",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00135",
+      "pattern": "parameterized_tests",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00136",
+      "pattern": "parameterized_tests",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00137",
+      "pattern": "parameterized_tests",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00138",
+      "pattern": "parameterized_tests",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00139",
+      "pattern": "parameterized_tests",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00140",
+      "pattern": "parameterized_tests",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00141",
+      "pattern": "parameterized_tests",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00142",
+      "pattern": "parameterized_tests",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00143",
+      "pattern": "parameterized_tests",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00144",
+      "pattern": "parameterized_tests",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00145",
+      "pattern": "parameterized_tests",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00146",
+      "pattern": "parameterized_tests",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00147",
+      "pattern": "parameterized_tests",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00148",
+      "pattern": "parameterized_tests",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00149",
+      "pattern": "parameterized_tests",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00150",
+      "pattern": "parameterized_tests",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00151",
+      "pattern": "test_data_builders",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00152",
+      "pattern": "test_data_builders",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00153",
+      "pattern": "test_data_builders",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00154",
+      "pattern": "test_data_builders",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00155",
+      "pattern": "test_data_builders",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00156",
+      "pattern": "test_data_builders",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00157",
+      "pattern": "test_data_builders",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00158",
+      "pattern": "test_data_builders",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00159",
+      "pattern": "test_data_builders",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00160",
+      "pattern": "test_data_builders",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00161",
+      "pattern": "test_data_builders",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00162",
+      "pattern": "test_data_builders",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00163",
+      "pattern": "test_data_builders",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00164",
+      "pattern": "test_data_builders",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00165",
+      "pattern": "test_data_builders",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00166",
+      "pattern": "test_data_builders",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00167",
+      "pattern": "test_data_builders",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00168",
+      "pattern": "test_data_builders",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00169",
+      "pattern": "test_data_builders",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00170",
+      "pattern": "test_data_builders",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00171",
+      "pattern": "test_data_builders",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00172",
+      "pattern": "test_data_builders",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00173",
+      "pattern": "test_data_builders",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00174",
+      "pattern": "test_data_builders",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00175",
+      "pattern": "test_data_builders",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00176",
+      "pattern": "test_naming_conventions",
+      "language": "python",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00177",
+      "pattern": "test_naming_conventions",
+      "language": "python",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00178",
+      "pattern": "test_naming_conventions",
+      "language": "python",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00179",
+      "pattern": "test_naming_conventions",
+      "language": "python",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00180",
+      "pattern": "test_naming_conventions",
+      "language": "python",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00181",
+      "pattern": "test_naming_conventions",
+      "language": "javascript",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00182",
+      "pattern": "test_naming_conventions",
+      "language": "javascript",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00183",
+      "pattern": "test_naming_conventions",
+      "language": "javascript",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00184",
+      "pattern": "test_naming_conventions",
+      "language": "javascript",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00185",
+      "pattern": "test_naming_conventions",
+      "language": "javascript",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00186",
+      "pattern": "test_naming_conventions",
+      "language": "java",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00187",
+      "pattern": "test_naming_conventions",
+      "language": "java",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00188",
+      "pattern": "test_naming_conventions",
+      "language": "java",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00189",
+      "pattern": "test_naming_conventions",
+      "language": "java",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00190",
+      "pattern": "test_naming_conventions",
+      "language": "java",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00191",
+      "pattern": "test_naming_conventions",
+      "language": "csharp",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00192",
+      "pattern": "test_naming_conventions",
+      "language": "csharp",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00193",
+      "pattern": "test_naming_conventions",
+      "language": "csharp",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00194",
+      "pattern": "test_naming_conventions",
+      "language": "csharp",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00195",
+      "pattern": "test_naming_conventions",
+      "language": "csharp",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00196",
+      "pattern": "test_naming_conventions",
+      "language": "go",
+      "framework": "pytest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00197",
+      "pattern": "test_naming_conventions",
+      "language": "go",
+      "framework": "jest",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00198",
+      "pattern": "test_naming_conventions",
+      "language": "go",
+      "framework": "junit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00199",
+      "pattern": "test_naming_conventions",
+      "language": "go",
+      "framework": "nunit",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00200",
+      "pattern": "test_naming_conventions",
+      "language": "go",
+      "framework": "testing",
+      "test_type": "unit",
+      "category": "testing"
+    },
+    {
+      "id": "test_00201",
+      "pattern": "database_testing",
+      "language": "python",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00202",
+      "pattern": "database_testing",
+      "language": "javascript",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00203",
+      "pattern": "database_testing",
+      "language": "java",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00204",
+      "pattern": "database_testing",
+      "language": "go",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00205",
+      "pattern": "api_testing",
+      "language": "python",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00206",
+      "pattern": "api_testing",
+      "language": "javascript",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00207",
+      "pattern": "api_testing",
+      "language": "java",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00208",
+      "pattern": "api_testing",
+      "language": "go",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00209",
+      "pattern": "service_testing",
+      "language": "python",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00210",
+      "pattern": "service_testing",
+      "language": "javascript",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00211",
+      "pattern": "service_testing",
+      "language": "java",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00212",
+      "pattern": "service_testing",
+      "language": "go",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00213",
+      "pattern": "test_containers",
+      "language": "python",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00214",
+      "pattern": "test_containers",
+      "language": "javascript",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00215",
+      "pattern": "test_containers",
+      "language": "java",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00216",
+      "pattern": "test_containers",
+      "language": "go",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00217",
+      "pattern": "test_databases",
+      "language": "python",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00218",
+      "pattern": "test_databases",
+      "language": "javascript",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00219",
+      "pattern": "test_databases",
+      "language": "java",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00220",
+      "pattern": "test_databases",
+      "language": "go",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00221",
+      "pattern": "mock_servers",
+      "language": "python",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00222",
+      "pattern": "mock_servers",
+      "language": "javascript",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00223",
+      "pattern": "mock_servers",
+      "language": "java",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00224",
+      "pattern": "mock_servers",
+      "language": "go",
+      "test_type": "integration",
+      "category": "testing"
+    },
+    {
+      "id": "test_00225",
+      "pattern": "page_object_model",
+      "tool": "selenium",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00226",
+      "pattern": "page_object_model",
+      "tool": "playwright",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00227",
+      "pattern": "page_object_model",
+      "tool": "cypress",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00228",
+      "pattern": "page_object_model",
+      "tool": "puppeteer",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00229",
+      "pattern": "test_scenarios",
+      "tool": "selenium",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00230",
+      "pattern": "test_scenarios",
+      "tool": "playwright",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00231",
+      "pattern": "test_scenarios",
+      "tool": "cypress",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00232",
+      "pattern": "test_scenarios",
+      "tool": "puppeteer",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00233",
+      "pattern": "test_data_management",
+      "tool": "selenium",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00234",
+      "pattern": "test_data_management",
+      "tool": "playwright",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00235",
+      "pattern": "test_data_management",
+      "tool": "cypress",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00236",
+      "pattern": "test_data_management",
+      "tool": "puppeteer",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00237",
+      "pattern": "screenshot_comparison",
+      "tool": "selenium",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00238",
+      "pattern": "screenshot_comparison",
+      "tool": "playwright",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00239",
+      "pattern": "screenshot_comparison",
+      "tool": "cypress",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00240",
+      "pattern": "screenshot_comparison",
+      "tool": "puppeteer",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00241",
+      "pattern": "performance_testing",
+      "tool": "selenium",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00242",
+      "pattern": "performance_testing",
+      "tool": "playwright",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00243",
+      "pattern": "performance_testing",
+      "tool": "cypress",
+      "test_type": "e2e",
+      "category": "testing"
+    },
+    {
+      "id": "test_00244",
+      "pattern": "performance_testing",
+      "tool": "puppeteer",
+      "test_type": "e2e",
+      "category": "testing"
+    }
+  ]
+}

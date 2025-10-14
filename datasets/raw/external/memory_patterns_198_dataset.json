@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "name": "memory_patterns_variant_7",
+    "type": "memory_management",
+    "language": "rust",
+    "total_patterns": 2,
+    "created_at": "2025-10-13T23:32:22.355628",
+    "variant": 7
+  },
+  "patterns": [
+    {
+      "id": "memory_7_0_1fd09e9e",
+      "pattern": "smart_pointer",
+      "language": "rust",
+      "example": "# Memory management",
+      "variant": 7
+    },
+    {
+      "id": "memory_7_1_2a34e85f",
+      "pattern": "RAII",
+      "language": "rust",
+      "example": "# Memory management",
+      "variant": 7
+    }
+  ]
+}
