@@ -28,15 +28,16 @@
 
 ## 🎯 Executive Summary
 
-The **DATA Repository** by Nibert Investments represents a comprehensive collection of **1,409 code implementations** across **18 programming languages** with **129 JSON datasets** organized for AI/ML training. This repository serves as a foundational resource for AI coding agents, machine learning researchers, and software developers seeking high-quality, well-documented code examples and training data.
+The **DATA Repository** by Nibert Investments represents a comprehensive collection of **1,409 code implementations** across **18 programming languages** with **336 JSON datasets** containing **2,381 training samples** organized for AI/ML training. This repository serves as a foundational resource for AI coding agents, machine learning researchers, and software developers seeking high-quality, well-documented code examples and training data.
 
 ### Key Achievements
 - ✅ **1,409 Code Implementations** across 18 programming languages
-- ✅ **129 Dataset Files** (19 processed, 102 raw, 8 sample datasets)
+- ✅ **336 Dataset Files** (31 processed, 297 raw, 8 sample datasets)
+- ✅ **2,381 Training Samples** across all datasets
 - ✅ **18 Programming Languages** with idiomatic implementations
-- ✅ **19 Processed Datasets** in JSON format ready for ML training
-- ✅ **Professional Documentation** with 63 markdown files
+- ✅ **Professional Documentation** with 30 files (24 markdown + 6 HTML)
 - ✅ **AI-Optimized Structure** specifically designed for coding agent training
+- ✅ **~15MB Repository Size** of curated, production-ready content
 
 ---
 
@@ -44,10 +45,13 @@ The **DATA Repository** by Nibert Investments represents a comprehensive collect
 
 ### Statistical Overview
 ```
-Repository Size: 5.4MB of curated content
+Repository Size: ~15MB of curated content
 Code Files: 1,409 implementations across 18 languages
-Datasets: 129 JSON datasets (19 processed, 102 raw, 8 sample)
-Documentation: 63 markdown files
+Datasets: 336 JSON datasets (31 processed, 297 raw, 8 sample)
+Dataset Samples: 2,381 individual training samples
+Documentation: 30 files (24 markdown + 6 HTML)
+Specialized Content: 72 files (data-sources, high-end, vector, scripts, tests)
+Total Files: 1,847 tracked files
 Test Coverage: Comprehensive validation framework
 License: MIT (Commercial and Academic Use)
 ```
@@ -57,6 +61,7 @@ License: MIT (Commercial and Academic Use)
 - **Documentation Completeness**: Comprehensive coverage across all areas
 - **Language Coverage**: 18 major programming languages covered
 - **AI Training Readiness**: Structured for ML consumption
+- **Dataset Richness**: 2,381 training samples across diverse categories
 
 ---
 

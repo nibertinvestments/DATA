@@ -47,16 +47,13 @@ Successfully added **309 new dataset files** specifically designed for AI, ML, a
 
 ## 📈 Repository Impact
 
-### Before Addition
-- Datasets: 121 files
-- Training samples: ~3,000
-- Repository size: ~1.6MB
-
-### After Addition
-- Datasets: **430 files** (+309, +256% increase)
-- Structured training samples in processed datasets: **1,936**
-- External dataset files: **297** (with additional samples)
-- Repository size: **~4.0MB** (+2.4MB, +150% increase)
+### Accurate Repository Statistics
+- **Datasets**: 336 files (31 processed, 297 raw, 8 sample)
+- **Training samples**: 2,381 individual samples
+- **Repository size**: ~15MB
+- **Code samples**: 1,409 implementations across 18 languages
+- **Documentation**: 30 files (24 markdown + 6 HTML)
+- **Total files**: 1,847 tracked files
 
 ---
 
