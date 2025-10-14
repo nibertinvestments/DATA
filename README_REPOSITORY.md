@@ -51,12 +51,13 @@ This repository is developing a comprehensive collection of high-quality coding 
 |--------|--------|--------|
 | **Total Code Samples** | 1,409 implementations | ✅ Comprehensive |
 | **Programming Languages** | 18 languages supported | ✅ Diverse |
-| **Dataset Files** | 129 JSON files | ✅ Rich |
+| **Dataset Files** | 336 JSON files | ✅ Rich |
+| **Dataset Samples** | 2,381 training samples | ✅ Extensive |
 | **Specialized Domains** | AI/ML, Crypto, Finance, Systems | ✅ Expanding |
-| **Repository Size** | 5.4MB curated content | ✅ Optimized |
-| **Documentation Files** | 63 markdown files | ✅ Well-documented |
+| **Repository Size** | ~15MB curated content | ✅ Optimized |
+| **Documentation Files** | 30 files (24 MD + 6 HTML) | ✅ Well-documented |
 | **Language Coverage** | Enterprise to emerging languages | ✅ Comprehensive |
-| **Last Updated** | December 2024 | ✅ Current |
+| **Last Updated** | October 2025 | ✅ Current |
 
 ### Language Distribution (1,409 Total Code Samples)
 
