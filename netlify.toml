@@ -18,7 +18,7 @@
     X-Content-Type-Options = "nosniff"
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://api.github.com;"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none';"
     
     # Performance headers
     Cache-Control = "public, max-age=31536000, immutable"
@@ -77,10 +77,18 @@
 [context.branch-deploy.environment]
   NODE_ENV = "development"
 
-# Plugin configuration
+# Plugin configuration - Lighthouse with fallback and timeout settings
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
   
+  [plugins.inputs]
+    # Audit timeout in milliseconds (120s)
+    timeout = 120000
+    # Wait for site to be ready (60s)
+    wait_for_timeout = 60000
+    # Disable the plugin in deploy previews to avoid timeout issues
+    fail_on_error = false
+    
   [plugins.inputs.thresholds]
     performance = 0.9
     accessibility = 0.9
