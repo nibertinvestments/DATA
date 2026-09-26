@@ -1,0 +1,156 @@
+{
+  "dataset_id": "ai_coding_agent_training_suite_v1",
+  "name": "AI Coding Agent Training Suite",
+  "version": "1.0.0",
+  "description": "A curated set of software-engineering tasks designed for code generation, bug fixing, security review, translation, and reasoning benchmarks.",
+  "language_coverage": [
+    "python",
+    "javascript",
+    "typescript",
+    "solidity",
+    "java",
+    "go",
+    "rust"
+  ],
+  "task_types": [
+    "bug_fix",
+    "code_generation",
+    "security_review",
+    "translation",
+    "refactor",
+    "test_generation",
+    "performance_optimization"
+  ],
+  "tasks": [
+    {
+      "id": "task-001",
+      "language": "python",
+      "task_type": "bug_fix",
+      "difficulty": "medium",
+      "prompt": "Fix the bug in this function. It should return the median value from a list of numbers, but it currently fails on even-length lists because it uses the wrong index and the function can also crash on an empty list.",
+      "response": "def median(values):\n    if not values:\n        raise ValueError('values must not be empty')\n    ordered = sorted(values)\n    mid = len(ordered) // 2\n    if len(ordered) % 2 == 0:\n        return (ordered[mid - 1] + ordered[mid]) / 2\n    return ordered[mid]\n",
+      "metadata": {
+        "tags": ["statistics", "list-processing", "edge-case"],
+        "source": "synthetic",
+        "preferred_approach": "sorted list with midpoint handling"
+      }
+    },
+    {
+      "id": "task-002",
+      "language": "javascript",
+      "task_type": "code_generation",
+      "difficulty": "easy",
+      "prompt": "Implement a function that returns the nth Fibonacci number using iterative arithmetic, with O(n) time and O(1) auxiliary space.",
+      "response": "function fibonacci(n) {\n  if (!Number.isInteger(n) || n < 0) {\n    throw new Error('n must be a non-negative integer');\n  }\n  if (n < 2) return n;\n\n  let previous = 0;\n  let current = 1;\n\n  for (let i = 2; i <= n; i += 1) {\n    const next = previous + current;\n    previous = current;\n    current = next;\n  }\n\n  return current;\n}\n",
+      "metadata": {
+        "tags": ["math", "iterative", "performance"],
+        "source": "synthetic",
+        "preferred_approach": "iterative DP"
+      }
+    },
+    {
+      "id": "task-003",
+      "language": "typescript",
+      "task_type": "translation",
+      "difficulty": "medium",
+      "prompt": "Translate the Python function below that computes a rolling sum into TypeScript. Preserve the API semantics and include type annotations.",
+      "response": "export function rollingSum(values: number[]): number[] {\n  const result: number[] = [];\n  let runningTotal = 0;\n\n  for (const value of values) {\n    runningTotal += value;\n    result.push(runningTotal);\n  }\n\n  return result;\n}\n",
+      "metadata": {
+        "tags": ["translation", "arrays", "types"],
+        "source": "synthetic",
+        "preferred_approach": "typed function signature"
+      }
+    },
+    {
+      "id": "task-004",
+      "language": "solidity",
+      "task_type": "security_review",
+      "difficulty": "hard",
+      "prompt": "Review this token transfer function. It must prevent reentrancy and should only allow transfers to valid addresses. Provide the corrected implementation.",
+      "response": "pragma solidity ^0.8.20;\n\ncontract SafeToken {\n    mapping(address => uint256) public balanceOf;\n    bool private locked;\n\n    modifier nonReentrant() {\n        require(!locked, 'reentrant call');\n        locked = true;\n        _;\n        locked = false;\n    }\n\n    function transfer(address to, uint256 amount) external nonReentrant returns (bool) {\n        require(to != address(0), 'invalid recipient');\n        require(balanceOf[msg.sender] >= amount, 'insufficient balance');\n        balanceOf[msg.sender] -= amount;\n        balanceOf[to] += amount;\n        return true;\n    }\n}\n",
+      "metadata": {
+        "tags": ["security", "reentrancy", "access-control"],
+        "source": "synthetic",
+        "preferred_approach": "reentrancy guard with validation"
+      }
+    },
+    {
+      "id": "task-005",
+      "language": "java",
+      "task_type": "test_generation",
+      "difficulty": "medium",
+      "prompt": "Write a JUnit test suite for the function isPrime(int n). The tests should cover zero, one, negative numbers, and known prime/composite values.",
+      "response": "import static org.junit.jupiter.api.Assertions.*;\nimport org.junit.jupiter.api.Test;\n\nclass PrimeTest {\n    @Test\n    void zeroIsNotPrime() {\n        assertFalse(isPrime(0));\n    }\n\n    @Test\n    void oneIsNotPrime() {\n        assertFalse(isPrime(1));\n    }\n\n    @Test\n    void negativeNumbersAreNotPrime() {\n        assertFalse(isPrime(-7));\n    }\n\n    @Test\n    void primeNumbersReturnTrue() {\n        assertTrue(isPrime(2));\n        assertTrue(isPrime(13));\n        assertTrue(isPrime(37));\n    }\n\n    @Test\n    void compositeNumbersReturnFalse() {\n        assertFalse(isPrime(4));\n        assertFalse(isPrime(9));\n        assertFalse(isPrime(21));\n    }\n}\n",
+      "metadata": {
+        "tags": ["testing", "unit-tests", "math"],
+        "source": "synthetic",
+        "preferred_approach": "boundary and equivalence coverage"
+      }
+    },
+    {
+      "id": "task-006",
+      "language": "go",
+      "task_type": "performance_optimization",
+      "difficulty": "hard",
+      "prompt": "Optimize the function that checks whether a string contains duplicate characters. It must remain correct and should avoid quadratic behavior on large inputs.",
+      "response": "package main\n\nfunc hasDuplicateChars(s string) bool {\n    seen := make(map[rune]struct{}, len(s))\n    for _, ch := range s {\n        if _, exists := seen[ch]; exists {\n            return true\n        }\n        seen[ch] = struct{}{}\n    }\n    return false\n}\n",
+      "metadata": {
+        "tags": ["optimization", "string-processing", "hash-set"],
+        "source": "synthetic",
+        "preferred_approach": "hash-based tracking"
+      }
+    },
+    {
+      "id": "task-007",
+      "language": "rust",
+      "task_type": "refactor",
+      "difficulty": "medium",
+      "prompt": "Refactor the code so that it uses a slice-based API and eliminates repeated bounds checks while preserving the same behavior.",
+      "response": "fn sum_even(values: &[i32]) -> i32 {\n    values.iter().filter(|&&v| v % 2 == 0).sum()\n}\n",
+      "metadata": {
+        "tags": ["functional", "iterators", "refactor"],
+        "source": "synthetic",
+        "preferred_approach": "iterator combinators"
+      }
+    },
+    {
+      "id": "task-008",
+      "language": "python",
+      "task_type": "code_generation",
+      "difficulty": "medium",
+      "prompt": "Implement a function that flattens a nested list structure using recursion while preserving the original order of elements.",
+      "response": "def flatten(items):\n    result = []\n    for item in items:\n        if isinstance(item, list):\n            result.extend(flatten(item))\n        else:\n            result.append(item)\n    return result\n",
+      "metadata": {
+        "tags": ["recursion", "data-structures", "list-processing"],
+        "source": "synthetic",
+        "preferred_approach": "recursive flattening"
+      }
+    },
+    {
+      "id": "task-009",
+      "language": "javascript",
+      "task_type": "bug_fix",
+      "difficulty": "hard",
+      "prompt": "The function below should deduplicate an array while preserving insertion order. It currently returns duplicates because it compares against the wrong object identity and it also fails when the elements are objects.",
+      "response": "function uniqueInOrder(items) {\n  const seen = new Set();\n  const result = [];\n\n  for (const item of items) {\n    const key = typeof item === 'object' ? JSON.stringify(item) : item;\n    if (!seen.has(key)) {\n      seen.add(key);\n      result.push(item);\n    }\n  }\n\n  return result;\n}\n",
+      "metadata": {
+        "tags": ["deduplication", "array", "object-handling"],
+        "source": "synthetic",
+        "preferred_approach": "stable deduplication with keying"
+      }
+    },
+    {
+      "id": "task-010",
+      "language": "python",
+      "task_type": "refactor",
+      "difficulty": "medium",
+      "prompt": "Refactor the code to remove duplicated dictionary logic and make it easier to extend to more data fields without repeated branches.",
+      "response": "def normalize_record(record):\n    allowed = {'name': str, 'age': int, 'score': float}\n    normalized = {}\n\n    for key, value in record.items():\n        if key not in allowed:\n            continue\n        if allowed[key] is int:\n            normalized[key] = int(value)\n        elif allowed[key] is float:\n            normalized[key] = float(value)\n        else:\n            normalized[key] = str(value)\n    return normalized\n",
+      "metadata": {
+        "tags": ["normalization", "data-cleaning", "refactor"],
+        "source": "synthetic",
+        "preferred_approach": "config-driven normalization"
+      }
+    }
+  ]
+}
